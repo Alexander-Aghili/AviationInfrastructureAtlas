@@ -1,0 +1,22 @@
+{
+  "name": "aviation-infrastructure-atlas",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "vite build",
+    "preview": "vite preview --host 0.0.0.0",
+    "data:build": "python3 scripts/import_faa.py",
+    "test": "python3 -m unittest discover -s tests -p 'test_*.py' && node --test tests/*.test.js",
+    "test:browser": "playwright test",
+    "data:acquire": "python3 scripts/acquire_faa.py"
+  },
+  "dependencies": {
+    "leaflet": "^1.9.4"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.55.0",
+    "vite": "^7.1.0"
+  }
+}

@@ -1,0 +1,104 @@
+[
+  {
+    "identifier": "NCT",
+    "address": "11375 Douglas Road, Mather, CA 95655",
+    "city": "Mather",
+    "state": "CA",
+    "coordinates": [
+      -121.257064501901,
+      38.559587845887
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=11375+Douglas+Road&city=Mather&state=CA&zip=95655&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T17:25:36.994869+00:00"
+  },
+  {
+    "identifier": "SCT",
+    "address": "9175 Kearny Villa Rd, San Diego, CA 92126",
+    "city": "San Diego",
+    "state": "CA",
+    "coordinates": [
+      -117.118053892045,
+      32.891085137996
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=9175+Kearny+Villa+Rd&city=San+Diego&state=CA&zip=92126&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T17:25:36.998280+00:00"
+  },
+  {
+    "identifier": "A80",
+    "address": "784 S Hwy 74, Peachtree City, GA 30269",
+    "city": "Peachtree City",
+    "state": "GA",
+    "coordinates": null,
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=784+S+Hwy+74&city=Peachtree+City&state=GA&zip=30269&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T17:25:37.010175+00:00"
+  },
+  {
+    "identifier": "C90",
+    "address": "1100 Bowes Rd, Elgin, IL 60123",
+    "city": "Elgin",
+    "state": "IL",
+    "coordinates": [
+      -88.302207988635,
+      42.010380483648
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=1100+Bowes+Rd&city=Elgin&state=IL&zip=60123&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T17:25:37.157060+00:00"
+  },
+  {
+    "identifier": "PCT",
+    "address": "3699 MacIntosh Drive, Warrenton, VA 20187",
+    "city": "Warrenton",
+    "state": "VA",
+    "coordinates": [
+      -77.669459888313,
+      38.749187701313
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=3699+MacIntosh+Drive&city=Warrenton&state=VA&zip=20187&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T17:25:37.155850+00:00"
+  },
+  {
+    "identifier": "N90",
+    "address": "1515 Stewart Ave, Westbury, NY 11590",
+    "city": "Westbury",
+    "state": "NY",
+    "coordinates": [
+      -73.588272450061,
+      40.736883525797
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=1515+Stewart+Ave&city=Westbury&state=NY&zip=11590&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T17:25:37.169240+00:00"
+  },
+  {
+    "identifier": "A90",
+    "address": "25 Robert Milligan Pkwy, Merrimack, NH 03054",
+    "city": "Merrimack",
+    "state": "NH",
+    "coordinates": null,
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=25+Robert+Milligan+Pkwy&city=Merrimack&state=NH&zip=03054&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T17:25:37.320087+00:00"
+  },
+  {
+    "identifier": "S46",
+    "address": "825 S 160th Street, Burien, WA 98148",
+    "city": "Burien",
+    "state": "WA",
+    "coordinates": [
+      -122.323547260298,
+      47.459593254585
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=825+S+160th+Street&city=Burien&state=WA&zip=98148&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T17:25:37.323246+00:00"
+  },
+  {
+    "identifier": "T75",
+    "address": "22 Missouri Research Park Ct, St Charles, MO 63304",
+    "city": "St Charles",
+    "state": "MO",
+    "coordinates": [
+      -90.679477461199,
+      38.706134975256
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=22+Missouri+Research+Park+Ct&city=St+Charles&state=MO&zip=63304&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T17:25:37.334304+00:00"
+  }
+]

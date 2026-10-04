@@ -1,0 +1,3401 @@
+                                                                   Project Report
+                                                                         ATC-425
+
+
+
+Revised Multifunction Phased Array Radar
+         (MPAR) Network Siting Analysis
+
+
+                                                                        J.Y.N. Cho
+
+
+
+
+                                                                       26 May 2015
+
+
+
+      Lincoln Laboratory
+   MASSACHUSETTS INSTITUTE OF TECHNOLOGY
+            LEXINGTON, MASSACHUSETTS
+
+
+
+
+               Prepared for the Federal Aviation Administration,
+                           Washington, D.C. 20591
+
+                This document is available to the public through
+                 the National Technical Information Service,
+                         Springfield, Virginia 22161
+This document is disseminated under the sponsorship of the Department of
+Transportation, Federal Aviation Administration, in the interest of information
+exchange. The United States Government assumes no liability for its contents or
+use thereof.
+                                                                                         TECHNICAL REPORT STANDARD TITLE PAGE
+  1. Report No.                                2. Government Accession No.                    3. Recipient's Catalog No.
+
+  ATC-425
+												
+4. Title and Subtitle			 5. Report Date
+                                                                                                             26 May 2015
+Revised Multifunction Phased Array Radar (MPAR) Network Siting Analysis
+					                                                                                         6. Performing Organization Code
+
+  7. Author(s)			                                                                             8. Performing Organization Report No.
+   John Y.N. Cho                                                                                               ATC-425
+
+  9. Performing Organization Name and Address			                                            10. Work Unit No. (TRAIS)
+
+MIT Lincoln Laboratory
+244 Wood Street
+					                                                                                        11. Contract or Grant No.
+Lexington, MA 02420-9108                                                                                  FA8721-05-C-0002
+ 12. Sponsoring Agency Name and Address			                                                  13. Type of Report and Period Covered
+Department of Transportation                                                                                Project Report
+Federal Aviation Administration
+					
+800 Independence Ave., S.W.                                                                 14. Sponsoring Agency Code
+Washington, DC 20591
+ 15. Supplementary Notes
+
+   This report is based on studies performed at Lincoln Laboratory, a federally funded research and development center operated 		
+   by Massachusetts Institute of Technology, under Air Force Contract FA8721-05-C-0002.
+
+
+ 16. Abstract
+  As part of the NextGen Surveillance and Weather Radar Capability (NSWRC) program, the Federal Aviation Administration (FAA) is
+  currently developing the solution for aircraft and meteorological surveillance in the future National Airspace System (NAS). A potential
+  solution is a multifunction phased array radar (MPAR) that would replace some or all of the single-purpose radar types used in the NAS
+  today. One attractive aspect of MPAR is that the number of radars deployed would decrease, because redundancy in coverage by single-
+  mission sensors would be reduced with a multifunction system. The lower radar count might then result in overall life cycle cost savings,
+  but in order to estimate costs, a reliable estimate of the number of MPARs is needed.
+  Thus this report addresses the question, “If today’s weather and aircraft surveillance radars are replaced by a single class of
+  multimission radars, how many would be needed to replicate the current air space coverage over the United States and its territories?”
+  Various replacement scenarios must be considered, since it is not yet determined which of the organizations that own today’s radars (the
+  FAA, the National Weather Service (NWS), the different branches of the U.S. military) would join in an MPAR program. It updates a
+  previous study using a revised set of legacy systems, including 81 additional military airbase radars.
+  Six replacement scenarios were considered, depending on the radar mission categories. Scenario 1 would replace terminal radars only,
+  i.e., the Airport Surveillance Radars (ASRs) and the Terminal Doppler Weather Radar (TDWR). Scenario 2 would include the Scenario
+  1 radars plus the long-range weather radar, commonly known as NEXRAD. Scenario 3 would add the long-range aircraft surveillance
+  radars, i.e., the Air Route Surveillance Radars (ARSRs), to the Scenario 2 radars. To each of these three scenarios, we then add the
+  military’s Ground Position Navigation (GPN) airbase radars for Scenarios 1G, 2G, and 3G.
+  We assumed that the new multimission radar would be available in two sizes—a full-size MPAR and a scaled-down terminal MPAR
+  (TMPAR). Furthermore, we assumed that the new radar antennas would have four sides that could be populated by one, two, three, or
+  four phased array faces, such that the azimuthal coverage provided could be scaled from 90° to 360°. Radars in the 50 United States,
+  Guam, Puerto Rico, U.S. Virgin Islands, Guantanamo Bay (Cuba), and Kwajalein (Marshall Islands) were included in the study.
+  Our analysis results can be summarized in the following bar graph and table.
+
+
+17. Key Words			                                                         18. Distribution Statement
+
+                                                                          This document is available to the public through the National
+                                                                          Technical Information Service, Springfield, VA 22161.
+
+
+
+19. Security Classif. (of this report)            20. Security Classif. (of this page)                21. No. of Pages       22. Price
+
+                   Unclassified                                 Unclassified                                  84
+
+ FORM DOT F 1700.7 (8-72)                       Reproduction of completed page authorized
+This page intentionally left blank.
+                                    EXECUTIVE SUMMARY
+
+
+       As part of the NextGen Surveillance and Weather Radar Capability (NSWRC) program, the Federal
+Aviation Administration (FAA) is currently developing the solution for aircraft and meteorological
+surveillance in the future National Airspace System (NAS). A potential solution is a multifunction phased
+array radar (MPAR) that would replace some or all of the single-purpose radar types used in the NAS
+today. One attractive aspect of MPAR is that the number of radars deployed would decrease, because
+redundancy in coverage by single-mission sensors would be reduced with a multifunction system. The
+lower radar count might then result in overall life cycle cost savings, but in order to estimate costs, a
+reliable estimate of the number of MPARs is needed.
+
+      Thus this report addresses the question, “If today’s weather and aircraft surveillance radars are
+replaced by a single class of multimission radars, how many would be needed to replicate the current air
+space coverage over the United States and its territories?” Various replacement scenarios must be
+considered, since it is not yet determined which of the organizations that own today’s radars (the FAA,
+the National Weather Service (NWS), the different branches of the U.S. military) would join in an MPAR
+program. It updates a previous study using a revised set of legacy systems, including 81 additional
+military airbase radars.
+
+      Six replacement scenarios were considered, depending on the radar mission categories. Scenario 1
+would replace terminal radars only, i.e., the Airport Surveillance Radars (ASRs) and the Terminal
+Doppler Weather Radar (TDWR). Scenario 2 would include the Scenario 1 radars plus the long-range
+weather radar, commonly known as NEXRAD. Scenario 3 would add the long-range aircraft surveillance
+radars, i.e., the Air Route Surveillance Radars (ARSRs), to the Scenario 2 radars. To each of these three
+scenarios, we then add the military’s Ground Position Navigation (GPN) airbase radars for Scenarios 1G,
+2G, and 3G.
+
+      We assumed that the new multimission radar would be available in two sizes—a full-size MPAR
+and a scaled-down terminal MPAR (TMPAR). Furthermore, we assumed that the new radar antennas
+would have four sides that could be populated by one, two, three, or four phased array faces, such that the
+azimuthal coverage provided could be scaled from 90° to 360°. Radars in the 50 United States, Guam,
+Puerto Rico, U.S. Virgin Islands, Guantanamo Bay (Cuba), and Kwajalein (Marshall Islands) were
+included in the study.
+
+
+
+
+                                                    iii
+                                 Reduction in Number of Radars
+       Scenario      Legacy           MPAR + TMPAR                Change        % Reduction
+
+           1           270             43 + 178 = 221               –49              18%
+
+           2           426            174 + 129 = 303              –123              29%
+
+           3           548            217 + 139 = 356              –192              35%
+
+          1G           351             43 + 258 = 301               –50              14%
+
+          2G           507            174 + 189 = 363              –144              28%
+
+          3G           629            215 + 196 = 411              –218              35%
+
+
+
+      For Scenario 1, the reduction in radar count comes from the elimination in coverage overlap of
+ASRs and TDWRs at TDWR airports. In Scenario 2, additional reduction results from removing the
+overlap between NEXRADs located near airports and the ASRs at those airports. Even more redundancy
+can be taken out in Scenario 3, because much of the en route coverage targeted by the ARSRs is already
+covered by the NEXRAD replacement from Scenario 2. Similar fractional radar count reductions are
+achieved when GPN sites are added.
+
+
+
+
+                                                  iv
+      Despite the reduction in radar count, the projected coverage volume for weather and aircraft
+surveillance would increase modestly for the MPAR network. This is an inevitable by-product of
+constraining ourselves to duplicating the existing coverage for both weather and aircraft surveillance.
+Comparing legacy to Scenario 3G coverage over all of the air space considered in this study, weather
+observation coverage would increase from 89% to 91% and aircraft surveillance coverage would improve
+from 71% to 81%. Peaks in coverage enhancement occur at altitude slices of 2,500 ft AGL for weather
+(35% to 50%) and 60,000 ft MSL for aircraft (83% to 100%).
+
+      In addition to the increase in coverage, the observation performance inside the coverage volume
+will improve due to the dual-polarization weather measurement and aircraft altitude finding capabilities of
+MPAR. (In contrast, only the NEXRAD has the former and the ARSR-4 has the latter capability among
+the legacy radars.) And even though the total radar counts would decrease, overlapping Doppler weather
+coverage will increase overall, which will benefit echo tops and wind vector determination. Comparing
+legacy to Scenario 3G over all of the air space considered in this study, overlapping Doppler weather
+coverage would increase from 59% to 75% and dual-polarization coverage would improve from 84% to
+91%.
+
+      Terminal aircraft surveillance coverage would be strictly preserved under this MPAR siting
+scheme. Airports currently equipped with an ASR but no wind-shear observation system would gain
+wind-shear detection coverage through a TMPAR or MPAR. Airports currently equipped with an ASR
+but without a nearby NEXRAD would get high-quality dual-polarization Doppler weather data. On
+average, terminal air spaces will have more overlapping Doppler weather coverage, increased dual-
+polarization weather radar data, and gain the capability for aircraft altitude estimation.
+
+       Finally, low-altitude urban air space coverage will be improved with MPAR for all replacement
+scenarios. More overlapping Doppler weather radar coverage, better spatial resolution for weather and
+aircraft surveillance, and, most of all, enhancements in dual-polarization coverage and vertical accuracy
+of aircraft detection will be obtained compared to the legacy radar network.
+
+
+
+
+                                                    v
+This page intentionally left blank.
+                                  TABLE OF CONTENTS
+
+                                                                Page
+
+     Executive Summary                                           iii
+     List of Illustrations                                       ix
+     List of Tables                                              xi
+
+1.   INTRODUCTION                                                 1
+
+2.   ASSUMPTIONS AND METHODOLOGY                                  3
+
+3.   SITING ANALYSIS RESULTS                                     11
+
+4.   STATISTICAL ANALYSIS RESULTS                                21
+
+     4.1   Coverage over En Route Air Space                      22
+     4.2   Coverage over Civil Terminal Air Space                33
+     4.3   Coverage over Urban Areas                             35
+
+5.   CONCLUSIONS                                                 41
+
+APPENDIX A: SITE-BY-SITE LISTING OF PROPOSED RADAR DEPLOYMENT    43
+
+     Glossary                                                    69
+     References                                                  71
+
+
+
+
+                                                vii
+This page intentionally left blank.
+                              LIST OF ILLUSTRATIONS
+
+
+Figure                                                                                        Page
+ No.
+
+
+ 2-1     Locations of the legacy radars in the CONUS, Alaska, Guam, Kwajalein, Hawaii,
+         and Puerto Rico/U.S. Virgin Islands/Guantanamo Bay.                                   7
+
+ 2-2     Illustration of MPAR and TMPAR coverage provided by each of the five possible
+         antenna configurations.                                                               9
+
+ 3-1     Total radar count vs. scenario.                                                      14
+
+ 3-2     Locations of MPAR (blue) and TMPAR (red) for Scenario 1. Clockwise from top
+         left: Alaska, CONUS, Puerto Rico/Virgin Islands/Guantanamo Bay, Hawaii,
+         Kwajalein, and Guam.                                                                 15
+
+ 3-3     Locations of MPAR (blue) and TMPAR (red) for Scenario 2. Clockwise from top
+         left: Alaska, CONUS, Puerto Rico/Virgin Islands/Guantanamo Bay, Hawaii,
+         Kwajalein, and Guam.                                                                 16
+
+ 3-4     Locations of MPAR (blue) and TMPAR (red) for Scenario 3. Clockwise from top
+         left: Alaska, CONUS, Puerto Rico/Virgin Islands/Guantanamo Bay, Hawaii,
+         Kwajalein, and Guam.                                                                 17
+
+ 3-5     Locations of MPAR (blue) and TMPAR (red) for Scenario 1G. Clockwise from
+         top left: Alaska, CONUS, Puerto Rico/Virgin Islands/Guantanamo Bay, Hawaii,
+         Kwajalein, and Guam.                                                                 18
+
+ 3-6     Locations of MPAR (blue) and TMPAR (red) for Scenario 2G. Clockwise from
+         top left: Alaska, CONUS, Puerto Rico/Virgin Islands/Guantanamo Bay, Hawaii,
+         Kwajalein, and Guam.                                                                 19
+
+ 3-7     Locations of MPAR (blue) and TMPAR (red) for Scenario 3G. Clockwise from
+         top left: Alaska, CONUS, Puerto Rico/Virgin Islands/Guantanamo Bay, Hawaii,
+         Kwajalein, and Guam.                                                                 20
+
+ 4-1     Illustration of percentage coverage missed metric. The blue and red circles
+         represent legacy and MPAR coverages, respectively. The legacy missed
+         percentage is computed by dividing the lower right crescent-shape area by the area
+
+
+
+
+                                              ix
+      of the red circle. The MPAR missed percentage is calculated by dividing the upper
+      left crescent-shape area by the area of the blue circle.                            24
+
+4-2   CONUS dual-polarization weather coverage at 1,000 ft AGL for (left) legacy and
+      (right) Scenario 3G.                                                                32
+
+4-3   Height profiles of coverage percentage for minimum detectable weather
+      reflectivity <18 dBZ (upper left), minimum detectable aircraft cross section <3.4
+      dBsm (upper right), Doppler weather coverage overlap ≥2 (lower left), and dual-
+      polarization weather coverage (lower right). Heights are MSL above 5,000 ft and
+      AGL otherwise.                                                                      32
+
+4-4   CONUS map of the civil airports included in this study. Airports served by
+      TDWR are green, airports with WSP are blue, airports with LLWAS only are red,
+      and those without a dedicated wind-shear detection system are black.                35
+
+4-5   CONUS population density map.                                                       36
+
+
+
+
+                                            x
+                                 LIST OF TABLES
+
+
+Table                                                                        Page
+ No.
+
+
+ 2-1    Legacy Radar Characteristics                                           5
+
+ 2-2    Assumed MPAR Characteristics                                           6
+
+ 2-3    Legacy Radar Count                                                     6
+
+ 3-1    Scenario 1: Legacy vs. MPAR/TMPAR Number of Radars                    11
+
+ 3-2    Scenario 2: Legacy vs. MPAR/TMPAR Number of Radars                    11
+
+ 3-3    Scenario 3: Legacy vs. MPAR/TMPAR Number of Radars                    12
+
+ 3-4    Scenario 1G: Legacy vs. MPAR/TMPAR Number of Radars                   12
+
+ 3-5    Scenario 2G: Legacy vs. MPAR/TMPAR Number of Radars                   12
+
+ 3-6    Scenario 3G: Legacy vs. MPAR/TMPAR Number of Radars                   13
+
+ 3-7    Reduction in Number of Radars                                         13
+
+ 4-1    Legacy Performance Parameter Coverage Percentage                      23
+
+ 4-2    Scenario 2 Performance Parameter Coverage Percentage                  24
+
+ 4-3    Scenario 3 Performance Parameter Coverage Percentage                  25
+
+ 4-4    Scenario 2G Performance Parameter Coverage Percentage                 26
+
+ 4-5    Scenario 3G Performance Parameter Coverage Percentage                 26
+
+ 4-6    Legacy Low-Altitude Performance Parameter Coverage Percentage         27
+
+ 4-7    Scenario 2 Low-Altitude Performance Parameter Coverage Percentage     28
+
+ 4-8    Scenario 3 Low-Altitude Performance Parameter Coverage Percentage     29
+
+ 4-9    Scenario 2G Low-Altitude Performance Parameter Coverage Percentage    30
+
+
+
+
+                                          xi
+4-10   Scenario 3G Low-Altitude Performance Parameter Coverage Percentage     31
+
+4-11   Average Terminal Air Space Performance Parameter Coverage Percentage   33
+
+4-12   Legacy Urban Area Coverage Percentage vs. Height                       36
+
+4-13   Scenario 1 Urban Area Coverage Percentage vs. Height                   37
+
+4-14   Scenario 2 Urban Area Coverage Percentage vs. Height                   37
+
+4-15   Scenario 3 Urban Area Coverage Percentage vs. Height                   38
+
+4-16   Scenario 1G Urban Area Coverage Percentage vs. Height                  38
+
+4-17   Scenario 2G Urban Area Coverage Percentage vs. Height                  39
+
+4-18   Scenario 3G Urban Area Coverage Percentage vs. Height                  39
+
+A-1    ASR Sites                                                              43
+
+A-2    TDWR Sites                                                             52
+
+A-3    NEXRAD Sites                                                           54
+
+A-4    CARSR Sites                                                            61
+
+A-5    ARSR-4 Sites                                                           64
+
+A-6    GPN Sites                                                              65
+
+
+
+
+                                          xii
+                                       1. INTRODUCTION
+
+
+      As weather and aircraft surveillance radars age, they must be sustained through service life
+extension programs or be replaced. One possibility for the latter option is to replace the current single-
+mission radars with scalable multifunction phased array radars (MPARs) (Benner et al., 2009). State-of-
+the-art active phased array systems have the potential to provide improved capabilities such as earlier
+detection and better characterization of hazardous weather phenomena, 3D tracking of noncooperative
+aircraft, better avoidance of unwanted clutter sources such as wind farms, and more graceful performance
+degradation with component failure. As the U.S. aviation community works toward realizing the Next
+Generation Air Transportation System (NextGen), achieving improved capabilities for aircraft and
+weather surveillance becomes critical, because stricter observation requirements are believed to be needed
+(Souders et al., 2010). Hence, the Federal Aviation Administration (FAA) is considering the MPAR as a
+possible solution to their NextGen Surveillance and Weather Radar Capability (NSWRC).
+
+      Cost is a major hurdle to the deployment of a modern phased array radar network. One way of
+lowering the overall cost is to reduce the total number of radars. Because of the overlap in coverage
+provided by the current radar networks, a unified MPAR replacement network can potentially decrease
+the total number of radars needed to cover the same airspace. This problem was previously studied by
+MIT Lincoln Laboratory. Since then, however, the FAA has revised the list of Airport Surveillance
+Radars (ASRs) that would be candidates for replacement by MPAR. Furthermore, it was decided that the
+military-equivalent airbase surveillance systems should be included in separate scenarios as the military
+services may join as stakeholders for MPAR. Therefore, this study revisits the siting analysis using an
+updated list of legacy radars. The aim is to provide an estimate of the minimum number of MPARs
+needed to replace the existing radar coverage. We will also provide a statistical compilation of legacy
+versus MPAR coverage for various observational performance parameters.
+
+
+
+
+                                                    1
+This page intentionally left blank.
+                        2. ASSUMPTIONS AND METHODOLOGY
+
+
+      The assumptions made in the analysis has not changed since the previous study except for the
+change in the list of FAA ASRs and the inclusion of military airbase radars, but we will list them here for
+easy reference.
+
+      •   Legacy radars included in the study were the ASRs, the military-equivalent Ground Position
+          Navigation (GPN) systems, Air Route Surveillance Radars (ARSRs), Terminal Doppler
+          Weather Radar (TDWR), and Next Generation Weather Radar (NEXRAD).
+      •   Only operational radars were included (e.g., no support and training facility radars).
+      •   Domain of interest was all 50 states plus U.S. territories that have any relevant legacy radars.
+          (No radars under foreign control were included.)
+      •   Relevant legacy radars in domain of interest were included regardless of owner (Department of
+          Commerce, Department of Defense, and Department of Transportation).
+      •   Study was conducted relative to existing weather and surveillance requirements (not future
+          NextGen requirements).
+      •   Secondary radars and their requirements were not included.
+      •   Performance characteristics of the legacy radars were based on completion of all ongoing and
+          planned upgrades.
+      •   Two sizes of MPARs were used: full size (MPAR) and terminal (TMPAR).
+      •   MPAR/TMPAR sites were limited to existing radar sites.
+      •   Antenna heights were constrained to the height of the existing antenna.
+      •   Current operational elevation angle coverages were used for the legacy radars.
+          MPAR/TMPARs were assumed to have 0° to 60° elevation coverage when sited at non-ARSR-
+          4 sites. At ARSR-4 sites, MPAR/TMPAR coverage was assumed to extend from –7° to 60°
+          elevation.
+      •   MPARs and TMPARs were assumed to be scalable in azimuthal coverage. In other words, the
+          basic building block would be a planar array covering 90° in azimuth. Thus, an MPAR could
+          have one to four faces with corresponding azimuthal coverage of 90°, 180°, 270°, and 360°.
+
+      Terrain and structural blockages were calculated using the Shuttle Radar Tomography Mission
+(SRTM) Level 1 data as the primary elevation data source. Where SRTM was unavailable, we used the
+Level 1 Digital Terrain Elevation Data (DTED). Beam propagation geometry assumed the 4/3-Earth-
+radius model to account for atmospheric refraction (e.g., Skolnik, 2008). Radar coverage parameters were
+computed at 1/120 deg (lat/lon) horizontal and variable vertical resolution (100 ft for 0–10,000 ft MSL,
+
+
+
+
+                                                     3
+1,000 ft for 11,000–25,000 ft MSL, 5,000 ft for 30,000–70,000 ft MSL, and 10,000 ft for 80,000–100,000
+ft MSL). Radar range coverage extent was determined by the instrumented range or the range at which the
+target sensitivity equaled the threshold value, whichever was shorter. We chose a sensitivity threshold of
+1 m2 for aircraft and 5 dBZ for weather. (The exact values used are not crucial as this is a comparative
+analysis.)
+
+      Note, also, that we used the top-of-tower height for the antenna height. The actual antenna feed
+height for a mechanically scanned dish will be a bit higher than the tower top and vary somewhat with
+elevation angle. The phase centers of the MPAR and TMPAR antennas would also be slightly higher than
+the tower top by some still undetermined amount. For the purposes of this comparative coverage analysis,
+the key factor is to use a consistent metric for all radars, which the tower height gives.
+
+      The legacy radar characteristics are listed in Table 2-1, while the assumed MPAR parameters are
+shown in Table 2-2. The GPN models are the military equivalent of the ASR series (GPN-20 = ASR-8,
+GPN-27 = ASR-9, GPN-30 = ASR-11). The NEXRAD has recently been upgraded with dual-polarization
+capability (Istok et al., 2009), while the TDWR has been retrofitted with an enhanced radar data
+acquisition system (Cho and Weber, 2010). The ARSR-1, ARSR-2, ARSR-3, and the military-equivalent
+Fixed Position System (FPS) series are being updated through the Common ARSR (CARSR) program
+(Wang et al., 2009). Thirty-four out of 122 FAA ASR-9s have the Weather Systems Processor (WSP),
+which enables Doppler measurements for wind-shear detection (Weber, 2002). Other references for the
+legacy systems are as follows: NEXRAD (ROC, 2010), TDWR (Michelson et al., 1990), ASR-9 (Taylor
+and Brunins, 1985), ASR-11 (Raytheon, 1999), and ARSR-4 (Lay et al., 1990). Note that the formal name
+for NEXRAD is the Weather Surveillance Radar-1988 Doppler (WSR-88D).
+
+
+
+
+                                                    4
+                                                          TABLE 2-1
+                                             Legacy Radar Characteristics
+
+      Parameter                   NEXRAD                       TDWR                 ASR/GPN             CARSR          ARSR-4
+Minimum
+                                     1 km                       0.5 km               0.93 km             9.3 km        9.3 km
+Observation Range
+Maximum                                                                                                                463 kmb,
+                                    460 km                      90 kma                110 km             444 km
+Observation Range                                                                                                      246 kmc
+Maximum
+Observation Range                   300 km                      90 km                110 kmd              N/A            N/A
+(Wx Doppler)
+Range Resolution                                                                     0.93 km,
+                                   0.25 km                     0.15 km                                  0.46 km        0.46 km
+(Wx)                                                                                 0.15 kmd
+Range Resolution
+                                      N/A                        N/A                 0.23 km            0.23 km        0.23 km
+(A/C)
+Maximum Elevation
+                                     19.5°                        60°                  N/Ae               N/Ae         5°b, 30°c
+Angle
+                              1° (0 < EL ≤6.2°)     0.6° (0 < EL ≤ 1°)
+Elevation Angle             1.3° (6.2 < EL ≤ 10°) 0.7° (1 < EL ≤ 2.6°)
+                                                                                        N/A               N/A            N/A
+Resolution (Wx)              2° (10 < EL ≤ 14°)   1.6° (2.6 < EL ≤ 6.1°)
+                               2.8° (EL > 14°)f     4.9° (EL > 6.1°)g
+Azimuthal Resolution           1° (0 < EL < 2°)
+                                                                 1.2°                2°, 2.5°d            1.7°           1.7°
+(Wx)h                           1.4° (EL ≥ 2°)
+Azimuthal Resolution
+                                      N/A                        N/A                    1.5°              1.5°           1.5°
+(A/C)
+Vertical RMS
+Accuracy at 175 nmi                   N/A                        N/A                    N/A               N/A          3,000 ft
+(A/C)
+Minimum Detectable
+Wx Reflectivity at                 –18 dBZ                    –19 dBZi                –1 dBZj            –8 dBZ        –9 dBZ
+20 km
+                                                                                                     430 km (2.2 m2,
+Maximum A/C                                                                           100 km             FPSs)         420 km
+                                      N/A                        N/A
+Detection Rangek                                                                       (1 m2)        380 km (2.2 m2,    (1 m2)
+                                                                                                      ARSR-1,2,3)
+a
+  Surface scan has maximum reflectivity range of 460 km.
+b
+  Low stack antenna beams.
+c
+  High stack antenna beams.
+d
+  For WSP output.
+e
+  Fixed elevation fan beam.
+f
+  From elevation beam spacing of Volume Coverage Pattern (VCP) 11.
+g
+  From elevation beam spacing of monitor volume scan.
+h
+  Includes scan broadening and data windowing effects.
+i
+ Sensitivity Time Control (STC) limits minimum detectable reflectivity to –26 dBZ for range <9 km.
+j
+  Sensitivity drops by 17 dB for range <12 km due to short pulse mode on ASR-11/GPN-30.
+k
+  Detection range varies with elevation angle.
+
+
+
+
+                                                                  5
+                                                     TABLE 2-2
+                                       Assumed MPAR Characteristics
+                             Parameter                                MPAR                TMPAR
+         Minimum Observation Range                                    0.5 km              0.5 km
+         Maximum Observation Range                                  460 km                90 km
+         Range Resolution (Wx)                                     0.15 km                0.15 km
+         Range Resolution (A/C)                                    0.23 km                0.23 km
+         Maximum Elevation Angle                                       60°                  60°
+                                             a
+         Elevation Angle Resolution (Wx)                                1°                  2°
+                                   a
+         Azimuthal Resolution (Wx)                                      1°                  2°
+         Azimuthal Resolution (A/C)a                                    1°                  2°
+                                                     b
+         Vertical RMS Accuracy at 175 nmi (A/C)                     1,900 ft              3,700 ft
+                                                          c
+         Minimum Detectable Wx Reflectivity at 20 km               –19 dBZ                –1 dBZ
+                                         c                                     2
+         Maximum A/C Detection Range                             420 km (1 m )       100 km (1 m2)
+     a
+       These are approximate values. They will actually vary with scan angle.
+     b
+       Assumes 1:10 monopulse improvement in intrabeam accuracy.
+     c
+       These values are for horizon scans. They will be degraded with increasing elevation angle due to
+       deliberate transmit beam widening that speeds up volume scan rates.
+
+
+       MPAR sensitivity at 0° elevation angle was assumed to equal the maximum ARSR-4 aircraft
+sensitivity and the TDWR’s weather sensitivity (i.e., the best weather sensitivity of the legacy radars).
+TMPAR sensitivity at 0° elevation angle was assumed to equal the maximum ASR-9 aircraft sensitivity
+and a weather sensitivity of 7 dBZ at 50 km. The MPAR/TMPAR sensitivities were degraded with
+increasing elevation angle to account for the deliberate beam spoiling that decreases the volume scan time
+while maintaining the required power on target. They were also assumed to operate in a long pulse/short
+pulse mode, with the latter covering the short-range blind zone of the former. The transition range
+between the two modes was 6 km for MPAR and 2 km for TMPAR. The minimum detectable weather
+reflectivity for the short pulse mode was –14 dBZ at 6 km for MPAR and –14 dBZ at 2 km for TMPAR.
+
+      The numbers of legacy radars by type are given in Table 2-3, and maps of their locations are
+displayed in Figure 2-1. Note that of the 81 GPN sites, 16 actually have ASRs. The “GPN” categorization
+simply indicates primary ownership by the military. (None of the ASR sites have GPN radars.)
+
+                                                     TABLE 2-3
+                                                 Legacy Radar Count
+   NEXRAD             TDWR             ASRs              GPNs      CARSR           ARSR-4            Total
+         156            45              225               81           79            43              629
+
+
+
+
+                                                          6
+                                                                               ×
+
+
+
+
+Figure 2-1. Locations of the legacy radars in the CONUS, Alaska, Guam, Kwajalein, Hawaii, and Puerto Rico/U.S.
+Virgin Islands/Guantanamo Bay.
+
+
+
+
+      Six replacement scenarios were examined. Scenario 1 had terminal radars only (ASRs and
+TDWRs). Scenario 2 included terminal radars and national-scale weather radars (ASRs, TDWRs, and
+NEXRADs). Scenario 3 had terminal radars, national-scale weather radars, and long-range aircraft
+surveillance radars (ASRs, TDWRs, NEXRADs, CARSRs, and ARSR-4s). Scenarios 1G, 2G, and 3G
+
+
+
+
+                                                      7
+added the GPN sites to the first three replacement scenarios. In terms of stakeholders corresponding to the
+radars to be replaced, Scenario 1 is the FAA only, Scenario 2 is primarily the FAA and the National
+Oceanic and Atmospheric Administration (NOAA), and Scenario 3 adds the Air Force to the mix. For
+Scenarios 1G, 2G, and 3G, all the armed services branches are added to the Scenarios 1, 2, and 3
+stakeholder compositions, respectively.
+
+      The basic procedure for selecting MPAR and TMPAR sites was to (1) compute the 3D weather and
+aircraft surveillance coverage provided by the legacy radars for each scenario, (2) start with a trial
+placement of new radars, (3) compare the new coverage with the legacy coverage, (4) add or subtract
+radars to better match the coverages, and (5) repeat steps 3 and 4 until coverage redundancy was
+minimized but legacy coverage was maintained.
+
+       For terminal area coverage, we took the conservative approach of essentially requiring every airport
+with an ASR to have at least a TMPAR, and TDWR airports to be covered by MPARs. The latter radars
+were sited at the airport ASR and not the TDWR off-airport location, so that low-altitude terminal aircraft
+coverage would not be compromised. This arrangement, however, moves the cone of silence over the
+airport, which may affect the ability of the microburst detection algorithm to mitigate false alarms by
+screening for storm-like reflectivity aloft (Huang et al., 2009). Fortunately, we were able to show that the
+cone of silence would be covered adequately by neighboring radars for this purpose (Cho et al., 2013).
+The choice of MPAR (instead of TMPAR) to cover TDWR airports stems from the uncertainty of
+whether a TMPAR would be able to match the wind-shear detection performance of TDWR. A recent
+study suggests that, for microburst detection, a TMPAR may be an acceptable replacement for TDWR at
+wet microburst sites; however, the range of gust front detection and tracking would be reduced (Cho et
+al., 2013). And, of course, dry microburst detection performance by a TMPAR would be much worse than
+with a TDWR, so a full-size MPAR should be placed at sites that experience dry microbursts.
+
+      For Scenario 2, we started with the Scenario 1 placements and added MPARs at NEXRAD sites
+that were not close to airports already covered in Scenario 1. We then focused on the 5,000 ft AGL level
+in weather coverage, because that is the level at which the NEXRAD network provides a nearly seamless
+coverage over flat terrain.
+
+      In Scenario 3, we began with the Scenario 2 placements and filled in gaps observed in en route
+aircraft coverage. Sometimes NEXRAD locations would be swapped with CARSR sites if better overall
+coverage could be generated. Along the national perimeter we preferentially used ARSR-4 sites over
+nearby NEXRAD sites to ensure that both low-altitude (down to 100 ft AGL) and long-range national
+border surveillance would remain unscathed as facilitated by the high-elevation location and look-down
+capability provided by the ARSR-4 sites. For the interior weather coverage, we again used the 5,000 ft
+AGL level coverage as an initial metric and the 10,000 ft level for en route aircraft coverage.
+
+       For Scenarios 1G, 2G, and 3G, we started with the respective scenarios without the GPN sites, then
+added TMPARs to the GPN sites. Wherever a GPN site could also be used to replace one of the MPAR
+sites, the MPAR site was removed and the TMPAR at the GPN site was replaced by an MPAR. The
+
+
+
+
+                                                     8
+resulting coverages were checked and the siting adjusted if necessary in the manner described above until
+an optimal solution was reached.
+
+      At times, two sites that were very close together could not be replaced by one radar, because a large
+difference in altitude combined with high-relief terrain prevented the replication of the legacy coverage.
+In other instances, wedge-shaped coverage gaps were observed for which a full 360° azimuth radar would
+not be necessary. Unlike the legacy radars that mechanically rotate a single antenna in azimuth, the
+MPAR and TMPAR could be scaled down in coverage and cost by having less than the full number of
+antenna faces needed to observe all azimuths. Thus, we made the assumption that the new radars would
+be composed of planar antenna arrays that would cover a 90° azimuth sector each, and that five different
+configurations would be available (Figure 2-2). In the site placement procedure, we allowed the use of
+these five configurations positioned at any azimuthal orientation.
+
+
+
+
+Figure 2-2. Illustration of MPAR and TMPAR coverage provided by each of the five possible antenna
+configurations.
+
+
+
+
+      This study is only a first-order siting analysis, used mainly for the purposes of planning and cost
+estimation. If the MPAR solution to NSWRC is officially adopted, then a more careful site-by-site
+analysis would have to be conducted for optimal (and feasible) placement of each radar.
+
+
+
+
+                                                    9
+This page intentionally left blank.
+                               3. SITING ANALYSIS RESULTS
+
+
+      By constraining ourselves to duplicating the existing coverage for both weather and aircraft
+surveillance, the new multifunctional coverage inevitably improves upon the legacy coverage. This is
+because the existing weather and aircraft surveillance coverages do not occupy exactly the same airspace,
+and the multifunctional coverage is essentially the union of the two disparate volumes. Detailed statistical
+comparisons between legacy and proposed MPAR coverages are given in Section 4. In this section, we
+present the proposed siting results.
+
+      The site-by-site placement of MPARs and TMPARs, and the number of antenna faces on each, are
+tabulated in Appendix A. For number of faces less than four, the number of faces and the azimuthal
+coverage range (increasing clockwise from due north) are given in parentheses. The total radar counts are
+summarized by scenario in Tables 3-1 through 3-6. The reductions in the number of radars are listed in
+Table 3-7 and graphically displayed in Figure 3-1.
+
+
+                                                 TABLE 3-1
+                    Scenario 1: Legacy vs. MPAR/TMPAR Number of Radars
+
+                                            Number of Faces
+               Type                                                                  Total
+                                1            2             3             4
+
+              Legacy          N/A           N/A           N/A           N/A           270
+
+              MPAR              0            0             0             43           43
+
+              TMPAR             0            2             1            175           178
+
+
+
+
+                                                 TABLE 3-2
+                    Scenario 2: Legacy vs. MPAR/TMPAR Number of Radars
+
+                                            Number of Faces
+               Type                                                                  Total
+                                1            2             3              4
+
+              Legacy           N/A          N/A           N/A           N/A           426
+
+               MPAR             1            3             9            161           174
+
+              TMPAR             0            2             1            126           129
+
+
+
+
+                                                    11
+                           TABLE 3-3
+    Scenario 3: Legacy vs. MPAR/TMPAR Number of Radars
+
+                     Number of Faces
+Type                                                Total
+             1         2            3      4
+
+Legacy      N/A       N/A          N/A    N/A       548
+
+MPAR         1        11           16     189       217
+
+TMPAR        0         2            1     136       139
+
+
+
+                           TABLE 3-4
+   Scenario 1G: Legacy vs. MPAR/TMPAR Number of Radars
+
+                     Number of Faces
+Type                                                Total
+             1         2           3       4
+
+Legacy      N/A       N/A          N/A    N/A       351
+
+MPAR         0         0            0      43        43
+
+TMPAR        0         2            0     256       258
+
+
+
+                           TABLE 3-5
+   Scenario 2G: Legacy vs. MPAR/TMPAR Number of Radars
+
+                     Number of Faces
+Type                                                Total
+             1         2           3       4
+
+Legacy      N/A       N/A          N/A    N/A       507
+
+MPAR         1         1            5     167       174
+
+TMPAR        0         2            0     187       189
+
+
+
+
+                              12
+                                           TABLE 3-6
+           Scenario 3G: Legacy vs. MPAR/TMPAR Number of Radars
+
+                                      Number of Faces
+       Type                                                         Total
+                          1            2             3         4
+
+       Legacy            N/A          N/A            N/A     N/A    629
+
+       MPAR               1            6             11      197    215
+
+       TMPAR              0            2              0      194    196
+
+
+
+
+                                           TABLE 3-7
+                               Reduction in Number of Radars
+
+Scenario        Legacy            MPAR + TMPAR             Change   % Reduction
+
+   1             270               43 + 178 = 221           –49        18%
+
+   2             426               174 + 129 = 303          –123       29%
+
+   3             548               217 + 139 = 356          –192       35%
+
+  1G             351               43 + 258 = 301           –50        14%
+
+  2G             507               174 + 189 = 363          –144       28%
+
+  3G             629               215 + 196 = 411          –218       35%
+
+
+
+
+                                              13
+                                Figure 3-1. Total radar count vs. scenario.
+
+
+
+
+      For Scenarios 1 and 1G, the reduction in radar count mainly comes from the overlap of ASRs and
+TDWRs at TDWR airports. For Scenarios 2 and 2G, additional reductions result from NEXRADs located
+near airports (ASRs) and military airbases (GPNs). Even more redundancy can be eliminated in Scenarios
+3 and 3G, because much of the en route coverage targeted by the CARSRs and ARSR-4s is already
+covered by the NEXRAD replacements from Scenarios 2 and 2G.
+      Although the minimum antenna beam elevation angle specification for the ARSR-4 is –7°, the
+lowest angle used in operation today is –3° (K. Roulston, private communication). Near-range legacy
+radar coverage may be affected by the difference in minimum elevation angle, so we reran the Scenario 3
+siting analysis in regions with ARSR-4s. Because the minimum observation range of the ARSR-4 is
+9.3 km, only sites that were more than ~1,600 ft above nearby terrain were affected. We concluded that
+our final siting set would remain the same. Finally, Figures 3-2 to 3-7 show maps of the MPAR and
+TMPAR locations for all replacement scenarios.
+
+
+
+
+                                                    14
+Figure 3-2. Locations of MPAR (blue) and TMPAR (red) for Scenario 1. Clockwise from top left: Alaska, CONUS,
+Puerto Rico/Virgin Islands/Guantanamo Bay, Hawaii, Kwajalein, and Guam.
+
+
+
+
+                                                    15
+Figure 3-3. Locations of MPAR (blue) and TMPAR (red) for Scenario 2. Clockwise from top left: Alaska, CONUS,
+Puerto Rico/Virgin Islands/Guantanamo Bay, Hawaii, Kwajalein, and Guam.
+
+
+
+
+                                                    16
+Figure 3-4. Locations of MPAR (blue) and TMPAR (red) for Scenario 3. Clockwise from top left: Alaska, CONUS,
+Puerto Rico/Virgin Islands/Guantanamo Bay, Hawaii, Kwajalein, and Guam.
+
+
+
+
+                                                    17
+Figure 3-5. Locations of MPAR (blue) and TMPAR (red) for Scenario 1G. Clockwise from top left: Alaska, CONUS,
+Puerto Rico/Virgin Islands/Guantanamo Bay, Hawaii, Kwajalein, and Guam.
+
+
+
+
+                                                     18
+Figure 3-6. Locations of MPAR (blue) and TMPAR (red) for Scenario 2G. Clockwise from top left: Alaska, CONUS,
+Puerto Rico/Virgin Islands/Guantanamo Bay, Hawaii, Kwajalein, and Guam.
+
+
+
+
+                                                     19
+Figure 3-7. Locations of MPAR (blue) and TMPAR (red) for Scenario 3G. Clockwise from top left: Alaska, CONUS,
+Puerto Rico/Virgin Islands/Guantanamo Bay, Hawaii, Kwajalein, and Guam.
+
+
+
+
+                                                     20
+                           4. STATISTICAL ANALYSIS RESULTS
+
+
+      We now quantify and compare the legacy and MPAR coverages for various parameters. The
+following parameters were computed: number of Doppler coverage, number of dual-polarization
+coverage, minimum detectable weather reflectivity, minimum detectable aircraft cross section, and
+geometric-mean horizontal resolution for weather, vertical resolution for weather, worst-dimension
+horizontal resolution for aircraft, and vertical accuracy for aircraft.
+
+      The number of Doppler coverage is the number of radars with visibility to a coverage grid cell that
+outputs Doppler weather parameters (radial velocity and spectral width) for this location. This value has a
+strong influence on how accurately the wind vector is measured at this point. For example, the Integrated
+Terminal Weather System (ITWS) Terminal Winds product shows dramatic improvement in wind vector
+accuracy when coverage is provided by two or more Doppler radars (Cho and Martin 2007). Although the
+ASR-9 WSP generates Doppler data, because its vertical resolution is poor (and, thus, is not suitable for
+wind vector estimation), we did not include it in this parameter.
+
+       The number of dual-polarization coverage is the number of radars that are within range and
+visibility to a grid cell that yield dual-polarization weather parameters. The primary significance of this
+value is determined by whether it is zero or greater than zero. (There may be some product quality
+improvement when there is multiple overlap.) Dual-polarization data yield hydrometeor type
+differentiation capability (as well as improvement in other estimates such as rainfall rate and icing
+potential) lacking in single-polarization data.
+
+       The minimum detectable weather reflectivity is a measure of the sensitivity of the observing radar.
+It is based on the reflectivity that would generate a single-pulse signal-to-noise ratio of about unity at the
+receiver output. The minimum detectable aircraft cross section was estimated for a Swerling 1 target with
+detection rate of 80% and false alarm probability of 10-6.
+
+      The horizontal resolution parallel to and perpendicular to the radar beam are given by
+
+               Δr
+      Δh|| =      rh + Δθ r 2 − rh2                                                                   (4-1)
+               r
+and
+
+      Δ h⊥ = rΔ φ ,                                                                                     (4-2)
+
+where r is slant range, rh is horizontal range, Δr is range resolution, Δφ is azimuthal resolution, and Δθ is
+range from the radar multiplied by the elevation beam width (converted to radians). To distill the
+asymmetric orthogonal resolution values given by (4-1) and (4-2), we computed the geometric-mean
+horizontal resolution (Δh||Δh⊥)1/2 and the “worst dimension” horizontal resolution (the maximum of Δh||
+
+
+
+
+                                                     21
+and Δh⊥). Since weather is a diffuse target usually spanning multiple horizontal resolution units, we used
+the geometric mean parameter to characterize its effective resolution. For aircraft detection, we used the
+worst dimension metric because it is virtually a point target within the horizontal resolution. Note that we
+did not attempt to capture the best possible horizontal accuracy estimate for aircraft observation, as this
+would entail a more complex analysis involving multilateration.
+
+      Vertical resolution for weather observation is determined by the range times the elevation angle
+resolution given in Tables 2-1 and 2-2. For the legacy radars, this parameter is limited by their sparse
+volume scanning strategies. For aircraft, vertical accuracy is the more relevant parameter, and
+measurement within a beam width is made possible by angle-of-arrival techniques like monopulse and
+beam-space maximum likelihood estimation.
+
+4.1   COVERAGE OVER EN ROUTE AIR SPACE
+
+       First, we will examine the various performance parameter coverages for horizontal slices at
+absolute altitudes above mean sea level. All air space considered in this study is included. Table 4-1 gives
+the results for the 629 legacy radars. Each entry shows how much of the air space satisfies the given
+column heading condition. Some of the conditional values have clear rationales. Number of Doppler ≥ 2
+allows direct wind vector measurement. Weather reflectivity = 18 dBZ is the lower boundary of Level 1
+(light or mist) precipitation. And minimum detectable aircraft cross section of 2.2 m2 (3.4 dBsm) is often
+used for en route surveillance radar coverage specification. Coverage percentages are over area at each
+height slice, but are over all valid air space volume for the last row (“All”). Weather observation
+parameters are shown up to 70,000 ft MSL, which is the coverage ceiling for legacy radars. The ARSR-4
+has a mission ceiling of 100,000 ft MSL, so we extend the tables to this height for aircraft surveillance
+parameters.
+
+
+
+
+                                                    22
+                                               TABLE 4-1
+                     Legacy Performance Parameter Coverage Percentage
+Height                        Min.              Wx Mean           Wx Vert.    A/C Worst
+       Doppler Dual                  Min. dBsm                                            A/C Vert. Acc.
+ (kft                         dBZ              Horiz. Res.          Res.      Horiz. Res.
+         ≥2    Pol. ≥1                  <3.4                                                 ≤500 ft
+MSL)                          <18                ≤1 km            ≤2,000 ft     ≤1 km
+  10      35        67         67         63             64           3             7              3
+  20      60        88         89         80             50          0.1            4              2
+  30      68        91         95         82             35           0             3              2
+  40      68        91         98         83             27           0             2              2
+  50      68        91         99         83             20           0             1              2
+  60      68        91         99         83             13           0            0.6             1
+  70      67        90         99         83             6            0            0.2            0.7
+  80      N/A       N/A       N/A         58             N/A         N/A          0.01            0.1
+  90      N/A       N/A       N/A         58             N/A         N/A            0              0
+ 100      N/A       N/A       N/A         58             N/A         N/A            0              0
+  All     59        84         89         71             31          0.7            2              1
+
+
+
+       Scenario 2 results are given in Table 4-2. (Scenarios 1 and 1G are not considered in this subsection,
+because they only cover terminal air space.) As en route aircraft surveillance radars are not replaced in
+Scenario 2, we focus on the weather observation parameters. The altitude coverage only goes up to
+70,000 ft MSL, because Scenario 2 does not include the ARSR-4 mission. The Guantanamo Bay air space
+is also excluded, because there is only an ARSR-4 there. The last two columns are a way to assess how
+much the exact coverage spaces diverge between the MPAR and legacy cases. The seventh column shows
+the percentage of <18 dBZ legacy coverage grid points not covered by MPAR, and the final column
+shows the percentage for the inverse condition. For these “percentage missed” comparisons, the MPAR
+coverage is compared to the coverage provided by the legacy radars that they would replace (Figure 4-1).
+The MPAR coverage replicates the legacy coverage extremely well. Comparison with Table 4-1 shows an
+improvement in coverage for all weather observation parameters listed.
+
+
+
+
+                                                    23
+                                                 TABLE 4-2
+                     Scenario 2 Performance Parameter Coverage Percentage
+                                   Wx Mean                   Wx Vert.        <18 dBZ            <18 dBZ
+  Height Doppler Dual    Min. dBZ
+                                  Horiz. Res.                  Res.         Coverage           Coverage
+ (kft MSL) ≥2    Pol. ≥1   <18
+                                    ≤1 km                    ≤2,000 ft     MPAR Missed       Legacy Missed
+     10         40        68          68           68             5              0.3                 1
+     20         64        89          89           81             5              0.1                0.4
+     30         79        96          96           73             4             0.002               0.2
+     40         85        98          98           64             3             0.003               0.2
+     50         87        99          99           54             2             0.004               0.3
+     60         87        99          99           45             2             0.005               0.4
+     70         87        100        100           37             1             0.005               0.5
+     All        72        90          90           59             3              0.1                0.8
+
+
+
+
+Figure 4-1. Illustration of percentage coverage missed metric. The blue and red circles represent legacy and MPAR
+coverages, respectively. The legacy missed percentage is computed by dividing the lower right crescent-shape area
+by the area of the red circle. The MPAR missed percentage is calculated by dividing the upper left crescent-shape
+area by the area of the blue circle.
+
+
+
+
+                                                        24
+       Table 4-3 displays the Scenario 3 results. Again, the MPAR coverage generally provides significant
+ improvement over the legacy coverage. Weather observation coverage would increase from 89% to 91%
+ and aircraft surveillance coverage would improve from 71% to 81%. As can be seen from the “coverage
+ legacy missed” columns, the gain is substantial, especially for aircraft surveillance. The sharp decrease in
+ coverage above 70,000 ft is due to the required coverage ceiling for TMPAR being set at that height. The
+ 5% aircraft coverage missed by MPAR at 100,000 ft is an artifact generated by our particular choice of
+ beam broadening (gain loss) with elevation angle that we assumed for MPAR. This could be easily
+ adjusted to eliminate the difference in coverage; it is not a performance limitation imposed by the
+ MPAR itself.
+
+                                                   TABLE 4-3
+                      Scenario 3 Performance Parameter Coverage Percentage
+                               Wx   Wx    A/C A/C                        <3.4      <3.4
+                                                     <18 dBZ <18 dBZ
+Height         Dual Min. Min. Mean Vert. Worst Vert.                    dBsm      dBsm
+       Doppler                                       Coverage Coverage
+ (kft          Pol. dBZ dBsm Horiz. Res. Horiz. Acc.                   Coverage Coverage
+         ≥2                                           MPAR     Legacy
+MSL)            ≥1 <18 <3.4 Res. ≤2,000 Res. ≤500                       MPAR     Legacy
+                                                      Missed   Missed
+                              ≤1 km  ft  ≤1 km ft                       Missed   Missed
+ 10      48      74     74    74      73       6       14    31      0.2         9          0.3         13
+ 20      73      92     92    92      83       5       13    32     0.008        5         0.05         13
+ 30      81      97     97    97      76       5       13    32    0.0001        3         0.03         15
+ 40      85      99     99    99      68       4       12    31    0.0002        3         0.003        16
+ 50      86      99     99    99      59       3       11    30     0.001        3         0.002        16
+ 60      87     100    100   100      51       2       10    29     0.005        3        0.0006        16
+ 70      87     100    100   100      42       1       9     28     0.005        3        0.0003        16
+ 80     N/A     N/A    N/A    64     N/A     N/A       2       6     N/A        N/A         0.3         5
+ 90     N/A     N/A    N/A    59     N/A     N/A       1       5     N/A        N/A         0.5        0.9
+ 100    N/A     N/A    N/A    69     N/A     N/A       1       5     N/A        N/A          5         0.7
+ All     75      91     91    81      64       4       9     22     0.08         5          0.7         11
+
+        In addition to the increase in coverage, the observation performance inside the coverage volume
+ will improve due to the dual-polarization weather measurement and aircraft altitude finding capabilities of
+ MPAR. (In contrast, only the NEXRAD has the former and the ARSR-4 has the latter capability among
+ the legacy radars.) And even though the total radar counts would decrease, overlapping Doppler weather
+ coverage will increase overall, which will benefit echo tops and wind vector determination. Comparing
+ legacy to Scenario 3 over all of the air space considered in this study, overlapping Doppler weather
+ coverage would increase from 59% to 75% and dual-polarization coverage would improve from 84%
+ to 91%.
+
+
+
+
+                                                      25
+       Scenarios 2G and 3G results are given in Tables 4-4 and 4-5. The overall values are very similar to
+ those of Scenarios 2 and 3, respectively.
+
+                                                     TABLE 4-4
+                        Scenario 2G Performance Parameter Coverage Percentage
+                                    Wx Mean                      Wx Vert.        <18 dBZ           <18 dBZ
+   Height Doppler Dual    Min. dBZ
+                                   Horiz. Res.                     Res.         Coverage          Coverage
+  (kft MSL) ≥2    Pol. ≥1   <18
+                                     ≤1 km                       ≤2,000 ft     MPAR Missed      Legacy Missed
+       10          41           69         69          69              5             0.4                 3
+       20          65           90         90          81              5             0.2                0.6
+       30          79           96         96          74              4            0.002               0.2
+       40          85           98         98          64              3            0.004               0.2
+       50          87           99         99          55              3            0.004               0.3
+       60          87           99         99          46              2            0.005               0.4
+       70          87       100            100         37              1            0.005               0.5
+       All         73           90         90          60              3             0.2                 1
+
+
+                                                     TABLE 4-5
+                        Scenario 3G Performance Parameter Coverage Percentage
+                               Wx   Wx    A/C A/C                        <3.4      <3.4
+                                                     <18 dBZ <18 dBZ
+Height         Dual Min. Min. Mean Vert. Worst Vert.                    dBsm      dBsm
+       Doppler                                       Coverage Coverage
+ (kft          Pol. dBZ dBsm Horiz. Res. Horiz. Acc.                   Coverage Coverage
+         ≥2                                           MPAR     Legacy
+MSL)            ≥1 <18 <3.4 Res. ≤2,000 Res. ≤500                       MPAR     Legacy
+                                                      Missed   Missed
+                              ≤1 km  ft  ≤1 km ft                       Missed   Missed
+ 10          50     75     75        75    74    6          15    32         0.3           10     0.4         12
+ 20          74     92     92        92    83    6          14    33         0.01          5     0.08         13
+ 30          81     97     97        97    76    5          13    33       0.0001          3     0.03         15
+ 40          85     99     99        99    68    4          12    32       0.0002          3     0.003        16
+ 50          86     99     99        99    60    3          12    31       0.001           3     0.002        16
+ 60          87    100 100           100   51    2          11    30       0.005           3    0.0006        16
+ 70          87    100 100           100   43    1           9    28       0.005           3    0.0003        16
+ 80          N/A   N/A N/A           64    N/A   N/A         2     5         N/A       N/A        0.6         5
+ 90          N/A   N/A N/A           59    N/A   N/A         1     5         N/A       N/A        0.8         0.9
+ 100         N/A   N/A N/A           53    N/A   N/A         1     4         N/A       N/A         6          0.7
+ All         75     91     91        81    64    4           9    23         0.1           5      0.9         11
+
+
+
+
+                                                            26
+       We can also analyze coverage at low altitudes using height slices above local ground level.
+Boundary layer weather observations are crucial for improving weather forecasts (NRC, 2008), while
+low-altitude aircraft surveillance is important for detecting and tracking rogue flyers. Tables 4-6 to 4-10
+give the low-altitude coverage results for the legacy, Scenarios 2, 3, 2G, and 3G cases. As with the high-
+altitude cases, the low-altitude MPAR coverage improves on the legacy coverage. For weather, the
+coverage improvement peaks at around 2,500 ft AGL (+7% for Scenario 2, +9% for Scenario 2G, +14%
+for Scenario 3, +15% for Scenario 3G), and it is reassuring to note that there is no overall loss of
+overlapping Doppler coverage, which is helpful for wind vector measurements. In Scenarios 3 and 3G,
+there is a dramatic enhancement in the ability to determine the vertical position of aircraft, which is not
+surprising, since only the ARSR-4 has this capability among the legacy radars. Finally, the maximum
+percentage of legacy coverage missed by MPAR for either weather or aircraft surveillance does not
+exceed 2% at any altitude.
+
+
+                                               TABLE 4-6
+               Legacy Low-Altitude Performance Parameter Coverage Percentage
+Height                       Min.               Wx Mean           Wx Vert.    A/C Worst
+       Doppler Dual                  Min. dBsm                                                A/C Vert.
+  (ft                        dBZ               Horiz. Res.          Res.      Horiz. Res.
+         ≥2    Pol. ≥1                  <3.4                                                 Acc. ≤500 ft
+AGL)                         <18                 ≤1 km            ≤2,000 ft     ≤1 km
+ 100      0.2        2         3          8              3           2              5              2
+ 200      0.4        3         4          11             4           3              6              2
+ 300      0.6        5         6          14             6           4              7              2
+ 400      0.9        6         7          16             7           4              8              2
+ 500       1         8         9          19             9           5              8              2
+1,000      3        15        17          29             16          5              9              2
+1,500      5        22        24          37             23          5              9              2
+2,000      7        29        30          42             29          5              9              2
+2,500      8        34        35          45             35          4              9              2
+3,000     10        40        41          49             40          4              9              3
+3,500     13        45        46          52             44          4              9              3
+4,000     16        50        50          55             48          4              9              3
+4,500     20        54        54          58             52          4              8              3
+5,000     23        58        58          60             54          4              8              3
+
+
+
+
+                                                    27
+                                    TABLE 4-7
+         Scenario 2 Low-Altitude Performance Parameter Coverage Percentage
+                               Wx Mean          Wx Vert.    <18 dBZ        <18 dBZ
+ Height Doppler Dual Min. dBZ
+                              Horiz. Res.         Res.     Coverage       Coverage
+(ft AGL)  ≥2    Pol. ≥1 <18
+                                ≤1 km           ≤2,000 ft MPAR Missed   Legacy Missed
+ 100        0.2     4       4         4            2         0.6             2.3
+ 200        0.4     6       6         6            3         0.9             3
+ 300        0.6     9       9         9            4          1              4
+ 400         1      11      11        11           4          1              5
+ 500         1      13      13        13           4          1              6
+ 1,000       4      23      23        23           5          2              8
+ 1,500       8      30      30        30           5          1              8
+ 2,000       13     36      36        36           5          1              8
+ 2,500       17     42      42        41           5          1              7
+ 3,000       21     46      46        45           5         0.9             6
+ 3,500       24     50      50        49           5         0.8             5
+ 4,000       28     55      55        53           5         0.7             4
+ 4,500       31     59      59        56           5         0.6             3
+ 5,000       35     62      62        59           5         0.6             2
+
+
+
+
+                                           28
+                                            TABLE 4-8
+              Scenario 3 Low-Altitude Performance Parameter Coverage Percentage
+                               Wx    Wx    A/C A/C
+                                                     <18 dBZ <18 dBZ <3.4 dBsm <3.4 dBsm
+Height         Dual Min. Min. Mean Vert. Worst Vert.
+       Doppler                                       Coverage Coverage Coverage Coverage
+ (kft          Pol. dBZ dBsm Horiz. Res. Horiz. Acc.
+         ≥2                                           MPAR     Legacy   MPAR     Legacy
+AGL)            ≥1 <18 <3.4    Res. ≤2,000 Res. ≤500
+                                                      Missed   Missed   Missed   Missed
+                              ≤1 km   ft  ≤1 km ft
+ 100    0.4      7    7    7      7     3       5       6    0.6   5        0.7   0.9
+ 200    0.8     10   10    10    10     4       7       8    0.9   7        0.9    1
+ 300    1       12   12    12    12     4       9       10   1     8        1      2
+ 400    2       15   15    15    15     5      10       12   1     9        1      2
+ 500    2       17   17    17    17     5      11       14   1     10       1      3
+1,000   6       28   28    28    28     5      13       21   1     14       2      4
+1,500   11      37   37    37    37     5      14       26   1     15       2      6
+2,000   17      44   44    44    43     6      14       28   1     16       2      8
+2,500   21      49   49    49    49     6      14       29   0.9   15       2      9
+3,000   26      54   54    54    53     6      15       30   0.7   15       1      9
+3,500   30      58   58    58    57     6      15       30   0.6   14       1     10
+4,000   34      61   61    61    61     6      15       31   0.5   13       1     10
+4,500   38      64   64    64    64     6      15       31   0.4   12       1     10
+5,000   41      67   67    67    67     6      15       31   0.3   11       0.9   10
+
+
+
+
+                                               29
+                                     TABLE 4-9
+         Scenario 2G Low-Altitude Performance Parameter Coverage Percentage
+                               Wx Mean          Wx Vert.      <18 dBZ        <18 dBZ
+ Height Doppler Dual Min. dBZ
+                              Horiz. Res.         Res.       Coverage       Coverage
+(ft AGL)  ≥2    Pol. ≥1 <18
+                                ≤1 km           ≤2,000 ft   MPAR Missed   Legacy Missed
+ 100         0.3     5       5        5            3            0.7            3
+ 200         0.6     8       8        8            4             1             4
+ 300         1      10      10        10           4             1             6
+ 400         2      12      12        12           4             1             7
+ 500         2      15      15        15           5             1             7
+ 1,000       6      25      25        25           5             2             10
+ 1,500       11     32      32        32           5             2             10
+ 2,000       16     38      38        38           5             1             10
+ 2,500       20     44      44        43           5             1             9
+ 3,000       24     48      48        47           5             1             8
+ 3,500       27     52      52        51           5            0.9            5
+ 4,000       31     56      56        55           5            0.9            5
+ 4,500       34     60      60        58           5            0.8            4
+ 5,000       38     63      63        60           5            0.8            4
+
+
+
+
+                                           30
+                                               TABLE 4-10
+           Scenario 3G Low-Altitude Performance Parameter Coverage Percentage
+                               Wx         Wx    A/C A/C
+                         Min.                              <18 dBZ <18 dBZ <3.4 dBsm <3.4 dBsm
+Height         Dual Min.      Mean       Vert. Worst Vert.
+       Doppler           dBs                               Coverage Coverage Coverage Coverage
+ (kft          Pol. dBZ       Horiz.     Res. Horiz. Acc.
+         ≥2               m                                 MPAR     Legacy   MPAR     Legacy
+AGL)            ≥1 <18         Res.     ≤2,000 Res. ≤500
+                         <3.4                               Missed   Missed   Missed   Missed
+                              ≤1 km       ft   ≤1 km ft
+ 100     0.5     8    8    8       8       3       6    6       0.7         6         0.8        0.8
+ 200      1      11   11   11     11       4       8    9        1          8         1           1
+ 300      2      14   14   14     13       5       9    11       1          9         1           1
+ 400      2      16   16   16     16       5      11    13       1         10         1           2
+ 500      3      19   19   19     19       5      12    15       1         11         2           2
+1,000     8      30   30   30     30       6      14    22       2         15         2           3
+1,500     14     38   38   38     38       6      15    26       1         17         2           4
+2,000     19     45   45   45     45       6      15    29       1         17         2           6
+2,500     24     50   50   50     50       6      15    30      0.8        16         1           8
+3,000     28     55   55   55     54       6      15    31      0.7        15         1           8
+3,500     33     59   59   59     58       6      15    31      0.7        15         1           8
+4,000     36     62   62   62     61       6      15    32      0.6        14         1           9
+4,500     40     65   65   65     64       6      15    32      0.6        13         1           9
+5,000     43     68   68   68     66       6      15    32      0.5        12         0.9         9
+
+
+
+        To highlight the increase in boundary layer dual-polarization coverage with MPAR, we plot the
+  legacy and Scenario 3G dual-polarization coverages at 1,000 ft AGL over the CONUS in Figure 4-2.
+  Coverage is doubled from 15% to 30%. Note especially the improvement in highly populated areas.
+
+
+
+
+                                                   31
+ Figure 4-2. CONUS dual-polarization weather coverage at 1,000 ft AGL for (left) legacy and (right) Scenario 3G.
+
+
+
+     For ease of comparison between the legacy and MPAR cases, we plotted four of the parameters
+from Tables 4-1, 4-4, and 4-5 in Figure 4-3.
+
+
+
+
+Figure 4-3. Height profiles of coverage percentage for minimum detectable weather reflectivity <18 dBZ (upper
+left), minimum detectable aircraft cross section <3.4 dBsm (upper right), Doppler weather coverage overlap ≥2
+(lower left), and dual-polarization weather coverage (lower right). Heights are MSL above 5,000 ft and AGL
+otherwise.
+
+
+
+
+                                                       32
+  4.2   COVERAGE OVER CIVIL TERMINAL AIR SPACE
+
+         Landing and take-off are the riskiest phases of flight. Flying more closely to the Earth’s surface
+  than during the en route phase, the aircraft has less time to recover after encountering a dangerous
+  weather phenomenon, and there is a higher density of other aircraft from which safe distance must be
+  maintained. Radar surveillance data for both aircraft tracking and hazardous weather detection in terminal
+  air space are crucial for maintaining aviation safety and efficiency. With these points in mind, we
+  compiled terminal air space coverage statistics for primary ASR- and TDWR-associated civil airports in
+  this study. LGA was also added to this list, since it is a super density operations (SDO) airport that relies
+  on the JFK ASR-9 and TDWR. Military airbases/GPN sites were excluded. The overall means are
+  collected in Table 4-11.
+
+
+                                                 TABLE 4-11
+           Average Terminal Air Space Performance Parameter Coverage Percentage
+
+                                                                                       ≤24,000 ft and 60 nmi
+                                                     ≤1,500 ft and 6 nmi radius
+                   Parameter                                                                  radius
+                                                    Legacy Sc. 1 Sc. 2 Sc. 3 Legacy Sc. 1 Sc. 2 Sc. 3
+
+Doppler Coverage ≥1                                    47       93     93     93       84      91     90      92
+Doppler Coverage ≥2                                    16       45     21     27       57      82     74      79
+Dual Polarization Coverage ≥1                          37       93     93     93       82      91     90      92
+Minimum Detectable Wx Reflectivity <–10|0 dBZ          41       50     53     52       81      83     82      85
+Minimum Detectable A/C Cross Section ≤0 dBsm           93       93     93     93       89      91     92      92
+Wx Mean Horizontal Resolution ≤0.25|0.5 km             27       83     84     83       26      37     51      54
+Wx Vertical Resolution ≤500|1,000 ft                   11       26     29     27       1        3      3      3
+A/C Worst Horizontal Resolution ≤0.25|0.5 km           57       64     70     68       5        8     10      10
+A/CVertical Accuracy ≤100|200 ft                      0.1       61     70     68      0.7       9     14      14
+<–10|0 dBZ Coverage MPAR Missed                       N/A       2       4      5      N/A      0.7     4      3
+<–10|0 dBZ Coverage Legacy Missed                     N/A       14     17     17      N/A      17      4      7
+≤0 dBsm Coverage MPAR Missed                          N/A      0.1     0.1    0.2     N/A      0.1   0.09    0.6
+≤0 dBsm Coverage Legacy Missed                        N/A      0.3     0.8    0.6     N/A       9     12      3
+
+
+
+
+                                                       33
+       Statistics were compiled over two subvolumes within the terminal air space: (1) altitude ≤ 1,500 ft
+AGL and range ≤ 6 nmi from the airport, and (2) altitude ≤ 24,000 ft AGL and range ≤ 60 nmi from the
+airport. These subvolumes correspond to the required coverage volume for hazardous wind-shear
+detection (FAA, 1995) and terminal aircraft surveillance (Raytheon, 1999). Different performance
+parameter thresholds were used for the two subvolumes as indicated in Table 4-7 (divided by a “|”). Note
+that this table is different from the en route coverage tables in that coverages were averaged over altitude
+and range instead of slices taken at individual heights.
+
+      Once again, overall coverage and performance figures are better for the MPAR compared to legacy
+radars. The vast improvement in aircraft vertical position accuracy occurs because the legacy ASRs do
+not provide this capability at all. (The very small fractions that show up under the legacy column for this
+parameter is due to a bit of ARSR-4 coverage that extends into some terminal air space.)
+
+       For the given thresholds, the MPAR provides a faithful replication of the legacy terminal air space
+coverage, especially for aircraft surveillance. The somewhat larger “miss” percentages (up to 5%) for
+weather observation is due to our methodology of locating terminal MPARs on the airport rather than at
+the stand-off TDWR sites. Much of this difference can be made up in the 60-nmi-radius case if the
+assumed instrumented range for the TMPAR is increased beyond 90 km. Technically, there is no reason
+not to do so. In fact, the Doppler weather parameter coverage range for today’s TDWR could be increased
+at least twofold with known signal transmission and processing techniques (Cho, 2010).
+
+      One may wonder why the weather Doppler coverage redundancy is better in Scenario 1 than in
+Scenario 2. This is because in Scenario 1 the terminal radar coverage was replaced by MPAR and
+TMPAR without eliminating any existing NEXRADs; in Scenario 2, the terminal and en route weather
+coverages were considered together to eliminate unneeded NEXRAD sites. Therefore, Scenario 1
+contains more weather coverage redundancy than Scenario 2. This extra redundancy cannot be eliminated
+in Scenario 1, because NEXRAD is a legacy radar that is not used multifunctionally (at least not to the
+extent of an MPAR).
+
+      Assuming that MPAR will have dual-polarization capability, there will be a big improvement in
+coverage for this parameter over the legacy case near the airport. If hydrometeor classification and icing
+condition detection are to be requirements for future terminal air space weather observation under
+NextGen (FAA, 2009), then dual polarization coverage will be a key component.
+
+      Of the 215 civil airports included in this section, 46 are served by TDWRs, 34 have WSPs, and 40
+have only LLWASs (see Figure 4-4 for CONUS locations). This leaves 95 airports with no dedicated
+wind-shear detection systems at this time. (Some of these have or will have NEXRAD gust front and
+microburst products available to them.) But with the deployment of MPAR, all of them will be provided
+with excellent wind-shear detection capability. If the 81 military airbase sites are included in the
+replacement plan, they will also gain wind-shear protection coverage.
+
+
+
+
+                                                    34
+Figure 4-4. CONUS map of the civil airports included in this study. Airports served by TDWR are green, airports
+with WSP are blue, airports with LLWAS only are red, and those without a dedicated wind-shear detection system
+are black.
+
+
+
+
+4.3   COVERAGE OVER URBAN AREAS
+
+      Beyond aviation purposes for which the FAA is primarily concerned, weather and aircraft
+surveillance data impact the lives of people on the ground through improved hazardous weather forecasts
+and protection from rogue air vehicle attacks. Urban areas with their high concentration of people have
+disproportionate value in coverage by these radars. Thus, we wish to characterize the changes in radar
+coverage specifically over these regions.
+
+      We obtained projected 2010 digital U.S. population density data with 2.5 arc-minute spatial
+resolution from CIESIN (2005) (Figure 4-5). The U.S. Census Bureau defines an urban area as “Core
+census block groups or blocks that have a population density of at least 1,000 people per square mile (386
+per square kilometer) and surrounding census blocks that have an overall density of at least 500 people
+per square mile (193 per square kilometer).” Thus, we selected 193/km2 as the minimum threshold for
+population density and computed the CONUS urban region legacy and MPAR coverage statistics in
+Tables 4-12 to 4-18. (Urban region defined in this way is 3.5% of the CONUS area and encompasses 210
+million people.) The “legacy” coverage here includes the GPN sites. Low altitudes were emphasized to
+cover rapid-onset threats to people on the ground such as tornadoes. The threshold for minimum
+detectable aircraft cross section was also reduced to 0.1 m2 (–10 dBsm) to make allowance for small
+targets.
+
+
+
+
+                                                      35
+                                  Figure 4-5. CONUS population density map.
+
+
+
+
+                                               TABLE 4-12
+                      Legacy Urban Area Coverage Percentage vs. Height
+
+                                                                                    Height AGL (ft)
+                       Parameter                             Threshold
+                                                                              100   500    1,000      5,000
+
+Doppler Coverage                                             ≥2 radars        1      17     33         70
+
+Dual Polarization Coverage                                    ≥1 radar        5      28     49         97
+
+Minimum Detectable Weather Reflectivity                       ≤18 dBZ         10     45     63         97
+
+Minimum Detectable Aircraft Cross Section                   ≤–10 dBsm         30     72     84         96
+
+Horizontal Resolution for Weather (Dimensional Mean)          ≤0.5 km         10     45     59         63
+
+Vertical Resolution for Weather                               ≤1,000 ft       9      24     18         5
+
+Horizontal Resolution for Aircraft (Worst Dimension)          ≤0.5 km         21     35     37         32
+
+Vertical Accuracy for Aircraft                                 ≤200 ft        2      2       2         2
+
+
+
+
+                                                     36
+                                            TABLE 4-13
+                   Scenario 1 Urban Area Coverage Percentage vs. Height
+
+                                                                           Height AGL (ft)
+                       Parameter                       Threshold
+                                                                     100   500    1,000      5,000
+
+Doppler Coverage                                         ≥2 radars   4      33     59         95
+
+Dual Polarization Coverage                               ≥1 radar    26     72     88         99
+
+Minimum Detectable Weather Reflectivity                  ≤18 dBZ     26     72     88         99
+
+Minimum Detectable Aircraft Cross Section              ≤–10 dBsm     28     72     87         97
+
+Horizontal Resolution for Weather (Dimensional Mean)     ≤0.5 km     26     71     83         83
+
+Vertical Resolution for Weather                          ≤1,000 ft   13     22     22         19
+
+Horizontal Resolution for Aircraft (Worst Dimension)     ≤0.5 km     21     41     42         41
+
+Vertical Accuracy for Aircraft                            ≤200 ft    21     45     47         47
+
+
+
+
+                                            TABLE 4-14
+                   Scenario 2 Urban Area Coverage Percentage vs. Height
+
+                                                                           Height AGL (ft)
+                       Parameter                       Threshold
+                                                                     100   500    1,000      5,000
+
+Doppler Coverage                                         ≥2 radars   1      15     35         86
+
+Dual Polarization Coverage                               ≥1 radar    24     69     87         99
+
+Minimum Detectable Weather Reflectivity                  ≤18 dBZ     24     69     87         99
+
+Minimum Detectable Aircraft Cross Section              ≤–10 dBsm     29     74     89         99
+
+Horizontal Resolution for Weather (Dimensional Mean)     ≤0.5 km     24     68     84         89
+
+Vertical Resolution for Weather                          ≤1,000 ft   13     21     22         20
+
+Horizontal Resolution for Aircraft (Worst Dimension)     ≤0.5 km     22     44     45         43
+
+Vertical Accuracy for Aircraft                           ≤200 ft     22    49      53         54
+
+
+
+
+                                                  37
+                                            TABLE 4-15
+                   Scenario 3 Urban Area Coverage Percentage vs. Height
+
+                                                                           Height AGL (ft)
+                       Parameter                       Threshold
+                                                                     100   500    1,000      5,000
+
+Doppler Coverage                                         ≥2 radars    2     19     40         89
+
+Dual Polarization Coverage                               ≥1 radar    27     72     89         99
+
+Minimum Detectable Weather Reflectivity                  ≤18 dBZ     27     72     89         99
+
+Minimum Detectable Aircraft Cross Section              ≤–10 dBsm     27     72     88         99
+
+Horizontal Resolution for Weather (Dimensional Mean)     ≤0.5 km     27     71     86         89
+
+Vertical Resolution for Weather                          ≤1,000 ft   13     21     21         20
+
+Horizontal Resolution for Aircraft (Worst Dimension)     ≤0.5 km     22     43     45         44
+
+Vertical Accuracy for Aircraft                            ≤200 ft    23     49     52         53
+
+
+
+
+                                            TABLE 4-16
+                  Scenario 1G Urban Area Coverage Percentage vs. Height
+
+                                                                           Height AGL (ft)
+                       Parameter                       Threshold
+                                                                     100   500    1,000      5,000
+
+Doppler Coverage                                         ≥2 radars   4      37     64         96
+
+Dual Polarization Coverage                               ≥1 radar    29     75     89         99
+
+Minimum Detectable Weather Reflectivity                  ≤18 dBZ     29     75     89         99
+
+Minimum Detectable Aircraft Cross Section              ≤–10 dBsm     31     76     89         98
+
+Horizontal Resolution for Weather (Dimensional Mean)     ≤0.5 km     28     74     85         85
+
+Vertical Resolution for Weather                          ≤1,000 ft   14     23     24         20
+
+Horizontal Resolution for Aircraft (Worst Dimension)     ≤0.5 km     23     43     45         43
+
+Vertical Accuracy for Aircraft                            ≤200 ft    24     47     50         50
+
+
+
+
+                                                  38
+                                            TABLE 4-17
+                  Scenario 2G Urban Area Coverage Percentage vs. Height
+
+                                                                           Height AGL (ft)
+                       Parameter                       Threshold
+                                                                     100   500    1,000      5,000
+
+Doppler Coverage                                         ≥2 radars   1      20     43         89
+
+Dual Polarization Coverage                               ≥1 radar    27     73     89         99
+
+Minimum Detectable Weather Reflectivity                  ≤18 dBZ     27     73     89         99
+
+Minimum Detectable Aircraft Cross Section              ≤–10 dBsm     31     76     90         99
+
+Horizontal Resolution for Weather (Dimensional Mean)     ≤0.5 km     27     72     85         89
+
+Vertical Resolution for Weather                          ≤1,000 ft   14     22     23         21
+
+Horizontal Resolution for Aircraft (Worst Dimension)     ≤0.5 km     24     46     48         45
+
+Vertical Accuracy for Aircraft                            ≤200 ft    24     52     55         56
+
+
+
+
+                                            TABLE 4-18
+                  Scenario 3G Urban Area Coverage Percentage vs. Height
+
+                                                                           Height AGL (ft)
+                       Parameter                       Threshold
+                                                                     100   500    1,000      5,000
+
+Doppler Coverage                                         ≥2 radars    2     23     46         91
+
+Dual Polarization Coverage                               ≥1 radar    29     75     90         99
+
+Minimum Detectable Weather Reflectivity                  ≤18 dBZ     29     75     90         99
+
+Minimum Detectable Aircraft Cross Section              ≤–10 dBsm     29     75     89         99
+
+Horizontal Resolution for Weather (Dimensional Mean)     ≤0.5 km     29     74     87         90
+
+Vertical Resolution for Weather                          ≤1,000 ft   14     22     23         21
+
+Horizontal Resolution for Aircraft (Worst Dimension)     ≤0.5 km     24     46     48         46
+
+Vertical Accuracy for Aircraft                            ≤200 ft    24     52     55         56
+
+
+
+
+                                                  39
+      MPAR networks generally improve urban coverage over the legacy network for all parameters and
+scenarios. The most dramatic enhancements are seen in dual polarization coverage and vertical accuracy
+of aircraft detection. The former occurs because the only legacy radar with dual polarization is the
+NEXRAD, whereas all MPARs and TMPARs are assumed to have dual polarization. The better boundary
+layer coverage with dual polarization will allow more accurate characterization of hydrometeor type and
+provide valuable data for assimilation into numerical weather forecast models. Finer vertical accuracy for
+aircraft detection results because the only legacy radar with this capability is the ARSR-4, whereas all
+MPARs and TMPARs will be able to measure the altitude of aircraft. This parameter will be crucial in
+tracking uncooperative air targets or when the Automatic Dependent Surveillance-Broadcast (ADS-B)
+relayed positional data are not available due to Global Position System (GPS) jamming, severe
+geomagnetic storms, etc.
+
+
+
+
+                                                   40
+                                        5. CONCLUSIONS
+
+
+      The main purpose of this study was to determine, to first order, the number of MPARs and
+TMPARs needed to replicate the weather and aircraft surveillance coverage provided by existing radars
+for six replacement scenarios: (1) terminal radars only (ASRs and TDWRs), (2) terminal radars and
+national-scale weather radars (ASRs, TDWRs, and NEXRADs), and (3) terminal radars, national-scale
+weather radars, and long-range aircraft surveillance radars (ASRs, TDWRs, NEXRADs, CARSRs, and
+ARSR-4s); scenarios 1G, 2G, and 3G added military airbase radars to the first three replacement
+scenarios. The locations and tower heights for the new radars were restricted to those of the existing
+radars. In reality, a transition period would require the legacy and replacement radars to be
+simultaneously operating, which would necessitate different locations and towers for the new radars.
+Therefore, the MPAR locations given in this report should only be used as a guide for future, more locally
+detailed, analyses that would provide the final siting data. With that caveat in mind, we conclude the
+following.
+
+      Replacing the legacy radars by MPARs and TMPARs would reduce the total number of radars by
+18%/14% (Scenarios 1/1G), 29%/28% (Scenarios 2/2G), and 35%/35% (Scenarios 3/3G). Despite the
+reduction in radar count, coverage volume for weather and aircraft surveillance would increase modestly.
+Dual-polarization and overlapping Doppler weather coverage will improve.
+
+      Terminal aircraft surveillance coverage would be strictly preserved under this MPAR siting
+scheme. Airports currently equipped with an ASR but no wind-shear observation system would gain
+wind-shear detection coverage through a TMPAR or MPAR. Airports currently equipped with an ASR
+but without a nearby NEXRAD would get high-quality dual-polarization Doppler weather data. On
+average, terminal air spaces will have more overlapping Doppler weather coverage, increased dual-
+polarization weather radar data, and gain the capability for aircraft altitude estimation.
+
+       Finally, low-altitude urban airspace coverage will be improved with MPAR for all replacement
+scenarios. More overlapping Doppler weather radar coverage, better spatial resolution for weather and
+aircraft surveillance, and, most of all, enhancements in dual-polarization coverage and vertical accuracy
+of aircraft detection will be obtained compared to the legacy radar network.
+
+
+
+
+                                                   41
+This page intentionally left blank.
+             APPENDIX A: SITE-BY-SITE LISTING OF PROPOSED RADAR
+                                DEPLOYMENT
+
+
+       For each relevant scenario, the tables below list the site-by-site radar replacement proposal—
+ MPAR, TMPAR, or none. If fewer than four antenna faces are specified, this is indicated by the number
+ of faces and azimuth coverage range in parentheses. In the ASR table, site IDs currently with WSPs are
+ marked with asterisks. For the GPN sites, the radar ownership is indicated as AF = Air Force, AR =
+ Army, MC = Marine Corps, N = Navy, and NG = National Guard.
+
+
+                                                 TABLE A-1
+                                                 ASR Sites
+                                                  Scenario Scenario Scenario Scenario Scenario Scenario
+Site ID          Site Name       State    Type
+                                                     1        2        3       1G       2G       3G
+
+ ABE      ALLENTOWN               PA     ASR-11    TMPAR     TMPAR   TMPAR   TMPAR     TMPAR     TMPAR
+
+ ABI      ABILENE                 TX     ASR-11    TMPAR     MPAR    MPAR    TMPAR      MPAR      MPAR
+
+ABQ* ALBUQUERQUE                  NM     ASR-9     TMPAR     TMPAR   TMPAR   TMPAR     TMPAR     TMPAR
+
+ ACK      NANTUCKET               MA     ASR-9     TMPAR     MPAR    TMPAR   TMPAR      MPAR     TMPAR
+
+ ACT      WACO                    TX     ASR-11    TMPAR     TMPAR   TMPAR   TMPAR     TMPAR     TMPAR
+
+ ACY      ATLANTIC CITY           NJ     ASR-9     TMPAR     TMPAR   TMPAR   TMPAR     TMPAR     TMPAR
+
+          ANDREWS AFB
+ADW                               MD     ASR-9     MPAR      MPAR    MPAR     MPAR      MPAR      MPAR
+          (CAMP SPRINGS)
+
+ AGS      AUGUSTA                 GA     ASR-8     TMPAR     TMPAR   TMPAR   TMPAR     TMPAR     TMPAR
+
+ALB*      ALBANY                  NY     ASR-9     TMPAR     MPAR    MPAR    TMPAR      MPAR      MPAR
+
+ ALO      WATERLOO                IA     ASR-8     TMPAR     TMPAR   TMPAR   TMPAR     TMPAR     TMPAR
+
+ AMA      AMARILLO                TX     ASR-11    TMPAR     MPAR    MPAR    TMPAR      MPAR      MPAR
+
+ ANC      ANCHORAGE #1            AK     ASR-8     TMPAR     TMPAR   TMPAR   TMPAR     TMPAR     TMPAR
+
+ANC2 ANCHORAGE #2                 AK     ASR-11    None      None    None      None     None      None
+
+ ATL      ATLANTA                 GA     ASR-9     MPAR      MPAR    MPAR     MPAR      MPAR      MPAR
+
+AUS* AUSTIN                       TX     ASR-9     TMPAR     TMPAR   TMPAR   TMPAR     TMPAR     TMPAR
+
+ AVL      ASHEVILLE               NC     ASR-8     TMPAR     TMPAR   TMPAR   TMPAR     TMPAR     TMPAR
+
+
+
+
+                                                    43
+                                                    Scenario Scenario Scenario Scenario Scenario Scenario
+Site ID           Site Name        State    Type
+                                                       1        2        3       1G       2G       3G
+
+ AVP      WILKES BARRE              PA     ASR-11   TMPAR    TMPAR    TMPAR       TMPAR   TMPAR   TMPAR
+
+ AZO      KALAMAZOO                 MI     ASR-8    TMPAR    TMPAR    TMPAR       TMPAR   TMPAR   TMPAR
+
+                                                                       MPAR                        MPAR
+ BAB      MARYSVILLE (BEALE AFB)    CA     ASR-9    TMPAR    TMPAR    (3: 220°–   TMPAR   TMPAR   (3: 220°–
+                                                                       130°)                       130°)
+
+          SHREVEPORT
+ BAD                                LA     ASR-9    TMPAR     MPAR     MPAR       TMPAR   MPAR     MPAR
+          (BARKSDALE AFB)
+
+BDL* WINDSOR LOCKS                  CT     ASR-9    TMPAR    TMPAR    TMPAR       TMPAR   TMPAR   TMPAR
+
+ BFL      BAKERSFIELD               CA     ASR-8    TMPAR     MPAR     MPAR       TMPAR   MPAR     MPAR
+
+BGM       BINGHAMTON                NY     ASR-11   TMPAR     MPAR     MPAR       TMPAR   MPAR     MPAR
+
+ BGR      BANGOR                   ME      ASR-11   TMPAR    TMPAR    TMPAR       TMPAR   TMPAR   TMPAR
+
+BHM* BIRMINGHAM                     AL     ASR-9    TMPAR     MPAR     MPAR       TMPAR   MPAR     MPAR
+
+ BIL      BILLINGS                 MT      ASR-11   TMPAR     MPAR     MPAR       TMPAR   MPAR     MPAR
+
+ BIS      BISMARK                  ND      ASR-8    TMPAR     MPAR     MPAR       TMPAR   MPAR     MPAR
+
+ BLV      SCOTT AFB (BELLEVILLE)    IL     ASR-9    TMPAR    TMPAR    TMPAR       TMPAR   TMPAR   TMPAR
+
+ BNA      NASHVILLE                 TN     ASR-9     MPAR     MPAR     MPAR       MPAR    MPAR     MPAR
+
+ BNH      BRENHAM                   TX     ASR-11   TMPAR    TMPAR    TMPAR       TMPAR   TMPAR   TMPAR
+
+ BOI      BOISE                     ID     ASR-11   TMPAR    TMPAR    TMPAR       TMPAR   TMPAR   TMPAR
+
+ BOS      BOSTON                   MA      ASR-9     MPAR     MPAR     MPAR       MPAR    MPAR     MPAR
+
+ BPT      BEAUMONT                  TX     ASR-11   TMPAR    TMPAR    TMPAR       TMPAR   TMPAR   TMPAR
+
+ BTR      BATON ROUGE               LA     ASR-11   TMPAR    TMPAR    TMPAR       TMPAR   TMPAR   TMPAR
+
+ BTV      BURLINGTON                VT     ASR-11   TMPAR     MPAR    TMPAR       TMPAR   MPAR    TMPAR
+
+BUF* BUFFALO                        NY     ASR-9    TMPAR     MPAR     MPAR       TMPAR   MPAR     MPAR
+
+ BUR      BURBANK                   CA     ASR-9    TMPAR    TMPAR    TMPAR       TMPAR   TMPAR   TMPAR
+
+ BWI      BALTIMORE                MD      ASR-9     MPAR     MPAR     MPAR       MPAR    MPAR     MPAR
+
+ CAE      COLUMBIA                  SC     ASR-11   TMPAR    TMPAR    TMPAR       TMPAR   TMPAR   TMPAR
+
+ CAK      AKRON/CANTON             OH      ASR-11   TMPAR    TMPAR    TMPAR       TMPAR   TMPAR   TMPAR
+
+ CHA      CHATTANOOGA               TN     ASR-8    TMPAR    TMPAR    TMPAR       TMPAR   TMPAR   TMPAR
+
+
+
+
+                                                      44
+                                                 Scenario Scenario Scenario Scenario Scenario Scenario
+Site ID            Site Name    State    Type
+                                                    1        2        3       1G       2G       3G
+
+ CHO      CHARLOTTESVILLE        VA     ASR-9    TMPAR    TMPAR    TMPAR       TMPAR   TMPAR   TMPAR
+
+CHS* CHARLESTON                  SC     ASR-9    TMPAR    TMPAR    TMPAR       TMPAR   TMPAR   TMPAR
+
+ CID*     CEDAR RAPIDS           IA     ASR-9    TMPAR    TMPAR    TMPAR       TMPAR   TMPAR   TMPAR
+
+ CKB      CLARKSBURG            WV      ASR-8    TMPAR    TMPAR    TMPAR       TMPAR   TMPAR   TMPAR
+
+CLEA CLEVELAND                  OH      ASR-9     MPAR     MPAR     MPAR       MPAR    MPAR     MPAR
+
+ CLT      CHARLOTTE             NC      ASR-9     MPAR     MPAR     MPAR       MPAR    MPAR     MPAR
+
+CMH       COLUMBUS              OH      ASR-9     MPAR     MPAR     MPAR       MPAR    MPAR     MPAR
+
+ CMI      CHAMPAIGN              IL     ASR-11   TMPAR    TMPAR    TMPAR       TMPAR   TMPAR   TMPAR
+
+ COS      COLORADO SPRINGS      CO      ASR-11   TMPAR    TMPAR    TMPAR       TMPAR   TMPAR   TMPAR
+
+ COU      COLUMBIA              MO      ASR-11   TMPAR    TMPAR    TMPAR       TMPAR   TMPAR   TMPAR
+
+ CPR      CASPER                WY      ASR-8    TMPAR    TMPAR    TMPAR       TMPAR   TMPAR   TMPAR
+
+ CRP      CORPUS CHRISTI         TX     ASR-11   TMPAR     MPAR     MPAR       TMPAR   MPAR     MPAR
+
+                                                                    MPAR                        MPAR
+CRW CHARLESTON                  WV      ASR-8    TMPAR     MPAR    (3: 315°–   TMPAR   MPAR    (3: 315°–
+                                                                    225°)                       225°)
+
+ CSG      COLUMBUS              GA      ASR-11   TMPAR    TMPAR    TMPAR       TMPAR   TMPAR   TMPAR
+
+          CUMBERLAND
+CUM                             ME      ASR-9    TMPAR     MPAR     MPAR       TMPAR   MPAR     MPAR
+          (PORTLAND)
+
+          COVINGTON
+ CVG                             KY     ASR-9     MPAR     MPAR     MPAR       MPAR    MPAR     MPAR
+          (CINCINNATI)
+
+ DAB      DAYTONA BEACH          FL     ASR-9    TMPAR    TMPAR    TMPAR       TMPAR   TMPAR   TMPAR
+
+ DAY      DAYTON                OH      ASR-9     MPAR     MPAR     MPAR       MPAR    MPAR     MPAR
+
+ DCA      WASHINGTON NATIONAL    VA     ASR-9    TMPAR    TMPAR    TMPAR       TMPAR   TMPAR   TMPAR
+
+DENA DENVER #1 (IRONDALE)       CO      ASR-9     MPAR     MPAR     MPAR       MPAR    MPAR     MPAR
+
+          DALLAS FT WORTH #4
+DFW                              TX     ASR-9     None     None     None       None    None     None
+          (WEST)
+
+          DALLAS FT WORTH #1
+DFWA                             TX     ASR-9     MPAR     MPAR     MPAR       MPAR    MPAR     MPAR
+          (EAST)
+
+ DLH      DULUTH                MN      ASR-8    TMPAR     MPAR     MPAR       TMPAR   MPAR     MPAR
+
+
+
+
+                                                   45
+                                                   Scenario Scenario Scenario Scenario Scenario Scenario
+Site ID            Site Name      State    Type
+                                                      1        2        3       1G       2G       3G
+
+                                                   TMPAR       TMPAR       TMPAR     TMPAR      TMPAR     TMPAR
+ DPA      DUPAGE (ORD #4, WEST)    IL     ASR-9    (2: 180°– (2: 180°– (2: 180°– (2: 180°– (2: 180°– (2: 180°–
+                                                    360°)       360°)       360°)     360°)      360°)     360°)
+
+DSM* DES MOINES                    IA     ASR-9    TMPAR        MPAR        MPAR     TMPAR      MPAR      MPAR
+
+DTWA DETROIT #1 (ROMULUS)          MI     ASR-9     MPAR        MPAR        MPAR      MPAR      MPAR      MPAR
+
+                                                   TMPAR       TMPAR       TMPAR     TMPAR      TMPAR     TMPAR
+          PONTIAC (DTW #2,
+DTWC                               MI     ASR-9    (2: 225°–   (2: 225°-   (2: 225°– (2: 225°– (2: 225°– (2: 225°–
+          NORTHVILLE)
+                                                     45°)        45°)        45°)      45°)      45°)       45°)
+
+ ELM      ELMIRA                   NY     ASR-8    TMPAR       TMPAR       TMPAR     TMPAR      TMPAR     TMPAR
+
+ELP*      EL PASO (BIGGS AFB)      TX     ASR-9    TMPAR       TMPAR       TMPAR     TMPAR      TMPAR     TMPAR
+
+ ERI      ERIE                     PA     ASR-11   TMPAR       TMPAR       TMPAR     TMPAR      TMPAR     TMPAR
+
+ EUG      EUGENE                  OR      ASR-8    TMPAR       TMPAR       TMPAR     TMPAR      TMPAR     TMPAR
+
+ EVV      EVANSVILLE               IN     ASR-8    TMPAR        MPAR        MPAR     TMPAR      MPAR      MPAR
+
+EWR NEWARK                         NJ     ASR-9     MPAR        MPAR        MPAR      MPAR      MPAR      MPAR
+
+ FAI      FAIRBANKS                AK     ASR-11   TMPAR       TMPAR       TMPAR     TMPAR      TMPAR     TMPAR
+
+ FAR      FARGO                   ND      ASR-11   TMPAR       TMPAR       TMPAR     TMPAR      TMPAR     TMPAR
+
+ FAT      FRESNO                   CA     ASR-11   TMPAR        MPAR        MPAR     TMPAR      MPAR      MPAR
+
+ FAY      FAYETTEVILLE            NC      ASR-9    TMPAR       TMPAR       TMPAR     TMPAR      TMPAR     TMPAR
+
+ FLL      FT LAUDERDALE            FL     ASR-9     MPAR        MPAR        MPAR      MPAR      MPAR      MPAR
+
+ FLO      FLORENCE                 SC     ASR-8    TMPAR       TMPAR       TMPAR     TMPAR      TMPAR     TMPAR
+
+ FMH      FALMOUTH (OTIS AFB)     MA      ASR-8    TMPAR       TMPAR       TMPAR     TMPAR      TMPAR     TMPAR
+
+ FNT      FLINT                    MI     ASR-11   TMPAR       TMPAR       TMPAR     TMPAR      TMPAR     TMPAR
+
+ FSD      SIOUX FALLS              SD     ASR-11   TMPAR        MPAR        MPAR     TMPAR      MPAR      MPAR
+
+ FSM      FT SMITH                 AR     ASR-11   TMPAR        MPAR        MPAR     TMPAR      MPAR      MPAR
+
+ FWA      FT WAYNE                 IN     ASR-9    TMPAR       TMPAR       TMPAR     TMPAR      TMPAR     TMPAR
+
+ FYV      FAYETTEVILLE             AR     ASR-9    TMPAR       TMPAR       TMPAR     TMPAR      TMPAR     TMPAR
+
+GEG* SPOKANE                      WA      ASR-9    TMPAR        MPAR       TMPAR     TMPAR      MPAR      TMPAR
+
+GGG LONGVIEW (TYLER)               TX     ASR-8    TMPAR       TMPAR       TMPAR     TMPAR      TMPAR     TMPAR
+
+
+
+
+                                                      46
+                                                  Scenario Scenario Scenario Scenario Scenario Scenario
+Site ID           Site Name      State    Type
+                                                     1        2        3       1G       2G       3G
+
+ GNV      GAINESVILLE             FL     ASR-9    TMPAR    TMPAR    TMPAR    TMPAR    TMPAR     TMPAR
+
+ GPT      GULFPORT               MS      ASR-11   TMPAR    TMPAR    TMPAR    TMPAR    TMPAR     TMPAR
+
+ GRB      GREEN BAY               WI     ASR-11   TMPAR     MPAR     MPAR    TMPAR     MPAR     MPAR
+
+GRR* GRAND RAPIDS                 MI     ASR-9    TMPAR     MPAR     MPAR    TMPAR     MPAR     MPAR
+
+GSO* GREENSBORO                  NC      ASR-9    TMPAR    TMPAR    TMPAR    TMPAR    TMPAR     TMPAR
+
+ GSP      GREER (GREENVILLE)      SC     ASR-8    TMPAR     MPAR     MPAR    TMPAR     MPAR     MPAR
+
+ GTF      GREAT FALLS            MT      ASR-8    TMPAR     MPAR    TMPAR    TMPAR     MPAR     TMPAR
+
+ GXY      PLATTEVILLE (DEN #2)   CO      ASR-9    TMPAR    TMPAR    TMPAR    TMPAR    TMPAR     TMPAR
+
+HNL* HONOLULU                     HI     ASR-9    TMPAR    TMPAR    TMPAR    TMPAR    TMPAR     TMPAR
+
+HOUA HOUSTON (HOBBY)              TX     ASR-9     MPAR     MPAR     MPAR     MPAR     MPAR     MPAR
+
+HPN* WHITE PLAINS                 NY     ASR-9    TMPAR    TMPAR    TMPAR    TMPAR    TMPAR     TMPAR
+
+          HARLINGEN
+ HRL                              TX     ASR-9    TMPAR     MPAR     MPAR    TMPAR     MPAR     MPAR
+          (BROWNSVILLE)
+
+HSV* HUNTSVILLE                   AL     ASR-9    TMPAR    TMPAR    TMPAR    TMPAR    TMPAR     TMPAR
+
+ HTS      HUNTINGTON             WV      ASR-8    TMPAR    TMPAR    TMPAR    TMPAR    TMPAR     TMPAR
+
+ HUF      TERRA HAUTE             IN     ASR-8    TMPAR    TMPAR    TMPAR    TMPAR    TMPAR     TMPAR
+
+ IAD      CHANTILLY (DULLES)      VA     ASR-9     MPAR     MPAR     MPAR     MPAR     MPAR     MPAR
+
+          HOUSTON
+ IAH                              TX     ASR-9     MPAR     MPAR     MPAR     MPAR     MPAR     MPAR
+          (INTERNATIONAL)
+
+ ICT      WICHITA                 KS     ASR-9     MPAR     MPAR     MPAR     MPAR     MPAR     MPAR
+
+ ILM      WILMINGTON             NC      ASR-8    TMPAR    TMPAR    TMPAR    TMPAR    TMPAR     TMPAR
+
+ IND      INDIANAPOLIS            IN     ASR-9     MPAR     MPAR     MPAR     MPAR     MPAR     MPAR
+
+ ISP*     ISLIP                   NY     ASR-9    TMPAR    TMPAR    TMPAR    TMPAR    TMPAR     TMPAR
+
+ ITO      HILO                    HI     ASR-8    TMPAR    TMPAR    TMPAR    TMPAR    TMPAR     TMPAR
+
+          PHOENIX-GATEWAY
+ IWA                              AZ     ASR-8    TMPAR     MPAR     MPAR    TMPAR     MPAR     MPAR
+          (WILLIAMS AFB)
+
+ JAN      JACKSON                MS      ASR-8    TMPAR     MPAR     MPAR    TMPAR     MPAR     MPAR
+
+ JAX*     JACKSONVILLE            FL     ASR-9    TMPAR     MPAR    TMPAR    TMPAR     MPAR     TMPAR
+
+
+
+
+                                                    47
+                                                 Scenario Scenario Scenario Scenario Scenario Scenario
+Site ID           Site Name     State    Type
+                                                    1        2        3       1G       2G       3G
+
+ JFK      NEW YORK               NY     ASR-9     MPAR     MPAR     MPAR     MPAR     MPAR     MPAR
+
+ LAN      LANSING                MI     ASR-11   TMPAR    TMPAR    TMPAR    TMPAR    TMPAR     TMPAR
+
+ LAS      LAS VEGAS              NV     ASR-9     MPAR     MPAR     MPAR     MPAR     MPAR     MPAR
+
+LAXN LOS ANGELES (NORTH)         CA     ASR-9    TMPAR    TMPAR    TMPAR    TMPAR    TMPAR     TMPAR
+
+LAXS* LOS ANGELES (SOUTH)        CA     ASR-9     None     None     None     None     None     None
+
+LBB*      LUBBOCK (REESE AFB)    TX     ASR-9    TMPAR     MPAR     MPAR    TMPAR     MPAR     MPAR
+
+ LCH      LAKE CHARLES           LA     ASR-8    TMPAR     MPAR    TMPAR    TMPAR     MPAR     TMPAR
+
+ LEX      LEXINGTON              KY     ASR-11   TMPAR    TMPAR    TMPAR    TMPAR    TMPAR     TMPAR
+
+ LFT      LAFAYETTE              LA     ASR-11   TMPAR    TMPAR    TMPAR    TMPAR    TMPAR     TMPAR
+
+          LONG BEACH (GARDEN
+ LGB                             CA     ASR-9    TMPAR     MPAR    TMPAR    TMPAR     MPAR     TMPAR
+          GROVE)
+
+ LIH      LIHUE                  HI     ASR-8    TMPAR    TMPAR    TMPAR    TMPAR    TMPAR     TMPAR
+
+ LIT      LITTLE ROCK            AR     ASR-11   TMPAR     MPAR     MPAR    TMPAR     MPAR     MPAR
+
+ LNK      LINCOLN                NE     ASR-11   TMPAR    TMPAR    TMPAR    TMPAR    TMPAR     TMPAR
+
+ LSV      NELLIS AFB             NV     ASR-9    TMPAR    TMPAR    TMPAR    TMPAR    TMPAR     TMPAR
+
+ LYH      LYNCHBURG              VA     ASR-9    TMPAR    TMPAR    TMPAR    TMPAR    TMPAR     TMPAR
+
+ LZU      LAWRENCEVILLE         GA      ASR-9    TMPAR    TMPAR    TMPAR    TMPAR    TMPAR     TMPAR
+
+ MAF      MIDLAND                TX     ASR-11   TMPAR     MPAR    TMPAR    TMPAR     MPAR     TMPAR
+
+ MBS      SAGINAW                MI     ASR-11   TMPAR    TMPAR    TMPAR    TMPAR    TMPAR    TMPAR
+
+          MCCLELLAN AFB
+MCC                              CA     ASR-9    TMPAR    TMPAR     MPAR    TMPAR    TMPAR     MPAR
+          (SACRAMENTO)
+
+ MCE      CASTLE AFB (MERCED)    CA     ASR-11   TMPAR    TMPAR    TMPAR    TMPAR    TMPAR     TMPAR
+
+ MCI      KANSAS CITY           MO      ASR-9     MPAR     MPAR     MPAR     MPAR     MPAR     MPAR
+
+          WARNER ROBINS AFB
+MCN                             GA      ASR-11   TMPAR     MPAR     MPAR    TMPAR     MPAR     MPAR
+          (MACON)
+
+MCO ORLANDO                      FL     ASR-9     MPAR     MPAR     MPAR     MPAR     MPAR     MPAR
+
+MDT* HARRISBURG                  PA     ASR-9    TMPAR    TMPAR    TMPAR    TMPAR    TMPAR     TMPAR
+
+MEM MEMPHIS                      TN     ASR-9     MPAR     MPAR     MPAR     MPAR     MPAR     MPAR
+
+
+
+
+                                                   48
+                                                 Scenario Scenario Scenario Scenario Scenario Scenario
+Site ID            Site Name    State    Type
+                                                    1        2        3       1G       2G       3G
+
+ MFD      MANSFIELD             OH      ASR-8    TMPAR    TMPAR    TMPAR    TMPAR    TMPAR     TMPAR
+
+ MFR      MEDFORD               OR      ASR-9    TMPAR    TMPAR    TMPAR    TMPAR    TMPAR     TMPAR
+
+ MHT      MANCHESTER (HEATON)   NH      ASR-9    TMPAR    TMPAR    TMPAR    TMPAR    TMPAR     TMPAR
+
+ MI2      SACHSE (DFW #3)        TX     ASR-9    TMPAR    TMPAR    TMPAR    TMPAR    TMPAR     TMPAR
+
+ MIA      MIAMI                  FL     ASR-9     MPAR     MPAR     MPAR     MPAR     MPAR     MPAR
+
+ MKE      MILWAUKEE              WI     ASR-9     MPAR     MPAR     MPAR     MPAR     MPAR     MPAR
+
+MKG       MUSKEGON               MI     ASR-11   TMPAR    TMPAR    TMPAR    TMPAR    TMPAR     TMPAR
+
+ MLB      PATRICK AFB            FL     ASR-11   TMPAR    TMPAR    TMPAR    TMPAR    TMPAR     TMPAR
+
+ MLI      MOLINE                 IL     ASR-11   TMPAR     MPAR     MPAR    TMPAR     MPAR     MPAR
+
+ MLU      MONROE                 LA     ASR-8    TMPAR    TMPAR    TMPAR    TMPAR    TMPAR     TMPAR
+
+MOB       MOBILE                 AL     ASR-11   TMPAR     MPAR     MPAR    TMPAR     MPAR     MPAR
+
+ MRB      MARTINSBURG           WV      ASR-9    TMPAR    TMPAR    TMPAR    TMPAR    TMPAR     TMPAR
+
+ MRY      MONTEREY (FT ORD)      CA     ASR-11   TMPAR     MPAR     MPAR    TMPAR     MPAR     MPAR
+
+MSN* MADISON                     WI     ASR-9    TMPAR    TMPAR    TMPAR    TMPAR    TMPAR     TMPAR
+
+MSO       MISSOULA              MT      ASR-9    TMPAR    TMPAR    TMPAR    TMPAR    TMPAR     TMPAR
+
+ MSP      MINNEAPOLIS           MN      ASR-9     MPAR     MPAR     MPAR     MPAR     MPAR     MPAR
+
+ MSY      NEW ORLEANS            LA     ASR-9     MPAR     MPAR     MPAR     MPAR     MPAR     MPAR
+
+MWH MOSES LAKE                  WA      ASR-9    TMPAR    TMPAR    TMPAR    TMPAR    TMPAR     TMPAR
+
+          MAXWELL AFB
+ MXF                             AL     ASR-9    TMPAR     MPAR     MPAR    TMPAR     MPAR     MPAR
+          (MONTGOMERY)
+
+ MYR      MYRTLE BEACH           SC     ASR-11   TMPAR     MPAR    TMPAR    TMPAR     MPAR     TMPAR
+
+          CAMP PENDLETON
+ NFG                             CA     ASR-9    TMPAR    TMPAR    TMPAR    TMPAR    TMPAR     TMPAR
+          (OCEANSIDE)
+
+          MIRAMAR MCAS (SAN
+ NKX                             CA     ASR-9    TMPAR     MPAR    TMPAR    TMPAR     MPAR     TMPAR
+          DIEGO)
+
+          MOFFETT NAS (SAN
+ NUQ                             CA     ASR-9    TMPAR    TMPAR    TMPAR    TMPAR    TMPAR     TMPAR
+          JOSE)
+
+ NXX      WILLOW GROVE NAS       PA     ASR-11   TMPAR    TMPAR    TMPAR    TMPAR    TMPAR     TMPAR
+
+
+
+
+                                                   49
+                                                  Scenario Scenario Scenario Scenario Scenario Scenario
+Site ID            Site Name     State    Type
+                                                     1        2        3       1G       2G       3G
+
+ OAK      OAKLAND                 CA     ASR-9    TMPAR     TMPAR      TMPAR      TMPAR   TMPAR   TMPAR
+
+ OFF      OFFUTT AFB (OMAHA)      NE     ASR-9    TMPAR      MPAR      MPAR       TMPAR   MPAR    MPAR
+
+OGG KAHULUI                       HI     ASR-11   TMPAR     TMPAR      TMPAR      TMPAR   TMPAR   TMPAR
+
+ OKC      OKLAHOMA CITY          OK      ASR-9     MPAR      MPAR      MPAR       MPAR    MPAR    MPAR
+
+ONT* ONTARIO (MARCH AFB)          CA     ASR-9    TMPAR     TMPAR      TMPAR      TMPAR   TMPAR   TMPAR
+
+ ORD      CHICAGO (OHARE) #1      IL     ASR-9     None       None      None      None    None    None
+
+ORD2 CHICAGO (OHARE) #2           IL     ASR-9     MPAR      MPAR      MPAR       MPAR    MPAR    MPAR
+
+ORF* NORFOLK                      VA     ASR-9    TMPAR      MPAR      TMPAR      TMPAR   MPAR    TMPAR
+
+                                                  TMPAR     TMPAR      TMPAR
+ PA2      AZLE (DFW #2)           TX     ASR-9    (3: 135°– (3: 135°– (3: 135°–   None    None    None
+                                                    45°)      45°)      45°)
+
+ PBI      WEST PALM BEACH         FL     ASR-11    MPAR      MPAR      MPAR       MPAR    MPAR    MPAR
+
+PDX* PORTLAND                    OR      ASR-9    TMPAR     TMPAR      TMPAR      TMPAR   TMPAR   TMPAR
+
+ PHL      PHILADELPHIA            PA     ASR-9     MPAR      MPAR      MPAR       MPAR    MPAR    MPAR
+
+ PHX      PHOENIX                 AZ     ASR-9     MPAR      MPAR      MPAR       MPAR    MPAR    MPAR
+
+ PIA      PEORIA                  IL     ASR-11   TMPAR     TMPAR      TMPAR      TMPAR   TMPAR   TMPAR
+
+ PIT      PITTSBURGH              PA     ASR-9     MPAR      MPAR      MPAR       MPAR    MPAR    MPAR
+
+ PNS      PENSACOLA               FL     ASR-11   TMPAR     TMPAR      TMPAR      TMPAR   TMPAR   TMPAR
+
+ PSC      PASCO                  WA      ASR-9    TMPAR     TMPAR      TMPAR      TMPAR   TMPAR   TMPAR
+
+ PSP      PALM SPRINGS            CA     ASR-9    TMPAR     TMPAR      TMPAR      TMPAR   TMPAR   TMPAR
+
+ PUB      PUEBLO                 CO      ASR-11   TMPAR      MPAR      MPAR       TMPAR   MPAR    MPAR
+
+          COVENTRY
+ PVD                              RI     ASR-9    TMPAR     TMPAR      TMPAR      TMPAR   TMPAR   TMPAR
+          (PROVIDENCE)
+
+          ORCHARD MESA (GRAND
+ QLO                             CO      ASR-9    TMPAR     TMPAR      TMPAR      TMPAR   TMPAR   TMPAR
+          JUNCTION)
+
+QXM       TINLEY PARK (ORD #2)    IL     ASR-9     MPAR      MPAR      MPAR       MPAR    MPAR    MPAR
+
+ RDG      READING                 PA     ASR-11   TMPAR     TMPAR      TMPAR      TMPAR   TMPAR   TMPAR
+
+ RDU      RALEIGH-DURHAM         NC      ASR-9     MPAR      MPAR      MPAR       MPAR    MPAR    MPAR
+
+
+
+
+                                                    50
+                                              Scenario Scenario Scenario Scenario Scenario Scenario
+Site ID          Site Name   State    Type
+                                                 1        2        3       1G       2G       3G
+
+ RFD      ROCKFORD            IL     ASR-8    TMPAR    TMPAR    TMPAR    TMPAR    TMPAR     TMPAR
+
+ RIC*     RICHMOND            VA     ASR-9    TMPAR    TMPAR    TMPAR    TMPAR    TMPAR     TMPAR
+
+ RNO      RENO                NV     ASR-11   TMPAR    TMPAR    TMPAR    TMPAR    TMPAR     TMPAR
+
+ ROA      ROANOKE             VA     ASR-11   TMPAR    TMPAR    TMPAR    TMPAR    TMPAR     TMPAR
+
+ROC* ROCHESTER                NY     ASR-9    TMPAR    TMPAR    TMPAR    TMPAR    TMPAR     TMPAR
+
+ROW ROSWELL                  NM      ASR-9    TMPAR    TMPAR     MPAR    TMPAR    TMPAR     MPAR
+
+ RST      ROCHESTER          MN      ASR-11   TMPAR    TMPAR    TMPAR    TMPAR    TMPAR     TMPAR
+
+RSW FORT MEYERS               FL     ASR-11   TMPAR    TMPAR    TMPAR    TMPAR    TMPAR     TMPAR
+
+SATA* SAN ANTONIO             TX     ASR-9    TMPAR    TMPAR    TMPAR    TMPAR    TMPAR     TMPAR
+
+ SAV      SAVANNAH           GA      ASR-8    TMPAR     MPAR     MPAR    TMPAR     MPAR     MPAR
+
+ SBA      SANTA BARBARA       CA     ASR-11   TMPAR    TMPAR    TMPAR    TMPAR    TMPAR     TMPAR
+
+ SBN      SOUTH BEND          IN     ASR-8    TMPAR    TMPAR    TMPAR    TMPAR    TMPAR     TMPAR
+
+ SCK      STOCKTON            CA     ASR-11   TMPAR    TMPAR    TMPAR    TMPAR    TMPAR     TMPAR
+
+ SDF      LOUISVILLE          KY     ASR-9     MPAR     MPAR     MPAR     MPAR     MPAR     MPAR
+
+ SDL      NORTH VALLEY        AZ     ASR-11   TMPAR    TMPAR    TMPAR    TMPAR    TMPAR     TMPAR
+
+SEA* SEATTLE                 WA      ASR-9    TMPAR    TMPAR    TMPAR    TMPAR    TMPAR     TMPAR
+
+ SGF      SPRINGFIELD        MO      ASR-11   TMPAR     MPAR     MPAR    TMPAR     MPAR     MPAR
+
+ SJT      SAN ANGELO          TX     ASR-9    TMPAR     MPAR    TMPAR    TMPAR     MPAR     TMPAR
+
+ SJU      SAN JUAN            PR     ASR-8     MPAR     MPAR     MPAR     MPAR     MPAR     MPAR
+
+ SLC      SALT LAKE CITY      UT     ASR-9     MPAR     MPAR     MPAR     MPAR     MPAR     MPAR
+
+ SMX      SANTA MARIA         CA     ASR-11   TMPAR    TMPAR    TMPAR    TMPAR    TMPAR     TMPAR
+
+ SPI      SPRINGFIELD         IL     ASR-11   TMPAR    TMPAR    TMPAR    TMPAR    TMPAR     TMPAR
+
+SRQ* SARASOTA                 FL     ASR-9    TMPAR    TMPAR    TMPAR    TMPAR    TMPAR     TMPAR
+
+ STL      ST LOUIS           MO      ASR-9     MPAR     MPAR     MPAR     MPAR     MPAR     MPAR
+
+ STT      ST THOMAS           VI     ASR-8    TMPAR    TMPAR    TMPAR    TMPAR    TMPAR     TMPAR
+
+ SUX      SIOUX CITY          IA     ASR-11   TMPAR    TMPAR    TMPAR    TMPAR    TMPAR     TMPAR
+
+ SWF      NEWBURGH STEWART    NY     ASR-9    TMPAR    TMPAR    TMPAR    TMPAR    TMPAR     TMPAR
+
+
+
+
+                                                51
+                                                Scenario Scenario Scenario Scenario Scenario Scenario
+Site ID            Site Name   State    Type
+                                                   1        2        3       1G       2G       3G
+
+SYR* SYRACUSE                   NY     ASR-9     TMPAR     TMPAR    TMPAR    TMPAR     TMPAR     TMPAR
+
+ TLH      TALLAHASSEE           FL     ASR-8     TMPAR     MPAR     TMPAR    TMPAR     MPAR      TMPAR
+
+TOL* TOLEDO                    OH      ASR-9     TMPAR     TMPAR    TMPAR    TMPAR     TMPAR     TMPAR
+
+ TPA      TAMPA                 FL     ASR-9     MPAR      MPAR     MPAR     MPAR      MPAR      MPAR
+
+ TRI      TRI CITY (BRISTOL)    TN     ASR-8     TMPAR     TMPAR    TMPAR    TMPAR     TMPAR     TMPAR
+
+ TUL      TULSA                OK      ASR-9     MPAR      MPAR     MPAR     MPAR      MPAR      MPAR
+
+TUS* TUCSON (DAVIS AFB)         AZ     ASR-9     TMPAR     TMPAR    TMPAR    TMPAR     TMPAR     TMPAR
+
+TYS* KNOXVILLE                  TN     ASR-9     TMPAR     TMPAR    TMPAR    TMPAR     TMPAR     TMPAR
+
+ UAM      ANDERSEN AFB         GU      ASR-8     TMPAR     TMPAR    TMPAR    TMPAR     TMPAR     TMPAR
+
+ VRB      VERO BEACH            FL     ASR-11    TMPAR     TMPAR    TMPAR    TMPAR     TMPAR     TMPAR
+
+ YKM      YAKIMA               WA      ASR-9     TMPAR     TMPAR    TMPAR    TMPAR     TMPAR     TMPAR
+
+ YNG      YOUNGSTOWN           OH      ASR-11    TMPAR     TMPAR    TMPAR    TMPAR     TMPAR     TMPAR
+
+
+
+
+                                               TABLE A-2
+                                           TDWR Sites
+                                        Scenario Scenario Scenario Scenario    Scenario   Scenario
+ Site ID           Site Name   State
+                                           1        2        3       1G          2G         3G
+
+  ADW ANDREWS AFB               MD       None       None     None     None      None           None
+
+   ATL ATLANTA                   GA      None       None     None     None      None           None
+
+  BNA NASHEVILLE                 TN      None       None     None     None      None           None
+
+  BOS BOSTON                    MA       None       None     None     None      None           None
+
+   BWI BALTIMORE                MD       None       None     None     None      None           None
+
+  CLE CLEVELAND                 OH       None       None     None     None      None           None
+
+   CLT CHARLOTTE                NC       None       None     None     None      None           None
+
+  CMH COLUMBUS                  OH       None       None     None     None      None           None
+
+  CVG CINCINNATI                OH       None       None     None     None      None           None
+
+  DAL DALLAS (LOVE)              TX      None       None     None     None      None           None
+
+
+
+
+                                                  52
+                                        Scenario Scenario Scenario Scenario   Scenario   Scenario
+Site ID           Site Name     State
+                                           1        2        3       1G         2G         3G
+
+ DAY DAYTON                     OH       None     None     None     None       None       None
+
+          WASHINGTON
+ DCA                             DC      None     None     None     None       None       None
+          (NATIONAL)
+
+ DEN DENVER                     CO       None     None     None     None       None       None
+
+DFW DALLAS-FT WORTH              TX      None     None     None     None       None       None
+
+DTW DETROIT                      MI      None     None     None     None       None       None
+
+EWR NEWARK                       NJ      None     None     None     None       None       None
+
+ FLL      FT LAUDERDALE          FL      None     None     None     None       None       None
+
+ HOU HOUSTON (HOBBY)             TX      None     None     None     None       None       None
+
+ IAD      WASHINGTON (DULLES)    VA      None     None     None     None       None       None
+
+          HOUSTON
+ IAH                             TX      None     None     None     None       None       None
+          (INTERNATIONAL)
+
+ ICT      WICHITA                KS      None     None     None     None       None       None
+
+ IND      INDIANA                IN      None     None     None     None       None       None
+
+ JFK      NEW YORK (KENNEDY)     NY      None     None     None     None       None       None
+
+ LAS LAS VEGAS                   NV      None     None     None     None       None       None
+
+ MCI KANSAS CITY                MO       None     None     None     None       None       None
+
+MCO ORLANDO                      FL      None     None     None     None       None       None
+
+MDW CHICAGO (MIDWAY)             IL      None     None     None     None       None       None
+
+MEM MEMPHIS                      TN      None     None     None     None       None       None
+
+ MIA      MIAMI                  FL      None     None     None     None       None       None
+
+ MKE MILWAUKEE                   WI      None     None     None     None       None       None
+
+ MSP MINNEAPOLIS-ST PAUL        MN       None     None     None     None       None       None
+
+ MSY NEW ORLEANS                 LA      None     None     None     None       None       None
+
+ OKC OKLAHOMA CITY               OK      None     None     None     None       None       None
+
+ ORD CHICAGO (OHARE)             IL      None     None     None     None       None       None
+
+ PBI      PALM BEACH             FL      None     None     None     None       None       None
+
+ PHL PHILADELPHIA                PA      None     None     None     None       None       None
+
+ PHX PHOENIX                     AZ      None     None     None     None       None       None
+
+
+
+
+                                                 53
+                                    Scenario Scenario Scenario Scenario         Scenario   Scenario
+Site ID         Site Name   State
+                                       1        2        3       1G               2G         3G
+
+ PIT      PITTSBURGH         PA      None       None      None        None        None      None
+
+ RDU RALEIGH-DURHAM          NC      None       None      None        None        None      None
+
+ SDF LOUISVILLE              KY      None       None      None        None        None      None
+
+ SJU SAN JUAN                PR      None       None      None        None        None      None
+
+ SLC SALT LAKE CITY          UT      None       None      None        None        None      None
+
+ STL ST LOUIS                MO      None       None      None        None        None      None
+
+ TPA TAMPA                   FL      None       None      None        None        None      None
+
+ TUL TULSA                   OK      None       None      None        None        None      None
+
+
+
+
+                                        TABLE A-3
+                                      NEXRAD Sites
+Site ID         Site Name   State    Scenario 2          Scenario 3          Scenario 2G   Scenario 3G
+
+KABR ABERDEEN                SD        MPAR                MPAR                MPAR           MPAR
+
+KABX ALBUQUERQUE            NM         MPAR                MPAR                MPAR           MPAR
+
+                                                       MPAR (2: 150°–
+KAKQ NORFOLK                 VA         None                                    None          None
+                                                           330°)
+
+KAMA AMARILLO                TX         None               None                 None          None
+
+KAMX MIAMI                   FL         None               None                 None          None
+
+KAPX NCL MICHIGAN            MI        MPAR                MPAR                MPAR           MPAR
+
+KARX LA CROSSE               WI        MPAR                MPAR                MPAR           MPAR
+
+KATX SEATTLE                WA         MPAR                MPAR                 None          None
+
+KBBX BEALE AFB               CA        MPAR                None                MPAR           None
+
+KBGM BINGHAMTON              NY         None               None                 None          None
+
+KBHX EUREKA (BUNKER HILL)    CA        MPAR                None                MPAR           None
+
+KBIS BISMARCK                ND         None               None                 None          None
+
+KBLX BILLINGS                MT         None               None                 None          None
+
+KBMX BIRMINGHAM              AL         None               None                 None          None
+
+
+
+
+                                               54
+Site ID      Site Name   State    Scenario 2       Scenario 3     Scenario 2G   Scenario 3G
+
+KBOX BOSTON              MA          None             None           None          None
+
+KBRO BROWNSVILLE          TX         None             None           None          None
+
+KBUF BUFFALO              NY         None             None           None          None
+
+KBYX KEY WEST             FL        MPAR              None           None          None
+
+KCAE COLUMBIA             SC         None             None           None          None
+
+                                                  MPAR (3: 30°–
+KCBW CARIBOU             ME         MPAR                            MPAR          MPAR
+                                                      300°)
+
+KCBX BOISE                ID        MPAR             MPAR           MPAR          MPAR
+
+KCCX STATE COLLEGE        PA        MPAR             MPAR           MPAR          MPAR
+
+KCLE CLEVELAND           OH          None             None           None          None
+
+KCLX CHARLESTON           SC         None             None           None          None
+
+KCRP CORPUS CHRISTI       TX         None             None           None          None
+
+KCXX BURLINGTON           VT         None             None           None          None
+
+KCYS CHEYENNE            WY         MPAR             MPAR           MPAR          MPAR
+
+KDAX SACRAMENTO           CA        MPAR              None           None          None
+
+KDDC DODGE CITY           KS        MPAR             MPAR           MPAR          MPAR
+
+                                                  MPAR (3: 45°–
+KDFX LAUGHLIN AFB         TX        MPAR                             None          None
+                                                      315°)
+
+KDGX JACKSON/BRANDON     MS          None             None           None          None
+
+                                 MPAR (2: 45°–
+KDIX PHILADELPHIA         NJ                          None           None          None
+                                     225°)
+
+KDLH DULUTH              MN          None             None           None          None
+
+KDMX DES MOINES           IA         None             None           None          None
+
+KDOX DOVER AFB            DE        MPAR             MPAR           MPAR          MPAR
+
+KDTX DETROIT              MI         None             None           None          None
+
+KDVN QUAD CITIES          IA         None             None           None          None
+
+KDYX DYESS AFB            TX         None             None           None          None
+
+KEAX PLEASANT HILL       MO MPAR (3: 0°–270°) MPAR (3: 0°–270°)      None          None
+
+
+
+
+                                             55
+Site ID      Site Name    State     Scenario 2       Scenario 3      Scenario 2G      Scenario 3G
+
+KEMX TUCSON                AZ         MPAR             MPAR             MPAR             MPAR
+
+KENX ALBANY                NY         None             None             None             None
+
+KEOX FT RUCKER             AL         None             MPAR             None             MPAR
+
+KEPZ EL PASO              NM          MPAR             None             MPAR             None
+
+KESX LAS VEGAS             NV         MPAR             MPAR             MPAR             MPAR
+
+KEVX EGLIN AFB             FL         MPAR             None             MPAR             None
+
+KEWX AUSTIN/SAN ANTONIO    TX         MPAR             None             MPAR             None
+
+KEYX EDWARDS AFB           CA         MPAR             None             MPAR             None
+
+                                  MPAR (3: 210°–   MPAR (3: 210°–   MPAR (3: 210°–   MPAR (3: 210°–
+KFCX ROANOKE               VA
+                                      120°)            120°)            120°)            120°)
+
+KFDR ALTUS AFB             OK         MPAR             MPAR             None             None
+
+KFDX CANNON AFB           NM          MPAR             None             MPAR             None
+
+KFFC ATLANTA               GA         None             None             None             None
+
+KFSD SIOUX FALLS           SD         None             None             None             None
+
+KFSX FLAGSTAFF             AZ         MPAR             MPAR             MPAR             MPAR
+
+KFTG DENVER               CO          None             None             None             None
+
+KFWS DALLAS/FT WORTH       TX         None             None             None             None
+
+KGGW GLASGOW               MT         MPAR             MPAR             MPAR             MPAR
+
+KGJX GRAND JUNCTION       CO          MPAR             MPAR             MPAR             MPAR
+
+KGLD GOODLAND              KS         MPAR             MPAR             MPAR             MPAR
+
+KGRB GREEN BAY             WI         None             None             None             None
+
+KGRK FT HOOD               TX         MPAR             None             MPAR             None
+
+KGRR GRAND RAPIDS          MI         None             None             None             None
+
+KGSP GREER                 SC         None             None             None             None
+
+                                  MPAR (3: 120°–   MPAR (3: 120°–
+KGWX COLUMBUS AFB         MS                                            None             None
+                                       30°)             30°)
+
+KGYX PORTLAND             ME          None             None             None             None
+
+KHDX HOLLOMAN AFB         NM          MPAR             None             None             None
+
+
+
+
+                                              56
+Site ID      Site Name    State     Scenario 2         Scenario 3       Scenario 2G       Scenario 3G
+
+KHGX HOUSTON               TX          None               None             None              None
+
+KHNX SAN JOAQUIN VALLEY    CA          None               None             None              None
+
+                                  MPAR (3: 140°–     MPAR (2: 120°–
+KHPX FT CAMPBELL           KY                                              None              None
+                                        50°)              300°)
+
+KHTX NORTHEAST ALABAMA     AL          MPAR              MPAR              MPAR              MPAR
+
+KICT WICHITA               KS          None               None             None              None
+
+KICX CEDAR CITY            UT          MPAR               None             MPAR              None
+
+ KILN CINCINNATI          OH           None               None             None              None
+
+                                   MPAR (3: 45°–      MPAR (3: 45°–    MPAR (3: 45°–     MPAR (3: 45°–
+ KILX LINCOLN              IL
+                                       315°)              315°)            315°)             315°)
+
+KIND INDIANAPOLIS          IN          None               None             None              None
+
+KINX TULSA                 OK          None               None             None              None
+
+KIWA PHOENIX               AZ          None               None             None              None
+
+                                  MPAR (2: 0°–90°,   MPAR (2: 0°–90°, MPAR (2: 0°–90°,    MPAR (2: 0°–
+KIWX NORTHERN INDIANA      IN
+                                    180°–270°)         180°–270°)        180°–270°)      90°, 180°–270°)
+
+KJAX JACKSONVILLE          FL          None               None             None              None
+
+KJGX ROBINS AFB            GA          None               None             None              None
+
+KJKL JACKSON               KY          MPAR              MPAR              MPAR              MPAR
+
+KLBB LUBBOCK               TX          None               None             None              None
+
+KLCH LAKE CHARLES          LA          None               None             None              None
+
+KLGX LANGLEY HILL         WA           MPAR              MPAR              MPAR              MPAR
+
+ KLIX SLIDELL              LA          None               None             None              None
+
+KLNX NORTH PLATTE          NE          MPAR              MPAR              MPAR              MPAR
+
+KLOT CHICAGO               IL          None               None             None              None
+
+KLRX ELKO                  NV          MPAR              MPAR              MPAR              MPAR
+
+KLSX ST LOUIS             MO           None               None             None              None
+
+KLTX WILMINGTON            NC          None               None             None              None
+
+KLVX LOUISVILLE            KY          None               None             None              None
+
+
+
+
+                                               57
+Site ID       Site Name   State     Scenario 2       Scenario 3      Scenario 2G      Scenario 3G
+
+KLWX STERLING              VA         None             None             None             None
+
+KLZK LITTLE ROCK           AR         None             None             None             None
+
+KMAF MIDLAND/ODESSA        TX         None             None             None             None
+
+                                                   MPAR (3: 135°–                    MPAR (3: 135°–
+KMAX MEDFORD              OR          MPAR                              MPAR
+                                                        45°)                              45°)
+
+KMBX MINOT AFB             ND         MPAR             MPAR             None             None
+
+KMHX MOREHEAD CITY         NC         MPAR             MPAR             None             None
+
+KMKX MILWAUKEE             WI         None             None             None             None
+
+KMLB MELBOURNE             FL         None             None             None             None
+
+KMOB MOBILE                AL         None             None             None             None
+
+KMPX MINNEAPOLIS          MN          None             None             None             None
+
+KMQT MARQUETTE             MI         MPAR             MPAR             MPAR             MPAR
+
+KMRX KNOXVILLE             TN         MPAR             MPAR             MPAR             MPAR
+
+KMSX MISSOULA              MT         MPAR             MPAR             MPAR             MPAR
+
+KMTX SALT LAKE CITY        UT         MPAR             MPAR             MPAR             None
+
+KMUX SAN FRANCISCO         CA         None             None             None             None
+
+KMVX FARGO/GRAND FORKS     ND         MPAR             None             None             None
+
+KMXX MAXWELL AFB           AL         None             None             None             None
+
+KNKX SAN DIEGO             CA         None             None             None             None
+
+KNQA MEMPHIS               TN         None             None             None             None
+
+KOAX OMAHA                 NE         None             None             None             None
+
+KOHX NASHVILLE             TN         None             None             None             None
+
+                                  MPAR (3: 315°–                    MPAR (3: 315°–
+KOKX BROOKHAVEN            NY                          None                              None
+                                      225°)                             225°)
+
+KOTX SPOKANE              WA          None             None             None             None
+
+                                  MPAR (3: 120°–   MPAR (3: 120°–   MPAR (3: 120°–   MPAR (3: 120°–
+KPAH PADUCAH               KY
+                                       30°)             30°)             30°)             30°)
+
+KPBZ PITTSBURGH            PA         None             None             None             None
+
+
+
+
+                                              58
+Site ID      Site Name   State     Scenario 2       Scenario 3     Scenario 2G     Scenario 3G
+
+KPDT PENDLETON           OR          MPAR             MPAR            MPAR           MPAR
+
+                                 MPAR (2: 300°–   MPAR (2: 300°–
+KPOE FT POLK              LA                                           None           None
+                                     120°)            120°)
+
+KPUX PUEBLO              CO          None             None             None           None
+
+KRAX RALEIGH/DURHAM       NC         None             None             None           None
+
+KRGX RENO                 NV         MPAR             MPAR            MPAR           MPAR
+
+KRIW RIVERTON/LANDER     WY          MPAR             MPAR            MPAR           MPAR
+
+KRLX CHARLESTON          WV          None             None             None           None
+
+KRTX PORTLAND            OR          MPAR             MPAR            MPAR           MPAR
+
+KSFX POCATELLO            ID         MPAR             MPAR            MPAR           MPAR
+
+KSGF SPRINGFIELD         MO          None             None             None           None
+
+KSHV SHREVEPORT           LA         None             None             None           None
+
+KSJT SAN ANGELO           TX         None             None             None           None
+
+                                 MPAR (1: 60°–                     MPAR (1: 60°–
+KSOX SANTA ANA MTS        CA                          None                            None
+                                     150°)                             150°)
+
+KSRX WESTERN ARKANSAS     AR         None             None             None           None
+
+KTBW TAMPA                FL         None             None             None           None
+
+KTFX GREAT FALLS          MT         None             None             None           None
+
+KTLH TALLAHASSEE          MT         None             None             None           None
+
+KTLX NORMAN               FL         None             None             None           None
+
+KTWX TOPEKA               KS         MPAR             MPAR             None           None
+
+                                 MPAR (3: 240°–   MPAR (3: 240°–
+KTYX FT DRUM              NY                                           None           None
+                                     150°)            150°)
+
+KUDX RAPID CITY           SD         MPAR             MPAR             None           None
+
+KUEX GRAND ISLAND         NE         MPAR             MPAR            MPAR           MPAR
+
+KVAX MOODY AFB            GA         MPAR             MPAR             None           None
+
+KVBX VANDENBERG AFB       CA         MPAR             None            MPAR            None
+
+KVNX VANCE AFB            OK         MPAR             MPAR             None           None
+
+
+
+
+                                             59
+Site ID       Site Name   State    Scenario 2       Scenario 3     Scenario 2G     Scenario 3G
+
+KVTX LOS ANGELES           CA        MPAR             MPAR            MPAR            MPAR
+
+KVWX EVANSVILLE            IN         None             None            None            None
+
+KYUX YUMA                  AZ        MPAR             MPAR             None            None
+
+PABC BETHEL                AK        MPAR             MPAR            MPAR            MPAR
+
+PACG SITKA                 AK        MPAR             MPAR            MPAR            MPAR
+
+PAEC NOME                  AK        MPAR             MPAR            MPAR            MPAR
+
+PAHG ANCHORAGE             AK        MPAR             MPAR            MPAR            MPAR
+
+PAIH MIDDLETON ISLAND      AK        MPAR             MPAR            MPAR            MPAR
+
+PAKC KING SALMON           AK        MPAR             MPAR            MPAR            MPAR
+
+PAPD FAIRBANKS             AK        MPAR             MPAR            MPAR            MPAR
+
+PGUA ANDERSEN AFB         GU         MPAR              None           MPAR             None
+
+PHKI SOUTH KAUAI           HI        MPAR             MPAR            MPAR            MPAR
+
+PHKM KAMUELA/KOHALA APT    HI        MPAR             MPAR            MPAR            MPAR
+
+PHMO MOLOKAI               HI        MPAR             MPAR            MPAR            MPAR
+
+PHWA SOUTH SHORE           HI        MPAR             MPAR            MPAR            MPAR
+
+                                  MPAR (3: 45°–    MPAR (2: 90°–   MPAR (3: 45°–   MPAR (2: 90°–
+TJUA SAN JUAN              PR
+                                      315°)            270°)           315°)           270°)
+
+
+
+
+                                              60
+                                         TABLE A-4
+                                         CARSR Sites
+Site
+               Site Name         State   Original Type       Scenario 3           Scenario 3G
+ ID
+
+AEX ALEXANDRIA                    LA       FPS-20A              None                  None
+
+AMA AMARILLO                      TX       FPS-67B              None                  None
+
+ATL MARIETTA                      GA       ARSR-1               None                  None
+
+BAM BATTLE MOUNTAIN               NV       ARSR-2              MPAR                   None
+
+BQN PUNTA BORINQUEN               PR       FPS-93A             MPAR                  MPAR
+
+CDC CEDAR CITY                    UT       ARSR-2              MPAR                  MPAR
+
+CLE BRECKSVILLE (CLEVELAND)      OH        ARSR-1               None                  None
+
+CPV COOPERSVILLE                  MI       FPS-66A              None                  None
+
+DSV DANSVILLE                     NY       ARSR-1               None                  None
+
+ENA KENAI                         AK       ARSR-3               None                  None
+
+FLX FALLON                        NV       FPS-66A             MPAR                   None
+
+       SALT LAKE CITY (FRANCIS
+FPK                               UT       ARSR-1        MPAR (2: 350°–170°)   MPAR (2: 350°–170°)
+       PEAK)
+
+FTW KELLER                        TX       ARSR-1               None                  None
+
+GCK GARDEN CITY                   KS       ARSR-2               None                  None
+
+GJT GRAND JUNCTION               CO        ARSR-2              MPAR                  MPAR
+
+GUP GALLUP (FARMINGTON)          NM        ARSR-2              MPAR                  MPAR
+
+HOU HOUSTON (ELLINGTON AFB)       TX       ARSR-1               None                  None
+
+HTI    HUTCHINSON                 KS       FPS-66A              None                  None
+
+IND    INDIANAPOLIS               IN       ARSR-1               None                  None
+
+IRK    KIRKSVILLE                MO        ARSR-3              MPAR                  MPAR
+
+JOL ELWOOD (JOLIET)               IL       ARSR-3               None                  None
+
+LBF NORTH PLATTE                  NE       ARSR-2               None                  None
+
+LMT KLAMATH FALLS                OR        FPS-67B             MPAR                  MPAR
+
+LSK LUSK                         WY        ARSR-2              MPAR                  MPAR
+
+MGM MONTGOMERY                    AL       ARSR-1               None                  None
+
+OKC TINKER AFB                    OK       FPS-67B              None                  None
+
+
+
+
+                                              61
+Site
+                 Site Name   State   Original Type      Scenario 3           Scenario 3G
+ ID
+
+PHX PHOENIX (HUMBOLDT)        AZ       ARSR-1              None                 None
+
+PIT    OAKDALE                PA       FPS-67B             None                 None
+
+QAS ANGEL PEAK                NV       FPS-20A             MPAR                 MPAR
+
+QBE BEDFORD                   VA       ARSR-3              None                 None
+
+QBN BINNS HALL                VA       ARSR-3              None                 None
+
+QBZ OSKALOOSA                 KS       ARSR-2              None                 None
+
+QCF CLEARFIELD                PA       ARSR-3              None                 None
+
+QCK CASCADE (BOISE)           ID       ARSR-2              MPAR                 MPAR
+
+QDT CANTON (DETROIT)          MI       ARSR-1              None                 None
+
+QHA CUMMINGTON               MA         FPS-67             None                 None
+
+QHB ST ALBANS                 VT       FPS-67B             MPAR                 MPAR
+
+QHN ASHBURN                   GA       ARSR-1              None                 None
+
+QHO OMAHA                     NE       FPS-66A             None                 None
+
+QHZ HORICON                   WI       ARSR-2              None                 None
+
+QJB GETTYSBURG                SD       FPS-67B             None                 None
+
+QJC TYLER                    MN        ARSR-2              None                 None
+
+QJE APPLE VALLEY             MN        ARSR-1              None                 None
+
+QJO ARLINGTON                 IA       ARSR-3              None                 None
+
+QJQ PICO DEL ESTE             PR       FPS-67A       MPAR (1: 90°–180°)   MPAR (1: 90°–180°)
+
+QLA SAN PEDRO                 CA       ARSR-1              MPAR                 MPAR
+
+QNK LINCOLNTON                GA       ARSR-3              None                 None
+
+QNM NEWPORT                  MS        ARSR-3              None                 None
+
+QOJ JOELTON (NASHVILLE)       TN       ARSR-1              None                 None
+
+QPC HALEYVILLE                AL       FPS-67B             None                 None
+
+QPK PARKER                   CO        ARSR-1              MPAR                 MPAR
+
+QPL THE PLAINS                VA       ARSR-3              None                 None
+
+QRB CITRONELLE                AL       ARSR-2              None                 None
+
+QRC BENTON                    PA       FPS-67B             None                 None
+
+QRI LYNCH                     KY       ARSR-2              None                 None
+
+
+
+
+                                          62
+Site
+                Site Name   State   Original Type      Scenario 3           Scenario 3G
+ ID
+
+QRL BENSON                   NC       ARSR-1              None                 None
+
+QRM MAIDEN                   NC       ARSR-1              None                 None
+
+QSA WEST MESA               NM        FPS-66A             None                 None
+
+QSI    LOVELL               WY        ARSR-2              MPAR                 MPAR
+
+QSR BORON                    CA       FPS-67B             MPAR                 MPAR
+
+QTZ LAGRANGE                 IN       ARSR-1              None                 None
+
+QUZ HANNA CITY               IL       FPS-67B             None                 None
+
+QVA ASHTON                   ID       ARSR-2              MPAR                 MPAR
+
+QVN FOSSIL                  OR        ARSR-3              MPAR                 MPAR
+
+QWC MESA RICA               NM        ARSR-1              MPAR                 MPAR
+
+QWO LONDON                  OH        ARSR-1              None                 None
+
+QXP SELIGMAN                 AZ       ARSR-3              MPAR                 MPAR
+
+QXR RUSSELLVILLE             AR       FPS-67A             None                 None
+
+QXS ODESSA                   TX       ARSR-1              None                 None
+
+QYB BYHALIA (MEMPHIS)       MS        ARSR-1              None                 None
+
+QYS ROGERS                   TX       ARSR-1              MPAR                 MPAR
+
+RBL RED BLUFF                CA       FPS-67B             MPAR                 MPAR
+
+RKS ROCK SPRINGS            WY        ARSR-2              MPAR                 MPAR
+
+SEA SEATTLE (FT LAWTON)     WA        ARSR-1              None                 None
+
+SNI    SAN NICOLAS           CA       ARSR-3        MPAR (3: 100°–10°)   MPAR (3: 100°–10°)
+
+STL ST LOUIS (OVERLAND)     MO        ARSR-1              None                 None
+
+SVC SILVER CITY             NM        ARSR-2              MPAR                 MPAR
+
+TAD TRINIDAD                CO        ARSR-2              MPAR                 MPAR
+
+TXK TEXARKANA                AR        FPS-67             None                 None
+
+
+
+
+                                         63
+                                         TABLE A-5
+                                     ARSR-4 Sites
+Site ID                Site Name          State         Scenario 3           Scenario 3G
+
+ AJO      AJO                              AZ              MPAR                 MPAR
+
+ CTY      CROSS CITY                       FL     MPAR (2: 120°–300°)     MPAR (2: 120°–300°)
+
+DMN DEMING (MAGDALEN)                      NM              MPAR                 MPAR
+
+ FN7      FT GREEN                         FL        MPAR (2: 30°–210°)   MPAR (2: 30°–210°)
+
+ GFA      BOOTLEGGER RIDGE (MALMSTROM)     MT              MPAR                 MPAR
+
+ LCH      LAKE CHARLES                     LA              MPAR                 MPAR
+
+ MLB      MELBOURNE                        FL        MPAR (2: 45°–225°)   MPAR (2: 45°–225°)
+
+NBW GUANTANAMO                             CU              MPAR                 MPAR
+
+ NEN WHITEHOUSE (JACKSONVILLE)             FL        MPAR (2: 0°–180°)           None
+
+NEW SLIDELL (NEW ORLEANS)                  LA     MPAR (3: 270°–180°)     MPAR (3: 270°–180°)
+
+ NQX KEY WEST                              FL              MPAR                  None
+
+ NSD      SAN CLEMENTE                     CA              MPAR                 MPAR
+
+ PAM TYNDALL AFB                           FL              MPAR                 MPAR
+
+ PRB      PASO ROBLES                      CA              MPAR                 MPAR
+
+ QEA NORTH TRURO                           MA              MPAR                 MPAR
+
+ QFI      FINLEY                           ND              MPAR                 MPAR
+
+ QGV FT FISHER                             NC              MPAR                 MPAR
+
+ QIE      GIBBSBORO                        NJ        MPAR (2: 15°–195°)          None
+
+ QJA      EMPIRE                           MI              None                  None
+
+ QJD      NASHWAUK                         MN        MPAR (3: 180°–90°)   MPAR (3: 180°–90°)
+
+ QKA      MT KAALA                         HI              MPAR                 MPAR
+
+QKW MAKAH                                  WA              MPAR                 MPAR
+
+ QLR      MT SANTA ROSA                    GU              MPAR                 MPAR
+
+ QLS      LAKESIDE                         MT              MPAR                 MPAR
+
+ QM8 TAMIAMI                               FL        MPAR (3: 45°–315°)          None
+
+ QMI      MICA PEAK                        WA              MPAR                 MPAR
+
+QMV MILL VALLEY                            CA              MPAR                 MPAR
+
+
+
+
+                                            64
+Site ID              Site Name                  State           Scenario 3                 Scenario 3G
+
+ QNA MORALES                                     TX               MPAR                       MPAR
+
+QNW EAGLE PEAK                                   TX               MPAR                       MPAR
+
+QOM KING MOUNTAIN                                TX               MPAR                       MPAR
+
+ QRJ      JEDBURG                                SC               MPAR                       MPAR
+
+QRW MT LAGUNA                                    CA               MPAR                       MPAR
+
+ QVH RIVERHEAD (SUFFOLK)                         NY         MPAR (3: 315°–225°)        MPAR (3: 315°–225°)
+
+ QVR OCEANA                                      VA               MPAR                        None
+
+QWA WATFORD CITY                                 ND               MPAR                       MPAR
+
+ QXU UTICA (REMSEN)                              NY                 None                      None
+
+ QYA BUCKS HARBOR                                ME               MPAR                       MPAR
+
+ QYD CARIBOU                                     ME               MPAR                       MPAR
+
+ QZA      OILTON                                 TX               MPAR                       MPAR
+
+ QZZ      RAINBOW RIDGE                          CA               MPAR                       MPAR
+
+ RSG ROCKSPRINGS                                 TX               MPAR                       MPAR
+
+ SLE      SALEM                                  OR               MPAR                       MPAR
+
+ VBG VANDENBERG AFB                              CA               MPAR                       MPAR
+
+
+
+
+                                               TABLE A-6
+                                               GPN Sites
+Site ID        Site Name     State     Type    Owner      Scenario 1G        Scenario 2G      Scenario 3G
+
+ APN      ALPENA                 MI   GPN-30    AF          TMPAR              TMPAR            TMPAR
+
+ BYS      VELVET PEAK            CA   ASR-11    AR          TMPAR              TMPAR            TMPAR
+
+ CBM COLUMBUS                    MS GPN-30      AF          TMPAR              MPAR              MPAR
+
+ CVS      CANNON                 NM GPN-30      AF          TMPAR              TMPAR            TMPAR
+
+DGDQ HILL AFB- CEDAR MTN         UT   ASR-9     AF          TMPAR              TMPAR            TMPAR
+
+ DLF      LAUGHLIN               TX   GPN-30    AF          TMPAR              MPAR              MPAR
+
+ DOV      DOVER                  DE GPN-30      AF          TMPAR              TMPAR            TMPAR
+
+EDW EDWARDS AFB                  CA   ASR-11    AF          TMPAR              TMPAR            TMPAR
+
+ END      VANCE                  OK GPN-30      AF          TMPAR              MPAR              MPAR
+
+
+
+
+                                                     65
+Site ID          Site Name   State    Type    Owner      Scenario 1G   Scenario 2G   Scenario 3G
+
+ FBG      FT BRAGG            NC GPN-30        AR          TMPAR         TMPAR          TMPAR
+
+ FHU      FT HUACHUCA         AZ     GPN-30    AR          TMPAR         TMPAR          TMPAR
+
+ FRI      FT RILEY            KS     GPN-30    AR          TMPAR         MPAR           MPAR
+
+ FSI      HENRY POST AAF      OK     ASR-8     AR          TMPAR         TMPAR          TMPAR
+
+ GAB      GABBS               NV GPN-27        N           TMPAR         TMPAR          TMPAR
+
+ GSB      SEYMOUR JOHNSON     NC GPN-30        AF          TMPAR         TMPAR          TMPAR
+
+ GTB      FT DRUM             NY GPN-30        AR          TMPAR         MPAR           MPAR
+
+ GUS      GRISSOM             IN     GPN-30    AF          TMPAR         TMPAR          TMPAR
+
+ HLR      FT HOOD             TX     GPN-30    AR          TMPAR         TMPAR          TMPAR
+
+HMN HOLLOMAN                 NM GPN-30         AF          TMPAR         MPAR           TMPAR
+
+ HNG KANEOHE                  HI     GPN-30    MC          TMPAR         TMPAR          TMPAR
+
+ HOP      FT CAMPBELL         KY     GPN-30    AR          TMPAR         MPAR           MPAR
+
+                                                                                     MPAR (3: 45°–
+ HST      HOMESTEAD           FL     GPN-30    AF          TMPAR         TMPAR
+                                                                                         315°)
+
+ ILN      WILMINGTON         OH      ASR-9     NG          TMPAR         TMPAR          TMPAR
+
+          INDIAN WELLS
+ IYK                          CA     ASR-8     N           TMPAR         TMPAR          TMPAR
+          VALLEY
+
+          JOHNSTOWN
+ JST                          PA     GPN-30    AF          TMPAR         TMPAR          TMPAR
+          CAMBRIA
+
+KWA KWAJALEIN                MHL GPN-30        AR          TMPAR         TMPAR          TMPAR
+
+ LHW FT STEWART               GA GPN-30        AR          TMPAR         TMPAR          TMPAR
+
+ LTS      ALTUS               OK GPN-30        AF          TMPAR         MPAR           MPAR
+
+ LUF      LUKE                AZ     GPN-30    AF          TMPAR         TMPAR          TMPAR
+
+MGE DOBBINS                   GA GPN-30        AF          TMPAR         TMPAR          TMPAR
+
+ MIB      MINOT               ND GPN-30        AF          TMPAR         MPAR           MPAR
+
+MSGD HILL AFB- BOVINE         UT     ASR-9     AF          TMPAR         TMPAR          MPAR
+
+ MTC      SELFRIDGE           MI     GPN-30    AF          TMPAR         TMPAR          TMPAR
+
+MUO MTN HOME                  ID     GPN-30    AF          TMPAR         TMPAR          TMPAR
+
+ NBC      BEAUFORT            SC GPN-30        MC          TMPAR         TMPAR          TMPAR
+
+ NBG      NEW ORLEANS         LA     GPN-27    N           TMPAR         TMPAR          TMPAR
+
+
+
+
+                                                    66
+Site ID          Site Name    State    Type    Owner      Scenario 1G   Scenario 2G   Scenario 3G
+
+ NCA      NEW RIVER            NC GPN-30        MC          TMPAR         TMPAR         TMPAR
+
+ NFL      FALLON               NV GPN-30        N           TMPAR         TMPAR         TMPAR
+
+NFW FT WORTH                   TX     GPN-30    N           TMPAR         TMPAR         TMPAR
+
+ NHK      PATUXENT RIVER      MD GPN-30         N           TMPAR         TMPAR         TMPAR
+
+ NID      SEARLES VALLEY       CA     ASR-8     N           TMPAR         TMPAR         TMPAR
+
+NID2 PANAMINT VALLEY           CA     ASR-11    N           TMPAR         TMPAR         TMPAR
+
+ NIP      JACKSONVILLE         FL     GPN-30    N           TMPAR         TMPAR         MPAR
+
+ NKT      CHERRY PT            NC GPN-30        MC          TMPAR         MPAR          MPAR
+
+ NLC      LEMOORE              CA GPN-30        N           TMPAR         TMPAR         TMPAR
+
+NMM MERIDIAN                  MS      ASR-8     N           TMPAR         TMPAR         TMPAR
+
+ NNP      NEW PASS             NV GPN-27        N           TMPAR         TMPAR         MPAR
+
+ NQI      KINGSVILLE           TX     GPN-30    N           TMPAR         TMPAR         TMPAR
+
+ NQX      BOCA CHICA           FL     GPN-30    N           TMPAR         MPAR          MPAR
+
+ NRB      MAYPORT              FL     GPN-30    N           TMPAR         TMPAR         TMPAR
+
+ NSC      WHITING FIELD NAS    FL     ASR-11    N           TMPAR         TMPAR         TMPAR
+
+ NTD      PT MUGU              CA GPN-30        N           TMPAR         TMPAR         TMPAR
+
+ NTU      OCEANA               VA     GPN-30    N           TMPAR         TMPAR         MPAR
+
+ NUC      SAN CLEMENTE         CA GPN-30        N           TMPAR         TMPAR         TMPAR
+
+NUW WHIDBEY IS                WA GPN-30         N           TMPAR         MPAR          MPAR
+
+NV30 DIXIE VALLEY              NV GPN-27        N           TMPAR         TMPAR         TMPAR
+
+ NXP      TWENTYNINE PALMS     CA GPN-30        MC          TMPAR         TMPAR         TMPAR
+
+ NYG      QUANTICO             VA     GPN-27    MC          TMPAR         TMPAR         TMPAR
+
+ NYL      YUMA                 AZ     GPN-30    MC          TMPAR         MPAR          MPAR
+
+ NZY      NORTH ISLAND         CA GPN-30        N           TMPAR         TMPAR         TMPAR
+
+ O26      OWENS VALLEY         CA     ASR-8     N           TMPAR         TMPAR         TMPAR
+
+ PAM      TYNDALL              FL     GPN-30    AF          TMPAR         TMPAR          None
+
+ POE      FT POLK              LA     GPN-30    AR          TMPAR         MPAR          MPAR
+
+R-358 WHITE SANDS MR C        NM      ASR-9     AR          TMPAR         TMPAR         TMPAR
+
+R-361 WHITE SANDS MR D        NM      ASR-9     AR          TMPAR         TMPAR         TMPAR
+
+R-363 WHITE SANDS MR E        NM      ASR-9     AR          TMPAR         TMPAR         TMPAR
+
+
+
+
+                                                     67
+Site ID           Site Name   State    Type    Owner      Scenario 1G   Scenario 2G   Scenario 3G
+
+ RCA      ELLSWORTH            SD GPN-30        AF          TMPAR         MPAR          MPAR
+
+ RDR      GRAND FORKS          ND GPN-30        AF          TMPAR         MPAR          TMPAR
+
+ RIV      MARCH                CA GPN-30        AF          TMPAR         TMPAR         TMPAR
+
+ SPS      SHEPPARD             TX     GPN-30    AF          TMPAR         TMPAR         TMPAR
+
+ SSC      SHAW                 SC GPN-30        AF          TMPAR         TMPAR         TMPAR
+
+ SUU      TRAVIS               CA GPN-30        AF          TMPAR         MPAR          TMPAR
+
+ SZL      WHITEMAN            MO GPN-30         AF          TMPAR         MPAR          MPAR
+
+ TPN      TOLICHA PEAK         NV GPN-30        AF          TMPAR         TMPAR         TMPAR
+
+ VAD      MOODY                GA GPN-30        AF          TMPAR         MPAR          MPAR
+
+ VOK      VOLK FIELD           WI     GPN-30    AF          TMPAR         TMPAR         TMPAR
+
+ VPS      EGLIN                FL     GPN-30    AF          TMPAR         TMPAR         TMPAR
+
+ WAL      WALLOPS ISLAND       VA     GPN-27    N           TMPAR         TMPAR         TMPAR
+
+ WRI      MCGUIRE              NJ     GPN-30    AF          TMPAR         MPAR          MPAR
+
+          HILL AFB- TROUT
+XFP4                           UT     ASR-9     AF          TMPAR         TMPAR         TMPAR
+          CREEK
+
+ XMR KENNEDY SC                FL     GPN-30    AF          TMPAR         TMPAR         TMPAR
+
+
+
+
+                                                     68
+                      GLOSSARY
+
+
+3D        three dimensional
+
+A/C       aircraft
+
+ADS-B     Automatic Dependent Surveillance-Broadcast
+
+AGL       above ground level
+
+ARSR      Air Route Surveillance Radar
+
+ASR       Airport Surveillance Radar
+
+CARSR     Common Air Route Surveillance Radar
+
+CONUS     contiguous United States
+
+DTED      Digital Terrain Elevation Data
+
+FAA       Federal Aviation Administration
+
+FPS       Fixed Position System
+
+GPN       Ground Position Navigation
+
+GPS       Global Positioning System
+
+ITWS      Integrated Terminal Weather System
+
+MPAR      Multifunction Phased Array Radar
+
+MSL       mean sea level
+
+NAS       National Airspace System
+
+NEXRAD    Next Generation Radar
+
+NextGen   Next Generation Air Transportation System
+
+nmi       nautical mile
+
+
+
+
+                               69
+NOAA      National Oceanic and Atmospheric Administration
+
+NSWRC     NextGen Surveillance Weather Radar Capability
+
+NWS       National Weather Service
+
+SDO       super density operations
+
+SRTM      Shuttle Radar Tomography Mission
+
+STC       sensitivity time control
+
+TDWR      Terminal Doppler Weather Radar
+
+TMPAR     Terminal Multifunction Phased Array Radar
+
+VCP       volume coverage pattern
+
+Wx        weather
+
+WSP       Weather Systems Processor
+
+WSR-88D   Weather Surveillance Radar 1988-Doppler
+
+
+
+
+                              70
+                                          REFERENCES
+
+
+Benner, W.E., G. Torok, M. Weber, M. Emanuel, J. Stailey, J. Cho, and R. Blasewitz, 2009: “Progress of
+    multifunction phased array radar (MPAR) program.” Preprints, 25th Conf. on Interactive
+    Information and Processing Systems for Meteorology, Oceanography, and Hydrology, Phoenix, AZ,
+    Amer. Meteor. Soc., 8B.3.
+Cho, J.Y.N., and B.D. Martin, 2007: “Technical assessment of the impact of decommissioning the TDWR
+     on terminal weather services.” Project Rep. ATC-331, MIT Lincoln Laboratory, Lexington, MA,
+     68 pp.
+Cho, J.Y.N., 2010: “Signal processing algorithms for the Terminal Doppler Weather Radar: Build 2.”
+    Project Rep. ATC-363, MIT Lincoln Laboratory, Lexington, MA, 92 pp.
+Cho, J.Y.N., and M.E. Weber, 2010: “Terminal Doppler Weather Radar enhancements.” Proc. 2010 IEEE
+     Radar Conf., 1245–1249.
+Cho, J.Y.N., R.S. Frankel, M.F. Donovan, M.S. Veillette, and P.L. Heinselman, 2013: “Wind-shear
+    detection performance study for Multifunction Phased Array Radar (MPAR) risk reduction.” Project
+    Rep. ATC-409, MIT Lincoln Laboratory, Lexington, MA, 65 pp.
+CIESIN, 2005: “Gridded population of the world: Future estimates.” Center for International Earth
+    Science Information Network, Columbia University, United Nations Food and Agriculture Program,
+    and     Centro     Internacional   de Agricultura   Tropical,    Palisades, Palisades,    NY,
+    http://sedac.ciesin.columbia.edu/gpw.
+FAA, 1995: Specification, “Terminal Doppler Weather Radar with Enhancements.” FAA-E-2806c,
+   Federal Aviation Administration, Dept. of Transportation, Washington, DC, 163 pp.
+FAA, 2009: “Four-Dimensional Weather Data Cube Single Authoritative Source (SAS) Final
+   Performance Requirements (fPR), Version 1.0.” Federal Aviation Administration, Dept. of
+   Transportation, Washington, Washington, DC.
+Huang, S., J.Y.N. Cho, M.F. Donovan, R.G. Hallowell, R.S. Frankel, M.L. Pawlak, and M.E. Weber,
+    2009: “Redeployment of the New York TDWR: Technical analysis of candidate sites and alternative
+    wind shear sensors.” Project Rep. ATC-351, MIT Lincoln Laboratory, Lexington, MA, 96 pp.
+Istok, M.J., M.A. Fresch, S.D. Smith, Z. Jing, R. Murnan, A.V. Ryzhkov, J. Krause, M.H. Jain, J.T.
+     Ferree, P.T. Schlatter, B. Klein, D.J. Stein, G.S. Cate, and R.E. Saffle, 2009: “WSR-88D dual
+     polarization initial operational capabilities.” Preprints, 25th Conf. on Interactive Information and
+     Processing Systems for Meteorology, Oceanography, and Hydrology, Phoenix, AZ, Amer. Meteor.
+     Soc., 15.5.
+Lay, R.J., J.W. Taylor, Jr., and G. Brunins, 1990: “ARSR-4: Unique solutions to long-recognized radar
+     problems.” Proc. 1990 Int. Radar Conf., Arlington, VA, IEEE, 6–11.
+
+
+
+
+                                                   71
+Michelson, M., W.W. Shrader, and J.G. Wieler, 1990: “Terminal Doppler Weather Radar.” Microwave
+    Journal, 33, 139–148.
+NRC, 2008: Observing Weather and Climate from the Ground Up: A Nationwide Network of Networks.
+   National Research Council, National Academies Press, Washington, DC, 250 pp.
+Raytheon, 1999: Digital airport surveillance radar (DASR), Contract attachment 6—system specification
+    and SRD cross reference Rev-D: SSG708688; cage code 49956. Raytheon Electronics Systems,
+    Sudbury, MA, 110 pp.
+ROC, 2010: NEXRAD technical information, Radar Operations Center, National Weather
+   Service,    National    Oceanic  and    Atmospheric Administration, Norman, OK,
+   http://www.roc.noaa.gov/WSR88D/Engineering/NEXRADTechInfo.aspx.
+Skolnik, M., 2008: Radar Handbook, 3rd Ed. McGraw Hill, New York.
+Souders, C., T. Kays, S. Spincic, F. Bayne, C. Miner, S. Abelman, R. Showalter, J. Tauss, L. Leonard, E.
+    Dash, and J. May, 2010: “Next Generation Air Transportation System (NextGen) weather
+    requirements: An update.” Preprints, 14th Conf. on Aviation, Range, and Aerospace Meteorology,
+    Atlanta, GA, American Meteorological Society, J4.1.
+Taylor, J.W., Jr., and G. Brunins, 1985: “Design of a new airport surveillance radar (ASR-9).” Proc.
+    IEEE, 72, 284–289.
+Wang, J., M. Gerecke, E. Brookner, P. Cornwell, and J. Farr, 2009: “Design and implementation of long
+   range radar service life extension.” Proc. 2009 IEEE Radar Conf., Institute of Electrical and
+   Electronics Engineers, Pasadena, CA, 1–6.
+Weber, M.E., 2002: “ASR-9 Weather Systems Processor (WSP) signal processing algorithms.” Project
+   Rep. ATC-255, MIT Lincoln Laboratory, Lexington, MA, 63 pp.
+
+
+
+
+                                                  72
+

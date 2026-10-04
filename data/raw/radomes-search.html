@@ -1,0 +1,145 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<!-- <script language='javascript' src='javascripts/jquery-ui-1.8.11.custom.min.js'></script> -->
+<script language="javascript">
+(function($) {
+    $(function() {
+        $('#findsite').on('submit', function(e){
+            var values = 'findunits.php?'+$(this).serialize();
+//            alert(values);
+            e.preventDefault();
+            goback.push(values);
+            $('#display').load(values, function(e){
+            });
+        });
+    });
+})(jQuery);
+</script>
+<BODY >
+<CENTER><H2>Air Defense Radar Site Search</H1></CENTER>
+<p>This page will allow you to search the air defense radar database for a site.
+Enter information into any of the fields below to search for a site.
+</p><!-- You may also
+click the "All Sites" button to obtain a complete listing of CONUS/Alaska radar sites.-->
+<FORM id='findsite'>
+<CENTER>
+<table width=100%>
+<tr>
+<td align=right>
+Unit/Squadron:</td><td>
+ <INPUT TYPE="Text" NAME="sqdn" id="sqdn" SIZE="3" MAXLENGTH="50">
+ &nbsp;&nbsp;(Enter only the numeric Unit or Squadron number)</td>
+</tr>
+<tr>
+<td align=right>
+Site ID:</td><td>
+ <INPUT TYPE="Text" NAME="site" id="site" SIZE="3" MAXLENGTH="50">
+ &nbsp;&nbsp;Permanent, SAGE or JSS ID</td>
+</tr>
+<tr>
+<td align=right>
+Site Type:<BR>
+&nbsp;
+</td>
+<td>
+    <select name="sitetype" id='type'>
+    <option value="" selected="selected">All Types</option>
+    <option value="ALRI">ALRI</option>
+    <option value="ARMY">Army Joint Use</option>
+    <option value="BOMARC">BOMARC</option>
+    <option value="BUIC">BUIC</option>
+    <option value="BUIC-II">BUIC-II</option>
+    <option value="BUIC-III">BUIC-III</option>
+    <option value="CADIN">CADIN Pinetree Line</option>
+    <option value="DC">SAGE DC/CC</option>
+    <option value="DEW">DEW-Line</option>
+    <option value="FAA">FAA Joint-Use</option>
+    <option value="GFA">Gap Fillers</option>
+    <option value="GATR">GATR (stand-alone)</option>
+    <option value="LASH">Lashup</option>
+    <option value="LRR">Long Range Radar</option>
+    <option value="MCC">Manual Control Center</option>
+    <option value="MEWS">MEWS (Missile Early Warning Systems</option>
+    <option value="NAVY">Navy Joint Use</option>
+    <option value="NWS">North Warning System</option>
+    <option value="OTH-B">OTH-B</option>
+    <option value="TEST">Radar Test Sites</option>
+    <option value="TARS">TARS (Tethered Aerostat)</option>
+    <option value="USMC">USMC Joint Use</option>
+
+    </select>
+    </td>
+</tr>
+<tr>
+<td align=right>
+Location:</td><td>
+ <INPUT TYPE="Text" NAME="city" id="city" SIZE="30" MAXLENGTH="50">&nbsp;
+ Enter any portion of site location, such as city</td>
+</tr>
+<tr>
+<td align=right>
+State:</td><td>
+ <INPUT TYPE="Text" NAME="state" id="state" SIZE="2" MAXLENGTH="2">&nbsp;2-char abbrev. or select Country
+below.</td></tr>
+<CENTER>
+<B>If the site is overseas, select country from list below</B>
+</CENTER>
+<tr>
+<td align=right valign=top>
+ Country:</td><td>
+ <SELECT NAME="country" id="country">
+                    <OPTION VALUE="" SELECTED>North America, Hawaii</option>
+                    <OPTION VALUE="CN">Canada</option>
+                    <OPTION VALUE="CY">Cyprus</option>
+                    <option value="DK">Denmark</option>
+                    <OPTION VALUE="FR">France</option>
+                    <OPTION VALUE="DE">Germany</option>
+                    <OPTION VALUE="GU">Guam</option>
+                    <option value="GR">Greece</option>
+                    <OPTION VALUE="GL">Greenland</option>
+                    <OPTION VALUE="IS">Iceland</option>
+                    <OPTION VALUE="IT">Italy</option>
+                    <OPTION VALUE="JP">Japan</option>
+                    <OPTION VALUE="KR">Korea</option>
+                    <OPTION VALUE="LA">Laos</option>
+                    <OPTION VALUE="LY">Libya</option>
+                    <OPTION VALUE="MA">Morocco</option>
+                    <OPTION VALUE="NL">Netherlands</option>
+                    <OPTION VALUE="NO">Norway</option>
+                    <OPTION VALUE="PI">Philippines</option>
+                    <option value="PT">Portugal</option>
+                    <OPTION VALUE="ES">Spain</option>
+                    <option value="TW">Taiwan</option>
+                    <OPTION VALUE="TH">Thailand</option>
+                    <OPTION VALUE="TT">Trinidad</option>
+                    <OPTION VALUE="TR">Turkey</option>
+                    <OPTION VALUE="UK">United Kingdom </option>
+                    <OPTION VALUE="VN">Viet Nam</option>
+</SELECT>
+<I><B>Note:</B> Data are very limited for some of these overseas locations. We will be adding and 
+updating as time permits, given current workloads.</I>
+</td>
+</tr>
+<tr>
+<td colspan=2><HR></td>
+</tr>
+<tr>
+<td align=right Valign=top>
+Display Order:</td><td>
+<INPUT TYPE="Radio" NAME="order" VALUE="location" checked>&nbsp;Squadron Name&nbsp;&nbsp;<BR>
+<INPUT TYPE="Radio" NAME="order" VALUE="squadron">&nbsp;Squadron Number&nbsp;&nbsp;<BR>
+<INPUT TYPE="Radio" NAME="order" VALUE="site">&nbsp;Site Number&nbsp;&nbsp;<BR>
+<INPUT TYPE="Radio" NAME="order" VALUE="state">&nbsp;State&nbsp;&nbsp;
+
+</td>
+</tr>
+</table>
+</CENTER>
+<CENTER>
+    <INPUT TYPE="submit" id="search" class="search"  VALUE=" Search For Site" default>&nbsp;&nbsp;
+    <INPUT TYPE="submit" id="all" class="search"  VALUE=" All CONUS Sites">
+</CENTER>
+
+</FORM>
+
+
+</body>

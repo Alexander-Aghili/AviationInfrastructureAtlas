@@ -1,0 +1,5 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {chooseVisibleMarkers} from '../src/visible-markers.js';
+const records=Array.from({length:1000},(_,i)=>({feature_id:String(i),geometry:{coordinates:[i%100,Math.floor(i/100)*10]}}));
+const project=([x,y])=>({x,y});
+test('caps dense view, includes selected facility, and spreads the sample',()=>{const {visible,count}=chooseVisibleMarkers(records,project,{x:100,y:100},'999');assert.equal(count,1000);assert.equal(visible.length,150);assert(visible.some(f=>f.feature_id==='999'));assert(visible.some(f=>f.geometry.coordinates[0]<10));assert(visible.some(f=>f.geometry.coordinates[0]>90));assert.equal(new Set(visible.map(f=>f.feature_id)).size,150);});
+test('recomputes for a shifted viewport and includes every facility below the cap',()=>{const result=chooseVisibleMarkers(records,([x,y])=>({x:x-90,y}),{x:10,y:100});assert.equal(result.count,100);assert.equal(result.visible.length,100);assert(result.visible.every(f=>f.geometry.coordinates[0]>=90));});

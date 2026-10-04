@@ -1,0 +1,3345 @@
+                                                                               J.Y.N. Cho
+                                                                              W.J. Dupree
+
+
+
+
+                                                                             4 March 2022
+
+
+      Lincoln Laboratory
+MASSACHUSETTS INSTITUTE OF TECHNOLOGY
+             LEXINGTON, MASSACHUSETTS
+
+
+
+
+DISTRIBUTION STATEMENT A. Approved for public release. Distribution is unlimited.
+This report is the result of studies performed at Lincoln Laboratory, a federally funded research and
+development center operated by Massachusetts Institute of Technology. This material is based upon
+work supported by the Federal Aviation Administration under Air Force Contract No. FA8702-15-D-
+0001. Any opinions, findings, conclusions or recommendations expressed in this material are those of
+the author(s) and do not necessarily reflect the views of the Federal Aviation Administration.
+
+
+
+
+                                 © 2022 Massachusetts Institute of Technology
+
+
+Delivered to the U.S. Government with Unlimited Rights, as defined in DFARS Part 252.227-7013 or 7014 (Feb
+2014). Notwithstanding any copyright notice, U.S. Government rights in this work are defined by DFARS 252.227-
+7013 or DFARS 252.227-7014 as detailed above. Use of this work other than as specifically authorized by the U.S.
+Government may violate any copyrights that exist in this work.
+                                                                                                      TECHNICAL REPORT STANDARD TITLE PAGE
+                                                                              .
+  1. Report No.                                    2. Government Accession No.                          3. Recipient's Catalog No.
+  ATC-450
+
+  4. Title and Subtitle			                                                                              5. Report Date
+                                                                                                                       4 March 2022
+   Radar Coverage Analysis for the Terminal Precipitation on the Glass Program
+                                                                                                        6. Performing Organization Code
+
+  7. Author(s)			                                                                                       8. Performing Organization Report No.
+   J.Y.N. Cho, W.J. Dupree                                                                                                ATC-450
+
+  9. Performing Organization Name and Address			                                                       10. Work Unit No. (TRAIS)
+   MIT Lincoln Laboratory
+   244
+   					 Wood Street                                                                                   11. Contract or Grant No.
+   Lexington, MA 02421                                                                                                   FA8702-15-D-0001
+ 12. Sponsoring Agency Name and Address			                                                             13. Type of Report and Period Covered
+   Department of Transportation                                                                                       Project Report
+   Federal Aviation Administration
+   					
+   800 Independence Ave., S.W.                                                                         14. Sponsoring Agency Code
+   Washington, DC 20591
+ 15. Supplementary Notes
+
+   This report is based on studies performed at Lincoln Laboratory, a federally funded research and development center operated
+by Massachusetts Institute of Technology, under Air Force Contract FA8702-15-D-0001.
+
+
+ 16. Abstract
+ The Terminal Precipitation on the Glass (TPoG) program proposes to improve the STARS precipitation depiction by adding an alternative
+ precipitation product based on a national weather-radar-based mosaic, i.e., the NextGen Weather System (aka NextGen Weather Processor
+ [NWP] and Common Support Services Weather [CSS-Wx]). This report describes spatial and temporal domain analyses conducted over
+ the 146 terminal radar approach control (TRACON) airspaces that are within scope of TPoG to identify and quantify future TPoG benefits,
+ as well as potential operational issues.
+
+
+
+
+17. Key Words			                                                                  18. Distribution Statement
+
+                                                                                  DISTRIBUTION STATEMENT A.
+                                                                                  Approved for public release: distribution unlimited.
+
+
+
+19. Security Classif. (of this report)               20. Security Classif. (of this page)                      21. No. of Pages        22. Price
+
+                      Unclassified                                   Unclassified                                        104
+
+FORM DOT F 1700.7 (8-72)                             Reproduction of completed page authorized
+This page intentionally left blank.
+                                      EXECUTIVE SUMMARY
+
+
+      In a previous study, five shortfall areas were identified in the operational usage of the current standard
+terminal automation replacement system (STARS) precipitation display:
+
+      1. Insufficient accuracy in depicting precipitation event in relevant airspace.
+
+      2. Insufficient capability to identify and remove false precipitation depiction in relevant airspace.
+
+      3. Insufficient consistency of precipitation event depictions in relevant airspace.
+
+      4. Insufficient coverage of precipitation event depiction in relevant airspace.
+
+      5. Insufficient availability of precipitation event depiction in relevant airspace.
+
+      The Terminal Precipitation on the Glass (TPoG) program proposes to improve the STARS
+precipitation depiction by adding an alternative precipitation product based on a national weather-radar-
+based mosaic, i.e., the NextGen Weather System (aka NextGen Weather Processor [NWP] and Common
+Support Services Weather [CSS-Wx]). This report describes spatial and temporal domain analyses
+conducted over the 146 terminal radar approach control (TRACON) airspaces that are within scope of TPoG
+to identify and quantify future TPoG benefits, as well as potential operational issues. The main conclusions
+are as follows:
+
+      •   The addition of TPoG would increase the median (over all TRACONs) weather-weighted three-
+          dimensional (3D) coverage from 96.4% to 98.4%. For a more focused airspace within 6 NM of
+          the airport towers equipped with STARS inside the TRACONs, the improvement is from 90.5%
+          to 99.0%. These enhancements address shortfall #4 (insufficient coverage).
+      •   The weather radar data ingested by the NextGen Weather System provide superior horizontal
+          resolution compared to the airport surveillance radar (ASR) data. The median limiting horizontal
+          resolution (the larger of range or azimuthal resolution) taken over all TRACONs is 4.0 km for
+          ASRs and 1.2 km for weather radars. Within 6 NM of the airport towers, this improvement is
+          from 2.8 km to 0.89 km. Although the final precipitation product display resolution will be
+          limited by the NextGen Weather System grid spacing of 1 km and, potentially, the chosen
+          processing scheme employed in the TPoG adaptor, a significant degree of horizontal resolution
+          enhancement can be expected in many TRACONs with TPoG. This may help address shortfall
+          #1 (insufficient accuracy), if coarse horizontal resolution is one of the causes behind the perceived
+          inaccuracy of STARS precipitation depiction.
+      •   The increase in overlapping radar coverage with TPoG will correspondingly raise the aggregate
+          precipitation product availability on STARS. Without TPoG, only 22% of TRACONs have an
+          average radar coverage overlap of two or more radars; this increases to 100% with the addition
+          of TPoG. This helps to address shortfall #5 (insufficient availability).
+
+
+
+
+                                                      iii
+      •   Because of the highly overlapping nature of weather radar coverage, TPoG would receive
+          multiple radar data updates within the 25-second NextGen Weather System product update period
+          in most TRACONs. This implies that the 25-second period represents a meaningful refresh of the
+          airspace observations.
+      •   Specific TRACONs were identified where weather radar coverage might be insufficient for
+          operational usage. These are (with mean 3D coverage in parentheses): Eugene, OR (56% with
+          Medford, OR airspace included, 38% without); Moses Lake, WA (57%); Roswell, NM (67%),
+          Casper, WY (65%), and Bangor, ME (71%). Further evaluation involving real data and
+          operational air traffic control personnel is recommended.
+      •   Estimated latency for TPoG from start of radar observation to arrival of the precipitation product
+          at the STARS display input is comparable to that of the current ASR-based precipitation product.
+          This conclusion is based on a particular posited TPoG architecture (the actual operational
+          architecture is yet to be determined), and assumes that NextGen Weather System’s motion
+          compensation technique is effective in eliminating location errors; it excludes situations of very
+          rapid growth or decay in convective storms.
+
+      Although not specifically analyzed in this study, the proposed TPoG solution also helps to address
+shortfall #2 (insufficient capability to identify and remove false precipitation) due to the weather radars’
+superior data quality and NextGen Weather System’s multi-sensor techniques for anomaly removal.
+Furthermore, the national mosaic nature of the NextGen Weather System helps to address shortfall #3
+(insufficient consistency), since the same precipitation product source would be used to generate the
+STARS displays in neighboring TRACONs. Therefore, operational implementation and deployment of
+TPoG should help address all five of the identified STARS precipitation display shortfall areas. Note,
+however, that this is only a theoretical analysis. It is recommended that the results presented here be used
+to guide further evaluations of TPoG performance under simulated operational settings.
+
+
+
+
+                                                    iv
+                                      TABLE OF CONTENTS
+
+                                                          Page
+     EXECUTIVE SUMMARY                                      iii
+     List of Illustrations                                 vii
+     List of Tables                                         ix
+
+1.   INTRODUCTION                                           1
+
+2.   SPATIAL DOMAIN ANALYSES                                5
+
+     2.1   3D Coverage                                      6
+     2.2   Horizontal Resolution                           24
+
+3.   TIME DOMAIN ANALYSES                                  27
+
+     3.1   Operational Availability                        27
+     3.2   Update Period                                   29
+     3.3   Latency                                         34
+
+4.   SUMMARY DISCUSSION                                    37
+
+APPENDIX A: TABLES OF SITE-SPECIFIC PARAMETERS             41
+
+APPENDIX B: TABLES OF RESULTS                              67
+
+     Acknowledgments                                       85
+     Glossary                                              87
+     REFERENCES                                            89
+
+
+
+
+                                              v
+This page intentionally left blank.
+                                 LIST OF ILLUSTRATIONS
+
+
+Figure                                                                                             Page
+ No.
+
+
+1-1 TRACONs included in this study.                                                                 2
+
+1-2 Locations of ASRs included in this study: ASR-8 (red cross), ASR-9 (blue circle), and ASR-11
+    (black square).                                                                                 3
+
+2-1 NEXRAD (blue circle), TDWR (red cross), and CANRAD (black square) locations.                    5
+
+2-2 ASR two-way elevation angle antenna patterns.                                                   7
+
+2-3 Illustrations of radar beam blockage by terrain (top left), NEXRAD cone of silence (top right),
+    height above ground level (AGL) coverage limits (center), and FVO example for NEXRAD with
+    a smooth Earth and a ceiling of 20 kft (bottom).                                                8
+
+2-4 Areas with WX radar FVO > 0.98 shown in black.                                                 10
+
+2-6 Computed vertical distributions of Level 2+ weather for each of the 146 TRACONs in this
+    study.                                                                                         11
+
+2-5 Area closest to each NEXRAD depicted in contrasting colors. Vertical weather occurrence
+    histograms were aggregated within each area.                                                   11
+
+2-7 WX radar WFVO for Aspen (ASE) TRACON (left) and Bozeman (BZN) airspace (right). Both
+    have zero ASR coverage. BZN is a secondary airspace of the Boise (BOI) TRACON.       14
+
+2-8 Phoenix (P50) TRACON WFVO for ASRs (left) and ASRs + WX radars (right).                        15
+
+2-9 Missoula (MSO) TRACON WFVO for ASRs (left) and ASRs + WX radars (right).                       16
+
+2-10 Las Vegas (L30) TRACON WFVO for ASRs (left) and ASRs + WX radars (right).                     16
+
+2-11 Salt Lake City (S56) TRACON WFVO for ASRs (left) and ASRs + WX radars (right).                17
+
+2-12 Eugene (EUG) TRACON and Medford (MFR) airspace WFVO for ASRs (left) and WX radars
+     (right).                                                                          19
+
+2-13 NEXRAD daily maximum composite reflectivity example.                                          20
+
+
+
+
+                                                 vii
+2-14 Moses Lake (MWH) TRACON WFVO for ASRs (left) and WX radars (right).                         21
+
+2-15 Roswell (ROW) TRACON WFVO for ASRs (left) and WX radars (right).                            21
+
+2-16 Reading (RDG) TRACON WFVO for ASRs (left) and WX radars (right).                            22
+
+2-17 Histograms of 3D coverage for ASRs (top row), WX radars (middle row), and ASRs + WX
+     radars (bottom row).                                                                        23
+
+3-1 Histograms of average coverage overlap count in a TRACON for ASRs (top row), WX radars
+    (middle row), and ASRs + WX radars (bottom row). The left column is average taken over the
+    TRACON, and the right column is average taken over near-airport (r < 6 NM) airspace.         28
+
+3-2 Illustration of AVSET. From Mersereau (2014).                                                30
+
+3-3 NEXRAD and TDWR coverage overlap count by altitude. From Cho (2015).                         31
+
+3-4 Histogram of weighted mean WX radar scan update times averaged over each TRACON.             32
+
+3-5 Weighted mean WX radar update period for the Chicago (left) and Anchorage (right)
+    TRACONs. Note that the color scales for the two plots differ.                                33
+
+3-6 Assumed TPoG data distribution architecture.                                                 35
+
+3-7 Illustration of NextGen Weather System’s motion compensation scheme (“sliding volume”
+    technique). See MIT (2019) for further information.                                          36
+
+4-1 An example of using the 3D coverage metric to determine a “degraded” status for a WX-radar-
+    based precipitation display.                                                                39
+
+
+
+
+                                                   viii
+                                   LIST OF TABLES
+
+
+Table                                                                              Page
+ No.
+
+
+ 2-1    Radar Characteristics Relevant for Coverage                                  6
+
+ 2-2    Median % of TRACON Area Exceeding WFVO Threshold                            12
+
+ 2-3    Median % of Airport Area (r < 6 NM) Exceeding WFVO Threshold                13
+
+ 2-4    D Coverage (%) in Highest Benefit TRACONs for WX Radars                     14
+
+ 2-5    3D Coverage (%) in TRACONs with Worst Coverage by WX Radars                 18
+
+ 2-6    Radar Spatial Resolution Parameters                                         25
+
+ 2-7    Median LHR (km) Over All TRACONs                                            25
+
+ 3-1    Latency Budget for NextGen Weather System-based STARS Precipitation Data    34
+
+ A-1    TRACONs and Associated Airport Surveillance Radars                          41
+
+ A-2    List of TRACON-associated ASRs                                              45
+
+ A-3    TRACONs and Associated Remote Airport Towers                                51
+
+ A-4    NEXRADs with Minimum Antenna Beam Elevation Angle Less Than 0.5°            63
+
+ A-5    TDWR Minimum and Maximum Antenna Beam Elevation Angles                      64
+
+ B-1    3D Radar Coverage (%)                                                       67
+
+ B-2    Mean Limiting Horizontal Resolution (km)                                    71
+
+ B-3    Average Radar Coverage Overlap Count (Rounded to Nearest Integer)           75
+
+ B-4    Weighted Mean WX Radar Scan Update Time (s) Averaged Over Specified Area    79
+
+
+
+
+                                              ix
+This page intentionally left blank.
+                                        1. INTRODUCTION
+
+
+      Safe and efficient air traffic control (ATC) requires timely and accurate monitoring of weather. Such
+observations are provided by a combination of in situ and remote sensing instruments located on the ground,
+onboard aircraft, and on satellites. For airport and terminal radar approach control (TRACON) airspaces
+with coverage from airport surveillance radars (ASRs), real-time precipitation mapping is primarily
+provided by the six-level video integrator and processor (VIP) reflectivity field produced by the ASRs. This
+product is displayed as a simultaneous overlay on aircraft tracks shown on the standard terminal automation
+replacement system (STARS), which helps controllers to route air traffic within their domains.
+
+      It has been noted, however, that airport tower and TRACON controllers do not always have access
+to accurate, reliable, and timely depictions of precipitation. Subpar precipitation characterization reduces
+the controller’s ability to issue accurate weather advisories in terminal airspace, to effectively maneuver
+aircraft around hazardous storms cells, and to effectively anticipate traffic pattern changes and devise
+aircraft separation strategies. In response to these concerns, the Federal Aviation Administration (FAA)
+launched a concept maturity and technology demonstration (CMTD) activity, the Terminal Precipitation on
+the Glass (TPoG) program, to determine whether alternative precipitation data sources and dissemination
+mechanisms would be viable and beneficial for national airspace (NAS) operations. One of the initial TPoG
+tasks was an analysis of STARS precipitation display shortfalls. Five specific areas were identified (FAA
+2020a):
+
+      1. Insufficient accuracy in depicting precipitation event in relevant airspace.
+
+      2. Insufficient capability to identify and remove false precipitation depiction in relevant airspace.
+
+      3. Insufficient consistency of precipitation event depictions in relevant airspace.
+
+      4. Insufficient coverage of precipitation event depiction in relevant airspace.
+
+      5. Insufficient availability of precipitation event depiction in relevant airspace.
+
+      TPoG proposes to improve the STARS precipitation depiction by integrating alternative radar-based
+weather data (2020b). Various alternatives were considered, including the post-processing of ASR data and
+local weather processors such as the Integrated Terminal Weather System (ITWS); the preferred solution
+was one based on a national weather radar mosaic (FAA 2020c), i.e., the NextGen Weather System.
+
+      On average, national weather radar mosaic data should provide a number of advantages over local
+ASR data, such as consistent weather depiction across neighboring terminal and en route domains, as well
+as better elimination of artifacts due to multi-radar viewing angles and advanced processing techniques.
+However, there may be particular TRACONs that do not have weather radars that are close enough (or
+blocked by terrain) to provide the needed coverage. There are also uncertainties regarding issues of weather
+
+
+
+
+                                                      1
+radar data availability, update period, and latency. This report aims to address these concerns as well as
+identify potential benefits.
+
+       The scope of this study encompasses the 146 TRACONs (Figure 1-1) associated with the TPoG
+program. As this study supports a future-oriented program, the radar associations are not aligned to the
+current state, but to the planned configuration after the completion of the ongoing ASR divestiture program
+(https://www.faa.gov/air_traffic/technology/radardivestiture/). Also, Peoria (PIA) and Springfield, IL (SPI)
+were incorporated as remote towers under St. Louis (T75) per future plans.
+
+
+
+
+                                                            Blue: TRACONs
+                                                            Black: Associated towers
+
+
+
+
+                                 Figure 1-1. TRACONs included in this study.
+
+
+
+
+                                                     2
+      Individual TRACON listings are provided in Appendix A. Table A-1 shows the TRACONs and the
+ASRs/GPNs that feed STARS at each site. (GPN, or ground position navigation, radar is the military
+equivalent of the ASR: GPN-20 = ASR-8, GPN-27 = ASR-9, and GPN-30 = ASR-11.) Figure 1-2 shows
+the ASR locations, and Table A-2 provides the locations and owner agencies of the ASRs. Table A-3 lists
+the TRACONs and their associated towers. Five of the 146 TRACONs have control responsibility over
+secondary airspaces that are physically separated from the primary TRACON boundary, with STARS
+displays at the secondary airspace towers that are “slaved” off of the primary STARS. These secondary
+airspaces are listed in Table A-1 separately after the 146 TRACONs, with the primary TRACON affiliation
+shown in parentheses. Unless otherwise noted, the results for those five TRACONs will include those of
+the associated secondary airspaces.
+
+
+
+
+Figure 1-2. Locations of ASRs included in this study: ASR-8 (red cross), ASR-9 (blue circle), and ASR-11 (black
+square).
+
+
+
+
+                                                         3
+      The precipitation product available on the STARS displays is primarily based on data from ASRs.
+Air Route Surveillance Radar-4 (ARSR-4) precipitation data is also supplied to some STARS sites, but is
+rarely used (Worris and Cho 2018). Common Air Route Surveillance Radar (CARSR) precipitation data is
+currently only generated for STARS displays in the Phoenix (P50) TRACON, where there is a gap in ASR
+coverage in the northern sector (Worris and Cho 2018). The long-range radar precipitation products have
+various data quality and resolution issues (Carmouche 2012) that make them sub-optimal for terminal
+airspace usage. For these reasons, we limited the scope in our study to the comparison between ASR and
+weather radar coverages.
+
+      Aside from the spatial and temporal coverage and resolution issues that were studied for this report,
+note that there are underlying data quality differences in the radar data that feed into the precipitation
+products. Because the ASRs were designed primarily for aircraft detection and tracking, and not specifically
+for meteorological observations, their weather data quality is decidedly inferior to the output quality of
+weather radars. This can be seen even in the radar specifications. For example, the ASR-11 specification
+allows for a maximum weather reflectivity error (in the absence of clutter) of 2.5 dB (Raytheon 1999),
+whereas for the Next Generation Weather Radar (NEXRAD) this specification is only 1 dB (ROC 2008).
+The weather radars included in this study all have lower reflectivity estimate errors, narrower antenna
+beamwidths (better angular resolution at a given range), lower antenna sidelobes (less out-of-resolution-
+volume contamination), higher sensitivity, and better clutter filtering capability compared to the ASRs. See,
+for example, Chapter 7 of Mahapatra (1999) for further discussion on this topic. Therefore, on the basis of
+superior data quality, the use of weather radar data to generate a precipitation product for STARS should
+help address shortfalls #1 (accuracy) and #2 (false precipitation).
+
+      Even with these inherent data quality advantages, mosaics generated from weather radar data may
+not necessarily be operationally acceptable at every TRACON and airport. To reiterate, that is because the
+locations of the weather radars may be too far or obstructed by terrain to provide adequate coverage and/or
+spatial resolution. Section 2 addresses these issues.
+
+       There are also potential time-domain issues that need to be investigated. Would the data latency and
+effective update rates of a national weather radar mosaic be fast enough to be acceptable for terminal ATC
+operational usage? Would the data availability rate meet the requirements of terminal ATC operations?
+These questions are analyzed in Section 3.
+
+
+
+
+                                                     4
+                               2. SPATIAL DOMAIN ANALYSES
+
+
+      The future operational NextGen Weather System will ingest radar data from NEXRADs (ROC 2008),
+Terminal Doppler Weather Radars (TDWRs; FAA 1995), and Canadian weather radars (CANRADs; Sills
+and Joe 2019). All of these radars will collectively be referred to as weather (WX) radars in this report, and
+will be the subject of our analyses. Figure 2-1 shows the locations of the WX radars.
+
+
+
+
+          Figure 2-1. NEXRAD (blue circle), TDWR (red cross), and CANRAD (black square) locations.
+
+
+
+
+                                                      5
+      The spatial domain metrics of interest in assessing the viability and suitability of a precipitation
+product in a particular airspace are 3D coverage and horizontal resolution. The two-dimensional (2D)
+horizontal precipitation products of interest here—0–60-kft composite reflectivity (CR) and vertically
+integrated liquid (VIL) water—do not have vertical resolution. Analysis results for the two metrics are
+given in the following two sections.
+
+2.1   3D COVERAGE
+
+      Horizontal weather radar coverage is determined by the minimum and maximum range of
+observation. Sensitivity is not an issue for this study, because all of the radars have sufficient sensitivity to
+detect the lowest level of reflectivity (18 dBZ) needed to delineate Level 1 of the six-level VIP product
+throughout their instrumented ranges. Vertical weather radar coverage is set by the minimum and maximum
+elevation angles of the antenna beam, minus and plus half the elevation beam width. Table 2-1 lists the
+corresponding values of these parameters for the different radar types.
+
+
+                                                  Table 2-1
+                            Radar Characteristics Relevant for Coverage
+         Parameter                        NEXRAD                    TDWR             CANRAD         ASR/GPN
+ Minimum Observation Range                            1 km             0.3 km            0.5 km       0.93 km
+ Maximum Observation Range                          460 km             90 km*           245 km        111 km
+ Minimum Elevation Angle            0.5 (with exceptions)       Site dependent              0.4           N/A
+ Maximum Elevation Angle                              19.5      Site dependent             24.4           N/A
+ Elevation Beam Width                                      1                0.6            0.9           N/A
+*TDWR has one 460-km reflectivity scan per volume, but NextGen Weather System clips the range to 90 km during
+mosaicking.
+
+       Although NEXRAD maximum elevation angles are fixed at 19.5°, and most sites have a minimum
+elevation angle of 0.5°, there is a small subset of locations with lower minimum elevation angles, mostly at
+high-altitude sites to improve surrounding low-altitude coverage. These exceptions are listed in Appendix
+A, Table A-4. For TDWR, the minimum and maximum elevation angles are customized to optimize low-
+altitude wind shear detection over the associated airports. These values are listed in Appendix A, Table A-
+5. These site-adjustable parameters could change in the future, but since we have no way of knowing what
+changes there may be, we used the current values for our study.
+
+       Calculating the coverage of the ASRs is more complicated. First, their antenna beams are not
+symmetrically shaped in the elevation angle dimension, so the actual patterns are used to estimate the
+elevation coverage with respect to range. Second, they utilize a low beam for transmit, and a combination
+of the low beam (at closer ranges) and a high beam (at farther ranges) on receive (Figure 2-2). This is done
+in order to manage the trade-off between ground clutter and low-altitude coverage at close range. Each of
+the ASR types (ASR-8, -9, and -11) employ somewhat different techniques for this beam combination on
+
+
+
+
+                                                       6
+receive (IE 2019; FAA 2008; FAA 2019). Furthermore, the transition range from high beam to low beam
+can be tailored at each site (and can even be azimuthally dependent). This fine-grained data is not tracked
+in a national database, and requesting the data from each site was deemed to be an unreasonably time-
+consuming task for this project. Therefore, we used the default values for the beam transition range of 13
+NM (ASR-8), 15 NM (ASR-9 without Weather Systems Processor (WSP)), 3.75 NM (ASR-9 with WSP),
+and 6.5 NM (ASR-11).
+
+
+
+
+ Figure 2-2. ASR two-way elevation angle antenna patterns. Blue is transmit and receive on low beam, red is
+ transmit on low beam and receive on high beam.
+
+
+
+      Although the antenna beam patterns of all ASR types are essentially the same, the elevation angle
+mechanical tilt of the antenna reflector is site-adjustable. Again, this location-specific information was not
+available in a national database, so we assumed the default angle (2°) at all sites. This means that the two-
+way beam patterns in Figure 2-2 are shifted up by 2°.
+
+
+
+
+                                                        7
+       The 3D coverage calculation must also account for ground obstructions. For this purpose, we used
+the Shuttle Radar Tomography Mission (SRTM) Level 2 (1 arcsec) data. We chose this digital elevation
+data because it includes structures on top of the Earth’s terrain. In areas where Level 2 was not available
+(e.g., Alaska) we used the Level 1 (3 arcsec) SRTM data. Beam propagation geometry assumed a standard
+4/3-Earth-radius model to account for atmospheric refraction (e.g., Skolnik, 2008). Radar coverage was
+computed at 1/1200-deg (lat/lon) horizontal spacing and variable vertical resolution (25 m for 0–3000 m
+MSL, 50 m for 3050–4000 m MSL, 100 m for 4100–6000 m MSL, 200 m for 6200–9000 m, and 400 m for
+9400–15,000 m MSL). The coverage calculation procedure was similar to previous studies (e.g., Cho 2015).
+
+
+
+
+ Figure 2-3. Illustrations of radar beam blockage by terrain (top left), NEXRAD cone of silence (top right),
+ height above ground level (AGL) coverage limits (center), and FVO example for NEXRAD with a smooth Earth
+ and a ceiling of 20 kft (bottom).
+
+
+
+
+                                                      8
+       All of these input data discussed so far allow us to determine if any given point in 3D space is
+observed by a particular radar. It would be more convenient and useful, however, to have a metric that
+summarized the degree of vertical coverage in order to map that quantity in 2D space. To this end, we
+defined a quantity called the fraction of vertical volume observed (FVO) in an earlier unrelated study (Cho
+and Kurdzo 2019). FVO is the fraction of a vertical column observable by a radar, with the ground as the
+floor and a specified altitude as the ceiling. It includes the effects of the Earth’s curvature, ground structure
+blockage, and the radar’s cone of silence (the space above its maximum antenna beam elevation angle that
+it cannot observe) in one metric (Figure 2-3).
+
+      FVO treats all altitudes equally and has a hard cut-off (ceiling). Weather, however, does not occur
+equally at all altitudes, and does not cease abruptly at a certain height. Thus, in order to have a metric that
+takes into account the actual probability of operationally significant weather occurrence, we extended the
+FVO concept to include altitude-dependent weather occurrence weighting. This new metric, dubbed the
+weighted FVO, or WFVO, integrates local weather characteristics with radar coverage.
+
+       To compute WFVO, we needed the vertical profiles of radar echo occurrence for each TRACON. To
+derive this information, we first compiled vertical histograms of the NextGen Weather System’s Level 2 or
+greater, i.e., reflectivities of 30 dBZ or greater, over each latitude-longitude grid cell. Level 2 was chosen,
+because it was perceived to be the lowest precipitation level for ATC operational concerns. 542 days of
+relatively active weather days over 2019-2021 were used for this compilation. Only areas with excellent
+radar coverage (FVO > 0.98, with a ceiling of 70 kft) were kept, because otherwise the data would be biased
+by missing low altitude coverage, terrain blockage, and radar cones of silence (Figure 2-4). This filtered
+“key hole” histogram data were aggregated inside local regions as defined by closest distance to a NEXRAD
+(Figure 2-5). Finally, histograms of Level 2+ weather occurrence were computed for each TRACON by
+computing distance-weighted means of the NEXRAD-location-associated regional histograms; a 2D
+Gaussian kernel with a width of 200 km was employed for the distance weighting. For the Alaskan
+TRACONs, we used the S46 (Seattle, WA) profile as the closest proxy.
+
+
+
+
+                                                       9
+Figure 2-4. Areas with WX radar FVO > 0.98 shown in black. Only these areas were used to compute the
+vertical histograms of Level 2+ weather.
+
+
+
+
+                                                    10
+Figure 2-5. Area closest to each NEXRAD depicted in contrasting colors. Vertical weather occurrence
+histograms were aggregated within each area.
+
+      The TRACON-specific vertical weather histograms, normalized to sum to unity across all altitude
+bins, are shown in Figure 2-6. Of particular note is that some have very low altitude distributions of
+precipitating weather. These examples mainly occur on the West Coast, especially in the Pacific Northwest,
+which is consistent with the well-known scarcity of energetic convection in that region. Consequently, low
+altitude radar coverage would be of relatively greater importance in TRACONs of those regions.
+
+
+
+
+                                       S46 (Seattle)
+
+
+
+
+       Figure 2-6. Computed vertical distributions of Level 2+ weather for each of the 146 TRACONs in this study.
+
+
+
+
+                                                      11
+      2.1.1   Overall Results
+
+       We now present the computed coverage results. First, the percentage of area within each TRACON
+that exceeds a given WFVO threshold was computed for ASRs, WX radars, and ASRs + WX radars. Table
+2-2 rolls up those results by giving the median computed over all TRACONs; the bottom row shows the
+percentage of TRACONs where the results for WX radars were better than for ASRs. The change in results
+with the minimum WFVO threshold, i.e., WX coverage faring better at lower thresholds, is indicative of
+the respective missions of the two radar types. Whereas ASRs are sited specifically to provide coverage
+near airports, NEXRADs and CANRADs are sited to provide more seamless coverage on a continental
+scale. Therefore, WX radar coverage is perfect everywhere if the vertical coverage requirement is more
+relaxed, while ASR coverage may be completely absent in far reaches of some of the larger TRACONs. If
+the vertical coverage requirement is stricter, then WX radar WFVO shows more deficiencies where the
+radars are farther away from the TRACONs.
+
+      We can also have a single 3D coverage value per TRACON by computing the mean WFVO inside
+the TRACON boundary; these are shown in the last column of Table 2-2. With this formulation, the overall
+coverage that would be provided by WX radars to TRACONs is quite close to the coverage provided by
+the ASRs alone, and 43% of TRACONs would have better coverage with WX radars. Of course, if WX
+radar coverage is added to the ASR coverage, then the combined coverage is greater than either alone.
+
+
+
+                                                Table 2-2
+                    Median % of TRACON Area Exceeding WFVO Threshold
+                                            Minimum WFVO Threshold
+                 Radar Type                                                      3D Coverage (%)
+                                         0.5     0.6        0.7    0.8    0.9
+         ASR                             99.7    99.6       99.3   98.7   92.7   96.4
+         WX                              100     100        100    99.1   82.7   94.2
+         ASR + WX                        100     100        100    100    99.6   98.4
+         % of TRACONs WX > ASR           67.1    66.4       59.6   50.0   42.5   44.4
+
+
+
+       We also computed the same metrics over near-airport airspace (range within 6 NM of the airport
+tower) of all associated towers (Table A-3) inside the TRACON boundary. This was done to focus attention
+on low-altitude coverage that may be operationally important for take-offs and landings. The overall median
+results are given Table 2-3. Somewhat counterintuitively, WX radars fare better than the ASRs in this space.
+We attribute this trend to the ASRs’ cone of silence over their host airports, as well as the use of the high
+beam on receive at close range. The former cuts off high altitude coverage, while the latter overshoots low
+
+
+
+
+                                                       12
+altitude coverage, which together lowers WFVO at short ranges. The take-away message from Tables 2-2
+and 2-3 is that WX radars alone would provide better coverage than ASRs in a significant fraction of
+TRACONs, especially for near-airport airspaces; and if they are added to ASRs, then we would have close
+to perfect 3D coverage on average.
+
+
+                                               Table 2-3
+               Median % of Airport Area (r < 6 NM) Exceeding WFVO Threshold
+                                           Minimum WFVO Threshold
+                 Radar Type                                                    3D Coverage (%)
+                                        0.5    0.6        0.7    0.8    0.9
+         ASR                            95.3   93.4       90.6   86.7   69.1   90.5
+         WX                             100    100        100    100    91.9   96.2
+         ASR + WX                       100    100        100    100    100    99.0
+         % of TRACONs WX > ASR          65.1   63.7       61.6   57.5   53.4   66.2
+
+
+
+    The 3D coverage values per TRACON from which the overall medians of Tables 2-2 and 2-3 were
+computed are provided in Table B-1 of Appendix B.
+
+      2.1.2    Highest Benefit TRACONs for WX Radar Addition
+
+      We now present the TRACONs that would have the highest positive coverage difference if WX radars
+are added to ASRs. The top sites are given in Table 2-4. ASE (Aspen, CO) is the only TRACON in this
+study without any ASR coverage, so it would gain the most from WX radar coverage (Figure 2-7, left).
+Roughly a third of P50 (Phoenix, AZ), in the north, is entirely missing ASR coverage (Figure 2-8), and it
+comes in second. Note that P50 is the only TRACON that receives CARSR weather feed data to supplement
+coverage in the northern sector. Thus, on one hand, it might be argued that the benefit of having WX radar
+coverage is somewhat offset by the CARSR data. On the other hand, CARSR weather data quality
+(Carmouche 2012) and update period (108 s) are significantly worse than ASR weather data.
+
+
+
+
+                                                     13
+                                           Table 2-4
+            3D Coverage (%) in Highest Benefit TRACONs for WX Radars
+                          TRACON ID                  ASR ASR + WX Difference
+             Aspen (ASE)                                0         83.6         83.6
+             Phoenix (P50)                           54.1         93.1         39.1
+             Boise (BOI): Bozeman (BZN) only            0         34.4         34.4
+             Missoula (MSO)                          59.6         90.9         31.4
+             Las Vegas (L30)                         61.4         87.3         25.9
+             Boise (BOI)                             43.5         62.0         18.5
+             Salt Lake City (S56)                 78.2            93.0         14.8
+             N. California (NCT): Reno (RNO) only 82.5            92.7         10.3
+             Roanoke (ROA)                        86.1            95.3          9.2
+
+
+
+
+Figure 2-7. WX radar WFVO for Aspen (ASE) TRACON (left) and Bozeman (BZN) airspace (right). Both have
+zero ASR coverage. BZN is a secondary airspace of the Boise (BOI) TRACON.
+
+
+
+
+                                               14
+Figure 2-8. Phoenix (P50) TRACON WFVO for ASRs (left) and ASRs + WX radars (right). TRACON boundary is blue,
+radars labels are black, and 6-NM radii around airport towers are in light green. White space indicates lack of
+coverage.
+
+
+
+
+       BZN (Bozeman, MT) is a secondary airspace controlled by BOI (Boise, ID) and does not have its
+own ASR. However, unlike the ASE case, the WX radar coverage is poor, so even though there is a
+significant gain in coverage compared to 0, the resulting coverage is still not very good (Figure 2-7, right).
+When all of the airspace controlled by BOI is considered, i.e., BOI plus BZN, the gain in coverage with
+WX radars comes mainly from the added BZN coverage.
+
+        In MSO (Missoula, MT), the mountainous terrain blocks ASR coverage at the farther reaches of the
+TRACON airspace. Adding WX radar coverage coming from a nearby NEXRAD, sited at a higher altitude,
+fills in these gaps (Figure 2-9).
+
+
+
+
+                                                     15
+          Figure 2-9. Missoula (MSO) TRACON WFVO for ASRs (left) and ASRs + WX radars (right).
+
+
+
+       In the L30 (Las Vegas, NV) TRACON, some deficiency in coverage in the eastern sector that would
+be left by the removal of the LAS ASR as part of the divestiture plan, would be nicely filled in by WX radar
+coverage (Figure 2-10). In comparing the ASR coverage for current vs. post-divestiture states, we found
+that of the 34 TRACONs affected by the ASR divestiture program, 33 of them would experience less than
+5% difference in mean WFVO coverage. The exception, L30, would go from 79.5% (now) to 61.4% (post-
+divestiture), for an 18.1% decrease. We recommend considering removing the LSV ASR instead of the
+LAS ASR, which, we compute, would lead to only a decrease of 5.7% in WFVO.
+
+
+
+
+Figure 2-10. Las Vegas (L30) TRACON WFVO for ASRs (left) and ASRs + WX radars (right). The addition of WX
+radars fills in the areas of poor coverage (blue colors) in the left-hand plot.
+
+
+
+
+                                                    16
+       It is noteworthy that the top benefit sites for WX radars are in the mountainous western U.S. (The
+first non-western site that appears on this list is ROA (Roanoke, VA), which is in the heart of the
+Appalachian Mountains.) Terrain blockage plays a significant role in limiting the range of ASRs in these
+locales, as they are sited on relatively low ground (i.e., valleys) where airports are located. The Salt Lake
+City (S56) TRACON is a good example of this (Figure 2-11). Because NEXRADs are deployed for
+overlapping long-range coverage, they tend to provide wider coverage within TRACONs, and would
+certainly be excellent complements to ASRs in these TRACONs, helping to address shortfall #4 (coverage)
+for the STARS precipitation display.
+
+
+
+
+Figure 2-11. Salt Lake City (S56) TRACON WFVO for ASRs (left) and ASRs + WX radars (right). The SLC ASR,
+located at airport level, is blocked by surrounding mountains in multiple directions (areas of blue in left plot). The
+higher elevation NEXRADs, especially KMTX, help fill in those gaps (right plot).
+
+
+
+
+                                                          17
+      2.1.3   TRACONs with Worst Coverage by WX Radars
+
+      We now turn our attention to the other end of the coverage spectrum—the TRACONs with the biggest
+losses when comparing ASR to WX radar coverage (Table 2-5). This list is important if, in the future, there
+is consideration for eliminating ASR weather data requirements in favor of having a terminal precipitation
+display product being entirely generated from weather radar data.
+
+
+
+                                                Table 2-5
+              3D Coverage (%) in TRACONs with Worst Coverage by WX Radars
+                                   TRACON ID                 ASR WX Difference
+                        Eugene (EUG) w/o Medford (MFR) 90.5 38.1                -52.4
+                        Moses Lake (MWH)                     94.5 57.2          -37.3
+                        Eugene (EUG)                         88.8 55.8          -33.0
+                        Roswell (ROW)                        97.6 66.9          -30.7
+                        Casper (CPR)                         93.3 64.6          -28.7
+                        Bangor (BGR)                         93.8 71.4          -22.4
+                        Reading (RDG)                        97.9 79.9          -18.0
+                        Harrisburg (MDT)                     96.7 79.8          -16.9
+
+
+
+      Because the Eugene, OR (EUG) TRACON has responsibility over Medford, OR (MFR) airspace,
+which is physically separated, we computed the coverages over each area separately. The first entry in
+Table 2-5 is EUG without MFR, and the third entry is EUG and MFR combined. (The MFR-only case did
+not make this list.) Figure 2-12 shows that the worst coverage from the WX radars occurs right in the middle
+of the EUG TRACON. This is due to this area being about the farthest point between the Portland, OR
+NEXRAD (KRTX) and the Medford NEXRAD (KMAX). The combination of the lack of near-surface
+coverage and the prevalence of low-altitude weather in the Pacific Northwest (Figure 2-6) makes west-
+central Oregon most problematic for WX radar coverage. This can also be seen in daily maximum
+composite reflectivity data (Figure 2-13).
+
+
+
+
+                                                    18
+Figure 2-12. Eugene (EUG) TRACON and Medford (MFR) airspace WFVO for ASRs (left) and WX radars (right).
+
+
+
+
+                                                   19
+Figure 2-13. NEXRAD daily maximum composite reflectivity example. From the Iowa Environmental Mesonet
+(IEM) web site (https://mesonet.agron.iastate.edu/docs/nexrad_mosaic/). Coverage seam in west-central Oregon is
+highlighted by red oval. KMAX’s lowest elevation angle has since been lowered from 0.5° to -0.1°, which helps but
+does not eliminate the coverage deficiency.
+
+
+
+
+      WX radar coverage over the Moses Lake, WA (MWH) TRACON is sparse in the western sector
+(Figure 2-14), due to the far distance of the Seattle, WA NEXRAD (KATX) and its blockage by the high
+Cascade mountain range. CANRADs also contribute little due to distance and mountain blockage. The
+southern half of the Roswell, NM (ROW) TRACON also suffers from radar distance and terrain obscuration
+(Figure 2-15).
+
+
+
+
+                                                       20
+            Figure 2-14. Moses Lake (MWH) TRACON WFVO for ASRs (left) and WX radars (right).
+
+
+
+
+              Figure 2-15. Roswell (ROW) TRACON WFVO for ASRs (left) and WX radars (right).
+
+
+
+
+       Further down the list are TRACONs in the eastern U.S. Here, terrain blockage is a less significant
+issue than in the West—it is more a case of WX radars not being located very close to the TRACONs. For
+these cases, the WX radar coverage often appears fairly smooth and consistent (e.g., Figure 2-16), albeit
+with WFVO not as high as for the ASRs. This begs the question of what coverage level would be deemed
+acceptable for ATC operations. Figure 2-17 shows histograms of 3D coverage per TRACON. There is a
+fair amount of variance in the 3D coverage provided by ASRs, especially for the near-airport case (Figure
+2-17, top right), but most cases fall into bins above 80%, which suggests that perhaps 80% 3D coverage
+may be acceptable in most cases. However, is “acceptable” 3D coverage dependent on other factors such
+as traffic volume and frequency of hazardous weather? As there is no pre-existing FAA requirement along
+
+
+
+
+                                                   21
+these lines, we recommend further evaluation through human-in-the-loop exercises comparing ASR-based
+and WX-radar-based precipitation products side by side. The benefit of adding WX radar coverage to ASR
+coverage is clearly shown in the bottom two histograms in Figure 2-17, as the combined 3D coverage is
+nearly all greater than 90% for both TRACON and near-airport airspaces.
+
+
+
+
+              Figure 2-16. Reading (RDG) TRACON WFVO for ASRs (left) and WX radars (right).
+
+
+
+
+                                                  22
+Figure 2-17. Histograms of 3D coverage for ASRs (top row), WX radars (middle row), and ASRs + WX radars
+(bottom row).
+
+
+
+
+                                                   23
+      If we assume for the moment that 80% 3D coverage is the minimum acceptable threshold, then we
+can narrow the list of the top coverage benefit sites (for the addition of WX radars to ASRs, as given in
+Table 2-4) to ones where the ASR coverage is less than 80%. The resulting list is ASE, P50, BOI, MSO,
+L30, and S56. Analogously, we can narrow the list of potentially problematic sites (for WX radars alone,
+as given in Table 2-5) to ones where the WX radar coverage is less than 80%. Rounding to the nearest
+integer, we have EUG, MWH, ROW, CPR, and BGR.
+
+2.2   HORIZONTAL RESOLUTION
+
+       The horizontal resolution of the 2D precipitation products displayed on STARS is dependent on many
+factors. Because there are numerous processing steps between data acquisition by the radar and display of
+the final product on the controller’s “glass,” the effective resolution is limited not only by the radar pulse
+resolution volume, but by the various averaging that is necessitated by data quality needs. Furthermore,
+these factors are independent of the quantized output intervals of the intermediate and final data.
+
+      Briefly, the azimuthal resolution of radar data is limited by: 1) antenna beam width (BW), 2) coherent
+processing interval (CPI), 3) azimuthal smoothing, and 4) data output interval. Radar data range resolution
+is limited by: 1) transmitted pulse width and processing, 2) range smoothing, and 3) data output interval.
+For more details on these issues, see Doviak and Zrnic (1993).
+
+       After the radar data is ingested by the NextGen Weather System, further processing (resampling to
+Cartesian coordinates, etc.) alters the end-product horizontal resolution. Here, we wish to investigate
+whether the native horizontal resolution of weather radars presents any concerns or potential benefits
+relative to the effective horizontal resolution being provided by ASRs for the STARS precipitation display.
+
+      Table 2-6 gives the azimuthal and range resolutions for reflectivity data from the WX radars and the
+6-level VIP product from the ASRs. The range resolution given is, strictly speaking, slant range resolution,
+which differs slightly from ground range resolution. However, for our purposes and the relatively low
+elevation angles of interest, they can be taken to be the same. The procedure for computing the effective
+azimuthal resolution from the antenna BW and CPI is explained in section 7.8 of Doviak and Zrnic (1993).
+NEXRAD’s so-called “super resolution” technique employs tapered windowing of time series data and a
+0.5° output interval to achieve an effective resolution of 1° (Torres and Curtis 2007). ASR-9 6-level weather
+product generation and associated data averaging is discussed in FAA (2008). The ASR-11 averaging is
+dependent on the weather intensity levels, and is site-adjustable, so the 3 x 3 (azimuth x range) averaging
+assumed here is the worst-case scenario (Regulus 2020). The upgraded ASR-8 appears not to perform any
+spatial smoothing on the precipitation product (IE 2019).
+
+
+
+
+                                                     24
+                                               Table 2-6
+                               Radar Spatial Resolution Parameters
+                                Azimuth                                     Range (km)
+  Radar                      Output                                     Output
+             BW    CPI                 Averaging Effective Pulse                   Averaging Effective
+                            Interval                                   Interval
+ NEXRAD 0.95° 1°         0.5°          N/A         1°        0.25   0.25           N/A         0.25
+ TDWR   0.55° 1°         1°            N/A         1.2°      0.15   0.15           N/A         0.15
+ CANRAD 0.9       1°    1            N/A         1.5°      0.5    0.5            N/A         0.5
+ ASR-8      1.4   1.4 1.4           N/A         2        0.15   0.93           N/A         0.93
+ ASR-9      1.4   1.4 1.4           3x          4.8      0.15   0.93           3x          2.8
+ ASR-11     1.4   1.4 1.4           3x          4.8      0.15* 0.93            3x          2.8
+*After pulse compression processing.
+
+
+
+
+      We can see from Table 2-6 that the WX radar reflectivity outputs provide superior horizontal
+resolution relative to the ASRs. Some of this advantage in the azimuth dimension may be counteracted if
+the WX radars are located farther away from the TRACON than the ASRs. To investigate this issue, we
+computed the limiting horizontal resolution (LHR), which is the worse of either the azimuthal or range
+resolution at any given point in space, over all the TRACONs. The mean LHR computed over each
+TRACON and over the near-airport airspaces are listed in Table B-2 of Appendix B. The median of these
+values computed over all the TRACONs are given in Table 2-7.
+
+
+
+                                               Table 2-7
+                               Median LHR (km) Over All TRACONs
+                     Domain           ASR WX ASR+WX % of TRACONs WX < ASR
+                     TRACON           4.02 1.18 1.14         93.4
+              Within 6 NM of Airports 2.79 0.89 0.87         88.4
+
+
+
+      The LHR statistics show that the horizontal resolution of WX radar data that are ingested by the
+NextGen Weather System is better on average than that of the ASR six-level precipitation product that is
+sent to STARS. Of the small number (11) of TRACONs where WX LHR is worse than ASR LHR, only
+Casper, WY (CPR) has a mean TRACON LHR that is more than 1 km greater for WX radars. Thus, we
+might reasonably expect a benefit associated with this resolution improvement, for both WX radar data as
+supplement to ASR data and even for WX radar data alone. Since better spatial resolution contributes to a
+more accurate depiction of weather, this will help address shortfall #1 (accuracy) for the STARS
+
+
+
+
+                                                   25
+precipitation display. The actual horizontal resolution of the WX-radar-based STARS precipitation display
+will be limited by the 1-km grid spacing of the NextGen Weather System and potentially by TPoG adaptor
+processing. Ideally, the NextGen Weather System Cartesian grid would be directly ingested and displayed
+by STARS, but the current STARS input only accepts radar-based range-azimuth grids, so the NextGen
+Weather System data will need to be resampled as virtual radar data input, which will degrade the horizontal
+resolution at points farther away from the virtual radar locations. In addition, the STARS reprojection and
+mosaicking algorithm further modifies the virtual radar resolutions prior to display on the scope.
+
+      Note, however, that finer horizontal resolution may not necessarily be better from an operational
+perspective. Even if accurate, there may be instances when fine-scale differences in precipitation levels
+might distract more than help in routing traffic. There is likely an optimal resolution for TRACON
+operations. But it certainly is better that the input radar data have finer than coarser resolution, because it
+is possible to further smooth the former but impossible to recover finer features from coarser data.
+
+
+
+
+                                                      26
+                                  3. TIME DOMAIN ANALYSES
+
+
+      We now shift to a discussion of time domain issues that are relevant for the TPoG program. As
+shortfall #5 for STARS precipitation display is insufficient availability of event depiction, the input radar
+data availability is certainly a matter of interest. Timely depiction of precipitation on the STARS display is
+also an important factor, which involves both update period and latency of the input data. We begin with
+an analysis of data availability.
+
+3.1   OPERATIONAL AVAILABILITY
+
+      The availability of STARS precipitation display data is a product of the individual availabilities of
+all components, starting with the radars, through the various processors, and the data transfer lines. Of all
+the components, radars are the most likely culprit to be the limiting factor in the end-to-end operational
+availability (Ao) chain. This is because radars require a significant amount of scheduled maintenance
+downtime every year. Operational availability includes scheduled downtime, in contrast to inherent
+availability (Ai), the metric most often used for specification in contracts. As the name suggests, operational
+availability is more relevant for practical operational concerns.
+
+      The Ao specification for the ASRs (FAA 2017) and TDWR is 0.999 (FAA 1987). For NEXRAD, it
+is 0.960 for the National Weather Service (NWS) and Air Force (AF) systems, and 0.989 for the FAA
+systems (ROC 2008).
+
+      If there is overlap of coverage from different radars, then the aggregate data availability in that area
+of overlap will be greater than the individual radar data availability. Therefore, adding a WX-radar-based
+precipitation product to the existing ASR-based STARS display will increase the overall availability of the
+displayed data. The formula for this aggregate operational availability is
+
+                                           Ao(N) = 1 – [1 – Ao(1)]N ,                                      (1)
+
+where N is the overlap count. Using the actual recent Ao statistics for each radar type (not shown here), the
+formula revealed that all of them would exceed 0.999 Ao with two overlaps, except for the FAA NEXRAD.
+(The only FAA NEXRADs relevant for this study are the ones in Alaska, where hazardous convective
+weather is rare.)
+
+      Figure 3-1 shows histograms of the average coverage overlap counts per TRACON; the left column
+shows results for averaging over the TRACON area, and the right column shows results for averaging only
+over near-airport areas. Individual TRACON results are given in Appendix B, Table B-3. For the
+TRACON-averaged cases, only 32 out of 146 TRACONs (22%) have average ASR coverage overlap of
+two or more, while 131 out of 146 TRACONs (90%) have average WX radar overlap of two or more. This
+implies that the WX radars tend to have much better aggregate TRACON Ao than the ASRs. And when the
+two sources are combined, no TRACON would have single-radar coverage, meaning that the TRACONs
+
+
+
+
+                                                      27
+ would have Ao > 0.999 even with the historical single-radar Aos. Therefore, a WX-radar-based precipitation
+ product on STARS would help address shortfall #4 (availability) for the STARS display. The near-airport
+ cases show similar benefits.
+
+
+
+
+                           ASRs (TRACONs)                        ASRs (Near Airports)
+
+
+
+
+                         WX Radars (TRACONs)                  WX Radars (Near Airports)
+
+
+
+
+                     ASRs + WX Radars (TRACONs)            ASRs + WX Radars (Near Airports)
+
+
+
+
+Figure 3-1. Histograms of average coverage overlap count in a TRACON for ASRs (top row), WX radars (middle
+row), and ASRs + WX radars (bottom row). The left column is average taken over the TRACON, and the right
+column is average taken over near-airport (r < 6 NM) airspace.
+
+
+
+
+                                                      28
+3.2   UPDATE PERIOD
+
+      The timeliness of the STARS precipitation display depends on the update period—which is the time
+elapsed between display updates—and latency—which is the time elapsed between the start of radar
+observation to display presentation. The update period for the ASR-based STARS weather display is 28.8 s,
+and it would be 25 s for a NextGen Weather System-based STARS weather display. Therefore, the two
+update periods are comparable, and there would not seem to be any concerns in this area. However, these
+update periods only correspond to the output of the data processors—they do not necessarily mean that the
+inputs to the processors are being refreshed with new observations at the same or faster rate. If they are not,
+then the timeliness of the display can be worse than the stated update period.
+
+      The ASRs perform a 360° azimuthal rotation of its vertically thick (Figure 2-2) antenna beam every
+4.8 s, average the weather reflectivities over six scans, then output the temporally smoothed six-level
+precipitation product to STARS. Thus, its 28.8-s update period is reflective of the actual observational
+refresh time. The situation is not as clear for the NextGen Weather System, because it ingests data from
+multiple WX radars with variable scan update periods. Also, unlike the ASRs, the WX radars conduct 360°
+azimuthal rotations of vertically thin (Table 2-1) antenna beams at multiple elevation angles to cover the
+surveillance volume. Thus, it would be useful to understand, at least on average, how often new and
+independent WX radar observations are going into each 25-s NextGen Weather System update. For this
+investigation, we focus on the NEXRAD for specific details, since it is the dominant source of radar data
+for the NextGen Weather System.
+
+      First, we note that NEXRADs have, since 2012, a scanning mode called automated volume scan
+evaluation and termination (AVSET; Chrisman 2013), which is turned on by default at all sites. AVSET
+determines the highest elevation angle where there are detectable weather echoes and skips the scanning of
+higher angles (Figure 3-2) with some added margin for rapid growth. The result is that nearly every
+elevation scan has new weather observation data, i.e., there is little “wasted” radar time spent on clear-air
+elevation cuts. This implies that almost every new elevation scan received from a NEXRAD by the NextGen
+Weather System contains fresh precipitation data. AVSET also reduces the average volume scan update
+periods. For example, the median volume update time for NEXRAD VCP 12, a popular severe weather
+VCP, is 3.6 minutes. The median NEXRAD volume update time for all non-clear-air VCPs is 4.6 minutes.
+(TDWRs have even faster volume scan updates for hazardous modes at about 2.5 minutes.)
+
+
+
+
+                                                      29
+                           Figure 3-2. Illustration of AVSET. From Mersereau (2014).
+
+
+
+       Second, as with availability, overlapping coverage provides a boost to update rates. For radars
+scanning 360° azimuthally every T seconds, at any given point in 3D space, the mean revisit period by a
+radar is T/N, where N is the overlap count. However, at a given point in horizontal space, N varies with
+altitude due to the Earth’s curvature, ground blockage, and radar cones of silence (Figure 3-3). Furthermore,
+every altitude is not of equal importance, since the occurrence of weather varies with height at each location.
+Therefore, for every point in 2D horizontal space, we calculated the weighted mean update time using the
+product of the overlap count and Level 2 reflectivity (Figure 2-6) vertical profiles. We assumed T = 21.4 s,
+which is the actual average elevation scan time, taken over 2014-2020 for all CONUS NEXRADs in non-
+clear-air VCP modes. (The average TDWR elevation scan update period is about 15 s.)
+
+
+
+
+                                                      30
+             Figure 3-3. NEXRAD and TDWR coverage overlap count by altitude. From Cho (2015).
+
+
+
+
+       The resulting weighted mean WX radar update times averaged over each TRACON and over the
+near-airport areas are given in Appendix B, Table B-4. The histogram of the TRACON results is shown in
+Figure 3-4. Two extreme cases are plotted in Figure 3-5—Chicago, IL (C90) and Anchorage, AK (A11).
+C90, due to the high number of radar coverage overlaps, has the shortest average WX radar update period
+(3.9 s), while A11, with coverage mainly from one NEXRAD, has an average update period of 21.3 s. The
+bulk of TRACONs would have a new and independent elevation scan every 5 to 10 s in the presence of
+weather, with a median value of 7.6 s—comparable to the ASR scan period of 4.8 s. (The median elevation
+scan update period of 7.6 s corresponds to a median overlap count of 2.8.) This is a conservative estimate,
+
+
+
+
+                                                    31
+since we used the average NEXRAD T as input, whereas TDWRs, as noted earlier, have shorter elevation
+scan periods. In general, TRACONs with longer effective WX radar update periods tend to be in locations
+with lower terminal traffic and convective weather hazard occurrence. (TRACONs with high traffic and
+convective hazard occurrence have TDWRs, which overlap with NEXRAD coverage.) We conclude that
+the NextGen Weather System receives fresh WX radar rapidly enough on average for its 25-s update period
+to be a meaningful measure of data timeliness.
+
+
+
+
+                                            Median over all
+                                           TRACONs = 7.6 s
+
+
+
+
+                                                                           A11,
+                                                                           FAI
+                        C90
+
+
+
+
+      Figure 3-4. Histogram of weighted mean WX radar scan update times averaged over each TRACON.
+
+
+
+
+                                                  32
+                         C90                                                  A11
+
+
+
+
+Figure 3-5. Weighted mean WX radar update period for the Chicago (left) and Anchorage (right) TRACONs. Note
+that the color scales for the two plots differ.
+
+      Although we have shown that there is meaningful data refresh within the 25-s update window of the
+NextGen Weather System, complete volume updates take a longer time. For any vertical column, the
+aggregate multi-radar volume update period depends on many factors. It would certainly decrease with the
+number of overlaps within a given vertical column. At best, it could be the single-radar volume update time
+divided by the degree of overlap if the radars happen to scan different elevations at different times, but at
+worst it could approach the single-radar update time if the radars happen to scan the same elevations at the
+same times. If we crudely assume that the distribution of cases is uniform between the two extremes, then
+we get (Tv/N + Tv)/2 for the average multi-radar volume update time, where Tv is the average single-radar
+volume update time. Applying this expression to the median NEXRAD non-clear-air volume update time
+of 4.6 minutes and the average overlap count of 2.8 over all TRACONs, we get 3.1 minutes as a very rough
+estimate of the average WX volume update period overall all TRACONs. This is likely an overestimate as
+it does not get credit for the faster volume update time (2.5 minutes) of TDWRs.
+
+       Unlike discrete targets like aircraft, precipitation has significant vertical continuity. Therefore, the
+horizontal location updates of precipitation that are generated faster than the full volume updates can be
+quite accurate, especially with the sliding volume time alignment scheme (discussed further in the next
+section) used by the NextGen Weather System. However, intensity measures like VIL and composite
+reflectivity that are computed over the vertical column are more accurate at the full volume update
+timescale. It would be prudent to conduct further comparative evaluation using real and/or simulated radar
+data to assess the overall suitability of a WX-radar-based precipitation product for airport and TRACON
+ATC operations.
+
+
+
+
+                                                      33
+3.3   LATENCY
+
+      No matter how often the display data is updated, if there is a long time lag between observation and
+display, then it cannot be said that the display is timely. This lag, or latency, between the start of radar
+observation and delivery of the processed six-level VIP data to the STARS display input is specified to be
+within nine ASR scans (Raytheon 1999), which is 9 × 4.8 s = 43.2 s. This latency definition excludes any
+reprojection and mosaic time by the STARS display processor. We now proceed to estimate the equivalent
+latency for a NextGen Weather System-based TPoG display on STARS.
+
+      For this analysis, we begin with the start of a NEXRAD scan and end with delivery of the TPoG six-
+level weather product at the STARS display input. Table 3-1 lists the component breakdown of the entire
+latency chain.
+
+                                                Table 3-1
+      Latency Budget for NextGen Weather System-based STARS Precipitation Data
+                             Process                                             Latency (s)
+       Average NEXRAD elevation scan                                                 21
+       NEXRAD Product 193 generation                                                  5
+       NEXRAD to CSS-Wx data transfer                                                 15
+       CSS-Wx provider service adaptor                                                 1
+       NextGen Weather System data ingest and pre-processing                           5
+       Average NextGen Weather System mosaic queue wait time                         12.5
+       Mosaic trigger to Composite Reflectivity mosaic in netCDF                       4
+       NextGen Weather System/CSS-Wx to cloud data transfer                            5
+       Virtual radar data generation                                                  5
+       Cloud to STARS data transfer                                        33 (T1), 10 (T2), 3 (T3)
+       STARS TPoG adaptor                                                            10
+       Total                                                           116.5 (T1), 93.5 (T2), 86.5 (T3)
+       Total with NextGen Weather System motion
+                                                                          53 (T1), 30 (T2), 23 (T3)
+       compensation
+
+
+
+      As stated previously, 21 s is the average measured NEXRAD elevation scan time for non-clear-air
+VCPs. Product 193 is NEXRAD Level 3 super-resolution digital reflectivity with data quality algorithm
+processing that the NextGen Weather System ingests to generate CR or VIL (Dupree and Cho 2021) that
+will be used to produce the six-level precipitation product for STARS. Five seconds is a typically observed
+generation time for Product 193. The data would then be sent to the FAA’s CSS-Wx system, with a data
+transmission and CSS-Wx provider service adaptor processing latency specifications of 15 s and 1 s,
+respectively (FAA 2021).
+
+
+
+
+                                                    34
+      The average measured time for per-radar Product 193 ingest and pre-processing by the NextGen
+Weather System up to the multi-radar mosaic queue is 5 s. At this point, the data waits in the queue until
+the next mosaic trigger, which cycles every 25 s—therefore, we estimate the mean wait time to be 25/2 =
+12.5 s, since individual radar scans can arrive at any point within the 25-s window. After the trigger, the
+measured average time for mosaic generation and conversion to netCDF format is 4 s (Greg Viola, private
+communication).
+
+      After this point, the future operational TPoG processing and dissemination architecture has not been
+determined. Thus, we assumed a particular architecture as illustrated in Figure 3-6. The NextGen Weather
+System output data is assumed to be sent via T3 transmission line to a virtual radar (VR) generation
+processor (“slicer”) in a cloud computing environment. Based on 29 MB of NextGen Weather System
+output sliced data, we estimate about 5 s for this data transfer latency. Since some of the larger 146
+TRACONs will require more than one VR for complete coverage, we assumed 300 VRs; for this cloud-
+based VR generation time, we conservatively allocated 5 s.
+
+
+
+
+                                                                 Segment 2             STARS
+                                                                 256 kbps                1
+
+
+
+                    NextGen                      Segment 1
+                                                      FTI                              STARS
+                    Weather     T3   Slicer      T1/T2/T3 Line
+                                                                            256 kbps
+
+                    System                                                               2
+                                                                                         .
+                                                                                         .
+                                                                                         .
+
+                                                                 256 kbps              STARS
+                                                                                         n
+
+                          Figure 3-6. Assumed TPoG data distribution architecture.
+
+
+
+
+      The cloud-to-STARS transfer times given in Table 3-1 assumes T1, T2, or T3 transmission lines for
+Segment 1, and 256-kbps lines for Segment 2 (Figure 3-6). The 256 kbps bandwidth is based on an
+assumption that some facilities may be still using older equipment. Finally, the STARS TPoG adaptor
+processing time of 10 s is conservatively based on current concept demonstration system performance. The
+
+
+
+
+                                                     35
+resulting total latency times are about a factor of two longer than the 43.2-s specification for the ASR six-
+level weather product delivery to STARS.
+
+       However, NextGen Weather System’s tilt-by-tilt and mosaic motion compensation (Figure 3-7)
+effectively cancels some of the latency components by advecting radar observations to a future time. Data
+alignments occur between the radars’ end-of-tilt time to the mosaic trigger time, plus an additional time
+that is a configurable parameter (“additionalAdvectOffset_s”). This parameter compensates for post-
+mosaic-trigger latencies and the update period length; it is currently set to 25 s on MIT Lincoln Laboratory’s
+test reference system and Raytheon’s implementation of the NextGen Weather System. Consequently, for
+the assumed TPoG distribution architecture (Figure 3-6), 63.5 s of location latency is cancelled by NextGen
+Weather System’s motion compensation scheme. The resulting total latency times are reduced to be
+comparable to or better than the 43.2-s specification for the ASR six-level weather product delivery (Table
+3-1, bottom row), helping to address shortfall #1 (accuracy) for STARS precipitation depiction. (Caveat
+emptor: motion compensation does not work perfectly and cannot account for very rapid growth or decay.)
+
+
+
+
+Figure 3-7. Illustration of NextGen Weather System’s motion compensation scheme (“sliding volume” technique).
+See MIT (2019) for further information.
+
+
+
+
+                                                      36
+                                   4. SUMMARY DISCUSSION
+
+
+      TPoG’s concept of making precipitation display products based on a national mosaic of WX radar
+data available to STARS is appealing, as the quality of WX radar data is fundamentally better than that of
+ASR-based weather observations. This is because WX radars are specifically designed for weather
+surveillance, whereas the ASRs’ primary mission is to detect and track aircraft. However, since WX radars
+are not expressly sited to cover airport and TRACON airspaces, there were questions about whether there
+would be acceptable coverage provided by them in all cases. Specifically, the issues in question were spatial
+coverage, horizontal resolution, availability rate, update period, and latency.
+
+      Our study concludes that the addition to the STARS display of a precipitation product based on a
+national mosaic of WX radars would, in fact, provide benefit in all of these areas, on average. Several
+TRACONs were identified as having especially high benefit potential for improved coverage (ASE, P50,
+BOI, MSO, L30, and S56), while others were flagged as potentially problematic due to lack of low-altitude
+coverage (EUG, MWH, ROW, CPR, and BGR). Since the FAA does not have explicitly defined
+requirements for 3D weather observation coverage within TRACON airspaces, we recommend further
+studies involving human-in-the-loop evaluations to determine what degree of coverage is acceptable for
+operational ATC needs.
+
+      Adding WX radars as a source for STARS precipitation depiction effectively increases the degree of
+coverage overlap. Even on their own, WX radars have substantial overlapping coverage, especially in
+regions that correspond to heavy air traffic and high hazardous weather occurrence rate (due to TDWRs
+being located at those types of airports). Consequently, their addition increases the aggregate data
+availability and the effective radar update rate at any given point in space.
+
+      The data latency analysis has more uncertainty than the other areas of study, since the future
+operational TPoG architecture is yet to be determined. However, based on reasonable assumptions, we
+project that a NextGen-Weather-System-based TPoG precipitation product would have an effective latency
+from start of observation to arrival at the STARS display input that is comparable to that of the current
+ASR-based precipitation product. This conclusion assumes that NextGen Weather System’s motion
+compensation technique is effective in eliminating lags due to advection; it excludes situations of very rapid
+growth or decay in convective storms. Without taking into account motion compensation, the TPoG data
+latency is about twice the ASR-based latency.
+
+      Our 3D radar coverage metric, based on the WFVO formula that we developed for this study, could
+also be used for determining precipitation product degradation status. Because of the highly overlapping
+nature of the WX radar coverage, when a radar becomes unavailable, it is not obvious whether any
+TRACON or airport would be adversely affected by this input data dropout. The weather-weighted 3D
+coverage metric, which can be pre-computed for all possible combinations of radar outages for all
+TRACONs and airport airspaces, could then be used to declare a degradation status for any display. It would
+
+
+
+
+                                                     37
+require a determination of a threshold for the “degraded” status definition, but this can be a default value
+that could be customized at each site. An example of how this might work is shown in Figure 4-1. Here,
+over the Rochester, MN (RST) TRACON airspace, the relative 3D coverage (i.e., compared to the baseline
+coverage with all WX radars available) is computed for the cases when either the KARX or KMPX
+NEXRAD is down, and when both of those radars are down. Then, for a given threshold (96%, 94%, 90%,
+85%) the table in Figure 4-1 shows which conditions would result in a “degraded” status. The status flag
+could be generated by the TPoG adaptor to be passed on to STARS together with the precipitation product,
+and/or there could be a separate web-based TPoG monitor “console” that continuously displays the relative
+coverage statuses of all the TRACONs, based on real-time radar availability information. We recommend
+a follow-up activity to develop the best approach in dealing with missing radar conditions.
+
+
+
+
+                                                    38
+                           Threshold “Degraded” flag is set if…
+                           96%             KARX or KMPX is missing
+                           94%             KARX or KMPX is missing
+                           90%             KARX is missing
+                           85%             KARX and KMPX are missing
+
+
+
+
+               RST (baseline)                                  RST minus KMPX
+
+
+
+
+ Coverage relative to baseline = 100% Coverage relative to baseline = 93%
+
+           RST minus KARX                                 RST minus KMPX, KARX
+
+
+
+
+  Coverage relative to baseline = 87%                   Coverage relative to baseline = 36%
+
+Figure 4-1. An example of using the 3D coverage metric to determine a “degraded” status for a WX-radar-
+based precipitation display.
+
+
+
+
+                                                   39
+This page intentionally left blank.
+           APPENDIX A: TABLES OF SITE-SPECIFIC PARAMETERS
+
+
+                                           Table A-1
+                    TRACONs and Associated Airport Surveillance Radars
+ ID         Location        ASR-8            ASR-9              ASR-11     GPN
+A11   Anchorage             ANCA                          ANC
+A80   Atlanta                       LZU                   CSG, MCN       MGE
+                                    ACK, BDL, BOS, MHT,
+A90   Boston
+                                    PVD
+ABE   Allentown                                           ABE, AVP
+ABI   Abilene                       SJT                   ABI
+ABQ   Albuquerque                   ABQ
+ACT   Waco                                                ACT
+ACY   Atlantic City                 ACY, PHL
+AGS   Augusta                                             AGS
+ALB   Albany                        ALB
+ALO   Waterloo              ALO     CID
+AMA   Amarillo                                            AMA
+ASE   Aspen
+AUS   Austin                        AUS
+AVL   Asheville             AVL
+AVP   Wilkes-Barre                                        AVP
+AZA   Lansing               AZO     DTWA                  MBS, MKG       MTC
+AZO   Kalamazoo             AZO     DTWA                  MBS, MKG
+BAD   Shreveport                    BAD
+BFL   Bakersfield           BFL
+BGM   Binghamton            ELM                           BGM
+BGR   Bangor                                              BGR
+BHM   Birmingham                    BHM
+BIL   Billings                                            BIL
+BIS   Bismarck              BIS
+BNA   Nashville                     BNA
+BOI   Boise                                               BOI            MUO
+BTR   Baton Rouge                                         BTR
+BTV   Burlington                                          BTV
+BUF   Buffalo                       BUF                   ERI
+C90   Chicago                       DPA, MKE, ORDA, QXM
+
+
+
+
+                                               41
+CAE   Columbia           GSP                          AGS   SSC
+CHA   Chattanooga        CHA
+CHS   Charleston, SC           CHS                          SSC
+CID   Cedar Rapids             CID                    MLI
+CKB   Clarksburg         CKB
+                               CLE, CMH, DTWA, PIT,
+CLE   Cleveland                                       CAK
+                               TOL
+CLT   Charlotte                CLT
+CMH   Port Columbus            CMH, DAY
+CMI   Champaign                                       CMI
+COS   Colorado Springs                                COS
+CPR   Casper             CPR
+CRP   Corpus Christi           HRL                    CRP
+CRW   Charleston, WV     CRW
+CVG   Cincinnati               CVG, DAY, SDF          LEX
+D01   Denver                   DENA, GXY, QLO         COS
+D10   Dallas                   DFWA                         NFW
+D21   Detroit                  DTWA
+DAB   Daytona Beach            DAB, MCO               VRB   XMR
+DLH   Duluth             DLH
+DSM   Des Moines               DSM
+ELM   Elmira             ELM                          BGM
+ELP   El Paso                  ELP
+EUG   Eugene             EUG   MFR
+EVV   Evansville         EVV
+F11   Orlando                  DAB, MCO               VRB   XMR
+FAI   Fairbanks                                       FAI
+FAR   Fargo                                           FAR
+FAT   Fresno                                          MCE   NLC
+FAY   Fayetteville             RDU                          FBG, GSB
+FLO   Florence                                        MYR   FBG, SSC
+FSD   Sioux Falls                                     FSD
+FSM   Fort Smith               FYV                    FSM
+FWA   Fort Wayne               FWA                          GUS
+GEG   Spokane                  GEG
+GGG   Longview           GGG
+GPT   Gulfport                                        GPT
+GRB   Green Bay                                       GRB
+GSO   Greensboro               GSO
+
+
+
+
+                                          42
+GSP   Greer                  GSP
+GTF   Great Falls            GTF
+HSV   Huntsville                   HSV
+HTS   Huntington             HTS
+HUF   Terre Haute            HUF
+I90   Houston                      HUB, IAH              BNH, BPT, LFT     POE
+ICT   Wichita                      ICT                                     FRI
+ILM   Wilmington                                         MYR               NCA, GSB
+IND   Indianapolis                 IND
+JAN   Jackson                JAN
+JAX   Jacksonville                 DAB, GNV                                NIP, NRB
+L30   Las Vegas                    LSV
+LBB   Lubbock                      LBB                   ABI
+LCH   Lake Charles                                       BPT, LFT          POE
+LEX   Lexington                    SDF                   LEX
+LFT   Lafayette                                          BPT, BTR, LFT     POE
+LIT   Little Rock                                        LIT
+M03   Memphis                      MEM
+M98   Minneapolis-St. Paul         MSP
+MAF   Midland                      SJT                   MAF
+MCI   Kansas City                  MCI
+MDT   Harrisburg                   MDT                   ABE, NXX
+MGM   Montgomery                   MXF
+MIA   Miami                        FLL                                     HST
+MKE   Milwaukee                    MKE, MSN              GRB
+MLI   Moline                       CID                   MLI
+MLU   Monroe                 MLU
+MOB   Mobile                                             MOB
+MSN   Madison                      MSN                                     VOK
+MSO   Missoula                     MSO
+MSY   New Orleans                  MSY                   LFT
+MW
+      Moses Lake                   MWH
+H
+MYR   Myrtle Beach                                       MYR
+                                   ALB, HPN, ISP, JFK,
+N90   New York                                           AVP               WRI
+                                   PVD, SWF
+NCT   N. California                BAB, OAK              MCE, MRY, RNO, SCK SUU
+OKC   Oklahoma City                OKC
+ORF   Norfolk                      RIC                                     NTU
+
+
+
+
+                                              43
+P31   Pensacola                                     MOB, PNS   NSE
+P50   Phoenix          IWA   PHX                               LUF
+P80   Portland, OR           PDX
+PBI   W. Palm Beach          MCO                    PBI, VRB   XMR
+                             ADW, BWI, CHO, IAD,
+PCT   Potomac                                                  NHK, NYG
+                             MDT, MRB, PHL, RIC
+PHL   Philadelphia           PHL                    NXX        DOV, WRI
+PIT   Pittsburgh             PIT                    PIA
+PSC   Pasco                  PSC, YKM
+PVD   Providence             BDL, PVD
+PWM   Portland, ME           PWM, MHT
+R90   Omaha                  OMA                    LNK
+RDG   Reading                MDT                    ABE, NXX
+RDU   Raleigh-Durham         RDU                               FBG, GSB
+RFD   Rockford         RFD   DPA
+ROA   Roanoke          ROA   LYH
+ROC   Rochester, NY          ROC
+ROW   Roswell                ROW
+RST   Rochester, MN                                 RST
+RSW   Fort Myers                                    RSW
+S46   Seattle                SEA                               NUW
+S56   Salt Lake City         SLC
+SAT   San Antonio            AUS, SATA
+SAV   Savannah                                                 LHW, NBC
+SBA   Santa Barbara                                 SBA, SMX
+SBN   South Bend       SBN   QXM
+                             BUR, LAXN, LGB, LSV,
+SCT   S. California                                            NZY
+                             NFG, NKX, ONT, PSP
+SDF   Louisville             CVG, IND, SDF          LEX
+SGF   Springfield                                   COU, SGF
+SUX   Sioux City                                    SUX
+SYR   Syracuse               ALB, SYR
+T75   St. Louis              BLV, STL               PIA, SPI
+TLH   Tallahassee      TLH
+TOL   Toledo                 TOL
+TPA   Tampa                  SRQ, TPA
+TRI   Tri-Cities       TRI
+TUL   Tulsa                  TUL
+TYS   Knoxville              TYS
+
+
+
+
+                                        44
+U90   Tucson              IWA        DMA, PHX
+Y90   Bradley                        BDL, HPN, PVD
+YNG   Youngstown                     PIT                   CAK, ERI
+BZN   Bozeman (BOI)                                        BOI                 MUO
+      Grand Junction
+GJT                                  DENA, GXY, QLO        COS, PUB
+      (D01)
+PUB   Pueblo (D01)                   DENA, GXY, QLO        COS
+MFR   Medford (EUG)       EUG        MFR
+SJT   San Angelo (MAF)               SJT                   MAF
+RNO   Reno (NCT)                     BAB, MCC, NUQ, OAK    MCE, MRY, RNO, SCK SUU
+
+
+
+
+                                           Table A-2
+                           List of TRACON-associated ASRs
+              ID                     Location               Type      Agency
+             ABE     Allentown                            ASR-11      FAA
+             ABI     Abilene                              ASR-11      FAA
+             ABQ     Albuquerque                          ASR-9 WSP   FAA
+             ACK     Nantucket                            ASR-9       FAA
+             ACT     Waco                                 ASR-11      FAA
+             ACY     Atlantic City                        ASR-9 WSP   FAA
+             ADW     Andrews AFB (Camp Springs)           ASR-9       FAA
+             AGS     Augusta                              ASR-11      FAA
+             ALB     Albany                               ASR-9 WSP   FAA
+             ALO     Waterloo                             ASR-8       FAA
+             AMA     Amarillo                             ASR-11      FAA
+             ANC     Anchorage-2                          ASR-11      FAA
+             ANCA    Anchorage-1                          ASR-8       FAA
+             AUS     Austin                               ASR-9 WSP   FAA
+             AVL     Asheville                            ASR-8       FAA
+             AVP     Wilkes Barre                         ASR-11      FAA
+             AZO     Kalamazoo                            ASR-8       FAA
+             BAB     Marysville (Beale AFB)               ASR-9       FAA
+             BAD     Shreveport (Barksdale AFB)           ASR-9       FAA
+             BDL     Windsor Locks (Bradley)              ASR-9 WSP   FAA
+             BFL     Bakersfield                          ASR-8       FAA
+             BGM     Binghamton                           ASR-11      FAA
+
+
+
+
+                                                45
+BGR    Bangor                        ASR-11      FAA
+BHM    Birmingham                    ASR-9 WSP   FAA
+BIL    Billings                      ASR-11      FAA
+BIS    Bismarck                      ASR-8       FAA
+BLV    Scott AFB (Belleville)        ASR-9       FAA
+BNA    Nashville                     ASR-9       FAA
+BNH    Brenham (CLL)                 ASR-11      FAA
+BOI    Boise                         ASR-11      FAA
+BOS    Boston                        ASR-9       FAA
+BPT    Beaumont                      ASR-11      FAA
+BTR    Baton Rouge                   ASR-11      FAA
+BTV    Burlington                    ASR-11      FAA
+BUF    Buffalo                       ASR-9 WSP   FAA
+BUR    Burbank                       ASR-9       FAA
+BWI    Baltimore                     ASR-9       FAA
+CAK    Akron/Canton                  ASR-11      FAA
+CHA    Chattanooga                   ASR-8       FAA
+CHO    Charlottesville               ASR-9       FAA
+CHS    Charleston                    ASR-9 WSP   FAA
+CID    Cedar Rapids                  ASR-9 WSP   FAA
+CKB    Clarksburg                    ASR-8       FAA
+CLE    Cleveland                     ASR-9       FAA
+CLT    Charlotte                     ASR-9       FAA
+CMH    Columbus                      ASR-9       FAA
+CMI    Champaign                     ASR-11      FAA
+COS    Colorado Springs              ASR-11      FAA
+COU    Columbia                      ASR-11      FAA
+CPR    Casper                        ASR-8       FAA
+CRP    Corpus Christi                ASR-11      FAA
+CRW    Charleston                    ASR-8       FAA
+CSG    Columbus                      ASR-11      FAA
+CVG    Covington (Cincinnati)        ASR-9       FAA
+DAB    Daytona Beach                 ASR-9       FAA
+DAY    Dayton                        ASR-9       FAA
+DENA   Denver (Irondale)             ASR-9       FAA
+DFWA   West Dallas Ft. Worth         ASR-9       FAA
+DLH    Duluth                        ASR-8       FAA
+DMA    Tucson (Davis Monthan AFB)    ASR-9 WSP   FAA
+
+
+
+
+                                46
+DOV    Dover                          ASR-11      AF
+DPA    West Chicago (DuPage)          ASR-9       FAA
+DSM    Des Moines                     ASR-9 WSP   FAA
+DTWA   Detroit (Romulus)              ASR-9       FAA
+ELM    Elmira                         ASR-8       FAA
+ELP    El Paso (Biggs AFB)            ASR-9 WSP   FAA
+ERI    Erie                           ASR-11      FAA
+EUG    Eugene                         ASR-8       FAA
+EVV    Evansville                     ASR-8       FAA
+FAI    Fairbanks                      ASR-11      FAA
+FAR    Fargo                          ASR-11      FAA
+FBG    Ft. Bragg                      ASR-11      Army
+FLL    Ft. Lauderdale                 ASR-9       FAA
+FRI    Ft. Riley                      ASR-11      Army
+FSD    Sioux Falls                    ASR-11      FAA
+FSM    Ft. Smith                      ASR-11      FAA
+FWA    Ft. Wayne                      ASR-9       FAA
+FYV    Fayetteville                   ASR-9       FAA
+GEG    Spokane                        ASR-9 WSP   FAA
+GGG    Longview (Tyler)               ASR-8       FAA
+GNV    Gainesville                    ASR-9       FAA
+GPT    Gulfport                       ASR-11      FAA
+GRB    Green Bay                      ASR-11      FAA
+GSB    Seymour Johnson AFB            ASR-11      AF
+GSO    Greensboro                     ASR-9       FAA
+GSP    Greer (Greenville)             ASR-8       FAA
+GTF    Great Falls                    ASR-8       FAA
+GUS    Grissom AFB                    ASR-11      AF
+GXY    Platteville (Denver #2)        ASR-9       FAA
+HPN    White Plains                   ASR-9 WSP   FAA
+HRL    Harlingen (Brownsville)        ASR-9       FAA
+HST    Homestead AFB                  ASR-11      AF
+HSV    Huntsville                     ASR-9 WSP   FAA
+HTS    Huntington                     ASR-8       FAA
+HUB    Houston (Hobby)                ASR-9       FAA
+HUF    Terra Haute                    ASR-8       FAA
+IAD    Chantilly (Dulles)             ASR-9       FAA
+IAH    Houston (International)        ASR-9       FAA
+
+
+
+
+                                 47
+ICT    Wichita                     ASR-9       FAA
+IND    Indianapolis                ASR-9       FAA
+ISP    Islip                       ASR-9 WSP   FAA
+IWA    Phoenix Mesa Gateway        ASR-8       FAA
+JAN    Jackson                     ASR-8       FAA
+JFK    New York (Jamaica)          ASR-9       FAA
+LAXN   Los Angeles (North)         ASR-9       FAA
+LBB    Lubbock (Reese AFB)         ASR-9 WSP   FAA
+LEX    Lexington                   ASR-11      FAA
+LFT    Lafayette                   ASR-11      FAA
+LGB    Long Beach (Garden Grove)   ASR-9       FAA
+LHW    Ft. Stewart                 ASR-11      Army
+LIT    Little Rock                 ASR-11      FAA
+LNK    Lincoln                     ASR-11      FAA
+LSV    Nellis AFB                  ASR-9       FAA
+LUF    Luke AFB                    ASR-11      AF
+LYH    Lynchburg                   ASR-9       FAA
+LZU    Lawrenceville               ASR-9       FAA
+MAF    Midland                     ASR-11      FAA
+MBS    Saginaw                     ASR-11      FAA
+MCE    Castle AFB (Merced)         ASR-11      FAA
+MCI    Kansas City                 ASR-9       FAA
+MCN    Warner Robins AFB (Macon)   ASR-11      FAA
+MCO    Orlando                     ASR-9       FAA
+MDT    Harrisburg                  ASR-9 WSP   FAA
+MEM    Memphis                     ASR-9       FAA
+MFR    Medford                     ASR-9       FAA
+MGE    Dobbins AFB                 ASR-11      AF
+MHT    Manchester (Heaton)         ASR-9       FAA
+MKE    Milwaukee                   ASR-9       FAA
+MKG    Muskegon                    ASR-11      FAA
+MLI    Moline                      ASR-11      FAA
+MLU    Monroe                      ASR-8       FAA
+MOB    Mobile                      ASR-11      FAA
+MRB    Martinsburg                 ASR-9       FAA
+MRY    Monterey (Ft. Ord)          ASR-11      FAA
+MSN    Madison                     ASR-9 WSP   FAA
+MSO    Missoula                    ASR-9       FAA
+
+
+
+
+                              48
+MSP    Minneapolis                       ASR-9       FAA
+MSY    New Orleans                       ASR-9       FAA
+MTC    Selfridge                         ASR-11      AF
+MUO    Mountain Home AFB                 ASR-11      AF
+MWH    Moses Lake                        ASR-9       FAA
+MXF    Maxwell AFB (Montgomery)          ASR-9       FAA
+MYR    Myrtle Beach                      ASR-11      FAA
+NBC    Beaufort MCAS                     ASR-11      MC
+NCA    New River MCAS                    ASR-11      MC
+NFG    Camp Pendleton MCAS (Oceanside)   ASR-9       FAA
+NFW    Ft. Worth NAS                     ASR-11      Navy
+NHK    Patuxent River                    ASR-11      Navy
+NIP    Jacksonville NAS                  ASR-11      Navy
+NKX    Miramar MCAS (San Diego)          ASR-9       FAA
+NLC    Lemoore NAS                       ASR-11      Navy
+NRB    Mayport NAS                       ASR-11      Navy
+NSE    Whiting Field NAS                 ASR-11      Navy
+NTU    Oceana NAS                        ASR-11      Navy
+NUW    Whidbey Island NAS                ASR-11      Navy
+NXX    Willow Grove NAS                  ASR-11      FAA
+NYG    Quantico                          ASR-11      MC
+NZY    North Island NAS                  ASR-11      Navy
+OAK    Oakland                           ASR-9       FAA
+OKC    Oklahoma City (Will Rogers)       ASR-9       FAA
+OMA    Offutt AFB (Omaha)                ASR-9       FAA
+ONT    Ontario (March AFB)               ASR-9 WSP   FAA
+ORDA   Chicago O’Hare #2                 ASR-9       FAA
+PBI    West Palm Beach                   ASR-11      FAA
+PDX    Portland, OR                      ASR-9 WSP   FAA
+PHL    Philadelphia                      ASR-9       FAA
+PHX    Phoenix                           ASR-9       FAA
+PIA    Peoria                            ASR-11      FAA
+PIT    Pittsburgh                        ASR-9       FAA
+PNS    Pensacola                         ASR-11      FAA
+POE    Ft. Polk AAF                      ASR-11      Army
+PSC    Pasco                             ASR-9       FAA
+PSP    Palm Springs                      ASR-9       FAA
+PVD    Coventry (Providence)             ASR-9       FAA
+
+
+
+
+                               49
+PWM    Cumberland (Portland, ME)   ASR-9       FAA
+QLO    Orchard Mesa                ASR-9       FAA
+QXM    Tinley Park (Chicago)       ASR-9       FAA
+RDU    Raleigh-Durham              ASR-9       FAA
+RFD    Rockford                    ASR-8       FAA
+RIC    Richmond                    ASR-9 WSP   FAA
+RNO    Reno                        ASR-11      FAA
+ROA    Roanoke                     ASR-8       FAA
+ROC    Rochester, NY               ASR-9 WSP   FAA
+ROW    Roswell                     ASR-9       FAA
+RST    Rochester, MN               ASR-11      FAA
+RSW    Fort Meyers                 ASR-11      FAA
+SATA   San Antonio                 ASR-9 WSP   FAA
+SBA    Santa Barbara               ASR-11      FAA
+SBN    South Bend                  ASR-8       FAA
+SCK    Stockton                    ASR-11      FAA
+SDF    Louisville                  ASR-9       FAA
+SEA    Seattle                     ASR-9 WSP   FAA
+SGF    Springfield, MO             ASR-11      FAA
+SJT    San Angelo                  ASR-9       FAA
+SLC    Salt Lake City              ASR-9       FAA
+SMX    Santa Maria                 ASR-11      FAA
+SPI    Springfield, IL             ASR-11      FAA
+SRQ    Sarasota                    ASR-9 WSP   FAA
+SSC    Shaw                        ASR-11      AF
+STL    St. Louis                   ASR-9       FAA
+SUU    Travis AFB                  ASR-11      AF
+SUX    Sioux City                  ASR-11      FAA
+SWF    Newburgh Stewart            ASR-9       FAA
+SYR    Syracuse                    ASR-9 WSP   FAA
+TLH    Tallahassee                 ASR-8       FAA
+TOL    Toledo                      ASR-9 WSP   FAA
+TPA    Tampa                       ASR-9       FAA
+TRI    Tri City/Bristol            ASR-8       FAA
+TUL    Tulsa                       ASR-9       FAA
+TYS    Knoxville                   ASR-9 WSP   FAA
+VOK    Volk Field                  ASR-11      AF
+VRB    Vero Beach                  ASR-11      FAA
+
+
+
+
+                              50
+  WRI     McGuire AFB                          ASR-11        AF
+  XMR     Kennedy Space Center                 ASR-11        AF
+  YKM     Yakima                               ASR-9         FAA
+
+
+
+
+                             Table A-3
+        TRACONs and Associated Remote Airport Towers
+TRACON ID   Org./Facility    Tower ID  Associated Airport Towers
+A11       FAA                ANC
+A11       FAA RT             MRI      Merrill Field RT
+A11       FAA RT             ENA      Kenai RT
+A11        Army RT off FAA   FRN         Ft. Richardson (Bryant AAF)
+A11        AF RT off FAA     EDF         Elmendorf AFB RT
+A80        FAA               ATL         Atlanta
+A80        FAA RT            FTY         Fulton County
+A80        FAA RT            PDK         DeKalb-Peachtree
+A80        FAA RT            MCN         Macon
+A80        FAA RT            CSG         Columbus, GA
+A80        FAA RT            AHN         Athens, GA
+A80        FAA RT            RYY         McCollum/Cobb County
+A80        FAA RT            LZU         Gwinnet County/Briscoe
+A80        Army RT off FAA   LSF         Ft. Benning/Lawson AAF
+A80        AF RT off FAA     WRB         Robins AFB
+A80        AF RT off FAA     MGE         Dobbins AFB
+A90        FAA               BOS         Boston Logan RT
+A90        FAA RT            BVY         Beverly Municipal RT
+A90        FAA RT            BED         Hanscom Field/Bedford RT
+A90        FAA RT            LWM         Lawrence Municipal RT
+A90        FAA RT            ASH         Nashua Airport RT
+A90        FAA RT            OWD         Norwood Memorial RT
+A90        FAA RT            MHT         Manchester RT
+A90        FAA RT            ACK         Nantucket RT
+A90        FAA RT            HYA         Barnstable RT
+A90        FAA RT            MVY         Martha's Vineyard RT
+A90        AF RT off FAA     PSM         Pease ANGB RT
+A90        CG RT off FAA     FMH         CGAS Cape Code/Falmouth RT
+ABE        FAA               ABE
+
+
+
+
+                                 51
+ABI   FAA             ABI
+ABI   AF RT off FAA   DYS    Dyess
+ABQ   FAA             ABQ
+ABQ   FAA RT          FMN    Farmington Municipal RT
+ABQ   FAA RT          AEG    Double Eagle RT
+ABQ   FAA RT          SAF    Santa Fe RT
+ACT   FAA             ACT
+ACY   FAA             ACY
+AGS   FAA             AGS
+ALB   FAA             ALB
+ALB   FAA RT          SCH    Schenectady RT
+ALO   FAA             ALO
+AMA   FAA             AMA
+ASE   FAA             ASE
+AUS   FAA             AUS
+AUS   FAA RT          GTU    Georgetown RT
+AUS   FAA RT          HYI    San Marcos RT
+AVL   FAA             AVL
+AVP   FAA             AVP
+AZA   FAA             LAN    Lansing
+AZA   FAA RT          FNT    Flint
+AZA   FAA RT          MBS    Saginaw
+AZO   FAA             AZO
+AZO   FAA RT          BTL    Battle Creek RT
+AZO   FAA RT          GRR    Grand Rapids
+AZO   FAA RT          MKG    Muskegon
+BAD   FAA             BAD
+BAD   FAA RT          DTN    Shreveport Downtown RT
+BAD   FAA RT          SHV    Shreveport Regional RT
+BAD   FAA RT          TXK    Texarkana RT
+BAD   AF RT off FAA   BAD    Barksdale AFB RT
+BFL   FAA             BFL
+BGM   FAA             BGM
+BGR   FAA             BGR
+BHM   FAA             BHM
+BIL   FAA             BIL
+BIS   FAA             BIS
+BNA   FAA             BNA
+
+
+
+
+                        52
+BNA   FAA RT            MQY    Smyrna RT
+BOI   FAA               BOI
+BOI   FAA RT            BZN    Bozeman RT
+BTR   FAA               BTR
+BTV   FAA               BTV
+BUF   FAA               BUF
+BUF   FAA RT            IAG    Niagara Int’l RT
+BUF   FAA RT            ERI    Erie
+C90   FAA               ORD    O'Hare Int'l
+C90   FAA RT            PWK    Palwaukee
+C90   FAA RT            GYY    Gary, IN
+C90   FAA RT            ARR    Aurora
+C90   FAA RT            MDW    Midway Airport
+C90   FAA RT            DPA    DuPage Airport
+C90   FAA RT            UGN    Waukegan Regional
+CAE   FAA               CAE
+CHA   FAA               CHA
+CHS   FAA               CHS
+CID   FAA               CID
+CID   FAA RT            DBQ    Dubuque RT
+CKB   FAA               CKB
+CLE   FAA               CLE
+CLE   FAA RT            MFD    Mansfield
+CLE   FAA RT            CAK    Akron
+CLE   FAA RT            BKL    Burke-Lakefront RT
+CLE   FAA RT            CGF    Cuyahoga RT
+CLT   FAA               CLT
+CLT   FAA RT            JQF    Concord Regional RT
+CLT   FAA RT            HKY    Hickory Regional RT
+CMH   FAA               CMH
+CMH   FAA RT            OSU    Ohio State University RT
+CMH   FAA RT            LCK    Rickenbacker RT
+CMH   FAA RT            DAY    Dayton
+CMH   AF RT off FAA     FFO    Wright Patterson AFB
+CMI   FAA               CMI
+COS   FAA               COS
+COS   Army RT off FAA   FCS    Fort Carson AAF RT
+COS   AF RT off FAA     AFF    Air Force Academy RT
+
+
+
+
+                          53
+CPR   FAA             CPR
+CRP   FAA             CRP
+CRP   FAA RT          MFE    McAllen RT
+CRP   FAA RT          HRL    Harlingen Rio Grande RT
+CRP   FAA RT          BRO    Brownsville RT
+CRP   FAA RT          LRD    Laredo RT
+CRW   FAA             CRW
+CVG   FAA             CVG
+CVG   FAA RT          LUK    Cincinnati Lunken RT
+D01   FAA             DEN    Denver
+D01   FAA RT          EGE    Eagle RT
+D01   FAA RT          PUB    Pueblo
+D01   FAA RT          FTG    Front Range
+D01   FAA RT          GJT    Grand Junction
+D01   FAA RT          APA    Centennial
+D01   FAA RT          BJC    Jefferson Co.
+D01   AF RT off FAA   BKF    Aurora-Buckley ANGB
+D10   FAA             DFW    Dallas
+D10   FAA RT          ADS    Addison
+D10   FAA RT          AFW    Ft. Worth Alliance
+D10   FAA RT          FTW    Ft. Worth Meacham
+D10   FAA RT          DAL    Dallas Love Field
+D10   FAA RT          RBD    Redbird
+D10   FAA RT          TKI    McKinney Muni
+D10   FAA RT          GPM    Grand Prairie Muni
+D10   FAA RT          GKY    Arlington
+D10   FAA RT          DTO    Denton
+D10   FAA RT          FWS    Spinks
+D21   FAA             DTW
+D21   FAA RT          ARB    Ann Arbor RT
+D21   FAA RT          DET    Detroit Metro RT
+D21   FAA RT          PTK    Oakland Pontiac RT
+D21   FAA RT          YIP    Willow Run Tower RT
+DAB   FAA             DAB
+DAB   FAA RT          OMN    Ormond Beach RT
+DAB   FAA RT          EVB    New Smyrna Beach RT
+DLH   FAA             DLH
+DSM   FAA             DSM
+
+
+
+
+                        54
+ELM   FAA               ELM
+ELP   FAA               ELP
+ELP   Army RT off FAA   BIF    Biggs AAF RT
+EUG   FAA               EUG
+EUG   FAA RT            MFR    Medford RT
+EVV   FAA               EVV
+F11   FAA               MCO    Orlando
+F11   FAA RT            MLB    Melbourne RT
+F11   FAA RT            TIX    Titusville RT
+F11   FAA RT            ORL    Orlando Exec RT
+F11   FAA RT            SFB    Orlando Sanford RT
+F11   FAA RT            ISM    Kissimmee RT
+F11   AF RT off FAA     COF    Patrick AFB RT
+FAI   FAA               FAI
+FAI   Army RT off FAA   FBK    Ft. Wainwright RT
+FAI   AF RT off FAA     EIL    Eielson AFB RT
+FAR   FAA               FAR
+FAT   FAA               FAT
+FAY   FAA               FAY
+FAY   Army RT off FAA   HFF    Mackall AAF RT
+FAY   Army RT off FAA   FBG    Simmons AAF RT
+FAY   AF RT off FAA     POB    Pope AFB RT
+FLO   FAA               FLO
+FSD   FAA               FSD
+FSM   FAA               FSM
+FSM   FAA RT            ASG    Springdale Muni RT
+FSM   FAA RT            FYV    Fayetteville RT
+FSM   FAA RT            XNA    Northwest Arkansas RT
+FWA   FAA               FWA
+GEG   FAA               GEG
+GEG   FAA RT            SFF    Felts Field RT
+GEG   FAA RT            MSO    Missoula RT
+GEG   AF RT off FAA     SKA    Fairchild AFB RT
+GGG   FAA               GGG
+GGG   FAA RT            TYR    Tyler RT
+GPT   FAA               GPT
+GPT   AF RT off FAA     BIX    Keesler AFB RT
+GRB   FAA               GRB
+
+
+
+
+                          55
+GRB   FAA RT            ATW    Appleton RT
+GRB   FAA RT            TVC    Traverse City RT
+GSO   FAA               GSO
+GSO   FAA RT            INT    Winston-Salem RT
+GSP   FAA               GSP
+GSP   FAA RT            GMU    Greenville RT
+GTF   FAA               GTF
+HSV   FAA               HSV
+HSV   Army RT off FAA   HUA    Redstone AAF RT
+HTS   FAA               HTS
+HUF   FAA               HUF
+I90   FAA               IAH    Houston ATCT
+I90   FAA RT            DWH    DW Hooks Memorial RT
+I90   FAA RT            HOU    Houston Hobby RT
+I90   FAA RT            BPT    Beaumont RT
+I90   FAA RT            SGR    Sugarland Hull Field RT
+I90   FAA RT            GLS    Galveston
+I90   FAA RT            CXO    Conroe
+I90   FAA RT            CLL    College Station RT
+I90   AF RT off FAA     EFD    Ellington
+ICT   FAA               ICT
+ICT   FAA RT            HUT    Hutchinson RT
+ICT   FAA RT            SLN    Salina RT
+ICT   AF RT off FAA     IAB    McConnell AFB RT
+ILM   FAA               ILM
+IND   FAA               IND
+JAN   FAA               JAN
+JAN   FAA RT            HKS    Hawkins RT
+JAX   FAA               JAX
+JAX   FAA RT            CRG    Craig RT
+JAX   FAA RT            GNV    Gainsville RT
+JAX   FAA RT            SGJ    St. Augustine RT
+JAX   FAA RT            VQQ    Cecil Field RT
+L30   FAA               LAS
+L30   FAA RT            VGT    North Las Vegas RT
+L30   FAA RT            HND    Henderson RT
+L30   FAA RT            GCN    Grand Canyon RT
+LBB   FAA               LBB
+
+
+
+
+                          56
+LCH   FAA             LCH
+LCH   FAA RT          CWF    Chennault RT
+LEX   FAA             LEX
+LFT   FAA             LFT
+LFT   FAA RT          ARA    Acadiana RT
+LIT   FAA             LIT
+LIT   AF RT off FAA   LRF    Little Rock AFB RT
+M03   FAA             MEM    Memphis
+M03   FAA RT          OLV    Olive Branch
+M98   FAA             MSP
+M98   FAA RT          FCM    Flying Cloud
+M98   FAA RT          MIC    Crystal
+M98   FAA RT          STP    St. Paul Holman Field
+M98   FAA RT          ANE    Anoka County
+MAF   FAA             MAF
+MAF   FAA RT          SJT    San Angelo RT
+MCI   FAA             MCI
+MCI   FAA RT          MKC    Kansas City Downtown RT
+MCI   FAA RT          FOE    Forbes RT
+MCI   FAA RT          OJC    Johnson County RT
+MCI   FAA RT          TOP    Topeka
+MDT   FAA             MDT
+MDT   FAA RT          CXY    Capital City RT
+MDT   FAA RT          LNS    Lancaster RT
+MGM   FAA             MGM
+MGM   AF RT off FAA   MXF    Maxwell AFB RT
+MIA   FAA             MIA
+MIA   FAA RT          FLL    Ft. Lauderdale/Hollywood RT
+MIA   FAA RT          FXE    Fort Lauderdale Exec. RT
+MIA   FAA RT          HWO    North Perry Airport RT
+MIA   FAA RT          OPF    Opa Locka RT
+MIA   FAA RT          PMP    Pompano Beach RT
+MIA   FAA RT          TMB    Tamiami Executive RT
+MKE   FAA             MKE
+MKE   FAA RT          ENW    Kenosha RT
+MKE   FAA RT          MWC    Lawrence J. Timmerman RT
+MKE   FAA RT          UES    Waukesha RT
+MKE   FAA RT          OSH    Oshkosh ATCT
+
+
+
+
+                        57
+MLI   FAA             MLI
+MLU   FAA             MLU
+MOB   FAA             MOB
+MOB   FAA RT          BFM    Downtown RT
+MSN   FAA             MSN
+MSO   FAA             MSO
+MSY   FAA             MSY
+MSY   FAA RT          NEW    Lakefront RT
+MSY   FAA RT          HUM    Houma-Terrebonne RT
+MWH   FAA             MWH
+MYR   FAA             MYR
+MYR   FAA RT          CRE    Grand Strand RT
+N90   FAA             JFK    Kennedy Int'l
+N90   FAA RT          OXC    Waterbury Oxford
+N90   FAA RT          CDW    Caldwell-Essex Co., NJ
+N90   FAA RT          HPN    White Plains Westchester
+N90   FAA RT          POU    Poughkeepsie Dutchess
+N90   FAA RT          MMU    Morristown, NJ
+N90   FAA RT          ISP    Islip Long Island
+N90   FAA RT          EWR    Newark, NJ
+N90   FAA RT          FRG    Farmingdale Republic
+N90   FAA RT          TEB    Teterboro, NJ
+N90   FAA RT          LGA    LaGuardia
+N90   FAA RT          SWF    Stewart
+N90   FAA RT          DXR    Danbury
+N90   FAA RT          HVN    New Haven, CT
+N90   FAA RT          BDR    Bridgeport
+N90   AF RT off FAA   FOK    Gabreski
+NCT   FAA             SFO    San Francisco
+NCT   FAA RT          PAO    Palo Alto
+NCT   FAA RT          APC    Napa
+NCT   FAA RT          STS    Santa Rosa
+NCT   FAA RT          SCK    Stockton
+NCT   FAA RT          RHV    Reid Hillview San Jose
+NCT   FAA RT          SAC    Sacramento Executive
+NCT   FAA RT          MRY    Monterey
+NCT   FAA RT          SQL    San Carlos
+NCT   FAA RT          CIC    Chico
+
+
+
+
+                        58
+NCT   FAA RT            HWD    Hayward
+NCT   FAA RT            SJC    San Jose
+NCT   FAA RT            OAK    Oakland International
+NCT   FAA RT            SMF    Sacramento Int'l
+NCT   FAA RT            CCR    Concord Buchanan Field
+NCT   FAA RT            LVK    Livermore Muni
+NCT   FAA RT            SNS    Salinas Muni
+NCT   FAA RT            MOD    Modesto
+NCT   FAA RT            MHR    Mather
+NCT   FAA RT            RNO    Reno
+NCT   FAA RT            RDD    Redding
+NCT   NASA RT off FAA   NUQ    NASA Ames (Moffett)
+NCT   AF RT off FAA     BAB    Beale AFB
+OKC   FAA               OKC
+OKC   FAA RT            OUN    Norman RT
+OKC   FAA RT            PWA    Wiley Post RT
+OKC   AF RT off FAA     TIK    Tinker AFB RT
+ORF   FAA               ORF
+ORF   FAA RT            PHF    Newport News RT
+ORF   AF RT off FAA     LFI    Langley AFB RT
+ORF   AF RT off FAA     FAF    Felker RT
+ORF   CG RT off FAA     ECG    Elizabeth City RT
+P31   FAA               PNS
+P31   FAA RT            NPA    NAS Pensacola ATCT
+P31   FAA RT            NSE    Whiting Field NAS North ATCT
+P31   FAA RT            NDZ    Whiting Field NAS South ATCT
+P50   FAA               PHX
+P50   FAA RT            PRC    Prescott RT
+P50   FAA RT            SDL    Scottsdale RT
+P50   FAA RT            FFZ    Mesa Falcon Field RT
+P50   FAA RT            IWA    Williams Gateway RT
+P50   FAA RT            CHD    Chandler RT
+P50   FAA RT            DVT    Deer Valley RT
+P80   FAA               PDX
+P80   FAA RT            HIO    Hillsboro RT
+P80   FAA RT            TTD    Portland-Troutdale RT
+P80   FAA RT            UAO    Aurora RT
+PBI   FAA               PBI
+
+
+
+
+                          59
+PBI   FAA RT            BCT    Boca Raton
+PBI   FAA RT            SUA    Witham Field
+PBI   FAA RT            FPR    Ft. Pierce
+PBI   FAA RT            VRB    Vero Beach
+PCT   FAA RT            BWI    Baltimore-Washington
+PCT   FAA RT            DCA    Reagan National
+PCT   FAA RT            IAD    Dulles International
+PCT   FAA RT            RIC    Richmond
+PCT   FAA RT            ADW    Andrews
+PCT   FAA RT            CHO    Charlottesville
+PCT   FAA RT            HGR    Hagerstown
+PCT   FAA RT            HEF    Manassas
+PCT   FAA RT            MTN    Martin State
+PCT   FAA RT            ESN    Easton RT
+PCT   FAA RT            JYO    Leesburg
+PCT   Army RT off FAA   DAA    Ft. Belvoir/Davison AAF
+PCT   AF RT off FAA     MRB    Martinsburg Air National Guard
+PHL   FAA               PHL
+PHL   FAA RT            PNE    North Philadelphia RT
+PHL   FAA RT            TTN    Trenton Mercer RT
+PHL   FAA RT            ILG    New Castle RT
+PIT   FAA               PIT
+PIT   FAA RT            AGC    Allegheny County RT
+PIT   FAA RT            BVI    Beaver County RT
+PSC   FAA               PSC
+PSC   FAA RT            YKM    Yakima RT
+PVD   FAA               PVD
+PVD   FAA RT            GON    Groton-New London RT
+PVD   FAA RT            EWB    New Bedford Regional RT
+PVD   AF RT off FAA     OQU    Quonset State RT
+PWM   FAA               PWM
+R90   FAA RT            OMA    Omaha Eppley Field ATCT
+R90   FAA RT            LNK    Lincoln RT
+R90   AF RT off FAA     OFF    Offutt AFB RT
+RDG   FAA               RDG
+RDU   FAA               RDU
+RFD   FAA               RFD
+ROA   FAA               ROA
+
+
+
+
+                          60
+ROA   FAA RT            LYH    Lynchburg RT
+ROC   FAA               ROC
+ROW   FAA               ROW
+RST   FAA               RST
+RSW   FAA               RSW
+RSW   FAA RT            APF    Naples RT
+RSW   FAA RT            FMY    Page RT
+RSW   FAA RT            PGD    Punta Gorda RT
+S46   FAA RT            SEA    Seattle Tacoma ATCT
+S46   FAA RT            TIW    Tacoma Narrows RT
+S46   FAA RT            BFI    Boeing Field RT
+S46   FAA RT            OLM    Olympia Airport RT
+S46   FAA RT            PAE    Paine Field RT
+S46   FAA RT            RNT    Renton Municipal RT
+S46   AF RT off FAA     TCM    McChord AFB RT
+S56   FAA               SLC
+S56   FAA RT            OGD    Ogden-Hinckley RT
+S56   FAA RT            PVU    Provo RT
+S56   AF RT off FAA     HIF    Hill AFB RT
+SAT   FAA               SAT
+SAT   FAA RT            SSF    Stinson Municipal RT
+SAT   AF RT off FAA     SKF    Kelly AFB RT
+SAT   AF RT off FAA     RND    Randolph AFB RT
+SAV   FAA               SAV
+SAV   Army RT off FAA   SVN    Hunter AAF RT 1
+SAV   Army RT off FAA   LHW    Wright AAF RT 1
+SBA   FAA               SBA
+SBA   FAA RT            SBP    San Luis Obispo RT
+SBA   FAA RT            SMX    Santa Maria RT
+SBA   AF RT off FAA     VBG    Vandenberg AFB RT
+SBN   FAA               SBN
+SCT   FAA               LAX    Los Angeles Int'l
+SCT   FAA RT            SNA    John Wayne/Orange Co.
+SCT   FAA RT            VNY    Van Nuys
+SCT   FAA RT            SDM    San Diego Brown Fld
+SCT   FAA RT            SMO    Santa Monica
+SCT   FAA RT            TOA    Torrance
+SCT   FAA RT            SEE    San Diego Gillespie
+
+
+
+
+                          61
+SCT   FAA RT            CNO    Chino
+SCT   FAA RT            SAN    San Diego Lindberg
+SCT   FAA RT            HHR    Hawthorne
+SCT   FAA RT            BUR    Burbank/Glendale/Pasadena
+SCT   FAA RT            RAL    Riverside
+SCT   FAA RT            MYF    San Diego Montgomery
+SCT   FAA RT            POC    Laverne Brackett Field
+SCT   FAA RT            CRQ    Carlsbad Palomar
+SCT   FAA RT            ONT    Ontario
+SCT   FAA RT            EMT    El Monte
+SCT   FAA RT            FUL    Fullerton
+SCT   FAA RT            LGB    Long Beach
+SCT   FAA RT            RNM    Ramona
+SCT   FAA RT            WHP    Whiteman
+SCT   FAA RT            PSP    Palm Springs
+SCT   Army RT off FAA   SLI    Los Alamitos
+SCT   Navy RT off FAA   NKX    Miramar MCAS
+SDF   FAA               SDF
+SDF   FAA RT            LOU    Bowman Field
+SGF   FAA               SGF
+SUX   FAA               SUX
+SYR   FAA               SYR
+SYR   FAA RT            RME    Rome ATCT
+T75   FAA RT            STL    St. Louis ATCT
+T75   FAA RT            SUS    Chesterfield Spirit of St. Louis
+T75   FAA RT            ALN    Alton
+T75   FAA RT            CPS    Cahokia/E. St. Louis
+T75   FAA RT            PIA    Peoria
+T75   FAA RT            SPI    Springfield, IL
+T75   AF RT off FAA     BLV    Scott AFB
+TLH   FAA               TLH
+TOL   FAA               TOL
+TPA   FAA               TPA
+TPA   FAA RT            PIE    Clearwater Int’l RT
+TPA   FAA RT            SPG    Albert Whitted/St Petersburg RT
+TPA   FAA RT            SRQ    Sarasota/Bradenton RT
+TPA   FAA RT            LAL    Lakeland RT
+TPA   AF RT off FAA     MCF    MacDill AFB RT
+
+
+
+
+                          62
+  TRI        FAA              TRI
+  TUL        FAA              TUL
+  TUL        FAA RT           RVS        Tulsa RL Jones RT
+  TYS        FAA              TYS
+  U90        FAA RT           TUS        Tucson ATCT
+  U90        FAA RT           RYN        Ryan Airport RT
+  U90        AF RT off FAA    DMA        Davis-Monthan AFB RT
+  Y90        AF RT off FAA    CEF        Westover ARB RT
+  Y90        FAA              BDL
+  Y90        FAA RT           HFD        Hartford-Brainard RT
+  Y90        FAA RT           BAF        Barnes Municipal RT
+  YNG        FAA              YNG
+
+
+
+
+                             Table A-4
+NEXRADs with Minimum Antenna Beam Elevation Angle Less Than 0.5°
+                   ID      Location      Min. El. (deg)
+                 KBUF   Buffalo          0.3
+                 KCLE   Cleveland        0.4
+                 KCLX   Grays            0.3
+                 KDGX   Jackson          0.3
+                 KDLH   Duluth           0.2
+                 KFSX   Flagstaff        -0.2
+                 KGJX   Grand Junction   -0.2
+                 KGSP   Greer            0.2
+                 KICX   Cedar City       0.2
+                 KLGX   Langley Hill     0.2
+                 KMAX   Medford          -0.2
+                 KMBX   Deering          0.3
+                 KMSX   Missoula         -0.2
+                 KMTX   Salt Lake City   0
+                 KMUX   Los Gatos        0
+                 KRAX   Clayton          0.2
+                 KRGX   Nixon            0
+                 KSHV   Shreveport       0.3
+
+
+
+
+                                 63
+                             Table A-5
+TDWR Minimum and Maximum Antenna Beam Elevation Angles
+       ID         Location           Min. El. (deg)   Max. El. (deg)
+     ADW    Andrews AFB              0.3              42.5
+     ATL    Atlanta                  0.3              31.1
+     BNA    Nashville                0.4              26.5
+     BOS    Boston                   0.3              20.1
+     BWI    Baltimore                0.5              42
+     CLE    Cleveland                0.2              22.6
+     CLT    Charlotte                0.2              29.1
+     CMH    Columbus                 0.1              29.8
+     CVG    Cincinnati               0.1              26.1
+     DAL    Dallas Love              0.5              33.7
+     DAY    Dayton                   0.3              26.1
+     DCA    Washington National      0.3              37.7
+     DEN    Denver                   0.3              24
+     DFW    Dallas Ft. Worth         0.4              20.1
+     DTW    Detroit                  0.1              26.1
+     EWR    Newark                   0.3              34.6
+     FLL    Ft. Lauderdale           0.3              20.1
+     HOU    Houston Hobby            0.2              28.4
+     IAD    Dulles                   0.3              26.9
+     IAH    Houston International    0.1              20.1
+     ICT    Wichita                  0.2              26.7
+     IND    Indianapolis             0.3              35.7
+     JFK    New York Kennedy         0.5              44
+     LAS    Las Vegas                0.8              29.8
+     MCI    Kansas City              0.3              20.1
+     MCO    Orlando                  0.3              55
+     MDW    Chicago Midway           0.3              23.3
+     MEM    Memphis                  0.3              27
+     MIA    Miami                    0.2              21.2
+     MKE    Milwaukee                0.3              21.3
+     MSP    Minneapolis              0.3              20.1
+     MSY    New Orleans              0.3              38.3
+     OKC    Oklahoma City            0.5              28.2
+     ORD    Chicago O’Hare           0.3              20.1
+     PBI    West Palm Beach          0.1              23.8
+     PHL    Philadelphia             0.4              26.8
+     PHX    Phoenix                  0.6              34.7
+     PIT    Pittsburgh               0.3              20.6
+
+
+
+
+                                    64
+RDU   Raleigh Durham    0.3   27.9
+SDF   Louisville        0.3   23.3
+SLC   Salt Lake City    0.5   20.7
+STL   St. Louis         0.3   46
+TPA   Tampa             0.3   41.5
+TUL   Tulsa             0.3   27.7
+
+
+
+
+                       65
+This page intentionally left blank.
+ APPENDIX B: TABLES OF RESULTS
+                      Table B-1
+             3D Radar Coverage (%)
+         TRACON Area            Airport (r < 6 NM) Area
+ ID
+      ASR    WX     ASR+WX      ASR     WX    ASR+WX
+A11   96.6   86.4   97.3        96.6   88.5   98.1
+A80   94.8   97.1   98.4        94.6   97.5   99.2
+A90   96.4   89     97.8        96.3   94.1   98.2
+ABE   98.1   85.7   98.2        97.3   89.5   98.2
+ABI   96.5   95.6   98.6        84.6   96.6   99.3
+ABQ   95.3   95.4   97.8        85.8   84.6   99.7
+ACT   97.9   92.2   98.9        73.7   92.6   98.1
+ACY   98.4   95.3   98.5        99.7   98.8   99.7
+AGS   97.4   93     98.1        83.8   92.7   98.2
+ALB   95.8   91.7   97.1        92.3   91.7   99.3
+ALO   97.8   81.4   97.9        97.4   74.7   97.4
+AMA   97.6   98.6   98.7        70.8   98.1   99.5
+ASE   0      83.6   83.6        0      75.7   75.7
+AUS   97.5   97.9   98.7        91.1   99.4   99.8
+AVL   86     91.6   94.5        81.3   87.9   98.3
+AVP   94.9   88.6   96.2        81.4   88     95
+AZA   97.4   89.2   99.1        90.5   92.2   97.6
+AZO   97.5   95.1   98.9        89.1   96.8   98.6
+BAD   97     99.7   99.7        84.1   99.2   100
+BFL   92.2   89     97.3        84.7   86.9   96.8
+BGM   97.9   98     98.2        95.3   95.5   99.1
+BGR   93.8   71.4   94.4        83.9   62.1   95.9
+BHM   87.8   94     96.5        80.8   96.4   99.4
+BIL   95.4   96.3   97.4        82.7   77.2   91.2
+BIS   95.9   97.8   98.2        76.7   97.6   99.4
+BNA   96.1   99.3   99.3        85.1   99.8   99.8
+BOI   43.5   59.7   62          47.4   52.1   60.1
+BTR   98.1   82.8   99          74     84.3   97.9
+BTV   92.9   95.5   96          84.2   99     99.7
+BUF   95.4 92.4 96.8            89.9   94.1 98.7
+C90   99.1 99.1 99.4            99.4   99.6 99.7
+CAE   97   99.2 99.2            98.6   99.8 100
+
+
+
+
+                           67
+CHA   92.5 87   95.3            81.3   89.2 97.9
+CHS   98   98.7 99.8            80.5   97.6 99.6
+CID   94.5 91.5 98.4            88.2   92.6 96.9
+CKB   96.3   84.9   96.9        82.4   77.9   95.8
+CLE   97.1   95.8   97.6        96.3   99     99
+CLT   96.5   99.1   99.2        87.5   100    100
+CMH   96.1   98.5   98.8        87.2   99.9   99.9
+CMI   97.9   90.6   98.8        79.1   93.2   97.2
+COS   96     99.6   99.6        88.1   99.7   99.8
+CPR   93.3   64.6   94.4        74.9   65.8   97.3
+CRP   97.4   97.5   98.9        87.2   95.7   99.3
+CRW   94.7   96.8   97.3        82.4   99.4   99.7
+CVG   97.2   99.7   99.7        94.3   99.9   99.9
+D01   96.2   95.5   98.6        96.5   95.6   98.7
+D10   99.1   98.9   99.5        99.3   99.7   99.8
+D21   96.1   99.2   99.4        93.1   99.9   99.9
+DAB   99.2   89.2   99.2        99.3   87.7   99.3
+DLH   94.7   98.7   98.9        78.8   84.6   95.1
+DSM   97.5   98     99.1        79.2   99.7   99.9
+ELM   94.8   91.1   94.9        95.5   93.5   95.5
+ELP   95.2   92.4   99.3        78.1   89.1   99.6
+EUG   88.8   55.8   90.5        88.4   41.6   96
+EVV   96.7   96.8   98.3        81     99.6   99.6
+F11   98.8   99     99.6        98.5   99.8   99.9
+FAI   86.1   81.8   94.2        95.8   85.8   98.5
+FAR   98.6   92.7   99.6        75.4   94.5   97.3
+FAT   98.9   98     99.6        99.1   99.2   99.3
+FAY   96.4   95     98.9        97     97.7   99.5
+FLO   96.3   88.1   97.7        96.1   86.4   97.6
+FSD   98.1   98.6   99.2        74.1   84.3   94.7
+FSM   97.1   95.5   97.4        94.8   91.9   95.6
+FWA   97.9   93.8   98.8        97     97.2   97.7
+GEG   93.4   93.9   95.7        95.9   93.6   99.3
+GGG   96.9   89.9   98.1        99.1   90.3   99.3
+GPT   98.4   98.1   99.6        85.1   96.7   98.9
+GRB   94.1   97.2   97.3        89.8   98.2   99.4
+GSO   96.3   85.5   97          86.9   82     95
+GSP   95.7   99.3   99.3        85.1   99.3   99.8
+
+
+
+
+                           68
+GTF   97.4 99.1 99.6            85.1   89.3 97.6
+HSV   96.9 90.7 98.7            87.9   91.3 99.6
+HTS   92.3 91.8 96.3            82.6   93.8 96.8
+HUF   96.8   91.3   97.6        81.1   90.6   97.1
+I90   97     96.7   98.9        96.3   98.6   99.7
+ICT   96.2   99.5   99.5        85.9   99.9   99.9
+ILM   94.7   97.9   99.4        97.2   98.6   98.9
+IND   94.4   97.8   97.8        81.3   100    100
+JAN   96.7   99.5   99.9        83.5   97     99.9
+JAX   98.2   91.7   98.3        99.4   97.8   99.4
+L30   61.4   83.2   87.3        91.3   99.4   99.6
+LBB   95.9   98.9   99          73.2   97.3   99.6
+LCH   95.4   99.2   99.3        95.4   99.8   100
+LEX   96.3   88.5   96.8        97.4   84.5   97.4
+LFT   99     87.2   99          98.9   85.9   98.9
+LIT   97.5   97.1   98.6        88     97.9   99.8
+M03   96.9   99.3   99.3        84.5   99.9   99.9
+M98   96.3   99.2   99.3        86.6   99.6   99.7
+MAF   97.5   99.1   99.3        71.9   97.5   99.5
+MCI   95.6   98.7   99          90.4   98.7   98.8
+MDT   96.7   79.8   97.2        92.4   73.2   98.3
+MGM   96.4   96.8   99          83.9   97.5   98
+MIA   98.9   99.5   99.7        98.4   100    100
+MKE   95.5   94.9   97.1        93.1   99.2   99.4
+MLI   98.6   98.4   99.3        84.9   99.8   99.8
+MLU   97.7   84.4   98.4        76.8   78.9   97.6
+MOB   98.3   99.3   99.3        86.7   99.3   99.7
+MSN   98.2   93.8   99          86.1   97.1   99.5
+MSO   59.6   87.1   90.9        87.7   69.2   98.6
+MSY   95.2   95.4   98.1        88.7   99.5   99.6
+MWH   94.5   57.2   95.1        90.1   41.1   96
+MYR   98.2   95.2   99.2        89.1   99.1   99.3
+N90   97.7   95.3   98.4        98.3   97.7   99
+NCT   96.6   92.3   97.4        96.9   92.2   98.6
+OKC   95.9   98.4   99.1        85.5   99.8   99.8
+ORF   98.1   94.5   99          98.8   96.2   99.5
+P31   99     93.1   99.1        99.5   91.2   99.5
+P50   54.1   91.9   93.1        84.2   98     98.1
+
+
+
+
+                           69
+P80   88.1 91.5 94.6            91.1   89.4 95.4
+PBI   98.4 99.3 99.5            93.6   99.2 99.7
+PCT   97.4 92.7 97.6            98.4   97.1 99.2
+PHL   99.4   98.5   99.5        99.7   99.3   99.8
+PIT   95.6   99.3   99.4        91.5   99.6   99.6
+PSC   88.9   78.7   93.6        90.5   66.9   96.4
+PVD   94.1   95.6   96.9        92.3   98     98.5
+PWM   94.1   96.4   97          85.7   98.9   99
+R90   98.1   96.2   99.1        95.1   98.6   98.8
+RDG   97.9   79.9   98.4        97     81.3   98.5
+RDU   97.9   99.6   99.7        97.9   100    100
+RFD   97     94.1   97.6        97.6   90.8   97.6
+ROA   86.1   85.9   95.3        95     81.5   96.6
+ROC   97.2   85.1   97.7        85.9   91.4   99.3
+ROW   97.6   66.9   98.3        72     65.7   97.1
+RST   97.8   86.7   98.6        76.4   87.8   96.8
+RSW   98     83.2   98.7        91.9   83.4   98.9
+S46   94.2   87.5   95.8        96.7   85.6   96.9
+S56   78.2   91.2   93          84.2   96.7   96.8
+SAT   97.4   96.9   98.1        98.6   99     99.7
+SAV   98.8   97.5   99.5        98.5   98.8   99.7
+SBA   87.2   89.4   94.9        92.2   90     97.5
+SBN   96.8   94.3   98          81.2   96.3   97.4
+SCT   95.1   79.4   96.4        97.8   79     98.6
+SDF   94     98.9   99          96.1   99.7   99.7
+SGF   97     97.4   97.5        76     96.1   98.7
+SUX   97.8   88.5   98.7        80.9   83.6   97.9
+SYR   93.2   89.2   96.8        92.6   85.5   99
+T75   98.6   97     99.2        97.1   98.9   99.2
+TLH   97.2   98.7   98.9        77.3   99.4   99.9
+TOL   97.9   81.3   98.3        83.8   76.1   99.2
+TPA   99.1   98.7   99.4        99.3   99.9   99.9
+TRI   90.7   88.6   94.4        81.8   90.2   97.7
+TUL   95.1   99.5   99.6        83.1   99.9   99.9
+TYS   95.6   92     97.8        82.4   95.3   99.5
+U90   92.4   81.8   95.1        88.2   84.3   99.3
+Y90   97     91.9   97.9        99.6   84.1   99.6
+YNG   92.2   91.5   97.7        94.6   92.2   96.8
+
+
+
+
+                           70
+                       Table B-2
+  Mean Limiting Horizontal Resolution (km)
+          TRACON Area            Airport (r < 6 NM) Area
+ ID
+       ASR    WX     ASR+WX      ASR     WX    ASR+WX
+A11    1.4    1.66   1.25        0.94   1.74   0.94
+A80    4.67   1.08   1.08        3      0.97   0.97
+A90    4.24   1.58   1.56        3.27   1.28   1.22
+ABE    3.21   2.28   2.28        2.8    2.05   2.05
+ABI    4.46   1.06   1.06        2.78   0.89   0.89
+ABQ    3.55   0.73   0.73        2.78   0.34   0.34
+ACT    4.17   1.52   1.52        2.78   1.71   1.71
+ACY    4.62   1.36   1.36        2.8    0.99   0.99
+AGS    4.4    1.72   1.72        2.78   1.77   1.77
+ALB    4.43   1      1           2.78   0.53   0.53
+ALO    1.67   2.16   1.49        0.98   2.49   0.94
+AMA    3.94   0.78   0.78        2.78   0.26   0.26
+ASE    ∞      2.07   2.07        ∞      2.06   2.06
+AUS    4.42   0.96   0.96        3.55   0.68   0.68
+AVL    1.36   1.25   1.11        0.93   1.19   0.93
+AVP    4.39   1.67   1.67        2.78   1.71   1.71
+AZA    4.18   1.52   1.52        3.95   1.3    1.3
+AZO    2.96   1.18   1.14        1.82   0.97   0.83
+BAD    4.18   0.88   0.88        2.78   0.3    0.3
+BFL    1.49   1.55   1.22        0.93   1.88   0.93
+BGM    3.26   0.72   0.72        2.65   0.26   0.25
+BGR    4.32   2.3    2.3         2.78   2.63   2.63
+BHM    4.88   1.18   1.18        2.78   0.77   0.77
+BIL    4.32   0.87   0.87        2.78   0.26   0.26
+BIS    1.5    0.73   0.73        0.93   0.26   0.25
+BNA    3.89   0.66   0.66        2.78   0.28   0.28
+BOI*   ∞      2      2           ∞      1.82   1.81
+BTR    3.9    2.31   2.31        2.78   2.25   2.25
+BTV    3.9    0.75   0.75        2.78   0.26   0.26
+BUF    4.41   1.58   1.58        2.78   1.1    1.1
+C90    3.42   0.82   0.82        2.94   0.61   0.61
+CAE    5.17   0.78   0.78        4.91   0.25   0.25
+CHA    1.46   1.63   1.32        0.93   1.42   0.93
+
+
+
+
+                            71
+CHS   3.83 1.38 1.38            2.78   1.71 1.71
+CID   4.36 1.62 1.62            5.61   1.64 1.64
+CKB   1.91 2.17 1.63            0.93   2.39 0.94
+CLE   4.63   1.19   1.1         3.75   0.77   0.67
+CLT   4.35   1.02   1.02        2.81   0.36   0.36
+CMH   4.45   0.93   0.93        2.78   0.49   0.49
+CMI   4.23   1.62   1.62        2.78   1.59   1.59
+COS   3.13   0.95   0.95        2.78   1.15   1.15
+CPR   1.37   2.98   1.37        0.93   2.88   0.94
+CRP   4.57   1.09   1.09        3.32   0.71   0.7
+CRW   1.83   0.95   0.95        0.93   0.29   0.29
+CVG   4.1    0.92   0.92        2.8    0.49   0.49
+D01   4.27   0.92   0.92        3.22   0.52   0.52
+D10   3.82   0.72   0.72        3.01   0.46   0.46
+D21   4.42   0.82   0.82        3.21   0.48   0.48
+DAB   3.47   1.97   1.97        2.78   2.11   2.11
+DLH   1.88   0.93   0.93        0.93   0.26   0.25
+DSM   4.16   0.86   0.86        2.78   0.41   0.41
+ELM   1.47   1.46   1.21        0.97   1.31   0.93
+ELP   3.56   0.95   0.95        2.78   0.55   0.55
+EUG   2.2    2.11   1.18        1.72   2.04   0.81
+EVV   1.98   1.01   1.01        0.93   0.53   0.53
+F11   4      0.86   0.86        3.63   0.51   0.51
+FAI   4.89   1.11   1.11        2.8    0.59   0.59
+FAR   3.74   1.43   1.43        2.78   1.36   1.36
+FAT   4.91   0.95   0.95        4.52   0.91   0.91
+FAY   4.2    1.66   1.66        2.97   1.54   1.54
+FLO   6.29   1.97   1.34        6.27   2.1    0.94
+FSD   3.46   0.65   0.65        2.78   0.26   0.26
+FSM   3.85   1.16   1.16        2.9    1.33   1.33
+FWA   4.02   1.21   1.21        2.82   1.05   1.05
+GEG   3.88   0.78   0.78        2.78   0.33   0.33
+GGG   1.75   2.02   1.5         1.2    2.01   1.18
+GPT   3.68   1.04   1.04        2.78   1.25   1.25
+GRB   4.78   0.96   0.96        3.09   0.5    0.5
+GSO   4.1    1.75   1.75        2.78   1.8    1.8
+GSP   1.81   0.88   0.88        0.93   0.27   0.27
+GTF   1.34   0.63   0.63        0.93   0.26   0.25
+
+
+
+
+                           72
+HSV   3.7 1.24 1.24             2.78   1.16 1.16
+HTS   1.89 1.4 1.3              0.93   1.29 0.93
+HUF   1.85 1.59 1.36            0.93   1.62 0.93
+I90   4.41   1.23   1.23        3.2    0.75   0.75
+ICT   4.27   0.78   0.78        3.26   0.45   0.45
+ILM   5.63   1.13   1.07        5.47   1.01   0.92
+IND   4.77   0.95   0.95        2.78   0.24   0.24
+JAN   1.24   0.6    0.6         0.93   0.35   0.35
+JAX   3.97   1.55   1.55        2.99   0.86   0.86
+L30   4.84   0.79   0.79        2.82   0.41   0.41
+LBB   4.26   0.85   0.85        2.78   0.26   0.26
+LCH   6.41   0.77   0.77        7.12   0.27   0.27
+LEX   3.87   1.7    1.7         2.82   2.02   2.02
+LFT   4.06   2.01   2.01        2.8    2.16   2.16
+LIT   4.5    0.94   0.94        2.78   0.29   0.29
+M03   4.29   0.75   0.75        2.78   0.41   0.41
+M98   4.13   0.71   0.71        2.79   0.43   0.43
+MAF   3.92   0.77   0.77        2.78   0.26   0.26
+MCI   4.75   0.84   0.84        4.65   0.75   0.75
+MDT   4.42   2.03   2.03        3.13   2.46   2.46
+MGM   4.16   1.03   1.03        2.78   1.05   1.05
+MIA   3.51   0.71   0.71        2.78   0.41   0.41
+MKE   5.13   1.2    1.2         3.45   0.66   0.66
+MLI   3.91   0.81   0.81        2.78   0.36   0.36
+MLU   1.58   2.53   1.49        0.93   2.95   0.94
+MOB   3.62   0.69   0.69        2.78   0.3    0.3
+MSN   3.72   1.34   1.34        2.78   1.17   1.17
+MSO   3.51   0.7    0.7         2.78   0.32   0.32
+MSY   5.06   1.19   1.19        3.59   0.71   0.71
+MWH   3.87   2.17   2.17        2.78   2.41   2.41
+MYR   4.23   1.25   1.25        2.78   0.8    0.8
+N90   4.08   1.07   1.07        3.41   0.87   0.87
+NCT   3.95   1.17   1.17        3.3    0.88   0.88
+OKC   3.97   0.78   0.78        2.78   0.37   0.37
+ORF   5.12   1.29   1.29        4.2    1.2    1.2
+P31   3.48   1.57   1.57        2.78   1.78   1.78
+P50   3.09   1.22   1.22        1.28   0.66   0.66
+P80   3.8    0.91   0.91        2.93   0.68   0.68
+
+
+
+
+                           73
+PBI   3.94 0.98 0.98            3.63   0.92 0.92
+PCT   3.7 1.3 1.3               3.05   0.76 0.76
+PHL   3.37 0.98 0.98            2.86   0.67 0.67
+PIT   3.52   0.62   0.62        2.93   0.45   0.45
+PSC   3.97   1.65   1.62        2.78   2.01   1.97
+PVD   4.55   1.25   1.25        3.74   0.9    0.9
+PWM   4.56   0.92   0.92        2.78   0.49   0.49
+R90   3.86   1.09   1.09        2.8    0.85   0.85
+RDG   4.7    2.51   2.51        4.58   2.46   2.46
+RDU   3.72   0.74   0.74        2.81   0.36   0.36
+RFD   1.73   1.42   1.22        0.97   1.68   0.93
+ROA   2.54   1.33   1.33        1.7    1.26   1.26
+ROC   4.03   1.7    1.7         2.78   1.55   1.55
+ROW   4.35   2.39   2.39        2.78   2.63   2.63
+RST   3.99   1.91   1.91        2.78   1.85   1.85
+RSW   4.34   2.29   2.29        3.35   2.28   2.28
+S46   4.08   1.47   1.47        3.63   1.47   1.47
+S56   4.36   0.98   0.98        3.89   0.87   0.87
+SAT   4.36   1.1    1.1         2.79   0.87   0.87
+SAV   3.9    1.45   1.36        3.37   1.36   1.13
+SBA   3.54   0.83   0.83        2.96   0.64   0.64
+SBN   1.72   1.29   1.2         0.93   1.13   0.93
+SCT   3.23   1.02   1.02        2.78   0.76   0.76
+SDF   4.33   0.82   0.82        2.81   0.42   0.42
+SGF   4.78   0.97   0.97        2.78   0.26   0.26
+SUX   3.89   1.78   1.78        2.78   2.09   2.09
+SYR   5.04   1.23   1.23        3.85   1.24   1.24
+T75   3.86   1.06   1.06        2.82   0.78   0.78
+TLH   1.71   0.83   0.83        0.93   0.25   0.25
+TOL   4.64   2.14   2.14        2.78   2.21   2.21
+TPA   3.77   0.97   0.97        3.06   0.49   0.49
+TRI   1.62   1.58   1.2         0.93   1.67   0.93
+TUL   3.84   0.68   0.68        2.78   0.34   0.34
+TYS   4.06   1.22   1.22        2.78   1.17   1.17
+U90   3.8    0.92   0.92        2.79   0.82   0.82
+Y90   3.94   1.61   1.61        2.82   1.98   1.98
+YNG   5.84   1.58   1.58        6.33   1.56   1.56
+
+
+
+
+                           74
+     *BOI ASR mean LHR is infinite because its associate secondary airspace, Bozeman, MT (BZN) has
+no ASR coverage.
+
+
+
+                                             Table B-3
+          Average Radar Coverage Overlap Count (Rounded to Nearest Integer)
+                                TRACON Area          Airport (r < 6 NM) Area
+                         ID
+                              ASR WX ASR+WX          ASR WX ASR+WX
+                       A11    2   1  3               2      1      3
+                       A80    1   5  6               1      5      6
+                       A90    2   2  3               2      2      4
+                       ABE    2   3  4               1      3      4
+                       ABI    1     3    5           1     3     4
+                       ABQ    1     2    2           1     1     2
+                       ACT    1     3    4           1     3     3
+                       ACY    1     2    4           2     2     4
+                       AGS    1     4    5           1     4     5
+                       ALB    1     3    4           1     3     3
+                       ALO    1     3    4           2     3     4
+                       AMA    1     3    4           1     2     3
+                       ASE    0     2    2           0     2     2
+                       AUS    1     3    4           1     3     4
+                       AVL    1     3    4           1     3     3
+                       AVP    1     3    4           1     3     3
+                       AZA    1     3    4           2     3     5
+                       AZO    1     3    4           1     3     4
+                       BAD    1     2    3           1     2     3
+                       BFL    1     1    2           1     1     2
+                       BGM    2     2    4           2     2     4
+                       BGR    1     2    2           1     2     2
+                       BHM    1     4    5           1     4     5
+                       BIL    1     1    2           1     1     2
+                       BIS    1     2    3           1     2     2
+                       BNA    1     5    6           1     5     5
+                       BOI    2     1    2           2     1     2
+                       BTR    1     3    4           1     3     4
+                       BTV    1     3    4           1     2     3
+                       BUF    1     3    4           1     3     3
+
+
+
+
+                                                75
+C90   3   6   9        3   6   9
+CAE   2   3   5        2   3   4
+CHA   1   3   4        1   3   4
+CHS   1   3   4        1   2   3
+CID   1   3   4        1   3   4
+CKB   1   2   3        1   2   3
+CLE   2   3   5        2   3   5
+CLT   1   4   5        1   4   5
+CMH   1   4   5        1   3   5
+CMI   1   3   4        1   3   4
+COS   1   3   4        1   3   3
+CPR   1   1   2        1   1   2
+CRP   1   2   3        1   1   2
+CRW   1   2   3        1   2   3
+CVG   2   4   6        2   4   6
+D01   1   2   3        2   2   3
+D10   2   4   6        2   4   6
+D21   1   4   5        1   4   5
+DAB   2   3   5        3   3   5
+DLH   1   1   2        1   1   2
+DSM   1   2   3        1   2   2
+ELM   2   3   4        2   2   4
+ELP   1   2   3        1   2   2
+EUG   1   1   2        1   1   1
+EVV   1   4   5        1   4   5
+F11   3   3   6        3   3   6
+FAI   1   1   2        1   1   2
+FAR   1   2   2        1   2   2
+FAT   1   2   3        2   2   4
+FAY   1   3   5        2   3   5
+FLO   2   4   5        2   4   6
+FSD   1   2   3        1   2   2
+FSM   1   3   5        2   3   5
+FWA   1   3   4        2   3   5
+GEG   1   1   2        1   1   2
+GGG   1   2   3        1   2   3
+GPT   1   3   3        1   3   3
+GRB   1   2   3        1   2   3
+
+
+
+
+                  76
+GSO   1   3   4        1   3   3
+GSP   1   3   4        1   2   3
+GTF   1   1   2        1   1   2
+HSV   1   4   4        1   4   4
+HTS   1   3   4        1   3   3
+HUF   1   4   4        1   4   4
+I90   2   3   5        2   4   6
+ICT   1   5   5        1   4   5
+ILM   2   3   4        1   3   4
+IND   1   4   5        1   4   4
+JAN   1   2   3        1   2   3
+JAX   2   3   5        2   3   5
+L30   1   2   3        1   2   3
+LBB   1   3   4        1   3   4
+LCH   1   3   4        2   2   4
+LEX   1   3   4        2   4   5
+LFT   1   3   4        2   3   4
+LIT   1   2   3        1   2   3
+M03   1   3   4        1   3   4
+M98   1   3   4        1   3   4
+MAF   1   2   3        1   2   3
+MCI   1   3   4        1   3   4
+MDT   1   3   4        1   4   4
+MGM   1   5   5        1   5   5
+MIA   2   4   6        2   4   6
+MKE   1   3   5        1   4   5
+MLI   1   3   4        1   3   4
+MLU   1   3   4        1   3   3
+MOB   1   3   4        1   3   3
+MSN   1   3   4        1   3   4
+MSO   1   1   2        1   1   2
+MSY   1   3   4        1   3   4
+MWH   1   1   2        1   2   2
+MYR   1   3   4        1   3   4
+N90   3   4   6        4   4   7
+NCT   2   2   4        2   2   4
+OKC   1   4   5        1   4   5
+ORF   1   2   4        1   2   4
+
+
+
+
+                  77
+P31   2   3   5        2   3   6
+P50   2   2   3        3   3   4
+P80   1   1   2        1   1   2
+PBI   1   3   4        1   3   4
+PCT   2   4   6        3   4   8
+PHL   3   4   7        3   4   7
+PIT   1   3   4        1   3   4
+PSC   1   1   2        1   1   2
+PVD   1   2   3        1   2   3
+PWM   1   1   2        1   1   3
+R90   2   2   4        2   2   4
+RDG   3   4   6        3   3   6
+RDU   2   4   6        3   4   7
+RFD   1   3   5        2   4   5
+ROA   1   3   4        2   3   4
+ROC   1   3   4        1   3   3
+ROW   1   2   3        1   2   2
+RST   1   2   3        1   2   3
+RSW   1   3   3        1   3   3
+S46   1   2   3        1   2   3
+S56   1   2   2        1   2   3
+SAT   1   3   4        1   3   4
+SAV   2   3   5        2   3   5
+SBA   1   2   3        1   2   3
+SBN   1   4   5        1   3   4
+SCT   3   2   5        3   2   5
+SDF   1   4   6        2   4   6
+SGF   1   2   3        1   2   3
+SUX   1   2   3        1   3   3
+SYR   1   3   4        1   3   4
+T75   2   3   5        2   3   5
+TLH   1   4   5        1   3   4
+TOL   1   3   4        1   4   4
+TPA   2   3   5        2   3   5
+TRI   1   3   4        1   3   3
+TUL   1   4   5        1   4   5
+TYS   1   3   3        1   2   3
+U90   1   2   2        1   2   2
+
+
+
+
+                  78
+              Y90      2         3   4           2   3   4
+              YNG      2         3   5           3   3   5
+
+
+
+                                         Table B-4
+Weighted Mean WX Radar Scan Update Time (s) Averaged Over Specified Area
+                 ID        TRACON Area Airport (r < 6 NM) Area
+                 A11       21.3              21.4
+                 A80       4.7               4.7
+                 A90       11.3              9.3
+                 ABE       6.8               7.3
+                 ABI       6.2               6.2
+                 ABQ       14                15.7
+                 ACT       7.7               7.6
+                 ACY       9.2               8.8
+                 AGS       5.5               5.5
+                 ALB       7.6               8.6
+                 ALO       8.5               7.6
+                 AMA       8.4               10
+                 ASE       14.1              13.7
+                 AUS       7.3               7.3
+                 AVL       7.9               8.4
+                 AVP       7.3               7.6
+                 AZA       7.2               7.1
+                 AZO       7.1               7.5
+                 BAD       10.2              12.3
+                 BFL       14.5              15.6
+                 BGM       8.6               9.9
+                 BGR       13.9              11.4
+                 BHM       5.4               5.4
+                 BIL       19.4              21.2
+                 BIS       9.9               12
+                 BNA       4.5               4.7
+                 BOI       16.4              15.7
+                 BTR       6.4               6.6
+                 BTV       8.1               10.4
+                 BUF       7.1               8.2
+                 C90       3.9               3.9
+
+
+
+
+                                            79
+CAE   6.5     7.7
+CHA   6.4     7
+CHS   8       8.8
+CID   8.5     8.1
+CKB   9.7     9.7
+CLE   6.9     6.4
+CLT   5.6     5.7
+CMH   6       6.3
+CMI   6.2     6.3
+COS   8.5     8.6
+CPR   16      17
+CRP   11.2    14.4
+CRW   9.4     10.4
+CVG   5.3     5.5
+D01   11.4    11.4
+D10   5       5
+D21   5.6     5.6
+DAB   7.5     7.3
+DLH   17.7    21.1
+DSM   12.8    14
+ELM   8.4     8.8
+ELP   12.5    11.3
+EUG   16.3    14.5
+EVV   5.4     5.4
+F11   7.6     7
+FAI   21.4    21.4
+FAR   13.8    14.2
+FAT   13.1    12.1
+FAY   6.5     6.8
+FLO   5.4     5.3
+FSD   12.2    13.8
+FSM   6.9     6.7
+FWA   7       7.2
+GEG   18.5    19.3
+GGG   9.9     10
+GPT   8.5     8.2
+GRB   10      10.5
+GSO   7.5     7.3
+
+
+
+
+             80
+GSP   8.1     9.5
+GTF   16.8    19.5
+HSV   5.7     5.8
+HTS   7.9     7.9
+HUF   6       6.1
+I90   6.3     5.8
+ICT   4.7     5.1
+ILM   7.5     7.7
+IND   5.5     5.8
+JAN   10.2    10.8
+JAX   6.9     7.8
+L30   11.3    10.9
+LBB   6.3     6.8
+LCH   8.1     8.7
+LEX   6.4     5.9
+LFT   7.9     8.2
+LIT   10.3    11.7
+M03   6.5     6.6
+M98   7.4     7.6
+MAF   8.6     10.6
+MCI   6.6     6.7
+MDT   6.6     5.8
+MGM   4.7     4.7
+MIA   5.9     5.6
+MKE   6.1     5.8
+MLI   7.9     8.2
+MLU   7.2     6.7
+MOB   7.5     8.4
+MSN   6.6     6.6
+MSO   18.8    19.7
+MSY   7.3     7.4
+MWH   14.7    11.5
+MYR   7       7.4
+N90   6.1     6.1
+NCT   9.9     9.6
+OKC   4.9     5
+ORF   9.5     9.6
+P31   6.7     6.3
+
+
+
+
+             81
+P50   9.8     8.5
+P80   18.7    19.8
+PBI   8       8.1
+PCT   6       4.8
+PHL   5.9     5.9
+PIT   7.6     7.9
+PSC   18.2    19.2
+PVD   10.4    10.9
+PWM   16.9    15.7
+R90   8.7     8.9
+RDG   6.1     6.3
+RDU   5.6     5.6
+RFD   6.1     5.8
+ROA   8.4     8.5
+ROC   7.2     7.9
+ROW   8.7     9
+RST   9.3     9.7
+RSW   7.4     7.2
+S46   10.9    10.8
+S56   12.9    12.6
+SAT   7.2     7.3
+SAV   7.3     7.2
+SBA   12.1    12.2
+SBN   6.1     6.5
+SCT   9.7     10.4
+SDF   4.8     4.9
+SGF   8.8     10.5
+SUX   9.2     8.5
+SYR   7       6.8
+T75   7       6.9
+TLH   5.4     6.2
+TOL   6.4     5.9
+TPA   7.6     8
+TRI   7.6     8.1
+TUL   4.8     4.8
+TYS   8.2     8.9
+U90   12.6    11.6
+Y90   7.7     7.4
+
+
+
+
+             82
+YNG   7.8    7.8
+
+
+
+
+            83
+This page intentionally left blank.
+                                   ACKNOWLEDGMENTS
+
+
+      We would like to thank: Craig Bielek (Raytheon System Engineer at the FAA Technical Center) for
+invaluable assistance in developing an accurate TRACON database; Kevin Hardina (System Engineer with
+the Regulus Group) for very helpful information on various ASR characteristics; and Greg Viola (NextGen
+Weather System Lead Test Director at the FAA Technical Center) for kindly providing us with measured
+NextGen Weather System latency data.
+
+
+
+
+                                                  85
+This page intentionally left blank.
+             GLOSSARY
+
+
+2D        Two-Dimensional
+3D        Three-Dimensional
+AF        Air Force
+ARSR-4    Air Route Surveillance Radar-4
+ASRs      Airport Surveillance Radars
+ATC       Air Traffic Control
+AVSET     Automated Volume Scan Evaluation and Termination
+BW        Beam Width
+CANRADs   Canadian Weather Radars
+CARSR     Common Air Route Surveillance Radar
+CMTD      Concept Maturity and Technology Demonstration
+CPI       Coherent Processing Interval
+CR        Composite Reflectivity
+CSS-Wx    Common Support Services Weather
+FAA       Federal Aviation Administration
+FVO       Fraction of Vertical Volume Observed
+GPN       Ground Position Navigation
+ITWS      Integrated Terminal Weather System
+LHR       Limiting Horizontal Resolution
+NAS       National Airspace
+NEXRAD    Next Generation Weather Radar
+NWP       NextGen Weather Processor
+NWS       National Weather Service
+SRTM      Shuttle Radar Tomography Mission
+STARS     Standard Terminal Automation Replacement System
+TDWRs     Terminal Doppler Weather Radars
+TPoG      Terminal Precipitation on the Glass
+TRACON    Terminal Radar Approach Control
+VIL       Vertically Integrated Liquid
+VIP       Video Integrator and Processor
+VR        Virtual Radar
+WFVO      Weighted Fraction of Vertical Volume Observed
+WSP       Weather Systems Processor
+WX        Weather
+
+
+
+
+                   87
+This page intentionally left blank.
+                                      REFERENCES
+
+
+1. Carmouche, M., 2012: White paper: Weather products and certification in FAA long range radar
+   systems. NAS Defense Programs, Federal Aviation Administration, Oklahoma City, OK, 12 pp.
+
+2. Cho, J. Y. N., 2015: Revised Multifunction Phased Array Radar (MPAR) network siting analysis.
+   Project Rep. ATC-425, MIT Lincoln Laboratory, Lexington, MA, 84 pp.,
+   https://www.ll.mit.edu/sites/default/files/publication/doc/2018-05/Cho_2015_ATC-425.pdf.
+
+3. Cho, J. Y. N., and J. M. Kurdzo, 2019: Weather radar network benefit model for tornadoes. J. Appl.
+   Meteor. Climatol., 58, 971-987.
+
+4. Dupree, W., and J. Cho, 2021: Tradeoffs between NextGen Weather VIL and composite reflectivity
+   radar products. Project Memo. 43PM-Wx-0195, MIT Lincoln Laboratory, Lexington, MA, 29 pp.
+
+5. Chrisman, J. N., 2013: Dynamic scanning. NEXRAD Now, 22, NOAA/NWS/Radar Operations
+   Center,                     Norman,                     OK,                   1–3,
+   https://www.roc.noaa.gov/WSR88D/PublicDocs/NNOW/NNow22c.pdf.
+
+6. Doviak, R. J., and D. S. Zrnic, 1993: Doppler Radar and Weather Observations. 2nd ed., Academic
+   Press, San Diego, CA, 562 pp.
+
+7. FAA, 1987: System requirements statement for the Terminal Doppler Weather Radar system. Order
+   1812.9, Federal Aviation Administration, Washington, DC, 12 pp.
+
+8. FAA, 1995: Specification—Terminal Doppler Weather Radar with enhancements. FAA-E-2806c,
+   Federal Aviation Administration, Washington, DC, 163 pp.
+
+9. FAA, 2017: National airspace system capital investment plan, FY2018-2022. Federal Aviation
+   Administration, 422 pp., https://www.faa.gov/air_traffic/publications/cip/files/FY18-22/FY18-
+   22_CIP_Complete_Nov_2017.pdf.
+
+10. FAA, 2008: ASR-9 system. Type FA-10064, TI6310.24, SDR-ASR9-013, William J. Hughes
+    Technical Center, Federal Aviation Administration, Atlantic City, NJ, 464 pp.
+
+11. FAA, 2019: ASR-11 S-band, solid state primary surveillance radar. Tech. manual SDR-ASR11-
+    067, TI 6310.57A, Federal Aviation Administration, Washington, DC, 1579 pp.
+
+12. FAA, 2020a: Precipitation on the Glass (PoG) preliminary shortfall analysis report. Federal
+    Aviation Administration, Washington, DC.
+
+
+
+
+                                               89
+13. FAA, 2020b: Solution concept of operations for Precipitation on the Glass. Federal Aviation
+    Administration, Washington, DC.
+
+14. FAA, 2020c: Precipitation on the Glass (PoG) alternatives. Federal Aviation Administration,
+    Washington, DC.
+
+15. FAA, 2021: Common Support Services-Weather (CSS-Wx) and NextGen Weather Processor
+    (NextGen Weather System), Attachment J-07: NextGen weather systems description. Federal
+    Aviation Administration, Washington, DC.
+
+16. IE, 2019: Optimization for CTD on ASR-8 radars. Edition 0091, IE-UM-00830-0091, Intersoft
+    Electronics, 214 pp.
+
+17. Mahapatra,      P.    R.,  1999:  Aviation      Weather     Surveillance    Systems.    AIAA,
+    https://doi.org/10.1049/PBRA008E.
+
+18. Mersereau, D., 2014: This one little programming tweak will save thousands of lives. The Vane,
+    http://thevane.gawker.com/this-one-little-programming-tweak-will-save-thousands-o-
+    1592764166.
+
+19. MIT, 2019: NextGen Weather Processor (NWP) domain technology description document. Project
+    Rep. ATC-392, version 1.19.1, MIT Lincoln Laboratory, Lexington, MA, Project Report, 1652 pp.
+
+20. Raytheon, 1999: Digital airport surveillance radar (DASR), contract attachment 6—system
+    specification and SRC cross reference. Rev-D: SSG708688; cage code 49956, RFP No. F19628-
+    95-R-0007, Raytheon Electronic Systems, Sudbury, MA, 110 pp.
+
+21. Regulus, 2020: ASR-11 design note: Median spatial filter for weather processing. Regulus Group,
+    3 pp.
+
+22. ROC, 2008: WSR-88D system specification. Document no. 2810000H, code ID 0WY55, WSR-
+    88D Radar Operations Center, Norman, OK, 160 pp.
+
+23. Sills, D. M. L., and P. I. Joe, 2019: From pioneers to practitioners: A short history of severe
+    thunderstorm research and forecasting in Canada. Atmosphere-Ocean, 57, 249-261,
+    https://doi.org/10.1080/07055900.2019.1673145.
+
+24. Skolnik, M., 2008: Radar Handbook, 3rd Ed. McGraw Hill, New York.
+
+25. Torres, S. M., and C. D. Curtis, 2007: Initial implementation of super-resolution data on the
+    NEXRAD network. 21st Int. Conf. on Interactive Information Processing Systems for Meteorology,
+    Oceanography, and Hydrology, Amer. Meteor. Soc., San Antonio, TX, 5B.10,
+    https://ams.confex.com/ams/pdfpapers/116240.pdf.
+
+
+
+
+                                              90
+26. Worris, M. A., and J. Y. N. Cho, 2018: Assessment of FAA radar precipitation weather information
+    services for air traffic operations. Project Memo. 43PM-Wx-0177, MIT Lincoln Laboratory,
+    Lexington, MA, 79 pp.
+
+
+
+
+                                              91
+This page intentionally left blank.
+

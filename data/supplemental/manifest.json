@@ -1,0 +1,154 @@
+[
+  {
+    "file": "data/raw/FAA_LongRangeRadars.kml",
+    "url": "https://uavsar.jpl.nasa.gov/kml/FAA_LongRangeRadars.kml",
+    "sha256": "95f3ae0c8eda6049ffc39eaf69d6e485848010fc91845a28751ec0bacdae13bf",
+    "bytes": 161839,
+    "retained_on": "2026-10-04",
+    "cycle": null
+  },
+  {
+    "file": "data/raw/Cho_2015_ATC-425.pdf",
+    "url": "https://www.ll.mit.edu/sites/default/files/publication/doc/2018-05/Cho_2015_ATC-425.pdf",
+    "sha256": "1f1095668dc8d5c02de9e7bfbf9b2f1f6fd1e3e99d5838d42525c24d590b059a",
+    "bytes": 1904538,
+    "retained_on": "2026-10-04",
+    "cycle": null
+  },
+  {
+    "file": "data/raw/Cho_2015_ATC-425.txt",
+    "url": "https://www.ll.mit.edu/sites/default/files/publication/doc/2018-05/Cho_2015_ATC-425.pdf",
+    "sha256": "34d4c7a5db097ad7f1f3985146d22b1d5f0486569a32f366672d77ec88536156",
+    "bytes": 177610,
+    "retained_on": "2026-10-04",
+    "cycle": null
+  },
+  {
+    "file": "data/raw/Cho_2021_ATC-450.pdf",
+    "url": "https://www.ll.mit.edu/sites/default/files/publication/doc/radar-coverage-analysis-terminal-precipitation-glass-program-cho-atc-450.pdf",
+    "sha256": "bef6e20c4ce7290ec2b0fae87dea5446fd06ed98e106b3f767b7c905c00b13a5",
+    "bytes": 3486965,
+    "retained_on": "2026-10-04",
+    "cycle": null
+  },
+  {
+    "file": "data/raw/Cho_2021_ATC-450.txt",
+    "url": "https://www.ll.mit.edu/sites/default/files/publication/doc/radar-coverage-analysis-terminal-precipitation-glass-program-cho-atc-450.pdf",
+    "sha256": "d4cf546a79330aa0993c7d25246f56cba9d1aa2d0b1f947ee9f1d31d0ecd7850",
+    "bytes": 160144,
+    "retained_on": "2026-10-04",
+    "cycle": null
+  },
+  {
+    "file": "data/raw/faa-service-centers.pdf",
+    "url": "https://www.faa.gov/sites/faa.gov/files/service-center-list-12.19.23.pdf",
+    "sha256": "10a203c0572c6f50ea94748bc039963c230d9fe54ec632ef7c09698ad9889599",
+    "bytes": 635801,
+    "retained_on": "2026-10-04",
+    "cycle": null
+  },
+  {
+    "file": "data/raw/nfdd-2025-03-25-56.pdf",
+    "url": "https://aeronav.faa.gov/aero_data/NFDD/nfdd-2025-03-25-56.pdf",
+    "sha256": "613aa8e8c09e626932b6313adf5ac4eab93ab72fe6c9744fee09c79d30607c69",
+    "bytes": 2930179,
+    "retained_on": "2026-10-04",
+    "cycle": null
+  },
+  {
+    "file": "data/raw/radomes-mill-valley.html",
+    "url": "https://www.radomes.org/museum/showsite.php?site=Mill+Valley+AFS%2C+CA",
+    "sha256": "e896fe8c2c9f56999aba456a19b9d601a2f4152c035821df4cce934fc1604bca",
+    "bytes": 8049,
+    "retained_on": "2026-10-04",
+    "cycle": null
+  },
+  {
+    "file": "data/raw/ntsb-rno.pdf",
+    "url": "https://data.ntsb.gov/Docket/Document/docBLOB?FileExtension=.PDF&FileName=Air+Traffic+Control+Group+Chairman%27s+Factual+Report-Master.PDF&ID=40464366",
+    "sha256": "ffc5c1aaf038eda4e8e831d1b9ff85cf2d725b6c9dde147d146a7602258c3ead",
+    "bytes": 396925,
+    "retained_on": "2026-10-04",
+    "cycle": null
+  },
+  {
+    "file": "data/raw/geocode-SCT.json",
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=9175+Kearny+Villa+Rd&city=San+Diego&state=CA&zip=92126&benchmark=Public_AR_Current&format=json",
+    "sha256": "0177f2c8fecde17d9933cd0a1451eaf6c53d703a23b7543fd9bb8711410a3db9",
+    "bytes": 749,
+    "retained_on": "2026-10-04",
+    "cycle": null
+  },
+  {
+    "file": "data/raw/geocode-A90.json",
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=25+Robert+Milligan+Pkwy&city=Merrimack&state=NH&zip=03054&benchmark=Public_AR_Current&format=json",
+    "sha256": "2bdb75632fcbfe67b9c619f95f5b50e7511fb1b5784abcff164bbb8b8936f3c2",
+    "bytes": 299,
+    "retained_on": "2026-10-04",
+    "cycle": null
+  },
+  {
+    "file": "data/raw/geocode-T75.json",
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=22+Missouri+Research+Park+Ct&city=St+Charles&state=MO&zip=63304&benchmark=Public_AR_Current&format=json",
+    "sha256": "1381cb0b70677a8b110d4b5b9317fc55db6d2a735feb8deb0ba7181e69b51c92",
+    "bytes": 760,
+    "retained_on": "2026-10-04",
+    "cycle": null
+  },
+  {
+    "file": "data/raw/geocode-S46.json",
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=825+S+160th+Street&city=Burien&state=WA&zip=98148&benchmark=Public_AR_Current&format=json",
+    "sha256": "7bfd200e1c83f429b55a354482c541da5bf178662ef6ae5e4d6588665ee4007a",
+    "bytes": 724,
+    "retained_on": "2026-10-04",
+    "cycle": null
+  },
+  {
+    "file": "data/raw/geocode-PCT.json",
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=3699+MacIntosh+Drive&city=Warrenton&state=VA&zip=20187&benchmark=Public_AR_Current&format=json",
+    "sha256": "870b1e5c7017ad45273384bb6da6091ed4eba00d216fa29ade1bcb3b809d5e5c",
+    "bytes": 740,
+    "retained_on": "2026-10-04",
+    "cycle": null
+  },
+  {
+    "file": "data/raw/geocode-N90.json",
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=1515+Stewart+Ave&city=Westbury&state=NY&zip=11590&benchmark=Public_AR_Current&format=json",
+    "sha256": "bcd8c621cc83d55b76724f268e80c2f826316dd6179ff1d25de8e5879d756ef7",
+    "bytes": 733,
+    "retained_on": "2026-10-04",
+    "cycle": null
+  },
+  {
+    "file": "data/raw/geocode-C90.json",
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=1100+Bowes+Rd&city=Elgin&state=IL&zip=60123&benchmark=Public_AR_Current&format=json",
+    "sha256": "b88fdeadef1142c0c720b7e7d00e2af67f14abb33064838bcf183e0d6e9e9f48",
+    "bytes": 715,
+    "retained_on": "2026-10-04",
+    "cycle": null
+  },
+  {
+    "file": "data/raw/geocode-A80.json",
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=784+S+Hwy+74&city=Peachtree+City&state=GA&zip=30269&benchmark=Public_AR_Current&format=json",
+    "sha256": "7799f7f448d5b31d4aed32b9d18f86d45027f916048ea578c1d1c3fe3569b096",
+    "bytes": 293,
+    "retained_on": "2026-10-04",
+    "cycle": null
+  },
+  {
+    "file": "data/raw/geocode-NCT.json",
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=11375+Douglas+Road&city=Mather&state=CA&zip=95655&benchmark=Public_AR_Current&format=json",
+    "sha256": "839f9eb2b95bb331f67e58c60f622bf1581312e58e33b61e6deb9ef084f9e4cc",
+    "bytes": 731,
+    "retained_on": "2026-10-04",
+    "cycle": null
+  },
+  {
+    "file": "data/supplemental/control_locations.json",
+    "url": "Derived from FAA directory and retained Census responses",
+    "sha256": "23e7850a84f8907c84f0aca2cf77fea0218d3aa7225b61ce2e1e9b401e28b45b",
+    "bytes": 3855,
+    "retained_on": "2026-10-04",
+    "cycle": null
+  }
+]

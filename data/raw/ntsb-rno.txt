@@ -1,0 +1,322 @@
+NATIONAL TRANSPORTATION SAFETY BOARD
+
+            Office of Aviation Safety
+            Washington, D.C. 20594
+
+               November 2, 2017
+
+      Group Chairman's Factual Report
+
+      AIR TRAFFIC CONTROL
+                 WPR16FA172
+                                                         Table Of Contents
+A.     ACCIDENT ............................................................................................................................ 3
+B.     AIR TRAFFIC CONTROL GROUP ...................................................................................... 3
+C.     SUMMARY ............................................................................................................................ 3
+D.     DETAILS OF THE INVESTIGATION ................................................................................. 3
+E.     FACTUAL INFORMATION ................................................................................................. 3
+     1.0      History of Flight .............................................................................................................. 3
+     2.0      Radar Data ...................................................................................................................... 5
+     3.0      Weather Information ....................................................................................................... 5
+     4.0      FAA Airport Information................................................................................................ 5
+     5.0      RNO Airspace ................................................................................................................. 5
+     6.0      Air Traffic Control Procedures ....................................................................................... 6
+F.     LIST OF ATTACHMENTS ................................................................................................... 9
+
+
+
+
+ATC FACTUAL REPORT                                                   2                                                        WPR16FA172
+A.     ACCIDENT
+
+Location:   Sparks, Nevada
+Date:       August 30, 2016
+Time:       1801 Pacific daylight time (PDT)
+            0101 coordinated universal time (UTC)
+Airplane:   N958CA, Beechcraft A36, Bonanza
+
+B.     AIR TRAFFIC CONTROL GROUP
+
+ Andy Olvis                                          Daniel Creedon
+ Group Chairman                                      FAA Air Traffic Organization
+ Operational Factors Division (AS-30)                Safety & Technical Training
+ National Transportation Safety Board                Federal Aviation Administration (FAA)
+
+ Eric Stormfels
+ Air Safety Investigator
+ Pittsburgh ATCT (PIT)
+ National Air Traffic Controllers Assn
+
+C.     SUMMARY
+
+        On August 30, 2016, about 1801 Pacific daylight time, a Beechcraft A-36 Bonanza,
+N985CA, was destroyed when it impacted the ground in a recreational vehicle (RV) park about
+one-half mile prior to the threshold of runway 16L at Reno/Tahoe International Airport (RNO),
+Sparks, Nevada. The airplane was owned by Venture Aviation Services of Reno Nevada, and was
+on leaseback to, and operated by, Flying Start Aero, a flight school based at RNO. Both persons
+on board received fatal injuries; there were no ground injuries. The flight was conducted under the
+provisions of Title 14 Code of Federal Regulations Part 91. Visual meteorological conditions
+prevailed.
+
+D.     DETAILS OF THE INVESTIGATION
+
+        On September 21, 2016, the air traffic control group convened remotely and conducted an
+interview via telephone with the RNO local controller working on the day of the accident. (See
+attachment 1.)
+
+E.     FACTUAL INFORMATION
+
+1.0    History of Flight
+         Bonanza N958CA entered the RNO airspace under visual flight rules (VFR) from the south
+for landing at RNO. The NCT approach controller had issued the pilot a vector of 350 with an
+altitude restriction to maintain 8,500 feet above mean sea level (msl). As N958CA approached
+RNO from about 6 miles southeast, the NCT approach controller advised the pilot of N958CA
+there would be a “slight delay for runway 25, ah you’re number four now for the airport, ah traffic
+on a fifteen mile straight in is a Boeing seven fifty seven for one-six right.” The pilot acknowledged
+
+
+ATC FACTUAL REPORT                               3                                       WPR16FA172
+and stated that he could accept runway 16L. The NCT approach controller instructed the pilot of
+N958CA to enter the downwind and to contact RNO tower; it was not specified which runway.
+
+       At 1754:33, the pilot of N958CA contacted the RNO local controller, “Reno tower good
+afternoon, Bonanza niner eight five Charlie Alpha restricted heading three-five-zero, eight
+thousand five hundred.”
+
+        At 1754:42, the RNO local controller answered a landline call from the NCT approach
+controller who informed him that the pilot of N958CA could accept runway 16L; would be the last
+aircraft for runway 16L; and, would be entering from the downwind.
+
+      At 1754:50, the RNO local controller instructed the pilot of N958CA to continue for
+runway 25; the pilot acknowledged. However, the pilot continued for runway 16L without the
+RNO controller correcting the pilot.
+
+       At 1755:08, an unknown pilot believed to be the pilot of N958CA transmitted “and ah
+tower, how about the restrictions?” There was no response by the RNO local controller.
+
+      At 1756:20, the pilot of N958CA reported that he was on a wide downwind for runway
+16L. The RNO local controller instructed the pilot to continue for runway 16L; the pilot
+acknowledged.
+
+       At 1757:12, the pilot of N958CA advised that he was turning a wide left base for runway
+16L. The RNO local controller acknowledged and informed the pilot “traffic, niner mile final for
+one-six right is a Boeing seven-fifty-seven, caution wake turbulence, wind two-six-zero at one-
+three gust one-eight, runway one-six left cleared to land.” The traffic was Federal Express flight
+1359 (FDX1359). The pilot acknowledged the clearance and informed the local controller they did
+not have the B757 in sight. Also landing runway 16R preceding FDX1359 was United Parcel
+Service flight 9706 (UPS9706), also a B757. (See attachment 2, figure 1.)
+
+       At 1758:17, the pilot of N958CA reported seeing the traffic saying “five Charlie Alpha has
+got a visual on the airliner for the, for the right.” There were no further recorded transmissions
+from the pilot of N958CA. When the pilot of N958CA reported the “airliner” in sight, FDX1359
+was about 5.95 nautical miles (NM) from the runway 16R threshold and UPS9706 was about 0.67
+NM from the runway 16R threshold. (See attachment 2, figure 2.)
+
+        At 1758:26, the RNO local controller informed the pilot of FDX1359 that there was traffic
+“on a four-mile left base for one-six left six thousand two hundred feet, Bonanza, they do have
+you in sight.” The pilot of FDX1359 acknowledged the traffic call and said they were also looking
+for the traffic.
+
+        At 1801:09, the RNO local controller instructed the pilot of Horizon Air flight 320
+(QXE320) to line up and wait on runway 16R. The pilot acknowledged the instruction and asked
+the RNO local controller “you see the flames off the end of ah the beginning of one-six right? Just,
+there is some smoke going up now.” (See attachment 2, figure 3.)
+
+
+
+ATC FACTUAL REPORT                              4                                      WPR16FA172
+       The RNO local controller made several attempts to contact the pilot of N958CA with no
+response.
+2.0    Radar Data
+        Radar data for this report was obtained from the FAA NCT terminal radar approach control
+(TRACON). The NCT TRACON plot playback (.PPB) data was of good quality and was part of
+the standard terminal automation replacement system (STARS). The FAA radar sensor providing
+the radar data was an airport surveillance radar 11 (ASR-11) located on the RNO airport at latitude
+39°30'4.55"N, and longitude 119°46'46.45"W. The RNO ATCT air traffic controllers used a
+Tower Display Workstation (TDW) to receive radar data and assist working traffic.
+3.0    Weather Information
+       The 1755 RNO automated weather observation indicated winds from 290 degrees at 17
+knots, gusting to 20 knots, visibility 10 miles, few clouds at 10,000 feet above ground level,
+temperature 31 degrees Celsius (C), dew point minus 5 degrees C, and an altimeter setting of 30.01
+inches of mercury.
+
+       For further information, please see the Weather Group Chairman’s factual report.
+4.0    FAA Airport Information
+        RNO runway 16L was 9,000 feet long by 150 feet wide and was constructed of grooved
+concrete. The runway approach end was located at 39-30.830430N and 119-46.004433W at an
+elevation of 4414.8 feet msl. The threshold crossing height was 75 feet. The runway was served
+by a 3.00 degree glide slope, and a 4-light Precision Approach Path Indicator (PAPI) light system,
+installed on the left side of the runway at the approach end.
+
+        RNO runway 16R was 11,001 feet long by 150 feet wide and was constructed of grooved
+concrete. The runway approach end was located at 39-30.830635N and 119-46.153228W at an
+elevation of 4414.8 feet msl. The runway had a displaced threshold of 999.3 feet at the approach
+end of the runway. The threshold crossing height was 77 feet. The runway was served by a 3.06
+degree glide slope, and a 4-light PAPI light system, installed on the left side of the runway at the
+approach end.
+
+        RNO runways 16R and 16L were parallel runways separated by 697.8 feet. (See attachment
+2, figure 4.)
+5.0    RNO Airspace
+       RNO was in class C airspace, and required RNO air traffic controllers to separate aircraft by
+specific class C standards. Federal Aviation Administration Joint Order 7110.65W (FAA JO
+7110.65W), Air Traffic Control, paragraph 7-8-3 addresses class C service separation and says [in
+part]:
+
+      7−8−3. CLASS C SERVICES
+
+      Separate VFR aircraft from IFR aircraft by any one of the following:
+
+
+
+ATC FACTUAL REPORT                              5                                      WPR16FA172
+              c. Target resolution, except when ISR is being displayed.
+
+              NOTE− Apply the provisions of Paragraph 5-5-4, Minima, subparagraphs f and g,
+              when wake turbulence separation is required.
+6.0    Air Traffic Control Procedures
+The air traffic controller was required to apply the provisions of FAA JO 7110.65, Air Traffic
+Control, chapter 5-5-4 which states [in part]:
+
+       5-5-4 MINIMA
+
+              h. In addition to subpara g, separate an aircraft landing behind another aircraft on
+              the same runway, or one making a touch-and-go, stop-and-go, or low approach by
+              ensuring the following minima will exist at the time the preceding aircraft is over
+              the landing threshold:
+
+              NOTE− Consider parallel runways less than 2,500 feet apart as a single runway
+              because of the possible effects of wake turbulence.
+
+                      1. Small behind large− 4 miles.
+                      2. Small behind heavy− 6 miles.
+
+       FAA Order 7110.659C Wake Turbulence Recategorization addresses Wake Turbulence
+Recategorization (Recat). The 7110.659C was signed on February 29, 2016 and provided
+“procedural guidance to FAA Order JO 7110.65, Air Traffic Control, the Pilot/Controller
+Glossary, and FAA Order JO 7210.3, Facility Operation and Administration, related to the
+implementation and use of Wake Turbulence Recategorization procedures and separation
+minima.” At facilities authorized to use Recat for air traffic control services, the applicable
+provisions of FAA Order 7110.65, Air Traffic Control, are superseded by the provisions contained
+in the order. RNO was authorized to use Recat on May 26, 2016. FAA JO 7110.695C, Wake
+Turbulence Recategorization, 5-5-4 addresses wake turbulence separation standards and states in
+part:
+
+       WAKE TURBULENCE APPLICATION
+
+       h. ON APPROACH. In addition to subpara g, separate an aircraft on approach behind another
+       aircraft to the same runway by ensuring the wake separation minima in table 5-5-2 will exist
+       at the time the trailing aircraft is within 5 NM of the FAF.
+
+              NOTE - Consider parallel runways less than 2,500 feet apart as a single runway
+              because of the possible effects of wake turbulence.
+                                       TBL 5-5-2
+
+
+
+
+ATC FACTUAL REPORT                                 6                                  WPR16FA172
+The B757 model 200 and 300 are considered wake category D according to FAA JO 7360.1,
+Appendix A Aircraft Type Designator, dated September 25, 2015 and stated [in part]:
+
+
+
+
+      2-10. Aircraft Wake Categories. For the purposes of wake turbulence separation
+      minima, aircraft are categorized as Category A through Category F. Each aircraft is
+      assigned a category based on wingspan and maximum takeoff weight (MTOW).
+
+      NOTE – Applicable only at facilities authorized to conduct operations in accordance
+      with FAA Order JO 7110.659, Wake Turbulence Recategorization.
+
+             a. Category A - Aircraft capable of MTOW of 300,000 pounds or more and a
+             wingspan greater than 245 feet.
+             b. Category B - Aircraft capable of MTOW of 300,000 pounds or more and a
+             wingspan greater than 175 feet and less than or equal to 245 feet.
+             c. Category C – Aircraft capable of a MTOW of 300,000 pounds or more and a
+             wingspan greater than 125 feet and less than or equal to 175 feet.
+             d. Category D –
+                    (1) Aircraft capable of a MTOW less than 300,000 pounds and a wingspan
+                    greater than 125 feet and less than or equal to 175 feet; or
+                    (2) Aircraft capable of a MTOW greater than 41,000 pounds with a
+                    wingspan greater than 90 feet and less than or equal to 125 feet.
+             e. Category E – Aircraft capable of a MTOW greater than 41,000 pounds with a
+             wingspan greater than 5 feet and less than or equal to 90 feet.
+
+ATC FACTUAL REPORT                           7                                     WPR16FA172
+              f. Category F –
+                      (1) Aircraft capable of a MTOW of less than 41,000 pounds and a
+                      wingspan less than or equal to 125 feet; or
+                      (2) Aircraft capable of a MTOW less than 15,500 pounds regardless of
+                      wingspan; or
+                      (3) A powered sailplane.
+      The Beechcraft A36 Bonanza is considered wake category F according to FAA JO 7360.1,
+Appendix A Aircraft Type Designator, dated September 25, 2015 and stated [in part]:
+
+
+
+
+        FAAJO 7110.65 Air Traffic Control, paragraph 7-2-1 addresses visual separation and says
+[in part]:
+
+       7-2-1. VISUAL SEPARATION
+       Aircraft may be separated by visual means, as provided in this paragraph, when other
+       approved separation is assured before and after the application of visual separation. To
+       ensure that other separation will exist, consider aircraft performance, wake turbulence,
+       closure rate, routes of flight, and known weather conditions. Reported weather conditions
+       must allow the aircraft to remain within sight until other separation exists. Do not apply
+       visual separation between successive departures when departure routes and/or aircraft
+       performance preclude maintaining separation. Visual separation is not authorized when the
+       lead aircraft is a category A.
+
+       2. Pilot-applied visual separation.
+               (a) Maintain communication with at least one of the aircraft involved and ensure
+               there is an ability to communicate with the other aircraft.
+               (b) The pilot sees another aircraft and is instructed to maintain visual separation
+               from the aircraft as follows:
+                       (1) Tell the pilot about the other aircraft. Include position, direction, type,
+                       and, unless it is obvious, the other aircraft’s intention.
+                       (2) Obtain acknowledgment from the pilot that the other aircraft is in sight.
+                       (3) Instruct the pilot to maintain visual separation from that aircraft.
+
+
+
+
+ATC FACTUAL REPORT                               8                                      WPR16FA172
+        The accident aircraft was operating under visual flight rules (VFR). FAA JO 7110.65, Air
+Traffic Control, addresses basic radar services provided to VFR aircraft. Paragraph 7-6-7 discusses
+sequencing for VFR aircraft to an airport and says [in part]:
+
+       7-6-7. SEQUENCING
+               c. Apply the following procedures to a VFR aircraft being radar sequenced:
+                      1. The provisions of Paragraph 5-5-4, Minima, subparagraphs f and g.
+                      2. When parallel runways are less than 2,500 feet apart, do not permit an
+                      aircraft to overtake another aircraft established on final within the facility’s
+                      area of responsibility when wake turbulence separation is required.
+
+F.     LIST OF ATTACHMENTS
+
+       Attachment 1: Interview summary of the air traffic controller involved.
+       Attachment 2: Radar graphics and a graphic of the RNO runways.
+
+
+
+
+Submitted by:
+
+
+ ______________________
+ Andy Olvis
+ Senior Air Traffic Investigator
+
+
+
+
+ATC FACTUAL REPORT                               9                                      WPR16FA172
+THIS PAGE INTENTIONALLY BLANK
+
+
+
+
+ATC FACTUAL REPORT       10     WPR16FA172
+

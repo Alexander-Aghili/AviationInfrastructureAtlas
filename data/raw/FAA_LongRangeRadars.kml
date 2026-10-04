@@ -1,0 +1,4998 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+
+<Document>
+  <name>FAA Long Range Radars</name>
+	
+  <Style id="triangleStyle">  
+    <PolyStyle>    
+      <color>7d000055</color>     
+      <fill>1</fill>     
+      <outline>0</outline>  
+    </PolyStyle>
+  </Style>
+
+
+
+    <!-- AERONAUTICAL CENTER -->
+    <Folder>	  
+      <name>AERONAUTICAL CENTER</name>
+
+      <GroundOverlay>
+	    <Icon>          
+		  <href>http://uavsar.jpl.nasa.gov/images/longRangeCircle.png</href>
+        </Icon>        
+	    <LatLonBox>          
+		  <north>35.56859</north>          
+		  <south>35.235854</south>          
+		  <east>-97.418612273209</east>          
+		  <west>-97.826387726791</west>   
+	    </LatLonBox>      
+	  </GroundOverlay>
+
+      <Placemark>  
+        <name>FAA Long Range Radar Site</name>  
+        <description>    
+          <![CDATA[    
+		    AERONAUTICAL CENTER<br><br>      
+            Latitude: 35.402222<br>      
+            Longitude: -97.622500<br>      
+            Exclusion Zone: 10 nautical miles<br>      
+            <span style="color: red">
+              No part of the image swath may cross this zone.
+            </span><br><br>      
+            The FAA long range radars are L-band radars<br>      
+            used by the FAA to <a href='http://en.wikipedia.org/wiki/Air_traffic_control' target='_blank'>track aircraft movement</a> in<br>  
+            US airspace.
+<br><br></span>    
+          ]]>   
+        </description>  
+        <styleUrl>#triangleStyle</styleUrl>  
+        <Polygon>    
+          <altitudeMode>clampToGround</altitudeMode>    
+          <outerBoundaryIs>      
+            <LinearRing>        
+              <coordinates>          
+                -97.622500,35.492222
+                -97.5225,35.352222
+                -97.7225,35.352222
+                -97.622500,35.492222
+              </coordinates>      
+            </LinearRing>    
+          </outerBoundaryIs>  
+        </Polygon>
+      </Placemark>
+
+    </Folder>
+    <!-- End of AERONAUTICAL CENTER -->
+
+
+    <!-- AJO -->
+    <Folder>	  
+      <name>AJO</name>
+
+      <GroundOverlay>
+	    <Icon>          
+		  <href>http://uavsar.jpl.nasa.gov/images/longRangeCircle.png</href>
+        </Icon>        
+	    <LatLonBox>          
+		  <north>32.597479</north>          
+		  <south>32.264743</south>          
+		  <east>-112.74834734229</east>          
+		  <west>-113.14220865771</west>   
+	    </LatLonBox>      
+	  </GroundOverlay>
+
+      <Placemark>  
+        <name>FAA Long Range Radar Site</name>  
+        <description>    
+          <![CDATA[    
+		    AJO<br><br>      
+            Latitude: 32.431111<br>      
+            Longitude: -112.945278<br>      
+            Exclusion Zone: 10 nautical miles<br>      
+            <span style="color: red">
+              No part of the image swath may cross this zone.
+            </span><br><br>      
+            The FAA long range radars are L-band radars<br>      
+            used by the FAA to <a href='http://en.wikipedia.org/wiki/Air_traffic_control' target='_blank'>track aircraft movement</a> in<br>  
+            US airspace.
+<br><br></span>    
+          ]]>   
+        </description>  
+        <styleUrl>#triangleStyle</styleUrl>  
+        <Polygon>    
+          <altitudeMode>clampToGround</altitudeMode>    
+          <outerBoundaryIs>      
+            <LinearRing>        
+              <coordinates>          
+                -112.945278,32.521111
+                -112.845278,32.381111
+                -113.045278,32.381111
+                -112.945278,32.521111
+              </coordinates>      
+            </LinearRing>    
+          </outerBoundaryIs>  
+        </Polygon>
+      </Placemark>
+
+    </Folder>
+    <!-- End of AJO -->
+
+
+    <!-- ALEXANDRIA -->
+    <Folder>	  
+      <name>ALEXANDRIA</name>
+
+      <GroundOverlay>
+	    <Icon>          
+		  <href>http://uavsar.jpl.nasa.gov/images/longRangeCircle.png</href>
+        </Icon>        
+	    <LatLonBox>          
+		  <north>31.481368</north>          
+		  <south>31.148632</south>          
+		  <east>-92.335984964448</east>          
+		  <west>-92.725127035552</west>   
+	    </LatLonBox>      
+	  </GroundOverlay>
+
+      <Placemark>  
+        <name>FAA Long Range Radar Site</name>  
+        <description>    
+          <![CDATA[    
+		    ALEXANDRIA<br><br>      
+            Latitude: 31.315000<br>      
+            Longitude: -92.530556<br>      
+            Exclusion Zone: 10 nautical miles<br>      
+            <span style="color: red">
+              No part of the image swath may cross this zone.
+            </span><br><br>      
+            The FAA long range radars are L-band radars<br>      
+            used by the FAA to <a href='http://en.wikipedia.org/wiki/Air_traffic_control' target='_blank'>track aircraft movement</a> in<br>  
+            US airspace.
+<br><br></span>    
+          ]]>   
+        </description>  
+        <styleUrl>#triangleStyle</styleUrl>  
+        <Polygon>    
+          <altitudeMode>clampToGround</altitudeMode>    
+          <outerBoundaryIs>      
+            <LinearRing>        
+              <coordinates>          
+                -92.530556,31.405
+                -92.430556,31.265
+                -92.630556,31.265
+                -92.530556,31.405
+              </coordinates>      
+            </LinearRing>    
+          </outerBoundaryIs>  
+        </Polygon>
+      </Placemark>
+
+    </Folder>
+    <!-- End of ALEXANDRIA -->
+
+
+    <!-- AMARILLO -->
+    <Folder>	  
+      <name>AMARILLO</name>
+
+      <GroundOverlay>
+	    <Icon>          
+		  <href>http://uavsar.jpl.nasa.gov/images/longRangeCircle.png</href>
+        </Icon>        
+	    <LatLonBox>          
+		  <north>35.412479</north>          
+		  <south>35.079743</south>          
+		  <east>-101.450670822973</east>          
+		  <west>-101.857663177027</west>   
+	    </LatLonBox>      
+	  </GroundOverlay>
+
+      <Placemark>  
+        <name>FAA Long Range Radar Site</name>  
+        <description>    
+          <![CDATA[    
+		    AMARILLO<br><br>      
+            Latitude: 35.246111<br>      
+            Longitude: -101.654167<br>      
+            Exclusion Zone: 10 nautical miles<br>      
+            <span style="color: red">
+              No part of the image swath may cross this zone.
+            </span><br><br>      
+            The FAA long range radars are L-band radars<br>      
+            used by the FAA to <a href='http://en.wikipedia.org/wiki/Air_traffic_control' target='_blank'>track aircraft movement</a> in<br>  
+            US airspace.
+<br><br></span>    
+          ]]>   
+        </description>  
+        <styleUrl>#triangleStyle</styleUrl>  
+        <Polygon>    
+          <altitudeMode>clampToGround</altitudeMode>    
+          <outerBoundaryIs>      
+            <LinearRing>        
+              <coordinates>          
+                -101.654167,35.336111
+                -101.554167,35.196111
+                -101.754167,35.196111
+                -101.654167,35.336111
+              </coordinates>      
+            </LinearRing>    
+          </outerBoundaryIs>  
+        </Polygon>
+      </Placemark>
+
+    </Folder>
+    <!-- End of AMARILLO -->
+
+
+    <!-- APPLE VALLEY -->
+    <Folder>	  
+      <name>APPLE VALLEY</name>
+
+      <GroundOverlay>
+	    <Icon>          
+		  <href>http://uavsar.jpl.nasa.gov/images/longRangeCircle.png</href>
+        </Icon>        
+	    <LatLonBox>          
+		  <north>44.919146</north>          
+		  <south>44.58641</south>          
+		  <east>-92.993605175796</east>          
+		  <west>-93.461394824204</west>   
+	    </LatLonBox>      
+	  </GroundOverlay>
+
+      <Placemark>  
+        <name>FAA Long Range Radar Site</name>  
+        <description>    
+          <![CDATA[    
+		    APPLE VALLEY<br><br>      
+            Latitude: 44.752778<br>      
+            Longitude: -93.227500<br>      
+            Exclusion Zone: 10 nautical miles<br>      
+            <span style="color: red">
+              No part of the image swath may cross this zone.
+            </span><br><br>      
+            The FAA long range radars are L-band radars<br>      
+            used by the FAA to <a href='http://en.wikipedia.org/wiki/Air_traffic_control' target='_blank'>track aircraft movement</a> in<br>  
+            US airspace.
+<br><br></span>    
+          ]]>   
+        </description>  
+        <styleUrl>#triangleStyle</styleUrl>  
+        <Polygon>    
+          <altitudeMode>clampToGround</altitudeMode>    
+          <outerBoundaryIs>      
+            <LinearRing>        
+              <coordinates>          
+                -93.227500,44.842778
+                -93.1275,44.702778
+                -93.3275,44.702778
+                -93.227500,44.842778
+              </coordinates>      
+            </LinearRing>    
+          </outerBoundaryIs>  
+        </Polygon>
+      </Placemark>
+
+    </Folder>
+    <!-- End of APPLE VALLEY -->
+
+
+    <!-- ARLINGTON -->
+    <Folder>	  
+      <name>ARLINGTON</name>
+
+      <GroundOverlay>
+	    <Icon>          
+		  <href>http://uavsar.jpl.nasa.gov/images/longRangeCircle.png</href>
+        </Icon>        
+	    <LatLonBox>          
+		  <north>42.934424</north>          
+		  <south>42.601688</south>          
+		  <east>-91.389822942782</east>          
+		  <west>-91.842399057218</west>   
+	    </LatLonBox>      
+	  </GroundOverlay>
+
+      <Placemark>  
+        <name>FAA Long Range Radar Site</name>  
+        <description>    
+          <![CDATA[    
+		    ARLINGTON<br><br>      
+            Latitude: 42.768056<br>      
+            Longitude: -91.616111<br>      
+            Exclusion Zone: 10 nautical miles<br>      
+            <span style="color: red">
+              No part of the image swath may cross this zone.
+            </span><br><br>      
+            The FAA long range radars are L-band radars<br>      
+            used by the FAA to <a href='http://en.wikipedia.org/wiki/Air_traffic_control' target='_blank'>track aircraft movement</a> in<br>  
+            US airspace.
+<br><br></span>    
+          ]]>   
+        </description>  
+        <styleUrl>#triangleStyle</styleUrl>  
+        <Polygon>    
+          <altitudeMode>clampToGround</altitudeMode>    
+          <outerBoundaryIs>      
+            <LinearRing>        
+              <coordinates>          
+                -91.616111,42.858056
+                -91.516111,42.718056
+                -91.716111,42.718056
+                -91.616111,42.858056
+              </coordinates>      
+            </LinearRing>    
+          </outerBoundaryIs>  
+        </Polygon>
+      </Placemark>
+
+    </Folder>
+    <!-- End of ARLINGTON -->
+
+
+    <!-- ASHBURN -->
+    <Folder>	  
+      <name>ASHBURN</name>
+
+      <GroundOverlay>
+	    <Icon>          
+		  <href>http://uavsar.jpl.nasa.gov/images/longRangeCircle.png</href>
+        </Icon>        
+	    <LatLonBox>          
+		  <north>31.862479</north>          
+		  <south>31.529743</south>          
+		  <east>-83.555193954411</east>          
+		  <west>-83.945918045589</west>   
+	    </LatLonBox>      
+	  </GroundOverlay>
+
+      <Placemark>  
+        <name>FAA Long Range Radar Site</name>  
+        <description>    
+          <![CDATA[    
+		    ASHBURN<br><br>      
+            Latitude: 31.696111<br>      
+            Longitude: -83.750556<br>      
+            Exclusion Zone: 10 nautical miles<br>      
+            <span style="color: red">
+              No part of the image swath may cross this zone.
+            </span><br><br>      
+            The FAA long range radars are L-band radars<br>      
+            used by the FAA to <a href='http://en.wikipedia.org/wiki/Air_traffic_control' target='_blank'>track aircraft movement</a> in<br>  
+            US airspace.
+<br><br></span>    
+          ]]>   
+        </description>  
+        <styleUrl>#triangleStyle</styleUrl>  
+        <Polygon>    
+          <altitudeMode>clampToGround</altitudeMode>    
+          <outerBoundaryIs>      
+            <LinearRing>        
+              <coordinates>          
+                -83.750556,31.786111
+                -83.650556,31.646111
+                -83.850556,31.646111
+                -83.750556,31.786111
+              </coordinates>      
+            </LinearRing>    
+          </outerBoundaryIs>  
+        </Polygon>
+      </Placemark>
+
+    </Folder>
+    <!-- End of ASHBURN -->
+
+
+    <!-- BEDFORD -->
+    <Folder>	  
+      <name>BEDFORD</name>
+
+      <GroundOverlay>
+	    <Icon>          
+		  <href>http://uavsar.jpl.nasa.gov/images/longRangeCircle.png</href>
+        </Icon>        
+	    <LatLonBox>          
+		  <north>37.68359</north>          
+		  <south>37.350854</south>          
+		  <east>-79.301054586549</east>          
+		  <west>-79.720057413451</west>   
+	    </LatLonBox>      
+	  </GroundOverlay>
+
+      <Placemark>  
+        <name>FAA Long Range Radar Site</name>  
+        <description>    
+          <![CDATA[    
+		    BEDFORD<br><br>      
+            Latitude: 37.517222<br>      
+            Longitude: -79.510556<br>      
+            Exclusion Zone: 10 nautical miles<br>      
+            <span style="color: red">
+              No part of the image swath may cross this zone.
+            </span><br><br>      
+            The FAA long range radars are L-band radars<br>      
+            used by the FAA to <a href='http://en.wikipedia.org/wiki/Air_traffic_control' target='_blank'>track aircraft movement</a> in<br>  
+            US airspace.
+<br><br></span>    
+          ]]>   
+        </description>  
+        <styleUrl>#triangleStyle</styleUrl>  
+        <Polygon>    
+          <altitudeMode>clampToGround</altitudeMode>    
+          <outerBoundaryIs>      
+            <LinearRing>        
+              <coordinates>          
+                -79.510556,37.607222
+                -79.410556,37.467222
+                -79.610556,37.467222
+                -79.510556,37.607222
+              </coordinates>      
+            </LinearRing>    
+          </outerBoundaryIs>  
+        </Polygon>
+      </Placemark>
+
+    </Folder>
+    <!-- End of BEDFORD -->
+
+
+    <!-- BENTON -->
+    <Folder>	  
+      <name>BENTON</name>
+
+      <GroundOverlay>
+	    <Icon>          
+		  <href>http://uavsar.jpl.nasa.gov/images/longRangeCircle.png</href>
+        </Icon>        
+	    <LatLonBox>          
+		  <north>41.523312</north>          
+		  <south>41.190576</south>          
+		  <east>-76.071723821919</east>          
+		  <west>-76.514388178081</west>   
+	    </LatLonBox>      
+	  </GroundOverlay>
+
+      <Placemark>  
+        <name>FAA Long Range Radar Site</name>  
+        <description>    
+          <![CDATA[    
+		    BENTON<br><br>      
+            Latitude: 41.356944<br>      
+            Longitude: -76.293056<br>      
+            Exclusion Zone: 10 nautical miles<br>      
+            <span style="color: red">
+              No part of the image swath may cross this zone.
+            </span><br><br>      
+            The FAA long range radars are L-band radars<br>      
+            used by the FAA to <a href='http://en.wikipedia.org/wiki/Air_traffic_control' target='_blank'>track aircraft movement</a> in<br>  
+            US airspace.
+<br><br></span>    
+          ]]>   
+        </description>  
+        <styleUrl>#triangleStyle</styleUrl>  
+        <Polygon>    
+          <altitudeMode>clampToGround</altitudeMode>    
+          <outerBoundaryIs>      
+            <LinearRing>        
+              <coordinates>          
+                -76.293056,41.446944
+                -76.193056,41.306944
+                -76.393056,41.306944
+                -76.293056,41.446944
+              </coordinates>      
+            </LinearRing>    
+          </outerBoundaryIs>  
+        </Polygon>
+      </Placemark>
+
+    </Folder>
+    <!-- End of BENTON -->
+
+
+    <!-- BINNS HALL -->
+    <Folder>	  
+      <name>BINNS HALL</name>
+
+      <GroundOverlay>
+	    <Icon>          
+		  <href>http://uavsar.jpl.nasa.gov/images/longRangeCircle.png</href>
+        </Icon>        
+	    <LatLonBox>          
+		  <north>37.549146</north>          
+		  <south>37.21641</south>          
+		  <east>-76.790040190638</east>          
+		  <west>-77.208293809362</west>   
+	    </LatLonBox>      
+	  </GroundOverlay>
+
+      <Placemark>  
+        <name>FAA Long Range Radar Site</name>  
+        <description>    
+          <![CDATA[    
+		    BINNS HALL<br><br>      
+            Latitude: 37.382778<br>      
+            Longitude: -76.999167<br>      
+            Exclusion Zone: 10 nautical miles<br>      
+            <span style="color: red">
+              No part of the image swath may cross this zone.
+            </span><br><br>      
+            The FAA long range radars are L-band radars<br>      
+            used by the FAA to <a href='http://en.wikipedia.org/wiki/Air_traffic_control' target='_blank'>track aircraft movement</a> in<br>  
+            US airspace.
+<br><br></span>    
+          ]]>   
+        </description>  
+        <styleUrl>#triangleStyle</styleUrl>  
+        <Polygon>    
+          <altitudeMode>clampToGround</altitudeMode>    
+          <outerBoundaryIs>      
+            <LinearRing>        
+              <coordinates>          
+                -76.999167,37.472778
+                -76.899167,37.332778
+                -77.099167,37.332778
+                -76.999167,37.472778
+              </coordinates>      
+            </LinearRing>    
+          </outerBoundaryIs>  
+        </Polygon>
+      </Placemark>
+
+    </Folder>
+    <!-- End of BINNS HALL -->
+
+
+    <!-- BOOTLEGGER RIDGE -->
+    <Folder>	  
+      <name>BOOTLEGGER RIDGE</name>
+
+      <GroundOverlay>
+	    <Icon>          
+		  <href>http://uavsar.jpl.nasa.gov/images/longRangeCircle.png</href>
+        </Icon>        
+	    <LatLonBox>          
+		  <north>47.779979</north>          
+		  <south>47.447243</south>          
+		  <east>-111.04392546717</east>          
+		  <west>-111.53663053283</west>   
+	    </LatLonBox>      
+	  </GroundOverlay>
+
+      <Placemark>  
+        <name>FAA Long Range Radar Site</name>  
+        <description>    
+          <![CDATA[    
+		    BOOTLEGGER RIDGE<br><br>      
+            Latitude: 47.613611<br>      
+            Longitude: -111.290278<br>      
+            Exclusion Zone: 10 nautical miles<br>      
+            <span style="color: red">
+              No part of the image swath may cross this zone.
+            </span><br><br>      
+            The FAA long range radars are L-band radars<br>      
+            used by the FAA to <a href='http://en.wikipedia.org/wiki/Air_traffic_control' target='_blank'>track aircraft movement</a> in<br>  
+            US airspace.
+<br><br></span>    
+          ]]>   
+        </description>  
+        <styleUrl>#triangleStyle</styleUrl>  
+        <Polygon>    
+          <altitudeMode>clampToGround</altitudeMode>    
+          <outerBoundaryIs>      
+            <LinearRing>        
+              <coordinates>          
+                -111.290278,47.703611
+                -111.190278,47.563611
+                -111.390278,47.563611
+                -111.290278,47.703611
+              </coordinates>      
+            </LinearRing>    
+          </outerBoundaryIs>  
+        </Polygon>
+      </Placemark>
+
+    </Folder>
+    <!-- End of BOOTLEGGER RIDGE -->
+
+
+    <!-- BORON -->
+    <Folder>	  
+      <name>BORON</name>
+
+      <GroundOverlay>
+	    <Icon>          
+		  <href>http://uavsar.jpl.nasa.gov/images/longRangeCircle.png</href>
+        </Icon>        
+	    <LatLonBox>          
+		  <north>35.24859</north>          
+		  <south>34.915854</south>          
+		  <east>-117.37913364357</east>          
+		  <west>-117.78531035643</west>   
+	    </LatLonBox>      
+	  </GroundOverlay>
+
+      <Placemark>  
+        <name>FAA Long Range Radar Site</name>  
+        <description>    
+          <![CDATA[    
+		    BORON<br><br>      
+            Latitude: 35.082222<br>      
+            Longitude: -117.582222<br>      
+            Exclusion Zone: 10 nautical miles<br>      
+            <span style="color: red">
+              No part of the image swath may cross this zone.
+            </span><br><br>      
+            The FAA long range radars are L-band radars<br>      
+            used by the FAA to <a href='http://en.wikipedia.org/wiki/Air_traffic_control' target='_blank'>track aircraft movement</a> in<br>  
+            US airspace.
+<br><br></span>    
+          ]]>   
+        </description>  
+        <styleUrl>#triangleStyle</styleUrl>  
+        <Polygon>    
+          <altitudeMode>clampToGround</altitudeMode>    
+          <outerBoundaryIs>      
+            <LinearRing>        
+              <coordinates>          
+                -117.582222,35.172222
+                -117.482222,35.032222
+                -117.682222,35.032222
+                -117.582222,35.172222
+              </coordinates>      
+            </LinearRing>    
+          </outerBoundaryIs>  
+        </Polygon>
+      </Placemark>
+
+    </Folder>
+    <!-- End of BORON -->
+
+
+    <!-- BUCKS HARBOR -->
+    <Folder>	  
+      <name>BUCKS HARBOR</name>
+
+      <GroundOverlay>
+	    <Icon>          
+		  <href>http://uavsar.jpl.nasa.gov/images/longRangeCircle.png</href>
+        </Icon>        
+	    <LatLonBox>          
+		  <north>44.795812</north>          
+		  <south>44.463076</south>          
+		  <east>-67.161879037698</east>          
+		  <west>-67.628676962302</west>   
+	    </LatLonBox>      
+	  </GroundOverlay>
+
+      <Placemark>  
+        <name>FAA Long Range Radar Site</name>  
+        <description>    
+          <![CDATA[    
+		    BUCKS HARBOR<br><br>      
+            Latitude: 44.629444<br>      
+            Longitude: -67.395278<br>      
+            Exclusion Zone: 10 nautical miles<br>      
+            <span style="color: red">
+              No part of the image swath may cross this zone.
+            </span><br><br>      
+            The FAA long range radars are L-band radars<br>      
+            used by the FAA to <a href='http://en.wikipedia.org/wiki/Air_traffic_control' target='_blank'>track aircraft movement</a> in<br>  
+            US airspace.
+<br><br></span>    
+          ]]>   
+        </description>  
+        <styleUrl>#triangleStyle</styleUrl>  
+        <Polygon>    
+          <altitudeMode>clampToGround</altitudeMode>    
+          <outerBoundaryIs>      
+            <LinearRing>        
+              <coordinates>          
+                -67.395278,44.719444
+                -67.295278,44.579444
+                -67.495278,44.579444
+                -67.395278,44.719444
+              </coordinates>      
+            </LinearRing>    
+          </outerBoundaryIs>  
+        </Polygon>
+      </Placemark>
+
+    </Folder>
+    <!-- End of BUCKS HARBOR -->
+
+
+    <!-- BYHALIA -->
+    <Folder>	  
+      <name>BYHALIA</name>
+
+      <GroundOverlay>
+	    <Icon>          
+		  <href>http://uavsar.jpl.nasa.gov/images/longRangeCircle.png</href>
+        </Icon>        
+	    <LatLonBox>          
+		  <north>35.01859</north>          
+		  <south>34.685854</south>          
+		  <east>-89.563034431922</east>          
+		  <west>-89.968077568078</west>   
+	    </LatLonBox>      
+	  </GroundOverlay>
+
+      <Placemark>  
+        <name>FAA Long Range Radar Site</name>  
+        <description>    
+          <![CDATA[    
+		    BYHALIA<br><br>      
+            Latitude: 34.852222<br>      
+            Longitude: -89.765556<br>      
+            Exclusion Zone: 10 nautical miles<br>      
+            <span style="color: red">
+              No part of the image swath may cross this zone.
+            </span><br><br>      
+            The FAA long range radars are L-band radars<br>      
+            used by the FAA to <a href='http://en.wikipedia.org/wiki/Air_traffic_control' target='_blank'>track aircraft movement</a> in<br>  
+            US airspace.
+<br><br></span>    
+          ]]>   
+        </description>  
+        <styleUrl>#triangleStyle</styleUrl>  
+        <Polygon>    
+          <altitudeMode>clampToGround</altitudeMode>    
+          <outerBoundaryIs>      
+            <LinearRing>        
+              <coordinates>          
+                -89.765556,34.942222
+                -89.665556,34.802222
+                -89.865556,34.802222
+                -89.765556,34.942222
+              </coordinates>      
+            </LinearRing>    
+          </outerBoundaryIs>  
+        </Polygon>
+      </Placemark>
+
+    </Folder>
+    <!-- End of BYHALIA -->
+
+
+    <!-- CANTON -->
+    <Folder>	  
+      <name>CANTON</name>
+
+      <GroundOverlay>
+	    <Icon>          
+		  <href>http://uavsar.jpl.nasa.gov/images/longRangeCircle.png</href>
+        </Icon>        
+	    <LatLonBox>          
+		  <north>42.443035</north>          
+		  <south>42.110299</south>          
+		  <east>-83.249645283969</east>          
+		  <west>-83.698688716031</west>   
+	    </LatLonBox>      
+	  </GroundOverlay>
+
+      <Placemark>  
+        <name>FAA Long Range Radar Site</name>  
+        <description>    
+          <![CDATA[    
+		    CANTON<br><br>      
+            Latitude: 42.276667<br>      
+            Longitude: -83.474167<br>      
+            Exclusion Zone: 10 nautical miles<br>      
+            <span style="color: red">
+              No part of the image swath may cross this zone.
+            </span><br><br>      
+            The FAA long range radars are L-band radars<br>      
+            used by the FAA to <a href='http://en.wikipedia.org/wiki/Air_traffic_control' target='_blank'>track aircraft movement</a> in<br>  
+            US airspace.
+<br><br></span>    
+          ]]>   
+        </description>  
+        <styleUrl>#triangleStyle</styleUrl>  
+        <Polygon>    
+          <altitudeMode>clampToGround</altitudeMode>    
+          <outerBoundaryIs>      
+            <LinearRing>        
+              <coordinates>          
+                -83.474167,42.366667
+                -83.374167,42.226667
+                -83.574167,42.226667
+                -83.474167,42.366667
+              </coordinates>      
+            </LinearRing>    
+          </outerBoundaryIs>  
+        </Polygon>
+      </Placemark>
+
+    </Folder>
+    <!-- End of CANTON -->
+
+
+    <!-- CARIBOU -->
+    <Folder>	  
+      <name>CARIBOU</name>
+
+      <GroundOverlay>
+	    <Icon>          
+		  <href>http://uavsar.jpl.nasa.gov/images/longRangeCircle.png</href>
+        </Icon>        
+	    <LatLonBox>          
+		  <north>47.052201</north>          
+		  <south>46.719465</south>          
+		  <east>-67.728666193437</east>          
+		  <west>-68.214667806563</west>   
+	    </LatLonBox>      
+	  </GroundOverlay>
+
+      <Placemark>  
+        <name>FAA Long Range Radar Site</name>  
+        <description>    
+          <![CDATA[    
+		    CARIBOU<br><br>      
+            Latitude: 46.885833<br>      
+            Longitude: -67.971667<br>      
+            Exclusion Zone: 10 nautical miles<br>      
+            <span style="color: red">
+              No part of the image swath may cross this zone.
+            </span><br><br>      
+            The FAA long range radars are L-band radars<br>      
+            used by the FAA to <a href='http://en.wikipedia.org/wiki/Air_traffic_control' target='_blank'>track aircraft movement</a> in<br>  
+            US airspace.
+<br><br></span>    
+          ]]>   
+        </description>  
+        <styleUrl>#triangleStyle</styleUrl>  
+        <Polygon>    
+          <altitudeMode>clampToGround</altitudeMode>    
+          <outerBoundaryIs>      
+            <LinearRing>        
+              <coordinates>          
+                -67.971667,46.975833
+                -67.871667,46.835833
+                -68.071667,46.835833
+                -67.971667,46.975833
+              </coordinates>      
+            </LinearRing>    
+          </outerBoundaryIs>  
+        </Polygon>
+      </Placemark>
+
+    </Folder>
+    <!-- End of CARIBOU -->
+
+
+    <!-- CEDAR CITY -->
+    <Folder>	  
+      <name>CEDAR CITY</name>
+
+      <GroundOverlay>
+	    <Icon>          
+		  <href>http://uavsar.jpl.nasa.gov/images/longRangeCircle.png</href>
+        </Icon>        
+	    <LatLonBox>          
+		  <north>37.759701</north>          
+		  <south>37.426965</south>          
+		  <east>-112.65250740734</east>          
+		  <west>-113.07193659266</west>   
+	    </LatLonBox>      
+	  </GroundOverlay>
+
+      <Placemark>  
+        <name>FAA Long Range Radar Site</name>  
+        <description>    
+          <![CDATA[    
+		    CEDAR CITY<br><br>      
+            Latitude: 37.593333<br>      
+            Longitude: -112.862222<br>      
+            Exclusion Zone: 10 nautical miles<br>      
+            <span style="color: red">
+              No part of the image swath may cross this zone.
+            </span><br><br>      
+            The FAA long range radars are L-band radars<br>      
+            used by the FAA to <a href='http://en.wikipedia.org/wiki/Air_traffic_control' target='_blank'>track aircraft movement</a> in<br>  
+            US airspace.
+<br><br></span>    
+          ]]>   
+        </description>  
+        <styleUrl>#triangleStyle</styleUrl>  
+        <Polygon>    
+          <altitudeMode>clampToGround</altitudeMode>    
+          <outerBoundaryIs>      
+            <LinearRing>        
+              <coordinates>          
+                -112.862222,37.683333
+                -112.762222,37.543333
+                -112.962222,37.543333
+                -112.862222,37.683333
+              </coordinates>      
+            </LinearRing>    
+          </outerBoundaryIs>  
+        </Polygon>
+      </Placemark>
+
+    </Folder>
+    <!-- End of CEDAR CITY -->
+
+
+    <!-- CLEARFIELD -->
+    <Folder>	  
+      <name>CLEARFIELD</name>
+
+      <GroundOverlay>
+	    <Icon>          
+		  <href>http://uavsar.jpl.nasa.gov/images/longRangeCircle.png</href>
+        </Icon>        
+	    <LatLonBox>          
+		  <north>41.236646</north>          
+		  <south>40.90391</south>          
+		  <east>-78.330187940464</east>          
+		  <west>-78.770924059536</west>   
+	    </LatLonBox>      
+	  </GroundOverlay>
+
+      <Placemark>  
+        <name>FAA Long Range Radar Site</name>  
+        <description>    
+          <![CDATA[    
+		    CLEARFIELD<br><br>      
+            Latitude: 41.070278<br>      
+            Longitude: -78.550556<br>      
+            Exclusion Zone: 10 nautical miles<br>      
+            <span style="color: red">
+              No part of the image swath may cross this zone.
+            </span><br><br>      
+            The FAA long range radars are L-band radars<br>      
+            used by the FAA to <a href='http://en.wikipedia.org/wiki/Air_traffic_control' target='_blank'>track aircraft movement</a> in<br>  
+            US airspace.
+<br><br></span>    
+          ]]>   
+        </description>  
+        <styleUrl>#triangleStyle</styleUrl>  
+        <Polygon>    
+          <altitudeMode>clampToGround</altitudeMode>    
+          <outerBoundaryIs>      
+            <LinearRing>        
+              <coordinates>          
+                -78.550556,41.160278
+                -78.450556,41.020278
+                -78.650556,41.020278
+                -78.550556,41.160278
+              </coordinates>      
+            </LinearRing>    
+          </outerBoundaryIs>  
+        </Polygon>
+      </Placemark>
+
+    </Folder>
+    <!-- End of CLEARFIELD -->
+
+
+    <!-- COBRA DANE -->
+    <Folder>	  
+      <name>COBRA DANE</name>
+
+      <GroundOverlay>
+	    <Icon>          
+		  <href>http://uavsar.jpl.nasa.gov/images/longRangeCircle.png</href>
+        </Icon>        
+	    <LatLonBox>          
+		  <north>55.43225</north>          
+		  <south>50.04235</south>          
+		  <east>178.54315</east>          
+		  <west>169.63965</west>   
+	    </LatLonBox>      
+	  </GroundOverlay>
+
+      <Placemark>  
+        <name>Long Range Radar Site</name>  
+        <description>    
+          <![CDATA[    
+		    COBRA DANE<br><br>      
+            Latitude: 52.7373<br>      
+            Longitude: 174.0914<br>      
+            Exclusion Zone: 300 kilometers<br>      
+            <span style="color: red">
+              No part of the image swath may cross this zone.
+            </span><br><br>      
+            The <a href='http://en.wikipedia.org/wiki/Cobra_Dane' target='_blank'>Cobra Dane radar</a> is operated by the<br>
+		    United States Air Force.
+<br><br></span>    
+          ]]>   
+        </description>  
+        <styleUrl>#triangleStyle</styleUrl>  
+        <Polygon>    
+          <altitudeMode>clampToGround</altitudeMode>    
+          <outerBoundaryIs>      
+            <LinearRing>        
+              <coordinates>          
+                174.0914,52.8273
+                174.1914,52.6873
+                173.9914,52.6873
+                174.0914,52.8273
+              </coordinates>      
+            </LinearRing>    
+          </outerBoundaryIs>  
+        </Polygon>
+      </Placemark>
+
+    </Folder>
+    <!-- End of COBRA DANE -->
+
+
+    <!-- COOPERSVILLE -->
+    <Folder>	  
+      <name>COOPERSVILLE</name>
+
+      <GroundOverlay>
+	    <Icon>          
+		  <href>http://uavsar.jpl.nasa.gov/images/longRangeCircle.png</href>
+        </Icon>        
+	    <LatLonBox>          
+		  <north>43.211924</north>          
+		  <south>42.879188</south>          
+		  <east>-85.763805640592</east>          
+		  <west>-86.218416359408</west>   
+	    </LatLonBox>      
+	  </GroundOverlay>
+
+      <Placemark>  
+        <name>FAA Long Range Radar Site</name>  
+        <description>    
+          <![CDATA[    
+		    COOPERSVILLE<br><br>      
+            Latitude: 43.045556<br>      
+            Longitude: -85.991111<br>      
+            Exclusion Zone: 10 nautical miles<br>      
+            <span style="color: red">
+              No part of the image swath may cross this zone.
+            </span><br><br>      
+            The FAA long range radars are L-band radars<br>      
+            used by the FAA to <a href='http://en.wikipedia.org/wiki/Air_traffic_control' target='_blank'>track aircraft movement</a> in<br>  
+            US airspace.
+<br><br></span>    
+          ]]>   
+        </description>  
+        <styleUrl>#triangleStyle</styleUrl>  
+        <Polygon>    
+          <altitudeMode>clampToGround</altitudeMode>    
+          <outerBoundaryIs>      
+            <LinearRing>        
+              <coordinates>          
+                -85.991111,43.135556
+                -85.891111,42.995556
+                -86.091111,42.995556
+                -85.991111,43.135556
+              </coordinates>      
+            </LinearRing>    
+          </outerBoundaryIs>  
+        </Polygon>
+      </Placemark>
+
+    </Folder>
+    <!-- End of COOPERSVILLE -->
+
+
+    <!-- CROSS CITY -->
+    <Folder>	  
+      <name>CROSS CITY</name>
+
+      <GroundOverlay>
+	    <Icon>          
+		  <href>http://uavsar.jpl.nasa.gov/images/longRangeCircle.png</href>
+        </Icon>        
+	    <LatLonBox>          
+		  <north>29.909701</north>          
+		  <south>29.576965</south>          
+		  <east>-82.809369027104</east>          
+		  <west>-83.192296972896</west>   
+	    </LatLonBox>      
+	  </GroundOverlay>
+
+      <Placemark>  
+        <name>FAA Long Range Radar Site</name>  
+        <description>    
+          <![CDATA[    
+		    CROSS CITY<br><br>      
+            Latitude: 29.743333<br>      
+            Longitude: -83.000833<br>      
+            Exclusion Zone: 10 nautical miles<br>      
+            <span style="color: red">
+              No part of the image swath may cross this zone.
+            </span><br><br>      
+            The FAA long range radars are L-band radars<br>      
+            used by the FAA to <a href='http://en.wikipedia.org/wiki/Air_traffic_control' target='_blank'>track aircraft movement</a> in<br>  
+            US airspace.
+<br><br></span>    
+          ]]>   
+        </description>  
+        <styleUrl>#triangleStyle</styleUrl>  
+        <Polygon>    
+          <altitudeMode>clampToGround</altitudeMode>    
+          <outerBoundaryIs>      
+            <LinearRing>        
+              <coordinates>          
+                -83.000833,29.833333
+                -82.900833,29.693333
+                -83.100833,29.693333
+                -83.000833,29.833333
+              </coordinates>      
+            </LinearRing>    
+          </outerBoundaryIs>  
+        </Polygon>
+      </Placemark>
+
+    </Folder>
+    <!-- End of CROSS CITY -->
+
+
+    <!-- DANSVILLE -->
+    <Folder>	  
+      <name>DANSVILLE</name>
+
+      <GroundOverlay>
+	    <Icon>          
+		  <href>http://uavsar.jpl.nasa.gov/images/longRangeCircle.png</href>
+        </Icon>        
+	    <LatLonBox>          
+		  <north>42.804701</north>          
+		  <south>42.471965</south>          
+		  <east>-77.427238562540</east>          
+		  <west>-77.878873437460</west>   
+	    </LatLonBox>      
+	  </GroundOverlay>
+
+      <Placemark>  
+        <name>FAA Long Range Radar Site</name>  
+        <description>    
+          <![CDATA[    
+		    DANSVILLE<br><br>      
+            Latitude: 42.638333<br>      
+            Longitude: -77.653056<br>      
+            Exclusion Zone: 10 nautical miles<br>      
+            <span style="color: red">
+              No part of the image swath may cross this zone.
+            </span><br><br>      
+            The FAA long range radars are L-band radars<br>      
+            used by the FAA to <a href='http://en.wikipedia.org/wiki/Air_traffic_control' target='_blank'>track aircraft movement</a> in<br>  
+            US airspace.
+<br><br></span>    
+          ]]>   
+        </description>  
+        <styleUrl>#triangleStyle</styleUrl>  
+        <Polygon>    
+          <altitudeMode>clampToGround</altitudeMode>    
+          <outerBoundaryIs>      
+            <LinearRing>        
+              <coordinates>          
+                -77.653056,42.728333
+                -77.553056,42.588333
+                -77.753056,42.588333
+                -77.653056,42.728333
+              </coordinates>      
+            </LinearRing>    
+          </outerBoundaryIs>  
+        </Polygon>
+      </Placemark>
+
+    </Folder>
+    <!-- End of DANSVILLE -->
+
+
+    <!-- DEMING -->
+    <Folder>	  
+      <name>DEMING</name>
+
+      <GroundOverlay>
+	    <Icon>          
+		  <href>http://uavsar.jpl.nasa.gov/images/longRangeCircle.png</href>
+        </Icon>        
+	    <LatLonBox>          
+		  <north>32.658035</north>          
+		  <south>32.325299</south>          
+		  <east>-106.96904852998</east>          
+		  <west>-107.36317347002</west>   
+	    </LatLonBox>      
+	  </GroundOverlay>
+
+      <Placemark>  
+        <name>FAA Long Range Radar Site</name>  
+        <description>    
+          <![CDATA[    
+		    DEMING<br><br>      
+            Latitude: 32.491667<br>      
+            Longitude: -107.166111<br>      
+            Exclusion Zone: 10 nautical miles<br>      
+            <span style="color: red">
+              No part of the image swath may cross this zone.
+            </span><br><br>      
+            The FAA long range radars are L-band radars<br>      
+            used by the FAA to <a href='http://en.wikipedia.org/wiki/Air_traffic_control' target='_blank'>track aircraft movement</a> in<br>  
+            US airspace.
+<br><br></span>    
+          ]]>   
+        </description>  
+        <styleUrl>#triangleStyle</styleUrl>  
+        <Polygon>    
+          <altitudeMode>clampToGround</altitudeMode>    
+          <outerBoundaryIs>      
+            <LinearRing>        
+              <coordinates>          
+                -107.166111,32.581667
+                -107.066111,32.441667
+                -107.266111,32.441667
+                -107.166111,32.581667
+              </coordinates>      
+            </LinearRing>    
+          </outerBoundaryIs>  
+        </Polygon>
+      </Placemark>
+
+    </Folder>
+    <!-- End of DEMING -->
+
+
+    <!-- EAGLE PEAK -->
+    <Folder>	  
+      <name>EAGLE PEAK</name>
+
+      <GroundOverlay>
+	    <Icon>          
+		  <href>http://uavsar.jpl.nasa.gov/images/longRangeCircle.png</href>
+        </Icon>        
+	    <LatLonBox>          
+		  <north>31.086646</north>          
+		  <south>30.75391</south>          
+		  <east>-104.892065495062</east>          
+		  <west>-105.27960050494</west>   
+	    </LatLonBox>      
+	  </GroundOverlay>
+
+      <Placemark>  
+        <name>FAA Long Range Radar Site</name>  
+        <description>    
+          <![CDATA[    
+		    EAGLE PEAK<br><br>      
+            Latitude: 30.920278<br>      
+            Longitude: -105.085833<br>      
+            Exclusion Zone: 10 nautical miles<br>      
+            <span style="color: red">
+              No part of the image swath may cross this zone.
+            </span><br><br>      
+            The FAA long range radars are L-band radars<br>      
+            used by the FAA to <a href='http://en.wikipedia.org/wiki/Air_traffic_control' target='_blank'>track aircraft movement</a> in<br>  
+            US airspace.
+<br><br></span>    
+          ]]>   
+        </description>  
+        <styleUrl>#triangleStyle</styleUrl>  
+        <Polygon>    
+          <altitudeMode>clampToGround</altitudeMode>    
+          <outerBoundaryIs>      
+            <LinearRing>        
+              <coordinates>          
+                -105.085833,31.010278
+                -104.985833,30.870278
+                -105.185833,30.870278
+                -105.085833,31.010278
+              </coordinates>      
+            </LinearRing>    
+          </outerBoundaryIs>  
+        </Polygon>
+      </Placemark>
+
+    </Folder>
+    <!-- End of EAGLE PEAK -->
+
+
+    <!-- EMPIRE -->
+    <Folder>	  
+      <name>EMPIRE</name>
+
+      <GroundOverlay>
+	    <Icon>          
+		  <href>http://uavsar.jpl.nasa.gov/images/longRangeCircle.png</href>
+        </Icon>        
+	    <LatLonBox>          
+		  <north>44.968035</north>          
+		  <south>44.635299</south>          
+		  <east>-85.817018732313</east>          
+		  <west>-86.285203267687</west>   
+	    </LatLonBox>      
+	  </GroundOverlay>
+
+      <Placemark>  
+        <name>FAA Long Range Radar Site</name>  
+        <description>    
+          <![CDATA[    
+		    EMPIRE<br><br>      
+            Latitude: 44.801667<br>      
+            Longitude: -86.051111<br>      
+            Exclusion Zone: 10 nautical miles<br>      
+            <span style="color: red">
+              No part of the image swath may cross this zone.
+            </span><br><br>      
+            The FAA long range radars are L-band radars<br>      
+            used by the FAA to <a href='http://en.wikipedia.org/wiki/Air_traffic_control' target='_blank'>track aircraft movement</a> in<br>  
+            US airspace.
+<br><br></span>    
+          ]]>   
+        </description>  
+        <styleUrl>#triangleStyle</styleUrl>  
+        <Polygon>    
+          <altitudeMode>clampToGround</altitudeMode>    
+          <outerBoundaryIs>      
+            <LinearRing>        
+              <coordinates>          
+                -86.051111,44.891667
+                -85.951111,44.751667
+                -86.151111,44.751667
+                -86.051111,44.891667
+              </coordinates>      
+            </LinearRing>    
+          </outerBoundaryIs>  
+        </Polygon>
+      </Placemark>
+
+    </Folder>
+    <!-- End of EMPIRE -->
+
+
+    <!-- FALLON -->
+    <Folder>	  
+      <name>FALLON</name>
+
+      <GroundOverlay>
+	    <Icon>          
+		  <href>http://uavsar.jpl.nasa.gov/images/longRangeCircle.png</href>
+        </Icon>        
+	    <LatLonBox>          
+		  <north>39.571924</north>          
+		  <south>39.239188</south>          
+		  <east>-118.50746386385</east>          
+		  <west>-118.93753613615</west>   
+	    </LatLonBox>      
+	  </GroundOverlay>
+
+      <Placemark>  
+        <name>FAA Long Range Radar Site</name>  
+        <description>    
+          <![CDATA[    
+		    FALLON<br><br>      
+            Latitude: 39.405556<br>      
+            Longitude: -118.722500<br>      
+            Exclusion Zone: 10 nautical miles<br>      
+            <span style="color: red">
+              No part of the image swath may cross this zone.
+            </span><br><br>      
+            The FAA long range radars are L-band radars<br>      
+            used by the FAA to <a href='http://en.wikipedia.org/wiki/Air_traffic_control' target='_blank'>track aircraft movement</a> in<br>  
+            US airspace.
+<br><br></span>    
+          ]]>   
+        </description>  
+        <styleUrl>#triangleStyle</styleUrl>  
+        <Polygon>    
+          <altitudeMode>clampToGround</altitudeMode>    
+          <outerBoundaryIs>      
+            <LinearRing>        
+              <coordinates>          
+                -118.722500,39.495556
+                -118.6225,39.355556
+                -118.8225,39.355556
+                -118.722500,39.495556
+              </coordinates>      
+            </LinearRing>    
+          </outerBoundaryIs>  
+        </Polygon>
+      </Placemark>
+
+    </Folder>
+    <!-- End of FALLON -->
+
+
+    <!-- FINLEY -->
+    <Folder>	  
+      <name>FINLEY</name>
+
+      <GroundOverlay>
+	    <Icon>          
+		  <href>http://uavsar.jpl.nasa.gov/images/longRangeCircle.png</href>
+        </Icon>        
+	    <LatLonBox>          
+		  <north>47.694701</north>          
+		  <south>47.361965</south>          
+		  <east>-97.655436058923</east>          
+		  <west>-98.147341941077</west>   
+	    </LatLonBox>      
+	  </GroundOverlay>
+
+      <Placemark>  
+        <name>FAA Long Range Radar Site</name>  
+        <description>    
+          <![CDATA[    
+		    FINLEY<br><br>      
+            Latitude: 47.528333<br>      
+            Longitude: -97.901389<br>      
+            Exclusion Zone: 10 nautical miles<br>      
+            <span style="color: red">
+              No part of the image swath may cross this zone.
+            </span><br><br>      
+            The FAA long range radars are L-band radars<br>      
+            used by the FAA to <a href='http://en.wikipedia.org/wiki/Air_traffic_control' target='_blank'>track aircraft movement</a> in<br>  
+            US airspace.
+<br><br></span>    
+          ]]>   
+        </description>  
+        <styleUrl>#triangleStyle</styleUrl>  
+        <Polygon>    
+          <altitudeMode>clampToGround</altitudeMode>    
+          <outerBoundaryIs>      
+            <LinearRing>        
+              <coordinates>          
+                -97.901389,47.618333
+                -97.801389,47.478333
+                -98.001389,47.478333
+                -97.901389,47.618333
+              </coordinates>      
+            </LinearRing>    
+          </outerBoundaryIs>  
+        </Polygon>
+      </Placemark>
+
+    </Folder>
+    <!-- End of FINLEY -->
+
+
+    <!-- FORT FISHER -->
+    <Folder>	  
+      <name>FORT FISHER</name>
+
+      <GroundOverlay>
+	    <Icon>          
+		  <href>http://uavsar.jpl.nasa.gov/images/longRangeCircle.png</href>
+        </Icon>        
+	    <LatLonBox>          
+		  <north>34.156646</north>          
+		  <south>33.82391</south>          
+		  <east>-77.718713101537</east>          
+		  <west>-78.119620898463</west>   
+	    </LatLonBox>      
+	  </GroundOverlay>
+
+      <Placemark>  
+        <name>FAA Long Range Radar Site</name>  
+        <description>    
+          <![CDATA[    
+		    FORT FISHER<br><br>      
+            Latitude: 33.990278<br>      
+            Longitude: -77.919167<br>      
+            Exclusion Zone: 10 nautical miles<br>      
+            <span style="color: red">
+              No part of the image swath may cross this zone.
+            </span><br><br>      
+            The FAA long range radars are L-band radars<br>      
+            used by the FAA to <a href='http://en.wikipedia.org/wiki/Air_traffic_control' target='_blank'>track aircraft movement</a> in<br>  
+            US airspace.
+<br><br></span>    
+          ]]>   
+        </description>  
+        <styleUrl>#triangleStyle</styleUrl>  
+        <Polygon>    
+          <altitudeMode>clampToGround</altitudeMode>    
+          <outerBoundaryIs>      
+            <LinearRing>        
+              <coordinates>          
+                -77.919167,34.080278
+                -77.819167,33.940278
+                -78.019167,33.940278
+                -77.919167,34.080278
+              </coordinates>      
+            </LinearRing>    
+          </outerBoundaryIs>  
+        </Polygon>
+      </Placemark>
+
+    </Folder>
+    <!-- End of FORT FISHER -->
+
+
+    <!-- FORT GREEN -->
+    <Folder>	  
+      <name>FORT GREEN</name>
+
+      <GroundOverlay>
+	    <Icon>          
+		  <href>http://uavsar.jpl.nasa.gov/images/longRangeCircle.png</href>
+        </Icon>        
+	    <LatLonBox>          
+		  <north>27.811646</north>          
+		  <south>27.47891</south>          
+		  <east>-81.945094486211</east>          
+		  <west>-82.320461513789</west>   
+	    </LatLonBox>      
+	  </GroundOverlay>
+
+      <Placemark>  
+        <name>FAA Long Range Radar Site</name>  
+        <description>    
+          <![CDATA[    
+		    FORT GREEN<br><br>      
+            Latitude: 27.645278<br>      
+            Longitude: -82.132778<br>      
+            Exclusion Zone: 10 nautical miles<br>      
+            <span style="color: red">
+              No part of the image swath may cross this zone.
+            </span><br><br>      
+            The FAA long range radars are L-band radars<br>      
+            used by the FAA to <a href='http://en.wikipedia.org/wiki/Air_traffic_control' target='_blank'>track aircraft movement</a> in<br>  
+            US airspace.
+<br><br></span>    
+          ]]>   
+        </description>  
+        <styleUrl>#triangleStyle</styleUrl>  
+        <Polygon>    
+          <altitudeMode>clampToGround</altitudeMode>    
+          <outerBoundaryIs>      
+            <LinearRing>        
+              <coordinates>          
+                -82.132778,27.735278
+                -82.032778,27.595278
+                -82.232778,27.595278
+                -82.132778,27.735278
+              </coordinates>      
+            </LinearRing>    
+          </outerBoundaryIs>  
+        </Polygon>
+      </Placemark>
+
+    </Folder>
+    <!-- End of FORT GREEN -->
+
+
+    <!-- FOSSIL -->
+    <Folder>	  
+      <name>FOSSIL</name>
+
+      <GroundOverlay>
+	    <Icon>          
+		  <href>http://uavsar.jpl.nasa.gov/images/longRangeCircle.png</href>
+        </Icon>        
+	    <LatLonBox>          
+		  <north>45.126646</north>          
+		  <south>44.79391</south>          
+		  <east>-119.71693067652</east>          
+		  <west>-120.18640332348</west>   
+	    </LatLonBox>      
+	  </GroundOverlay>
+
+      <Placemark>  
+        <name>FAA Long Range Radar Site</name>  
+        <description>    
+          <![CDATA[    
+		    FOSSIL<br><br>      
+            Latitude: 44.960278<br>      
+            Longitude: -119.951667<br>      
+            Exclusion Zone: 10 nautical miles<br>      
+            <span style="color: red">
+              No part of the image swath may cross this zone.
+            </span><br><br>      
+            The FAA long range radars are L-band radars<br>      
+            used by the FAA to <a href='http://en.wikipedia.org/wiki/Air_traffic_control' target='_blank'>track aircraft movement</a> in<br>  
+            US airspace.
+<br><br></span>    
+          ]]>   
+        </description>  
+        <styleUrl>#triangleStyle</styleUrl>  
+        <Polygon>    
+          <altitudeMode>clampToGround</altitudeMode>    
+          <outerBoundaryIs>      
+            <LinearRing>        
+              <coordinates>          
+                -119.951667,45.050278
+                -119.851667,44.910278
+                -120.051667,44.910278
+                -119.951667,45.050278
+              </coordinates>      
+            </LinearRing>    
+          </outerBoundaryIs>  
+        </Polygon>
+      </Placemark>
+
+    </Folder>
+    <!-- End of FOSSIL -->
+
+
+    <!-- GALLUP -->
+    <Folder>	  
+      <name>GALLUP</name>
+
+      <GroundOverlay>
+	    <Icon>          
+		  <href>http://uavsar.jpl.nasa.gov/images/longRangeCircle.png</href>
+        </Icon>        
+	    <LatLonBox>          
+		  <north>36.241924</north>          
+		  <south>35.909188</south>          
+		  <east>-108.65466640189</east>          
+		  <west>-109.06588959811</west>   
+	    </LatLonBox>      
+	  </GroundOverlay>
+
+      <Placemark>  
+        <name>FAA Long Range Radar Site</name>  
+        <description>    
+          <![CDATA[    
+		    GALLUP<br><br>      
+            Latitude: 36.075556<br>      
+            Longitude: -108.860278<br>      
+            Exclusion Zone: 10 nautical miles<br>      
+            <span style="color: red">
+              No part of the image swath may cross this zone.
+            </span><br><br>      
+            The FAA long range radars are L-band radars<br>      
+            used by the FAA to <a href='http://en.wikipedia.org/wiki/Air_traffic_control' target='_blank'>track aircraft movement</a> in<br>  
+            US airspace.
+<br><br></span>    
+          ]]>   
+        </description>  
+        <styleUrl>#triangleStyle</styleUrl>  
+        <Polygon>    
+          <altitudeMode>clampToGround</altitudeMode>    
+          <outerBoundaryIs>      
+            <LinearRing>        
+              <coordinates>          
+                -108.860278,36.165556
+                -108.760278,36.025556
+                -108.960278,36.025556
+                -108.860278,36.165556
+              </coordinates>      
+            </LinearRing>    
+          </outerBoundaryIs>  
+        </Polygon>
+      </Placemark>
+
+    </Folder>
+    <!-- End of GALLUP -->
+
+
+    <!-- GARDEN CITY -->
+    <Folder>	  
+      <name>GARDEN CITY</name>
+
+      <GroundOverlay>
+	    <Icon>          
+		  <href>http://uavsar.jpl.nasa.gov/images/longRangeCircle.png</href>
+        </Icon>        
+	    <LatLonBox>          
+		  <north>37.830812</north>          
+		  <south>37.498076</south>          
+		  <east>-100.661752504136</east>          
+		  <west>-101.081581495864</west>   
+	    </LatLonBox>      
+	  </GroundOverlay>
+
+      <Placemark>  
+        <name>FAA Long Range Radar Site</name>  
+        <description>    
+          <![CDATA[    
+		    GARDEN CITY<br><br>      
+            Latitude: 37.664444<br>      
+            Longitude: -100.871667<br>      
+            Exclusion Zone: 10 nautical miles<br>      
+            <span style="color: red">
+              No part of the image swath may cross this zone.
+            </span><br><br>      
+            The FAA long range radars are L-band radars<br>      
+            used by the FAA to <a href='http://en.wikipedia.org/wiki/Air_traffic_control' target='_blank'>track aircraft movement</a> in<br>  
+            US airspace.
+<br><br></span>    
+          ]]>   
+        </description>  
+        <styleUrl>#triangleStyle</styleUrl>  
+        <Polygon>    
+          <altitudeMode>clampToGround</altitudeMode>    
+          <outerBoundaryIs>      
+            <LinearRing>        
+              <coordinates>          
+                -100.871667,37.754444
+                -100.771667,37.614444
+                -100.971667,37.614444
+                -100.871667,37.754444
+              </coordinates>      
+            </LinearRing>    
+          </outerBoundaryIs>  
+        </Polygon>
+      </Placemark>
+
+    </Folder>
+    <!-- End of GARDEN CITY -->
+
+
+    <!-- GETTYSBURG -->
+    <Folder>	  
+      <name>GETTYSBURG</name>
+
+      <GroundOverlay>
+	    <Icon>          
+		  <href>http://uavsar.jpl.nasa.gov/images/longRangeCircle.png</href>
+        </Icon>        
+	    <LatLonBox>          
+		  <north>45.216646</north>          
+		  <south>44.88391</south>          
+		  <east>-99.720728835670</east>          
+		  <west>-100.190937164330</west>   
+	    </LatLonBox>      
+	  </GroundOverlay>
+
+      <Placemark>  
+        <name>FAA Long Range Radar Site</name>  
+        <description>    
+          <![CDATA[    
+		    GETTYSBURG<br><br>      
+            Latitude: 45.050278<br>      
+            Longitude: -99.955833<br>      
+            Exclusion Zone: 10 nautical miles<br>      
+            <span style="color: red">
+              No part of the image swath may cross this zone.
+            </span><br><br>      
+            The FAA long range radars are L-band radars<br>      
+            used by the FAA to <a href='http://en.wikipedia.org/wiki/Air_traffic_control' target='_blank'>track aircraft movement</a> in<br>  
+            US airspace.
+<br><br></span>    
+          ]]>   
+        </description>  
+        <styleUrl>#triangleStyle</styleUrl>  
+        <Polygon>    
+          <altitudeMode>clampToGround</altitudeMode>    
+          <outerBoundaryIs>      
+            <LinearRing>        
+              <coordinates>          
+                -99.955833,45.140278
+                -99.855833,45.000278
+                -100.055833,45.000278
+                -99.955833,45.140278
+              </coordinates>      
+            </LinearRing>    
+          </outerBoundaryIs>  
+        </Polygon>
+      </Placemark>
+
+    </Folder>
+    <!-- End of GETTYSBURG -->
+
+
+    <!-- GIBBSBORO -->
+    <Folder>	  
+      <name>GIBBSBORO</name>
+
+      <GroundOverlay>
+	    <Icon>          
+		  <href>http://uavsar.jpl.nasa.gov/images/longRangeCircle.png</href>
+        </Icon>        
+	    <LatLonBox>          
+		  <north>39.990535</north>          
+		  <south>39.657799</south>          
+		  <east>-74.738108725106</east>          
+		  <west>-75.170779274894</west>   
+	    </LatLonBox>      
+	  </GroundOverlay>
+
+      <Placemark>  
+        <name>FAA Long Range Radar Site</name>  
+        <description>    
+          <![CDATA[    
+		    GIBBSBORO<br><br>      
+            Latitude: 39.824167<br>      
+            Longitude: -74.954444<br>      
+            Exclusion Zone: 10 nautical miles<br>      
+            <span style="color: red">
+              No part of the image swath may cross this zone.
+            </span><br><br>      
+            The FAA long range radars are L-band radars<br>      
+            used by the FAA to <a href='http://en.wikipedia.org/wiki/Air_traffic_control' target='_blank'>track aircraft movement</a> in<br>  
+            US airspace.
+<br><br></span>    
+          ]]>   
+        </description>  
+        <styleUrl>#triangleStyle</styleUrl>  
+        <Polygon>    
+          <altitudeMode>clampToGround</altitudeMode>    
+          <outerBoundaryIs>      
+            <LinearRing>        
+              <coordinates>          
+                -74.954444,39.914167
+                -74.854444,39.774167
+                -75.054444,39.774167
+                -74.954444,39.914167
+              </coordinates>      
+            </LinearRing>    
+          </outerBoundaryIs>  
+        </Polygon>
+      </Placemark>
+
+    </Folder>
+    <!-- End of GIBBSBORO -->
+
+
+    <!-- GUANTANAMO BAY -->
+    <Folder>	  
+      <name>GUANTANAMO BAY</name>
+
+      <GroundOverlay>
+	    <Icon>          
+		  <href>http://uavsar.jpl.nasa.gov/images/longRangeCircle.png</href>
+        </Icon>        
+	    <LatLonBox>          
+		  <north>20.083035</north>          
+		  <south>19.750299</south>          
+		  <east>-75.006440562793</east>          
+		  <west>-75.360225437207</west>   
+	    </LatLonBox>      
+	  </GroundOverlay>
+
+      <Placemark>  
+        <name>FAA Long Range Radar Site</name>  
+        <description>    
+          <![CDATA[    
+		    GUANTANAMO BAY<br><br>      
+            Latitude: 19.916667<br>      
+            Longitude: -75.183333<br>      
+            Exclusion Zone: 10 nautical miles<br>      
+            <span style="color: red">
+              No part of the image swath may cross this zone.
+            </span><br><br>      
+            The FAA long range radars are L-band radars<br>      
+            used by the FAA to <a href='http://en.wikipedia.org/wiki/Air_traffic_control' target='_blank'>track aircraft movement</a> in<br>  
+            US airspace.
+<br><br></span>    
+          ]]>   
+        </description>  
+        <styleUrl>#triangleStyle</styleUrl>  
+        <Polygon>    
+          <altitudeMode>clampToGround</altitudeMode>    
+          <outerBoundaryIs>      
+            <LinearRing>        
+              <coordinates>          
+                -75.183333,20.006667
+                -75.083333,19.866667
+                -75.283333,19.866667
+                -75.183333,20.006667
+              </coordinates>      
+            </LinearRing>    
+          </outerBoundaryIs>  
+        </Polygon>
+      </Placemark>
+
+    </Folder>
+    <!-- End of GUANTANAMO BAY -->
+
+
+    <!-- HANNA CITY -->
+    <Folder>	  
+      <name>HANNA CITY</name>
+
+      <GroundOverlay>
+	    <Icon>          
+		  <href>http://uavsar.jpl.nasa.gov/images/longRangeCircle.png</href>
+        </Icon>        
+	    <LatLonBox>          
+		  <north>40.865812</north>          
+		  <south>40.533076</south>          
+		  <east>-89.605858607982</east>          
+		  <west>-90.044141392018</west>   
+	    </LatLonBox>      
+	  </GroundOverlay>
+
+      <Placemark>  
+        <name>FAA Long Range Radar Site</name>  
+        <description>    
+          <![CDATA[    
+		    HANNA CITY<br><br>      
+            Latitude: 40.699444<br>      
+            Longitude: -89.825000<br>      
+            Exclusion Zone: 10 nautical miles<br>      
+            <span style="color: red">
+              No part of the image swath may cross this zone.
+            </span><br><br>      
+            The FAA long range radars are L-band radars<br>      
+            used by the FAA to <a href='http://en.wikipedia.org/wiki/Air_traffic_control' target='_blank'>track aircraft movement</a> in<br>  
+            US airspace.
+<br><br></span>    
+          ]]>   
+        </description>  
+        <styleUrl>#triangleStyle</styleUrl>  
+        <Polygon>    
+          <altitudeMode>clampToGround</altitudeMode>    
+          <outerBoundaryIs>      
+            <LinearRing>        
+              <coordinates>          
+                -89.825000,40.789444
+                -89.725,40.649444
+                -89.925,40.649444
+                -89.825000,40.789444
+              </coordinates>      
+            </LinearRing>    
+          </outerBoundaryIs>  
+        </Polygon>
+      </Placemark>
+
+    </Folder>
+    <!-- End of HANNA CITY -->
+
+
+    <!-- HUTCHINSON -->
+    <Folder>	  
+      <name>HUTCHINSON</name>
+
+      <GroundOverlay>
+	    <Icon>          
+		  <href>http://uavsar.jpl.nasa.gov/images/longRangeCircle.png</href>
+        </Icon>        
+	    <LatLonBox>          
+		  <north>38.089146</north>          
+		  <south>37.75641</south>          
+		  <east>-97.677131325044</east>          
+		  <west>-98.098424674956</west>   
+	    </LatLonBox>      
+	  </GroundOverlay>
+
+      <Placemark>  
+        <name>FAA Long Range Radar Site</name>  
+        <description>    
+          <![CDATA[    
+		    HUTCHINSON<br><br>      
+            Latitude: 37.922778<br>      
+            Longitude: -97.887778<br>      
+            Exclusion Zone: 10 nautical miles<br>      
+            <span style="color: red">
+              No part of the image swath may cross this zone.
+            </span><br><br>      
+            The FAA long range radars are L-band radars<br>      
+            used by the FAA to <a href='http://en.wikipedia.org/wiki/Air_traffic_control' target='_blank'>track aircraft movement</a> in<br>  
+            US airspace.
+<br><br></span>    
+          ]]>   
+        </description>  
+        <styleUrl>#triangleStyle</styleUrl>  
+        <Polygon>    
+          <altitudeMode>clampToGround</altitudeMode>    
+          <outerBoundaryIs>      
+            <LinearRing>        
+              <coordinates>          
+                -97.887778,38.012778
+                -97.787778,37.872778
+                -97.987778,37.872778
+                -97.887778,38.012778
+              </coordinates>      
+            </LinearRing>    
+          </outerBoundaryIs>  
+        </Polygon>
+      </Placemark>
+
+    </Folder>
+    <!-- End of HUTCHINSON -->
+
+
+    <!-- INDIANAPOLIS -->
+    <Folder>	  
+      <name>INDIANAPOLIS</name>
+
+      <GroundOverlay>
+	    <Icon>          
+		  <href>http://uavsar.jpl.nasa.gov/images/longRangeCircle.png</href>
+        </Icon>        
+	    <LatLonBox>          
+		  <north>39.912479</north>          
+		  <south>39.579743</south>          
+		  <east>-86.068353037161</east>          
+		  <west>-86.500534962839</west>   
+	    </LatLonBox>      
+	  </GroundOverlay>
+
+      <Placemark>  
+        <name>FAA Long Range Radar Site</name>  
+        <description>    
+          <![CDATA[    
+		    INDIANAPOLIS<br><br>      
+            Latitude: 39.746111<br>      
+            Longitude: -86.284444<br>      
+            Exclusion Zone: 10 nautical miles<br>      
+            <span style="color: red">
+              No part of the image swath may cross this zone.
+            </span><br><br>      
+            The FAA long range radars are L-band radars<br>      
+            used by the FAA to <a href='http://en.wikipedia.org/wiki/Air_traffic_control' target='_blank'>track aircraft movement</a> in<br>  
+            US airspace.
+<br><br></span>    
+          ]]>   
+        </description>  
+        <styleUrl>#triangleStyle</styleUrl>  
+        <Polygon>    
+          <altitudeMode>clampToGround</altitudeMode>    
+          <outerBoundaryIs>      
+            <LinearRing>        
+              <coordinates>          
+                -86.284444,39.836111
+                -86.184444,39.696111
+                -86.384444,39.696111
+                -86.284444,39.836111
+              </coordinates>      
+            </LinearRing>    
+          </outerBoundaryIs>  
+        </Polygon>
+      </Placemark>
+
+    </Folder>
+    <!-- End of INDIANAPOLIS -->
+
+
+    <!-- JEDBURG -->
+    <Folder>	  
+      <name>JEDBURG</name>
+
+      <GroundOverlay>
+	    <Icon>          
+		  <href>http://uavsar.jpl.nasa.gov/images/longRangeCircle.png</href>
+        </Icon>        
+	    <LatLonBox>          
+		  <north>33.23609</north>          
+		  <south>32.903354</south>          
+		  <east>-80.022215125105</east>          
+		  <west>-80.418896874895</west>   
+	    </LatLonBox>      
+	  </GroundOverlay>
+
+      <Placemark>  
+        <name>FAA Long Range Radar Site</name>  
+        <description>    
+          <![CDATA[    
+		    JEDBURG<br><br>      
+            Latitude: 33.069722<br>      
+            Longitude: -80.220556<br>      
+            Exclusion Zone: 10 nautical miles<br>      
+            <span style="color: red">
+              No part of the image swath may cross this zone.
+            </span><br><br>      
+            The FAA long range radars are L-band radars<br>      
+            used by the FAA to <a href='http://en.wikipedia.org/wiki/Air_traffic_control' target='_blank'>track aircraft movement</a> in<br>  
+            US airspace.
+<br><br></span>    
+          ]]>   
+        </description>  
+        <styleUrl>#triangleStyle</styleUrl>  
+        <Polygon>    
+          <altitudeMode>clampToGround</altitudeMode>    
+          <outerBoundaryIs>      
+            <LinearRing>        
+              <coordinates>          
+                -80.220556,33.159722
+                -80.120556,33.019722
+                -80.320556,33.019722
+                -80.220556,33.159722
+              </coordinates>      
+            </LinearRing>    
+          </outerBoundaryIs>  
+        </Polygon>
+      </Placemark>
+
+    </Folder>
+    <!-- End of JEDBURG -->
+
+
+    <!-- JOELTON -->
+    <Folder>	  
+      <name>JOELTON</name>
+
+      <GroundOverlay>
+	    <Icon>          
+		  <href>http://uavsar.jpl.nasa.gov/images/longRangeCircle.png</href>
+        </Icon>        
+	    <LatLonBox>          
+		  <north>36.502479</north>          
+		  <south>36.169743</south>          
+		  <east>-86.654816777057</east>          
+		  <west>-87.067405222943</west>   
+	    </LatLonBox>      
+	  </GroundOverlay>
+
+      <Placemark>  
+        <name>FAA Long Range Radar Site</name>  
+        <description>    
+          <![CDATA[    
+		    JOELTON<br><br>      
+            Latitude: 36.336111<br>      
+            Longitude: -86.861111<br>      
+            Exclusion Zone: 10 nautical miles<br>      
+            <span style="color: red">
+              No part of the image swath may cross this zone.
+            </span><br><br>      
+            The FAA long range radars are L-band radars<br>      
+            used by the FAA to <a href='http://en.wikipedia.org/wiki/Air_traffic_control' target='_blank'>track aircraft movement</a> in<br>  
+            US airspace.
+<br><br></span>    
+          ]]>   
+        </description>  
+        <styleUrl>#triangleStyle</styleUrl>  
+        <Polygon>    
+          <altitudeMode>clampToGround</altitudeMode>    
+          <outerBoundaryIs>      
+            <LinearRing>        
+              <coordinates>          
+                -86.861111,36.426111
+                -86.761111,36.286111
+                -86.961111,36.286111
+                -86.861111,36.426111
+              </coordinates>      
+            </LinearRing>    
+          </outerBoundaryIs>  
+        </Polygon>
+      </Placemark>
+
+    </Folder>
+    <!-- End of JOELTON -->
+
+
+    <!-- JOLIET -->
+    <Folder>	  
+      <name>JOLIET</name>
+
+      <GroundOverlay>
+	    <Icon>          
+		  <href>http://uavsar.jpl.nasa.gov/images/longRangeCircle.png</href>
+        </Icon>        
+	    <LatLonBox>          
+		  <north>41.589146</north>          
+		  <south>41.25641</south>          
+		  <east>-87.836777427287</east>          
+		  <west>-88.279888572713</west>   
+	    </LatLonBox>      
+	  </GroundOverlay>
+
+      <Placemark>  
+        <name>FAA Long Range Radar Site</name>  
+        <description>    
+          <![CDATA[    
+		    JOLIET<br><br>      
+            Latitude: 41.422778<br>      
+            Longitude: -88.058333<br>      
+            Exclusion Zone: 10 nautical miles<br>      
+            <span style="color: red">
+              No part of the image swath may cross this zone.
+            </span><br><br>      
+            The FAA long range radars are L-band radars<br>      
+            used by the FAA to <a href='http://en.wikipedia.org/wiki/Air_traffic_control' target='_blank'>track aircraft movement</a> in<br>  
+            US airspace.
+<br><br></span>    
+          ]]>   
+        </description>  
+        <styleUrl>#triangleStyle</styleUrl>  
+        <Polygon>    
+          <altitudeMode>clampToGround</altitudeMode>    
+          <outerBoundaryIs>      
+            <LinearRing>        
+              <coordinates>          
+                -88.058333,41.512778
+                -87.958333,41.372778
+                -88.158333,41.372778
+                -88.058333,41.512778
+              </coordinates>      
+            </LinearRing>    
+          </outerBoundaryIs>  
+        </Polygon>
+      </Placemark>
+
+    </Folder>
+    <!-- End of JOLIET -->
+
+
+    <!-- KELLER -->
+    <Folder>	  
+      <name>KELLER</name>
+
+      <GroundOverlay>
+	    <Icon>          
+		  <href>http://uavsar.jpl.nasa.gov/images/longRangeCircle.png</href>
+        </Icon>        
+	    <LatLonBox>          
+		  <north>33.110812</north>          
+		  <south>32.778076</south>          
+		  <east>-97.022217306372</east>          
+		  <west>-97.418338693628</west>   
+	    </LatLonBox>      
+	  </GroundOverlay>
+
+      <Placemark>  
+        <name>FAA Long Range Radar Site</name>  
+        <description>    
+          <![CDATA[    
+		    KELLER<br><br>      
+            Latitude: 32.944444<br>      
+            Longitude: -97.220278<br>      
+            Exclusion Zone: 10 nautical miles<br>      
+            <span style="color: red">
+              No part of the image swath may cross this zone.
+            </span><br><br>      
+            The FAA long range radars are L-band radars<br>      
+            used by the FAA to <a href='http://en.wikipedia.org/wiki/Air_traffic_control' target='_blank'>track aircraft movement</a> in<br>  
+            US airspace.
+<br><br></span>    
+          ]]>   
+        </description>  
+        <styleUrl>#triangleStyle</styleUrl>  
+        <Polygon>    
+          <altitudeMode>clampToGround</altitudeMode>    
+          <outerBoundaryIs>      
+            <LinearRing>        
+              <coordinates>          
+                -97.220278,33.034444
+                -97.120278,32.894444
+                -97.320278,32.894444
+                -97.220278,33.034444
+              </coordinates>      
+            </LinearRing>    
+          </outerBoundaryIs>  
+        </Polygon>
+      </Placemark>
+
+    </Folder>
+    <!-- End of KELLER -->
+
+
+    <!-- KEY WEST -->
+    <Folder>	  
+      <name>KEY WEST</name>
+
+      <GroundOverlay>
+	    <Icon>          
+		  <href>http://uavsar.jpl.nasa.gov/images/longRangeCircle.png</href>
+        </Icon>        
+	    <LatLonBox>          
+		  <north>24.749979</north>          
+		  <south>24.417243</south>          
+		  <east>-81.505755530445</east>          
+		  <west>-81.871466469555</west>   
+	    </LatLonBox>      
+	  </GroundOverlay>
+
+      <Placemark>  
+        <name>FAA Long Range Radar Site</name>  
+        <description>    
+          <![CDATA[    
+		    KEY WEST<br><br>      
+            Latitude: 24.583611<br>      
+            Longitude: -81.688611<br>      
+            Exclusion Zone: 10 nautical miles<br>      
+            <span style="color: red">
+              No part of the image swath may cross this zone.
+            </span><br><br>      
+            The FAA long range radars are L-band radars<br>      
+            used by the FAA to <a href='http://en.wikipedia.org/wiki/Air_traffic_control' target='_blank'>track aircraft movement</a> in<br>  
+            US airspace.
+<br><br></span>    
+          ]]>   
+        </description>  
+        <styleUrl>#triangleStyle</styleUrl>  
+        <Polygon>    
+          <altitudeMode>clampToGround</altitudeMode>    
+          <outerBoundaryIs>      
+            <LinearRing>        
+              <coordinates>          
+                -81.688611,24.673611
+                -81.588611,24.533611
+                -81.788611,24.533611
+                -81.688611,24.673611
+              </coordinates>      
+            </LinearRing>    
+          </outerBoundaryIs>  
+        </Polygon>
+      </Placemark>
+
+    </Folder>
+    <!-- End of KEY WEST -->
+
+
+    <!-- KING MOUNTAIN -->
+    <Folder>	  
+      <name>KING MOUNTAIN</name>
+
+      <GroundOverlay>
+	    <Icon>          
+		  <href>http://uavsar.jpl.nasa.gov/images/longRangeCircle.png</href>
+        </Icon>        
+	    <LatLonBox>          
+		  <north>31.451646</north>          
+		  <south>31.11891</south>          
+		  <east>-102.078823023023</east>          
+		  <west>-102.467842976977</west>   
+	    </LatLonBox>      
+	  </GroundOverlay>
+
+      <Placemark>  
+        <name>FAA Long Range Radar Site</name>  
+        <description>    
+          <![CDATA[    
+		    KING MOUNTAIN<br><br>      
+            Latitude: 31.285278<br>      
+            Longitude: -102.273333<br>      
+            Exclusion Zone: 10 nautical miles<br>      
+            <span style="color: red">
+              No part of the image swath may cross this zone.
+            </span><br><br>      
+            The FAA long range radars are L-band radars<br>      
+            used by the FAA to <a href='http://en.wikipedia.org/wiki/Air_traffic_control' target='_blank'>track aircraft movement</a> in<br>  
+            US airspace.
+<br><br></span>    
+          ]]>   
+        </description>  
+        <styleUrl>#triangleStyle</styleUrl>  
+        <Polygon>    
+          <altitudeMode>clampToGround</altitudeMode>    
+          <outerBoundaryIs>      
+            <LinearRing>        
+              <coordinates>          
+                -102.273333,31.375278
+                -102.173333,31.235278
+                -102.373333,31.235278
+                -102.273333,31.375278
+              </coordinates>      
+            </LinearRing>    
+          </outerBoundaryIs>  
+        </Polygon>
+      </Placemark>
+
+    </Folder>
+    <!-- End of KING MOUNTAIN -->
+
+
+    <!-- KIRKSVILLE -->
+    <Folder>	  
+      <name>KIRKSVILLE</name>
+
+      <GroundOverlay>
+	    <Icon>          
+		  <href>http://uavsar.jpl.nasa.gov/images/longRangeCircle.png</href>
+        </Icon>        
+	    <LatLonBox>          
+		  <north>40.466368</north>          
+		  <south>40.133632</south>          
+		  <east>-92.358543530401</east>          
+		  <west>-92.794234469599</west>   
+	    </LatLonBox>      
+	  </GroundOverlay>
+
+      <Placemark>  
+        <name>FAA Long Range Radar Site</name>  
+        <description>    
+          <![CDATA[    
+		    KIRKSVILLE<br><br>      
+            Latitude: 40.300000<br>      
+            Longitude: -92.576389<br>      
+            Exclusion Zone: 10 nautical miles<br>      
+            <span style="color: red">
+              No part of the image swath may cross this zone.
+            </span><br><br>      
+            The FAA long range radars are L-band radars<br>      
+            used by the FAA to <a href='http://en.wikipedia.org/wiki/Air_traffic_control' target='_blank'>track aircraft movement</a> in<br>  
+            US airspace.
+<br><br></span>    
+          ]]>   
+        </description>  
+        <styleUrl>#triangleStyle</styleUrl>  
+        <Polygon>    
+          <altitudeMode>clampToGround</altitudeMode>    
+          <outerBoundaryIs>      
+            <LinearRing>        
+              <coordinates>          
+                -92.576389,40.39
+                -92.476389,40.25
+                -92.676389,40.25
+                -92.576389,40.39
+              </coordinates>      
+            </LinearRing>    
+          </outerBoundaryIs>  
+        </Polygon>
+      </Placemark>
+
+    </Folder>
+    <!-- End of KIRKSVILLE -->
+
+
+    <!-- KLAMATH FALLS -->
+    <Folder>	  
+      <name>KLAMATH FALLS</name>
+
+      <GroundOverlay>
+	    <Icon>          
+		  <href>http://uavsar.jpl.nasa.gov/images/longRangeCircle.png</href>
+        </Icon>        
+	    <LatLonBox>          
+		  <north>42.235257</north>          
+		  <south>41.902521</south>          
+		  <east>-121.74843393786</east>          
+		  <west>-122.19601006214</west>   
+	    </LatLonBox>      
+	  </GroundOverlay>
+
+      <Placemark>  
+        <name>FAA Long Range Radar Site</name>  
+        <description>    
+          <![CDATA[    
+		    KLAMATH FALLS<br><br>      
+            Latitude: 42.068889<br>      
+            Longitude: -121.972222<br>      
+            Exclusion Zone: 10 nautical miles<br>      
+            <span style="color: red">
+              No part of the image swath may cross this zone.
+            </span><br><br>      
+            The FAA long range radars are L-band radars<br>      
+            used by the FAA to <a href='http://en.wikipedia.org/wiki/Air_traffic_control' target='_blank'>track aircraft movement</a> in<br>  
+            US airspace.
+<br><br></span>    
+          ]]>   
+        </description>  
+        <styleUrl>#triangleStyle</styleUrl>  
+        <Polygon>    
+          <altitudeMode>clampToGround</altitudeMode>    
+          <outerBoundaryIs>      
+            <LinearRing>        
+              <coordinates>          
+                -121.972222,42.158889
+                -121.872222,42.018889
+                -122.072222,42.018889
+                -121.972222,42.158889
+              </coordinates>      
+            </LinearRing>    
+          </outerBoundaryIs>  
+        </Polygon>
+      </Placemark>
+
+    </Folder>
+    <!-- End of KLAMATH FALLS -->
+
+
+    <!-- LAGRANGE -->
+    <Folder>	  
+      <name>LAGRANGE</name>
+
+      <GroundOverlay>
+	    <Icon>          
+		  <href>http://uavsar.jpl.nasa.gov/images/longRangeCircle.png</href>
+        </Icon>        
+	    <LatLonBox>          
+		  <north>41.797479</north>          
+		  <south>41.464743</south>          
+		  <east>-85.192454561232</east>          
+		  <west>-85.636989438768</west>   
+	    </LatLonBox>      
+	  </GroundOverlay>
+
+      <Placemark>  
+        <name>FAA Long Range Radar Site</name>  
+        <description>    
+          <![CDATA[    
+		    LAGRANGE<br><br>      
+            Latitude: 41.631111<br>      
+            Longitude: -85.414722<br>      
+            Exclusion Zone: 10 nautical miles<br>      
+            <span style="color: red">
+              No part of the image swath may cross this zone.
+            </span><br><br>      
+            The FAA long range radars are L-band radars<br>      
+            used by the FAA to <a href='http://en.wikipedia.org/wiki/Air_traffic_control' target='_blank'>track aircraft movement</a> in<br>  
+            US airspace.
+<br><br></span>    
+          ]]>   
+        </description>  
+        <styleUrl>#triangleStyle</styleUrl>  
+        <Polygon>    
+          <altitudeMode>clampToGround</altitudeMode>    
+          <outerBoundaryIs>      
+            <LinearRing>        
+              <coordinates>          
+                -85.414722,41.721111
+                -85.314722,41.581111
+                -85.514722,41.581111
+                -85.414722,41.721111
+              </coordinates>      
+            </LinearRing>    
+          </outerBoundaryIs>  
+        </Polygon>
+      </Placemark>
+
+    </Folder>
+    <!-- End of LAGRANGE -->
+
+
+    <!-- LAKE CHARLES -->
+    <Folder>	  
+      <name>LAKE CHARLES</name>
+
+      <GroundOverlay>
+	    <Icon>          
+		  <href>http://uavsar.jpl.nasa.gov/images/longRangeCircle.png</href>
+        </Icon>        
+	    <LatLonBox>          
+		  <north>30.526924</north>          
+		  <south>30.194188</south>          
+		  <east>-93.318734003773</east>          
+		  <west>-93.704043996227</west>   
+	    </LatLonBox>      
+	  </GroundOverlay>
+
+      <Placemark>  
+        <name>FAA Long Range Radar Site</name>  
+        <description>    
+          <![CDATA[    
+		    LAKE CHARLES<br><br>      
+            Latitude: 30.360556<br>      
+            Longitude: -93.511389<br>      
+            Exclusion Zone: 10 nautical miles<br>      
+            <span style="color: red">
+              No part of the image swath may cross this zone.
+            </span><br><br>      
+            The FAA long range radars are L-band radars<br>      
+            used by the FAA to <a href='http://en.wikipedia.org/wiki/Air_traffic_control' target='_blank'>track aircraft movement</a> in<br>  
+            US airspace.
+<br><br></span>    
+          ]]>   
+        </description>  
+        <styleUrl>#triangleStyle</styleUrl>  
+        <Polygon>    
+          <altitudeMode>clampToGround</altitudeMode>    
+          <outerBoundaryIs>      
+            <LinearRing>        
+              <coordinates>          
+                -93.511389,30.450556
+                -93.411389,30.310556
+                -93.611389,30.310556
+                -93.511389,30.450556
+              </coordinates>      
+            </LinearRing>    
+          </outerBoundaryIs>  
+        </Polygon>
+      </Placemark>
+
+    </Folder>
+    <!-- End of LAKE CHARLES -->
+
+
+    <!-- LAKESIDE -->
+    <Folder>	  
+      <name>LAKESIDE</name>
+
+      <GroundOverlay>
+	    <Icon>          
+		  <href>http://uavsar.jpl.nasa.gov/images/longRangeCircle.png</href>
+        </Icon>        
+	    <LatLonBox>          
+		  <north>48.177757</north>          
+		  <south>47.845021</south>          
+		  <east>-114.11620292872</east>          
+		  <west>-114.61268507128</west>   
+	    </LatLonBox>      
+	  </GroundOverlay>
+
+      <Placemark>  
+        <name>FAA Long Range Radar Site</name>  
+        <description>    
+          <![CDATA[    
+		    LAKESIDE<br><br>      
+            Latitude: 48.011389<br>      
+            Longitude: -114.364444<br>      
+            Exclusion Zone: 10 nautical miles<br>      
+            <span style="color: red">
+              No part of the image swath may cross this zone.
+            </span><br><br>      
+            The FAA long range radars are L-band radars<br>      
+            used by the FAA to <a href='http://en.wikipedia.org/wiki/Air_traffic_control' target='_blank'>track aircraft movement</a> in<br>  
+            US airspace.
+<br><br></span>    
+          ]]>   
+        </description>  
+        <styleUrl>#triangleStyle</styleUrl>  
+        <Polygon>    
+          <altitudeMode>clampToGround</altitudeMode>    
+          <outerBoundaryIs>      
+            <LinearRing>        
+              <coordinates>          
+                -114.364444,48.101389
+                -114.264444,47.961389
+                -114.464444,47.961389
+                -114.364444,48.101389
+              </coordinates>      
+            </LinearRing>    
+          </outerBoundaryIs>  
+        </Polygon>
+      </Placemark>
+
+    </Folder>
+    <!-- End of LAKESIDE -->
+
+
+    <!-- LINCOLNTON -->
+    <Folder>	  
+      <name>LINCOLNTON</name>
+
+      <GroundOverlay>
+	    <Icon>          
+		  <href>http://uavsar.jpl.nasa.gov/images/longRangeCircle.png</href>
+        </Icon>        
+	    <LatLonBox>          
+		  <north>33.925812</north>          
+		  <south>33.593076</south>          
+		  <east>-82.266752034391</east>          
+		  <west>-82.666581965609</west>   
+	    </LatLonBox>      
+	  </GroundOverlay>
+
+      <Placemark>  
+        <name>FAA Long Range Radar Site</name>  
+        <description>    
+          <![CDATA[    
+		    LINCOLNTON<br><br>      
+            Latitude: 33.759444<br>      
+            Longitude: -82.466667<br>      
+            Exclusion Zone: 10 nautical miles<br>      
+            <span style="color: red">
+              No part of the image swath may cross this zone.
+            </span><br><br>      
+            The FAA long range radars are L-band radars<br>      
+            used by the FAA to <a href='http://en.wikipedia.org/wiki/Air_traffic_control' target='_blank'>track aircraft movement</a> in<br>  
+            US airspace.
+<br><br></span>    
+          ]]>   
+        </description>  
+        <styleUrl>#triangleStyle</styleUrl>  
+        <Polygon>    
+          <altitudeMode>clampToGround</altitudeMode>    
+          <outerBoundaryIs>      
+            <LinearRing>        
+              <coordinates>          
+                -82.466667,33.849444
+                -82.366667,33.709444
+                -82.566667,33.709444
+                -82.466667,33.849444
+              </coordinates>      
+            </LinearRing>    
+          </outerBoundaryIs>  
+        </Polygon>
+      </Placemark>
+
+    </Folder>
+    <!-- End of LINCOLNTON -->
+
+
+    <!-- LYNCH -->
+    <Folder>	  
+      <name>LYNCH</name>
+
+      <GroundOverlay>
+	    <Icon>          
+		  <href>http://uavsar.jpl.nasa.gov/images/longRangeCircle.png</href>
+        </Icon>        
+	    <LatLonBox>          
+		  <north>37.079701</north>          
+		  <south>36.746965</south>          
+		  <east>-82.682717814473</east>          
+		  <west>-83.098394185527</west>   
+	    </LatLonBox>      
+	  </GroundOverlay>
+
+      <Placemark>  
+        <name>FAA Long Range Radar Site</name>  
+        <description>    
+          <![CDATA[    
+		    LYNCH<br><br>      
+            Latitude: 36.913333<br>      
+            Longitude: -82.890556<br>      
+            Exclusion Zone: 10 nautical miles<br>      
+            <span style="color: red">
+              No part of the image swath may cross this zone.
+            </span><br><br>      
+            The FAA long range radars are L-band radars<br>      
+            used by the FAA to <a href='http://en.wikipedia.org/wiki/Air_traffic_control' target='_blank'>track aircraft movement</a> in<br>  
+            US airspace.
+<br><br></span>    
+          ]]>   
+        </description>  
+        <styleUrl>#triangleStyle</styleUrl>  
+        <Polygon>    
+          <altitudeMode>clampToGround</altitudeMode>    
+          <outerBoundaryIs>      
+            <LinearRing>        
+              <coordinates>          
+                -82.890556,37.003333
+                -82.790556,36.863333
+                -82.990556,36.863333
+                -82.890556,37.003333
+              </coordinates>      
+            </LinearRing>    
+          </outerBoundaryIs>  
+        </Polygon>
+      </Placemark>
+
+    </Folder>
+    <!-- End of LYNCH -->
+
+
+    <!-- MAIDEN -->
+    <Folder>	  
+      <name>MAIDEN</name>
+
+      <GroundOverlay>
+	    <Icon>          
+		  <href>http://uavsar.jpl.nasa.gov/images/longRangeCircle.png</href>
+        </Icon>        
+	    <LatLonBox>          
+		  <north>35.777201</north>          
+		  <south>35.444465</south>          
+		  <east>-81.033917307906</east>          
+		  <west>-81.442748692094</west>   
+	    </LatLonBox>      
+	  </GroundOverlay>
+
+      <Placemark>  
+        <name>FAA Long Range Radar Site</name>  
+        <description>    
+          <![CDATA[    
+		    MAIDEN<br><br>      
+            Latitude: 35.610833<br>      
+            Longitude: -81.238333<br>      
+            Exclusion Zone: 10 nautical miles<br>      
+            <span style="color: red">
+              No part of the image swath may cross this zone.
+            </span><br><br>      
+            The FAA long range radars are L-band radars<br>      
+            used by the FAA to <a href='http://en.wikipedia.org/wiki/Air_traffic_control' target='_blank'>track aircraft movement</a> in<br>  
+            US airspace.
+<br><br></span>    
+          ]]>   
+        </description>  
+        <styleUrl>#triangleStyle</styleUrl>  
+        <Polygon>    
+          <altitudeMode>clampToGround</altitudeMode>    
+          <outerBoundaryIs>      
+            <LinearRing>        
+              <coordinates>          
+                -81.238333,35.700833
+                -81.138333,35.560833
+                -81.338333,35.560833
+                -81.238333,35.700833
+              </coordinates>      
+            </LinearRing>    
+          </outerBoundaryIs>  
+        </Polygon>
+      </Placemark>
+
+    </Folder>
+    <!-- End of MAIDEN -->
+
+
+    <!-- MAKAH -->
+    <Folder>	  
+      <name>MAKAH</name>
+
+      <GroundOverlay>
+	    <Icon>          
+		  <href>http://uavsar.jpl.nasa.gov/images/longRangeCircle.png</href>
+        </Icon>        
+	    <LatLonBox>          
+		  <north>48.538868</north>          
+		  <south>48.206132</south>          
+		  <east>-124.42500862957</east>          
+		  <west>-124.92499137043</west>   
+	    </LatLonBox>      
+	  </GroundOverlay>
+
+      <Placemark>  
+        <name>FAA Long Range Radar Site</name>  
+        <description>    
+          <![CDATA[    
+		    MAKAH<br><br>      
+            Latitude: 48.372500<br>      
+            Longitude: -124.675000<br>      
+            Exclusion Zone: 10 nautical miles<br>      
+            <span style="color: red">
+              No part of the image swath may cross this zone.
+            </span><br><br>      
+            The FAA long range radars are L-band radars<br>      
+            used by the FAA to <a href='http://en.wikipedia.org/wiki/Air_traffic_control' target='_blank'>track aircraft movement</a> in<br>  
+            US airspace.
+<br><br></span>    
+          ]]>   
+        </description>  
+        <styleUrl>#triangleStyle</styleUrl>  
+        <Polygon>    
+          <altitudeMode>clampToGround</altitudeMode>    
+          <outerBoundaryIs>      
+            <LinearRing>        
+              <coordinates>          
+                -124.675000,48.4625
+                -124.575,48.3225
+                -124.775,48.3225
+                -124.675000,48.4625
+              </coordinates>      
+            </LinearRing>    
+          </outerBoundaryIs>  
+        </Polygon>
+      </Placemark>
+
+    </Folder>
+    <!-- End of MAKAH -->
+
+
+    <!-- MARIETTA -->
+    <Folder>	  
+      <name>MARIETTA</name>
+
+      <GroundOverlay>
+	    <Icon>          
+		  <href>http://uavsar.jpl.nasa.gov/images/longRangeCircle.png</href>
+        </Icon>        
+	    <LatLonBox>          
+		  <north>34.060535</north>          
+		  <south>33.727799</south>          
+		  <east>-84.297827242173</east>          
+		  <west>-84.698284757827</west>   
+	    </LatLonBox>      
+	  </GroundOverlay>
+
+      <Placemark>  
+        <name>FAA Long Range Radar Site</name>  
+        <description>    
+          <![CDATA[    
+		    MARIETTA<br><br>      
+            Latitude: 33.894167<br>      
+            Longitude: -84.498056<br>      
+            Exclusion Zone: 10 nautical miles<br>      
+            <span style="color: red">
+              No part of the image swath may cross this zone.
+            </span><br><br>      
+            The FAA long range radars are L-band radars<br>      
+            used by the FAA to <a href='http://en.wikipedia.org/wiki/Air_traffic_control' target='_blank'>track aircraft movement</a> in<br>  
+            US airspace.
+<br><br></span>    
+          ]]>   
+        </description>  
+        <styleUrl>#triangleStyle</styleUrl>  
+        <Polygon>    
+          <altitudeMode>clampToGround</altitudeMode>    
+          <outerBoundaryIs>      
+            <LinearRing>        
+              <coordinates>          
+                -84.498056,33.984167
+                -84.398056,33.844167
+                -84.598056,33.844167
+                -84.498056,33.984167
+              </coordinates>      
+            </LinearRing>    
+          </outerBoundaryIs>  
+        </Polygon>
+      </Placemark>
+
+    </Folder>
+    <!-- End of MARIETTA -->
+
+
+    <!-- MELBOURNE -->
+    <Folder>	  
+      <name>MELBOURNE</name>
+
+      <GroundOverlay>
+	    <Icon>          
+		  <href>http://uavsar.jpl.nasa.gov/images/longRangeCircle.png</href>
+        </Icon>        
+	    <LatLonBox>          
+		  <north>28.242757</north>          
+		  <south>27.910021</south>          
+		  <east>-80.317683442531</east>          
+		  <west>-80.694538557469</west>   
+	    </LatLonBox>      
+	  </GroundOverlay>
+
+      <Placemark>  
+        <name>FAA Long Range Radar Site</name>  
+        <description>    
+          <![CDATA[    
+		    MELBOURNE<br><br>      
+            Latitude: 28.076389<br>      
+            Longitude: -80.506111<br>      
+            Exclusion Zone: 10 nautical miles<br>      
+            <span style="color: red">
+              No part of the image swath may cross this zone.
+            </span><br><br>      
+            The FAA long range radars are L-band radars<br>      
+            used by the FAA to <a href='http://en.wikipedia.org/wiki/Air_traffic_control' target='_blank'>track aircraft movement</a> in<br>  
+            US airspace.
+<br><br></span>    
+          ]]>   
+        </description>  
+        <styleUrl>#triangleStyle</styleUrl>  
+        <Polygon>    
+          <altitudeMode>clampToGround</altitudeMode>    
+          <outerBoundaryIs>      
+            <LinearRing>        
+              <coordinates>          
+                -80.506111,28.166389
+                -80.406111,28.026389
+                -80.606111,28.026389
+                -80.506111,28.166389
+              </coordinates>      
+            </LinearRing>    
+          </outerBoundaryIs>  
+        </Polygon>
+      </Placemark>
+
+    </Folder>
+    <!-- End of MELBOURNE -->
+
+
+    <!-- MESA RICA -->
+    <Folder>	  
+      <name>MESA RICA</name>
+
+      <GroundOverlay>
+	    <Icon>          
+		  <href>http://uavsar.jpl.nasa.gov/images/longRangeCircle.png</href>
+        </Icon>        
+	    <LatLonBox>          
+		  <north>25.403868</north>          
+		  <south>25.071132</south>          
+		  <east>-104.020622169425</east>          
+		  <west>-104.388265830575</west>   
+	    </LatLonBox>      
+	  </GroundOverlay>
+
+      <Placemark>  
+        <name>FAA Long Range Radar Site</name>  
+        <description>    
+          <![CDATA[    
+		    MESA RICA<br><br>      
+            Latitude: 25.237500<br>      
+            Longitude: -104.204444<br>      
+            Exclusion Zone: 10 nautical miles<br>      
+            <span style="color: red">
+              No part of the image swath may cross this zone.
+            </span><br><br>      
+            The FAA long range radars are L-band radars<br>      
+            used by the FAA to <a href='http://en.wikipedia.org/wiki/Air_traffic_control' target='_blank'>track aircraft movement</a> in<br>  
+            US airspace.
+<br><br></span>    
+          ]]>   
+        </description>  
+        <styleUrl>#triangleStyle</styleUrl>  
+        <Polygon>    
+          <altitudeMode>clampToGround</altitudeMode>    
+          <outerBoundaryIs>      
+            <LinearRing>        
+              <coordinates>          
+                -104.204444,25.3275
+                -104.104444,25.1875
+                -104.304444,25.1875
+                -104.204444,25.3275
+              </coordinates>      
+            </LinearRing>    
+          </outerBoundaryIs>  
+        </Polygon>
+      </Placemark>
+
+    </Folder>
+    <!-- End of MESA RICA -->
+
+
+    <!-- MICA PEAK -->
+    <Folder>	  
+      <name>MICA PEAK</name>
+
+      <GroundOverlay>
+	    <Icon>          
+		  <href>http://uavsar.jpl.nasa.gov/images/longRangeCircle.png</href>
+        </Icon>        
+	    <LatLonBox>          
+		  <north>47.740257</north>          
+		  <south>47.407521</south>          
+		  <east>-116.83438982458</east>          
+		  <west>-117.32672217542</west>   
+	    </LatLonBox>      
+	  </GroundOverlay>
+
+      <Placemark>  
+        <name>FAA Long Range Radar Site</name>  
+        <description>    
+          <![CDATA[    
+		    MICA PEAK<br><br>      
+            Latitude: 47.573889<br>      
+            Longitude: -117.080556<br>      
+            Exclusion Zone: 10 nautical miles<br>      
+            <span style="color: red">
+              No part of the image swath may cross this zone.
+            </span><br><br>      
+            The FAA long range radars are L-band radars<br>      
+            used by the FAA to <a href='http://en.wikipedia.org/wiki/Air_traffic_control' target='_blank'>track aircraft movement</a> in<br>  
+            US airspace.
+<br><br></span>    
+          ]]>   
+        </description>  
+        <styleUrl>#triangleStyle</styleUrl>  
+        <Polygon>    
+          <altitudeMode>clampToGround</altitudeMode>    
+          <outerBoundaryIs>      
+            <LinearRing>        
+              <coordinates>          
+                -117.080556,47.663889
+                -116.980556,47.523889
+                -117.180556,47.523889
+                -117.080556,47.663889
+              </coordinates>      
+            </LinearRing>    
+          </outerBoundaryIs>  
+        </Polygon>
+      </Placemark>
+
+    </Folder>
+    <!-- End of MICA PEAK -->
+
+
+    <!-- MILL VALLEY -->
+    <Folder>	  
+      <name>MILL VALLEY</name>
+
+      <GroundOverlay>
+	    <Icon>          
+		  <href>http://uavsar.jpl.nasa.gov/images/longRangeCircle.png</href>
+        </Icon>        
+	    <LatLonBox>          
+		  <north>38.090257</north>          
+		  <south>37.757521</south>          
+		  <east>-122.38712815608</east>          
+		  <west>-122.80842784392</west>   
+	    </LatLonBox>      
+	  </GroundOverlay>
+
+      <Placemark>  
+        <name>FAA Long Range Radar Site</name>  
+        <description>    
+          <![CDATA[    
+		    MILL VALLEY<br><br>      
+            Latitude: 37.923889<br>      
+            Longitude: -122.597778<br>      
+            Exclusion Zone: 10 nautical miles<br>      
+            <span style="color: red">
+              No part of the image swath may cross this zone.
+            </span><br><br>      
+            The FAA long range radars are L-band radars<br>      
+            used by the FAA to <a href='http://en.wikipedia.org/wiki/Air_traffic_control' target='_blank'>track aircraft movement</a> in<br>  
+            US airspace.
+<br><br></span>    
+          ]]>   
+        </description>  
+        <styleUrl>#triangleStyle</styleUrl>  
+        <Polygon>    
+          <altitudeMode>clampToGround</altitudeMode>    
+          <outerBoundaryIs>      
+            <LinearRing>        
+              <coordinates>          
+                -122.597778,38.013889
+                -122.497778,37.873889
+                -122.697778,37.873889
+                -122.597778,38.013889
+              </coordinates>      
+            </LinearRing>    
+          </outerBoundaryIs>  
+        </Polygon>
+      </Placemark>
+
+    </Folder>
+    <!-- End of MILL VALLEY -->
+
+
+    <!-- MONTGOMERY -->
+    <Folder>	  
+      <name>MONTGOMERY</name>
+
+      <GroundOverlay>
+	    <Icon>          
+		  <href>http://uavsar.jpl.nasa.gov/images/longRangeCircle.png</href>
+        </Icon>        
+	    <LatLonBox>          
+		  <north>32.378312</north>          
+		  <south>32.045576</south>          
+		  <east>-85.971876099908</east>          
+		  <west>-86.364789900092</west>   
+	    </LatLonBox>      
+	  </GroundOverlay>
+
+      <Placemark>  
+        <name>FAA Long Range Radar Site</name>  
+        <description>    
+          <![CDATA[    
+		    MONTGOMERY<br><br>      
+            Latitude: 32.211944<br>      
+            Longitude: -86.168333<br>      
+            Exclusion Zone: 10 nautical miles<br>      
+            <span style="color: red">
+              No part of the image swath may cross this zone.
+            </span><br><br>      
+            The FAA long range radars are L-band radars<br>      
+            used by the FAA to <a href='http://en.wikipedia.org/wiki/Air_traffic_control' target='_blank'>track aircraft movement</a> in<br>  
+            US airspace.
+<br><br></span>    
+          ]]>   
+        </description>  
+        <styleUrl>#triangleStyle</styleUrl>  
+        <Polygon>    
+          <altitudeMode>clampToGround</altitudeMode>    
+          <outerBoundaryIs>      
+            <LinearRing>        
+              <coordinates>          
+                -86.168333,32.301944
+                -86.068333,32.161944
+                -86.268333,32.161944
+                -86.168333,32.301944
+              </coordinates>      
+            </LinearRing>    
+          </outerBoundaryIs>  
+        </Polygon>
+      </Placemark>
+
+    </Folder>
+    <!-- End of MONTGOMERY -->
+
+
+    <!-- MORALES -->
+    <Folder>	  
+      <name>MORALES</name>
+
+      <GroundOverlay>
+	    <Icon>          
+		  <href>http://uavsar.jpl.nasa.gov/images/longRangeCircle.png</href>
+        </Icon>        
+	    <LatLonBox>          
+		  <north>29.507757</north>          
+		  <south>29.175021</south>          
+		  <east>-96.681235910630</east>          
+		  <west>-97.062652089370</west>   
+	    </LatLonBox>      
+	  </GroundOverlay>
+
+      <Placemark>  
+        <name>FAA Long Range Radar Site</name>  
+        <description>    
+          <![CDATA[    
+		    MORALES<br><br>      
+            Latitude: 29.341389<br>      
+            Longitude: -96.871944<br>      
+            Exclusion Zone: 10 nautical miles<br>      
+            <span style="color: red">
+              No part of the image swath may cross this zone.
+            </span><br><br>      
+            The FAA long range radars are L-band radars<br>      
+            used by the FAA to <a href='http://en.wikipedia.org/wiki/Air_traffic_control' target='_blank'>track aircraft movement</a> in<br>  
+            US airspace.
+<br><br></span>    
+          ]]>   
+        </description>  
+        <styleUrl>#triangleStyle</styleUrl>  
+        <Polygon>    
+          <altitudeMode>clampToGround</altitudeMode>    
+          <outerBoundaryIs>      
+            <LinearRing>        
+              <coordinates>          
+                -96.871944,29.431389
+                -96.771944,29.291389
+                -96.971944,29.291389
+                -96.871944,29.431389
+              </coordinates>      
+            </LinearRing>    
+          </outerBoundaryIs>  
+        </Polygon>
+      </Placemark>
+
+    </Folder>
+    <!-- End of MORALES -->
+
+
+    <!-- MOUNT KAALA -->
+    <Folder>	  
+      <name>MOUNT KAALA</name>
+
+      <GroundOverlay>
+	    <Icon>          
+		  <href>http://uavsar.jpl.nasa.gov/images/longRangeCircle.png</href>
+        </Icon>        
+	    <LatLonBox>          
+		  <north>21.673868</north>          
+		  <south>21.341132</south>          
+		  <east>-157.96347356955</east>          
+		  <west>-158.32097043045</west>   
+	    </LatLonBox>      
+	  </GroundOverlay>
+
+      <Placemark>  
+        <name>FAA Long Range Radar Site</name>  
+        <description>    
+          <![CDATA[    
+		    MOUNT KAALA<br><br>      
+            Latitude: 21.507500<br>      
+            Longitude: -158.142222<br>      
+            Exclusion Zone: 10 nautical miles<br>      
+            <span style="color: red">
+              No part of the image swath may cross this zone.
+            </span><br><br>      
+            The FAA long range radars are L-band radars<br>      
+            used by the FAA to <a href='http://en.wikipedia.org/wiki/Air_traffic_control' target='_blank'>track aircraft movement</a> in<br>  
+            US airspace.
+<br><br></span>    
+          ]]>   
+        </description>  
+        <styleUrl>#triangleStyle</styleUrl>  
+        <Polygon>    
+          <altitudeMode>clampToGround</altitudeMode>    
+          <outerBoundaryIs>      
+            <LinearRing>        
+              <coordinates>          
+                -158.142222,21.5975
+                -158.042222,21.4575
+                -158.242222,21.4575
+                -158.142222,21.5975
+              </coordinates>      
+            </LinearRing>    
+          </outerBoundaryIs>  
+        </Polygon>
+      </Placemark>
+
+    </Folder>
+    <!-- End of MOUNT KAALA -->
+
+
+    <!-- MOUNT LAGUNA -->
+    <Folder>	  
+      <name>MOUNT LAGUNA</name>
+
+      <GroundOverlay>
+	    <Icon>          
+		  <href>http://uavsar.jpl.nasa.gov/images/longRangeCircle.png</href>
+        </Icon>        
+	    <LatLonBox>          
+		  <north>33.043035</north>          
+		  <south>32.710299</south>          
+		  <east>-116.21736816357</east>          
+		  <west>-116.61318783643</west>   
+	    </LatLonBox>      
+	  </GroundOverlay>
+
+      <Placemark>  
+        <name>FAA Long Range Radar Site</name>  
+        <description>    
+          <![CDATA[    
+		    MOUNT LAGUNA<br><br>      
+            Latitude: 32.876667<br>      
+            Longitude: -116.415278<br>      
+            Exclusion Zone: 10 nautical miles<br>      
+            <span style="color: red">
+              No part of the image swath may cross this zone.
+            </span><br><br>      
+            The FAA long range radars are L-band radars<br>      
+            used by the FAA to <a href='http://en.wikipedia.org/wiki/Air_traffic_control' target='_blank'>track aircraft movement</a> in<br>  
+            US airspace.
+<br><br></span>    
+          ]]>   
+        </description>  
+        <styleUrl>#triangleStyle</styleUrl>  
+        <Polygon>    
+          <altitudeMode>clampToGround</altitudeMode>    
+          <outerBoundaryIs>      
+            <LinearRing>        
+              <coordinates>          
+                -116.415278,32.966667
+                -116.315278,32.826667
+                -116.515278,32.826667
+                -116.415278,32.966667
+              </coordinates>      
+            </LinearRing>    
+          </outerBoundaryIs>  
+        </Polygon>
+      </Placemark>
+
+    </Folder>
+    <!-- End of MOUNT LAGUNA -->
+
+
+    <!-- MOUNT SANTA ROSA -->
+    <Folder>	  
+      <name>MOUNT SANTA ROSA</name>
+
+      <GroundOverlay>
+	    <Icon>          
+		  <href>http://uavsar.jpl.nasa.gov/images/longRangeCircle.png</href>
+        </Icon>        
+	    <LatLonBox>          
+		  <north>13.701924</north>          
+		  <south>13.369188</south>          
+		  <east>145.08526575628</east>          
+		  <west>144.74306824372</west>   
+	    </LatLonBox>      
+	  </GroundOverlay>
+
+      <Placemark>  
+        <name>FAA Long Range Radar Site</name>  
+        <description>    
+          <![CDATA[    
+		    MOUNT SANTA ROSA<br><br>      
+            Latitude: 13.535556<br>      
+            Longitude: 144.914167<br>      
+            Exclusion Zone: 10 nautical miles<br>      
+            <span style="color: red">
+              No part of the image swath may cross this zone.
+            </span><br><br>      
+            The FAA long range radars are L-band radars<br>      
+            used by the FAA to <a href='http://en.wikipedia.org/wiki/Air_traffic_control' target='_blank'>track aircraft movement</a> in<br>  
+            US airspace.
+<br><br></span>    
+          ]]>   
+        </description>  
+        <styleUrl>#triangleStyle</styleUrl>  
+        <Polygon>    
+          <altitudeMode>clampToGround</altitudeMode>    
+          <outerBoundaryIs>      
+            <LinearRing>        
+              <coordinates>          
+                144.914167,13.625556
+                145.014167,13.485556
+                144.814167,13.485556
+                144.914167,13.625556
+              </coordinates>      
+            </LinearRing>    
+          </outerBoundaryIs>  
+        </Polygon>
+      </Placemark>
+
+    </Folder>
+    <!-- End of MOUNT SANTA ROSA -->
+
+
+    <!-- NASHWAUK -->
+    <Folder>	  
+      <name>NASHWAUK</name>
+
+      <GroundOverlay>
+	    <Icon>          
+		  <href>http://uavsar.jpl.nasa.gov/images/longRangeCircle.png</href>
+        </Icon>        
+	    <LatLonBox>          
+		  <north>47.563868</north>          
+		  <south>47.231132</south>          
+		  <east>-92.925489533916</east>          
+		  <west>-93.416176466084</west>   
+	    </LatLonBox>      
+	  </GroundOverlay>
+
+      <Placemark>  
+        <name>FAA Long Range Radar Site</name>  
+        <description>    
+          <![CDATA[    
+		    NASHWAUK<br><br>      
+            Latitude: 47.397500<br>      
+            Longitude: -93.170833<br>      
+            Exclusion Zone: 10 nautical miles<br>      
+            <span style="color: red">
+              No part of the image swath may cross this zone.
+            </span><br><br>      
+            The FAA long range radars are L-band radars<br>      
+            used by the FAA to <a href='http://en.wikipedia.org/wiki/Air_traffic_control' target='_blank'>track aircraft movement</a> in<br>  
+            US airspace.
+<br><br></span>    
+          ]]>   
+        </description>  
+        <styleUrl>#triangleStyle</styleUrl>  
+        <Polygon>    
+          <altitudeMode>clampToGround</altitudeMode>    
+          <outerBoundaryIs>      
+            <LinearRing>        
+              <coordinates>          
+                -93.170833,47.4875
+                -93.070833,47.3475
+                -93.270833,47.3475
+                -93.170833,47.4875
+              </coordinates>      
+            </LinearRing>    
+          </outerBoundaryIs>  
+        </Polygon>
+      </Placemark>
+
+    </Folder>
+    <!-- End of NASHWAUK -->
+
+
+    <!-- NORTH PLATTE -->
+    <Folder>	  
+      <name>NORTH PLATTE</name>
+
+      <GroundOverlay>
+	    <Icon>          
+		  <href>http://uavsar.jpl.nasa.gov/images/longRangeCircle.png</href>
+        </Icon>        
+	    <LatLonBox>          
+		  <north>40.999146</north>          
+		  <south>40.66641</south>          
+		  <east>-100.528753196715</east>          
+		  <west>-100.967912803285</west>   
+	    </LatLonBox>      
+	  </GroundOverlay>
+
+      <Placemark>  
+        <name>FAA Long Range Radar Site</name>  
+        <description>    
+          <![CDATA[    
+		    NORTH PLATTE<br><br>      
+            Latitude: 40.832778<br>      
+            Longitude: -100.748333<br>      
+            Exclusion Zone: 10 nautical miles<br>      
+            <span style="color: red">
+              No part of the image swath may cross this zone.
+            </span><br><br>      
+            The FAA long range radars are L-band radars<br>      
+            used by the FAA to <a href='http://en.wikipedia.org/wiki/Air_traffic_control' target='_blank'>track aircraft movement</a> in<br>  
+            US airspace.
+<br><br></span>    
+          ]]>   
+        </description>  
+        <styleUrl>#triangleStyle</styleUrl>  
+        <Polygon>    
+          <altitudeMode>clampToGround</altitudeMode>    
+          <outerBoundaryIs>      
+            <LinearRing>        
+              <coordinates>          
+                -100.748333,40.922778
+                -100.648333,40.782778
+                -100.848333,40.782778
+                -100.748333,40.922778
+              </coordinates>      
+            </LinearRing>    
+          </outerBoundaryIs>  
+        </Polygon>
+      </Placemark>
+
+    </Folder>
+    <!-- End of NORTH PLATTE -->
+
+
+    <!-- NORTH TRURO -->
+    <Folder>	  
+      <name>NORTH TRURO</name>
+
+      <GroundOverlay>
+	    <Icon>          
+		  <href>http://uavsar.jpl.nasa.gov/images/longRangeCircle.png</href>
+        </Icon>        
+	    <LatLonBox>          
+		  <north>42.200257</north>          
+		  <south>41.867521</south>          
+		  <east>-69.830223759064</east>          
+		  <west>-70.277554240936</west>   
+	    </LatLonBox>      
+	  </GroundOverlay>
+
+      <Placemark>  
+        <name>FAA Long Range Radar Site</name>  
+        <description>    
+          <![CDATA[    
+		    NORTH TRURO<br><br>      
+            Latitude: 42.033889<br>      
+            Longitude: -70.053889<br>      
+            Exclusion Zone: 10 nautical miles<br>      
+            <span style="color: red">
+              No part of the image swath may cross this zone.
+            </span><br><br>      
+            The FAA long range radars are L-band radars<br>      
+            used by the FAA to <a href='http://en.wikipedia.org/wiki/Air_traffic_control' target='_blank'>track aircraft movement</a> in<br>  
+            US airspace.
+<br><br></span>    
+          ]]>   
+        </description>  
+        <styleUrl>#triangleStyle</styleUrl>  
+        <Polygon>    
+          <altitudeMode>clampToGround</altitudeMode>    
+          <outerBoundaryIs>      
+            <LinearRing>        
+              <coordinates>          
+                -70.053889,42.123889
+                -69.953889,41.983889
+                -70.153889,41.983889
+                -70.053889,42.123889
+              </coordinates>      
+            </LinearRing>    
+          </outerBoundaryIs>  
+        </Polygon>
+      </Placemark>
+
+    </Folder>
+    <!-- End of NORTH TRURO -->
+
+
+    <!-- OAKDALE -->
+    <Folder>	  
+      <name>OAKDALE</name>
+
+      <GroundOverlay>
+	    <Icon>          
+		  <href>http://uavsar.jpl.nasa.gov/images/longRangeCircle.png</href>
+        </Icon>        
+	    <LatLonBox>          
+		  <north>40.565535</north>          
+		  <south>40.232799</south>          
+		  <east>-79.938502226604</east>          
+		  <west>-80.374831773396</west>   
+	    </LatLonBox>      
+	  </GroundOverlay>
+
+      <Placemark>  
+        <name>FAA Long Range Radar Site</name>  
+        <description>    
+          <![CDATA[    
+		    OAKDALE<br><br>      
+            Latitude: 40.399167<br>      
+            Longitude: -80.156667<br>      
+            Exclusion Zone: 10 nautical miles<br>      
+            <span style="color: red">
+              No part of the image swath may cross this zone.
+            </span><br><br>      
+            The FAA long range radars are L-band radars<br>      
+            used by the FAA to <a href='http://en.wikipedia.org/wiki/Air_traffic_control' target='_blank'>track aircraft movement</a> in<br>  
+            US airspace.
+<br><br></span>    
+          ]]>   
+        </description>  
+        <styleUrl>#triangleStyle</styleUrl>  
+        <Polygon>    
+          <altitudeMode>clampToGround</altitudeMode>    
+          <outerBoundaryIs>      
+            <LinearRing>        
+              <coordinates>          
+                -80.156667,40.489167
+                -80.056667,40.349167
+                -80.256667,40.349167
+                -80.156667,40.489167
+              </coordinates>      
+            </LinearRing>    
+          </outerBoundaryIs>  
+        </Polygon>
+      </Placemark>
+
+    </Folder>
+    <!-- End of OAKDALE -->
+
+
+    <!-- OCEANA -->
+    <Folder>	  
+      <name>OCEANA</name>
+
+      <GroundOverlay>
+	    <Icon>          
+		  <href>http://uavsar.jpl.nasa.gov/images/longRangeCircle.png</href>
+        </Icon>        
+	    <LatLonBox>          
+		  <north>36.993312</north>          
+		  <south>36.660576</south>          
+		  <east>-75.806006704928</east>          
+		  <west>-76.221215295072</west>   
+	    </LatLonBox>      
+	  </GroundOverlay>
+
+      <Placemark>  
+        <name>FAA Long Range Radar Site</name>  
+        <description>    
+          <![CDATA[    
+		    OCEANA<br><br>      
+            Latitude: 36.826944<br>      
+            Longitude: -76.013611<br>      
+            Exclusion Zone: 10 nautical miles<br>      
+            <span style="color: red">
+              No part of the image swath may cross this zone.
+            </span><br><br>      
+            The FAA long range radars are L-band radars<br>      
+            used by the FAA to <a href='http://en.wikipedia.org/wiki/Air_traffic_control' target='_blank'>track aircraft movement</a> in<br>  
+            US airspace.
+<br><br></span>    
+          ]]>   
+        </description>  
+        <styleUrl>#triangleStyle</styleUrl>  
+        <Polygon>    
+          <altitudeMode>clampToGround</altitudeMode>    
+          <outerBoundaryIs>      
+            <LinearRing>        
+              <coordinates>          
+                -76.013611,36.916944
+                -75.913611,36.776944
+                -76.113611,36.776944
+                -76.013611,36.916944
+              </coordinates>      
+            </LinearRing>    
+          </outerBoundaryIs>  
+        </Polygon>
+      </Placemark>
+
+    </Folder>
+    <!-- End of OCEANA -->
+
+
+    <!-- ODESSA -->
+    <Folder>	  
+      <name>ODESSA</name>
+
+      <GroundOverlay>
+	    <Icon>          
+		  <href>http://uavsar.jpl.nasa.gov/images/longRangeCircle.png</href>
+        </Icon>        
+	    <LatLonBox>          
+		  <north>32.720535</north>          
+		  <south>32.387799</south>          
+		  <east>-102.230857069671</east>          
+		  <west>-102.625254930329</west>   
+	    </LatLonBox>      
+	  </GroundOverlay>
+
+      <Placemark>  
+        <name>FAA Long Range Radar Site</name>  
+        <description>    
+          <![CDATA[    
+		    ODESSA<br><br>      
+            Latitude: 32.554167<br>      
+            Longitude: -102.428056<br>      
+            Exclusion Zone: 10 nautical miles<br>      
+            <span style="color: red">
+              No part of the image swath may cross this zone.
+            </span><br><br>      
+            The FAA long range radars are L-band radars<br>      
+            used by the FAA to <a href='http://en.wikipedia.org/wiki/Air_traffic_control' target='_blank'>track aircraft movement</a> in<br>  
+            US airspace.
+<br><br></span>    
+          ]]>   
+        </description>  
+        <styleUrl>#triangleStyle</styleUrl>  
+        <Polygon>    
+          <altitudeMode>clampToGround</altitudeMode>    
+          <outerBoundaryIs>      
+            <LinearRing>        
+              <coordinates>          
+                -102.428056,32.644167
+                -102.328056,32.504167
+                -102.528056,32.504167
+                -102.428056,32.644167
+              </coordinates>      
+            </LinearRing>    
+          </outerBoundaryIs>  
+        </Polygon>
+      </Placemark>
+
+    </Folder>
+    <!-- End of ODESSA -->
+
+
+    <!-- OILTON -->
+    <Folder>	  
+      <name>OILTON</name>
+
+      <GroundOverlay>
+	    <Icon>          
+		  <href>http://uavsar.jpl.nasa.gov/images/longRangeCircle.png</href>
+        </Icon>        
+	    <LatLonBox>          
+		  <north>27.664979</north>          
+		  <south>27.332243</south>          
+		  <east>-98.781732865686</east>          
+		  <west>-99.156601134314</west>   
+	    </LatLonBox>      
+	  </GroundOverlay>
+
+      <Placemark>  
+        <name>FAA Long Range Radar Site</name>  
+        <description>    
+          <![CDATA[    
+		    OILTON<br><br>      
+            Latitude: 27.498611<br>      
+            Longitude: -98.969167<br>      
+            Exclusion Zone: 10 nautical miles<br>      
+            <span style="color: red">
+              No part of the image swath may cross this zone.
+            </span><br><br>      
+            The FAA long range radars are L-band radars<br>      
+            used by the FAA to <a href='http://en.wikipedia.org/wiki/Air_traffic_control' target='_blank'>track aircraft movement</a> in<br>  
+            US airspace.
+<br><br></span>    
+          ]]>   
+        </description>  
+        <styleUrl>#triangleStyle</styleUrl>  
+        <Polygon>    
+          <altitudeMode>clampToGround</altitudeMode>    
+          <outerBoundaryIs>      
+            <LinearRing>        
+              <coordinates>          
+                -98.969167,27.588611
+                -98.869167,27.448611
+                -99.069167,27.448611
+                -98.969167,27.588611
+              </coordinates>      
+            </LinearRing>    
+          </outerBoundaryIs>  
+        </Polygon>
+      </Placemark>
+
+    </Folder>
+    <!-- End of OILTON -->
+
+
+    <!-- OKLAHOMA CITY -->
+    <Folder>	  
+      <name>OKLAHOMA CITY</name>
+
+      <GroundOverlay>
+	    <Icon>          
+		  <href>http://uavsar.jpl.nasa.gov/images/longRangeCircle.png</href>
+        </Icon>        
+	    <LatLonBox>          
+		  <north>35.56859</north>          
+		  <south>35.235854</south>          
+		  <east>-97.155556273209</east>          
+		  <west>-97.563331726791</west>   
+	    </LatLonBox>      
+	  </GroundOverlay>
+
+      <Placemark>  
+        <name>FAA Long Range Radar Site</name>  
+        <description>    
+          <![CDATA[    
+		    OKLAHOMA CITY<br><br>      
+            Latitude: 35.402222<br>      
+            Longitude: -97.359444<br>      
+            Exclusion Zone: 10 nautical miles<br>      
+            <span style="color: red">
+              No part of the image swath may cross this zone.
+            </span><br><br>      
+            The FAA long range radars are L-band radars<br>      
+            used by the FAA to <a href='http://en.wikipedia.org/wiki/Air_traffic_control' target='_blank'>track aircraft movement</a> in<br>  
+            US airspace.
+<br><br></span>    
+          ]]>   
+        </description>  
+        <styleUrl>#triangleStyle</styleUrl>  
+        <Polygon>    
+          <altitudeMode>clampToGround</altitudeMode>    
+          <outerBoundaryIs>      
+            <LinearRing>        
+              <coordinates>          
+                -97.359444,35.492222
+                -97.259444,35.352222
+                -97.459444,35.352222
+                -97.359444,35.492222
+              </coordinates>      
+            </LinearRing>    
+          </outerBoundaryIs>  
+        </Polygon>
+      </Placemark>
+
+    </Folder>
+    <!-- End of OKLAHOMA CITY -->
+
+
+    <!-- OMAHA -->
+    <Folder>	  
+      <name>OMAHA</name>
+
+      <GroundOverlay>
+	    <Icon>          
+		  <href>http://uavsar.jpl.nasa.gov/images/longRangeCircle.png</href>
+        </Icon>        
+	    <LatLonBox>          
+		  <north>41.526368</north>          
+		  <south>41.193632</south>          
+		  <east>-95.803935468651</east>          
+		  <west>-96.246620531349</west>   
+	    </LatLonBox>      
+	  </GroundOverlay>
+
+      <Placemark>  
+        <name>FAA Long Range Radar Site</name>  
+        <description>    
+          <![CDATA[    
+		    OMAHA<br><br>      
+            Latitude: 41.360000<br>      
+            Longitude: -96.025278<br>      
+            Exclusion Zone: 10 nautical miles<br>      
+            <span style="color: red">
+              No part of the image swath may cross this zone.
+            </span><br><br>      
+            The FAA long range radars are L-band radars<br>      
+            used by the FAA to <a href='http://en.wikipedia.org/wiki/Air_traffic_control' target='_blank'>track aircraft movement</a> in<br>  
+            US airspace.
+<br><br></span>    
+          ]]>   
+        </description>  
+        <styleUrl>#triangleStyle</styleUrl>  
+        <Polygon>    
+          <altitudeMode>clampToGround</altitudeMode>    
+          <outerBoundaryIs>      
+            <LinearRing>        
+              <coordinates>          
+                -96.025278,41.45
+                -95.925278,41.31
+                -96.125278,41.31
+                -96.025278,41.45
+              </coordinates>      
+            </LinearRing>    
+          </outerBoundaryIs>  
+        </Polygon>
+      </Placemark>
+
+    </Folder>
+    <!-- End of OMAHA -->
+
+
+    <!-- OSKALOOSA -->
+    <Folder>	  
+      <name>OSKALOOSA</name>
+
+      <GroundOverlay>
+	    <Icon>          
+		  <href>http://uavsar.jpl.nasa.gov/images/longRangeCircle.png</href>
+        </Icon>        
+	    <LatLonBox>          
+		  <north>39.38859</north>          
+		  <south>39.055854</south>          
+		  <east>-95.031635325348</east>          
+		  <west>-95.460586674652</west>   
+	    </LatLonBox>      
+	  </GroundOverlay>
+
+      <Placemark>  
+        <name>FAA Long Range Radar Site</name>  
+        <description>    
+          <![CDATA[    
+		    OSKALOOSA<br><br>      
+            Latitude: 39.222222<br>      
+            Longitude: -95.246111<br>      
+            Exclusion Zone: 10 nautical miles<br>      
+            <span style="color: red">
+              No part of the image swath may cross this zone.
+            </span><br><br>      
+            The FAA long range radars are L-band radars<br>      
+            used by the FAA to <a href='http://en.wikipedia.org/wiki/Air_traffic_control' target='_blank'>track aircraft movement</a> in<br>  
+            US airspace.
+<br><br></span>    
+          ]]>   
+        </description>  
+        <styleUrl>#triangleStyle</styleUrl>  
+        <Polygon>    
+          <altitudeMode>clampToGround</altitudeMode>    
+          <outerBoundaryIs>      
+            <LinearRing>        
+              <coordinates>          
+                -95.246111,39.312222
+                -95.146111,39.172222
+                -95.346111,39.172222
+                -95.246111,39.312222
+              </coordinates>      
+            </LinearRing>    
+          </outerBoundaryIs>  
+        </Polygon>
+      </Placemark>
+
+    </Folder>
+    <!-- End of OSKALOOSA -->
+
+
+    <!-- PASO ROBLES -->
+    <Folder>	  
+      <name>PASO ROBLES</name>
+
+      <GroundOverlay>
+	    <Icon>          
+		  <href>http://uavsar.jpl.nasa.gov/images/longRangeCircle.png</href>
+        </Icon>        
+	    <LatLonBox>          
+		  <north>35.56109</north>          
+		  <south>35.228354</south>          
+		  <east>-120.15057515339</east>          
+		  <west>-120.55831284661</west>   
+	    </LatLonBox>      
+	  </GroundOverlay>
+
+      <Placemark>  
+        <name>FAA Long Range Radar Site</name>  
+        <description>    
+          <![CDATA[    
+		    PASO ROBLES<br><br>      
+            Latitude: 35.394722<br>      
+            Longitude: -120.354444<br>      
+            Exclusion Zone: 10 nautical miles<br>      
+            <span style="color: red">
+              No part of the image swath may cross this zone.
+            </span><br><br>      
+            The FAA long range radars are L-band radars<br>      
+            used by the FAA to <a href='http://en.wikipedia.org/wiki/Air_traffic_control' target='_blank'>track aircraft movement</a> in<br>  
+            US airspace.
+<br><br></span>    
+          ]]>   
+        </description>  
+        <styleUrl>#triangleStyle</styleUrl>  
+        <Polygon>    
+          <altitudeMode>clampToGround</altitudeMode>    
+          <outerBoundaryIs>      
+            <LinearRing>        
+              <coordinates>          
+                -120.354444,35.484722
+                -120.254444,35.344722
+                -120.454444,35.344722
+                -120.354444,35.484722
+              </coordinates>      
+            </LinearRing>    
+          </outerBoundaryIs>  
+        </Polygon>
+      </Placemark>
+
+    </Folder>
+    <!-- End of PASO ROBLES -->
+
+
+    <!-- RAINBOW RIDGE -->
+    <Folder>	  
+      <name>RAINBOW RIDGE</name>
+
+      <GroundOverlay>
+	    <Icon>          
+		  <href>http://uavsar.jpl.nasa.gov/images/longRangeCircle.png</href>
+        </Icon>        
+	    <LatLonBox>          
+		  <north>40.560812</north>          
+		  <south>40.228076</south>          
+		  <east>-123.94685047010</east>          
+		  <west>-124.38314952990</west>   
+	    </LatLonBox>      
+	  </GroundOverlay>
+
+      <Placemark>  
+        <name>FAA Long Range Radar Site</name>  
+        <description>    
+          <![CDATA[    
+		    RAINBOW RIDGE<br><br>      
+            Latitude: 40.394444<br>      
+            Longitude: -124.165000<br>      
+            Exclusion Zone: 10 nautical miles<br>      
+            <span style="color: red">
+              No part of the image swath may cross this zone.
+            </span><br><br>      
+            The FAA long range radars are L-band radars<br>      
+            used by the FAA to <a href='http://en.wikipedia.org/wiki/Air_traffic_control' target='_blank'>track aircraft movement</a> in<br>  
+            US airspace.
+<br><br></span>    
+          ]]>   
+        </description>  
+        <styleUrl>#triangleStyle</styleUrl>  
+        <Polygon>    
+          <altitudeMode>clampToGround</altitudeMode>    
+          <outerBoundaryIs>      
+            <LinearRing>        
+              <coordinates>          
+                -124.165000,40.484444
+                -124.065,40.344444
+                -124.265,40.344444
+                -124.165000,40.484444
+              </coordinates>      
+            </LinearRing>    
+          </outerBoundaryIs>  
+        </Polygon>
+      </Placemark>
+
+    </Folder>
+    <!-- End of RAINBOW RIDGE -->
+
+
+    <!-- RED BLUFF -->
+    <Folder>	  
+      <name>RED BLUFF</name>
+
+      <GroundOverlay>
+	    <Icon>          
+		  <href>http://uavsar.jpl.nasa.gov/images/longRangeCircle.png</href>
+        </Icon>        
+	    <LatLonBox>          
+		  <north>40.312479</north>          
+		  <south>39.979743</south>          
+		  <east>-122.08709089252</east>          
+		  <west>-122.52179710748</west>   
+	    </LatLonBox>      
+	  </GroundOverlay>
+
+      <Placemark>  
+        <name>FAA Long Range Radar Site</name>  
+        <description>    
+          <![CDATA[    
+		    RED BLUFF<br><br>      
+            Latitude: 40.146111<br>      
+            Longitude: -122.304444<br>      
+            Exclusion Zone: 10 nautical miles<br>      
+            <span style="color: red">
+              No part of the image swath may cross this zone.
+            </span><br><br>      
+            The FAA long range radars are L-band radars<br>      
+            used by the FAA to <a href='http://en.wikipedia.org/wiki/Air_traffic_control' target='_blank'>track aircraft movement</a> in<br>  
+            US airspace.
+<br><br></span>    
+          ]]>   
+        </description>  
+        <styleUrl>#triangleStyle</styleUrl>  
+        <Polygon>    
+          <altitudeMode>clampToGround</altitudeMode>    
+          <outerBoundaryIs>      
+            <LinearRing>        
+              <coordinates>          
+                -122.304444,40.236111
+                -122.204444,40.096111
+                -122.404444,40.096111
+                -122.304444,40.236111
+              </coordinates>      
+            </LinearRing>    
+          </outerBoundaryIs>  
+        </Polygon>
+      </Placemark>
+
+    </Folder>
+    <!-- End of RED BLUFF -->
+
+
+    <!-- REMSEN -->
+    <Folder>	  
+      <name>REMSEN</name>
+
+      <GroundOverlay>
+	    <Icon>          
+		  <href>http://uavsar.jpl.nasa.gov/images/longRangeCircle.png</href>
+        </Icon>        
+	    <LatLonBox>          
+		  <north>43.511924</north>          
+		  <south>43.179188</south>          
+		  <east>-75.021578423800</east>          
+		  <west>-75.478421576200</west>   
+	    </LatLonBox>      
+	  </GroundOverlay>
+
+      <Placemark>  
+        <name>FAA Long Range Radar Site</name>  
+        <description>    
+          <![CDATA[    
+		    REMSEN<br><br>      
+            Latitude: 43.345556<br>      
+            Longitude: -75.250000<br>      
+            Exclusion Zone: 10 nautical miles<br>      
+            <span style="color: red">
+              No part of the image swath may cross this zone.
+            </span><br><br>      
+            The FAA long range radars are L-band radars<br>      
+            used by the FAA to <a href='http://en.wikipedia.org/wiki/Air_traffic_control' target='_blank'>track aircraft movement</a> in<br>  
+            US airspace.
+<br><br></span>    
+          ]]>   
+        </description>  
+        <styleUrl>#triangleStyle</styleUrl>  
+        <Polygon>    
+          <altitudeMode>clampToGround</altitudeMode>    
+          <outerBoundaryIs>      
+            <LinearRing>        
+              <coordinates>          
+                -75.250000,43.435556
+                -75.15,43.295556
+                -75.35,43.295556
+                -75.250000,43.435556
+              </coordinates>      
+            </LinearRing>    
+          </outerBoundaryIs>  
+        </Polygon>
+      </Placemark>
+
+    </Folder>
+    <!-- End of REMSEN -->
+
+
+    <!-- RIVERHEAD -->
+    <Folder>	  
+      <name>RIVERHEAD</name>
+
+      <GroundOverlay>
+	    <Icon>          
+		  <href>http://uavsar.jpl.nasa.gov/images/longRangeCircle.png</href>
+        </Icon>        
+	    <LatLonBox>          
+		  <north>41.044701</north>          
+		  <south>40.711965</south>          
+		  <east>-72.468602732078</east>          
+		  <west>-72.908063267922</west>   
+	    </LatLonBox>      
+	  </GroundOverlay>
+
+      <Placemark>  
+        <name>FAA Long Range Radar Site</name>  
+        <description>    
+          <![CDATA[    
+		    RIVERHEAD<br><br>      
+            Latitude: 40.878333<br>      
+            Longitude: -72.688333<br>      
+            Exclusion Zone: 10 nautical miles<br>      
+            <span style="color: red">
+              No part of the image swath may cross this zone.
+            </span><br><br>      
+            The FAA long range radars are L-band radars<br>      
+            used by the FAA to <a href='http://en.wikipedia.org/wiki/Air_traffic_control' target='_blank'>track aircraft movement</a> in<br>  
+            US airspace.
+<br><br></span>    
+          ]]>   
+        </description>  
+        <styleUrl>#triangleStyle</styleUrl>  
+        <Polygon>    
+          <altitudeMode>clampToGround</altitudeMode>    
+          <outerBoundaryIs>      
+            <LinearRing>        
+              <coordinates>          
+                -72.688333,40.968333
+                -72.588333,40.828333
+                -72.788333,40.828333
+                -72.688333,40.968333
+              </coordinates>      
+            </LinearRing>    
+          </outerBoundaryIs>  
+        </Polygon>
+      </Placemark>
+
+    </Folder>
+    <!-- End of RIVERHEAD -->
+
+
+    <!-- ROCKSPRINGS -->
+    <Folder>	  
+      <name>ROCKSPRINGS</name>
+
+      <GroundOverlay>
+	    <Icon>          
+		  <href>http://uavsar.jpl.nasa.gov/images/longRangeCircle.png</href>
+        </Icon>        
+	    <LatLonBox>          
+		  <north>30.213035</north>          
+		  <south>29.880299</south>          
+		  <east>-100.075733329856</east>          
+		  <west>-100.459822670144</west>   
+	    </LatLonBox>      
+	  </GroundOverlay>
+
+      <Placemark>  
+        <name>FAA Long Range Radar Site</name>  
+        <description>    
+          <![CDATA[    
+		    ROCKSPRINGS<br><br>      
+            Latitude: 30.046667<br>      
+            Longitude: -100.267778<br>      
+            Exclusion Zone: 10 nautical miles<br>      
+            <span style="color: red">
+              No part of the image swath may cross this zone.
+            </span><br><br>      
+            The FAA long range radars are L-band radars<br>      
+            used by the FAA to <a href='http://en.wikipedia.org/wiki/Air_traffic_control' target='_blank'>track aircraft movement</a> in<br>  
+            US airspace.
+<br><br></span>    
+          ]]>   
+        </description>  
+        <styleUrl>#triangleStyle</styleUrl>  
+        <Polygon>    
+          <altitudeMode>clampToGround</altitudeMode>    
+          <outerBoundaryIs>      
+            <LinearRing>        
+              <coordinates>          
+                -100.267778,30.136667
+                -100.167778,29.996667
+                -100.367778,29.996667
+                -100.267778,30.136667
+              </coordinates>      
+            </LinearRing>    
+          </outerBoundaryIs>  
+        </Polygon>
+      </Placemark>
+
+    </Folder>
+    <!-- End of ROCKSPRINGS -->
+
+
+    <!-- ROGERS -->
+    <Folder>	  
+      <name>ROGERS</name>
+
+      <GroundOverlay>
+	    <Icon>          
+		  <href>http://uavsar.jpl.nasa.gov/images/longRangeCircle.png</href>
+        </Icon>        
+	    <LatLonBox>          
+		  <north>31.109701</north>          
+		  <south>30.776965</south>          
+		  <east>-97.075074997604</east>          
+		  <west>-97.462703002396</west>   
+	    </LatLonBox>      
+	  </GroundOverlay>
+
+      <Placemark>  
+        <name>FAA Long Range Radar Site</name>  
+        <description>    
+          <![CDATA[    
+		    ROGERS<br><br>      
+            Latitude: 30.943333<br>      
+            Longitude: -97.268889<br>      
+            Exclusion Zone: 10 nautical miles<br>      
+            <span style="color: red">
+              No part of the image swath may cross this zone.
+            </span><br><br>      
+            The FAA long range radars are L-band radars<br>      
+            used by the FAA to <a href='http://en.wikipedia.org/wiki/Air_traffic_control' target='_blank'>track aircraft movement</a> in<br>  
+            US airspace.
+<br><br></span>    
+          ]]>   
+        </description>  
+        <styleUrl>#triangleStyle</styleUrl>  
+        <Polygon>    
+          <altitudeMode>clampToGround</altitudeMode>    
+          <outerBoundaryIs>      
+            <LinearRing>        
+              <coordinates>          
+                -97.268889,31.033333
+                -97.168889,30.893333
+                -97.368889,30.893333
+                -97.268889,31.033333
+              </coordinates>      
+            </LinearRing>    
+          </outerBoundaryIs>  
+        </Polygon>
+      </Placemark>
+
+    </Folder>
+    <!-- End of ROGERS -->
+
+
+    <!-- RUSSELLVILLE -->
+    <Folder>	  
+      <name>RUSSELLVILLE</name>
+
+      <GroundOverlay>
+	    <Icon>          
+		  <href>http://uavsar.jpl.nasa.gov/images/longRangeCircle.png</href>
+        </Icon>        
+	    <LatLonBox>          
+		  <north>35.569146</north>          
+		  <south>35.23641</south>          
+		  <east>-92.790554873342</east>          
+		  <west>-93.198333126658</west>   
+	    </LatLonBox>      
+	  </GroundOverlay>
+
+      <Placemark>  
+        <name>FAA Long Range Radar Site</name>  
+        <description>    
+          <![CDATA[    
+		    RUSSELLVILLE<br><br>      
+            Latitude: 35.402778<br>      
+            Longitude: -92.994444<br>      
+            Exclusion Zone: 10 nautical miles<br>      
+            <span style="color: red">
+              No part of the image swath may cross this zone.
+            </span><br><br>      
+            The FAA long range radars are L-band radars<br>      
+            used by the FAA to <a href='http://en.wikipedia.org/wiki/Air_traffic_control' target='_blank'>track aircraft movement</a> in<br>  
+            US airspace.
+<br><br></span>    
+          ]]>   
+        </description>  
+        <styleUrl>#triangleStyle</styleUrl>  
+        <Polygon>    
+          <altitudeMode>clampToGround</altitudeMode>    
+          <outerBoundaryIs>      
+            <LinearRing>        
+              <coordinates>          
+                -92.994444,35.492778
+                -92.894444,35.352778
+                -93.094444,35.352778
+                -92.994444,35.492778
+              </coordinates>      
+            </LinearRing>    
+          </outerBoundaryIs>  
+        </Polygon>
+      </Placemark>
+
+    </Folder>
+    <!-- End of RUSSELLVILLE -->
+
+
+    <!-- SAINT ALBANS -->
+    <Folder>	  
+      <name>SAINT ALBANS</name>
+
+      <GroundOverlay>
+	    <Icon>          
+		  <href>http://uavsar.jpl.nasa.gov/images/longRangeCircle.png</href>
+        </Icon>        
+	    <LatLonBox>          
+		  <north>44.948035</north>          
+		  <south>44.615299</south>          
+		  <east>-72.831821565278</east>          
+		  <west>-73.299844434722</west>   
+	    </LatLonBox>      
+	  </GroundOverlay>
+
+      <Placemark>  
+        <name>FAA Long Range Radar Site</name>  
+        <description>    
+          <![CDATA[    
+		    SAINT ALBANS<br><br>      
+            Latitude: 44.781667<br>      
+            Longitude: -73.065833<br>      
+            Exclusion Zone: 10 nautical miles<br>      
+            <span style="color: red">
+              No part of the image swath may cross this zone.
+            </span><br><br>      
+            The FAA long range radars are L-band radars<br>      
+            used by the FAA to <a href='http://en.wikipedia.org/wiki/Air_traffic_control' target='_blank'>track aircraft movement</a> in<br>  
+            US airspace.
+<br><br></span>    
+          ]]>   
+        </description>  
+        <styleUrl>#triangleStyle</styleUrl>  
+        <Polygon>    
+          <altitudeMode>clampToGround</altitudeMode>    
+          <outerBoundaryIs>      
+            <LinearRing>        
+              <coordinates>          
+                -73.065833,44.871667
+                -72.965833,44.731667
+                -73.165833,44.731667
+                -73.065833,44.871667
+              </coordinates>      
+            </LinearRing>    
+          </outerBoundaryIs>  
+        </Polygon>
+      </Placemark>
+
+    </Folder>
+    <!-- End of SAINT ALBANS -->
+
+
+    <!-- SAINT LOUIS -->
+    <Folder>	  
+      <name>SAINT LOUIS</name>
+
+      <GroundOverlay>
+	    <Icon>          
+		  <href>http://uavsar.jpl.nasa.gov/images/longRangeCircle.png</href>
+        </Icon>        
+	    <LatLonBox>          
+		  <north>38.867479</north>          
+		  <south>38.534743</south>          
+		  <east>-90.177645669778</east>          
+		  <west>-90.603466330222</west>   
+	    </LatLonBox>      
+	  </GroundOverlay>
+
+      <Placemark>  
+        <name>FAA Long Range Radar Site</name>  
+        <description>    
+          <![CDATA[    
+		    SAINT LOUIS<br><br>      
+            Latitude: 38.701111<br>      
+            Longitude: -90.390556<br>      
+            Exclusion Zone: 10 nautical miles<br>      
+            <span style="color: red">
+              No part of the image swath may cross this zone.
+            </span><br><br>      
+            The FAA long range radars are L-band radars<br>      
+            used by the FAA to <a href='http://en.wikipedia.org/wiki/Air_traffic_control' target='_blank'>track aircraft movement</a> in<br>  
+            US airspace.
+<br><br></span>    
+          ]]>   
+        </description>  
+        <styleUrl>#triangleStyle</styleUrl>  
+        <Polygon>    
+          <altitudeMode>clampToGround</altitudeMode>    
+          <outerBoundaryIs>      
+            <LinearRing>        
+              <coordinates>          
+                -90.390556,38.791111
+                -90.290556,38.651111
+                -90.490556,38.651111
+                -90.390556,38.791111
+              </coordinates>      
+            </LinearRing>    
+          </outerBoundaryIs>  
+        </Polygon>
+      </Placemark>
+
+    </Folder>
+    <!-- End of SAINT LOUIS -->
+
+
+    <!-- SALEM -->
+    <Folder>	  
+      <name>SALEM</name>
+
+      <GroundOverlay>
+	    <Icon>          
+		  <href>http://uavsar.jpl.nasa.gov/images/longRangeCircle.png</href>
+        </Icon>        
+	    <LatLonBox>          
+		  <north>45.089424</north>          
+		  <south>44.756688</south>          
+		  <east>-123.33819330045</east>          
+		  <west>-123.80736269955</west>   
+	    </LatLonBox>      
+	  </GroundOverlay>
+
+      <Placemark>  
+        <name>FAA Long Range Radar Site</name>  
+        <description>    
+          <![CDATA[    
+		    SALEM<br><br>      
+            Latitude: 44.923056<br>      
+            Longitude: -123.572778<br>      
+            Exclusion Zone: 10 nautical miles<br>      
+            <span style="color: red">
+              No part of the image swath may cross this zone.
+            </span><br><br>      
+            The FAA long range radars are L-band radars<br>      
+            used by the FAA to <a href='http://en.wikipedia.org/wiki/Air_traffic_control' target='_blank'>track aircraft movement</a> in<br>  
+            US airspace.
+<br><br></span>    
+          ]]>   
+        </description>  
+        <styleUrl>#triangleStyle</styleUrl>  
+        <Polygon>    
+          <altitudeMode>clampToGround</altitudeMode>    
+          <outerBoundaryIs>      
+            <LinearRing>        
+              <coordinates>          
+                -123.572778,45.013056
+                -123.472778,44.873056
+                -123.672778,44.873056
+                -123.572778,45.013056
+              </coordinates>      
+            </LinearRing>    
+          </outerBoundaryIs>  
+        </Polygon>
+      </Placemark>
+
+    </Folder>
+    <!-- End of SALEM -->
+
+
+    <!-- SELIGMAN -->
+    <Folder>	  
+      <name>SELIGMAN</name>
+
+      <GroundOverlay>
+	    <Icon>          
+		  <href>http://uavsar.jpl.nasa.gov/images/longRangeCircle.png</href>
+        </Icon>        
+	    <LatLonBox>          
+		  <north>35.519146</north>          
+		  <south>35.18641</south>          
+		  <east>-112.74595861327</east>          
+		  <west>-113.15348538673</west>   
+	    </LatLonBox>      
+	  </GroundOverlay>
+
+      <Placemark>  
+        <name>FAA Long Range Radar Site</name>  
+        <description>    
+          <![CDATA[    
+		    SELIGMAN<br><br>      
+            Latitude: 35.352778<br>      
+            Longitude: -112.949722<br>      
+            Exclusion Zone: 10 nautical miles<br>      
+            <span style="color: red">
+              No part of the image swath may cross this zone.
+            </span><br><br>      
+            The FAA long range radars are L-band radars<br>      
+            used by the FAA to <a href='http://en.wikipedia.org/wiki/Air_traffic_control' target='_blank'>track aircraft movement</a> in<br>  
+            US airspace.
+<br><br></span>    
+          ]]>   
+        </description>  
+        <styleUrl>#triangleStyle</styleUrl>  
+        <Polygon>    
+          <altitudeMode>clampToGround</altitudeMode>    
+          <outerBoundaryIs>      
+            <LinearRing>        
+              <coordinates>          
+                -112.949722,35.442778
+                -112.849722,35.302778
+                -113.049722,35.302778
+                -112.949722,35.442778
+              </coordinates>      
+            </LinearRing>    
+          </outerBoundaryIs>  
+        </Polygon>
+      </Placemark>
+
+    </Folder>
+    <!-- End of SELIGMAN -->
+
+
+    <!-- SLIDELL -->
+    <Folder>	  
+      <name>SLIDELL</name>
+
+      <GroundOverlay>
+	    <Icon>          
+		  <href>http://uavsar.jpl.nasa.gov/images/longRangeCircle.png</href>
+        </Icon>        
+	    <LatLonBox>          
+		  <north>30.514701</north>          
+		  <south>30.181965</south>          
+		  <east>-89.587368950904</east>          
+		  <west>-89.972631049096</west>   
+	    </LatLonBox>      
+	  </GroundOverlay>
+
+      <Placemark>  
+        <name>FAA Long Range Radar Site</name>  
+        <description>    
+          <![CDATA[    
+		    SLIDELL<br><br>      
+            Latitude: 30.348333<br>      
+            Longitude: -89.780000<br>      
+            Exclusion Zone: 10 nautical miles<br>      
+            <span style="color: red">
+              No part of the image swath may cross this zone.
+            </span><br><br>      
+            The FAA long range radars are L-band radars<br>      
+            used by the FAA to <a href='http://en.wikipedia.org/wiki/Air_traffic_control' target='_blank'>track aircraft movement</a> in<br>  
+            US airspace.
+<br><br></span>    
+          ]]>   
+        </description>  
+        <styleUrl>#triangleStyle</styleUrl>  
+        <Polygon>    
+          <altitudeMode>clampToGround</altitudeMode>    
+          <outerBoundaryIs>      
+            <LinearRing>        
+              <coordinates>          
+                -89.780000,30.438333
+                -89.68,30.298333
+                -89.88,30.298333
+                -89.780000,30.438333
+              </coordinates>      
+            </LinearRing>    
+          </outerBoundaryIs>  
+        </Polygon>
+      </Placemark>
+
+    </Folder>
+    <!-- End of SLIDELL -->
+
+
+    <!-- TAMIAMI -->
+    <Folder>	  
+      <name>TAMIAMI</name>
+
+      <GroundOverlay>
+	    <Icon>          
+		  <href>http://uavsar.jpl.nasa.gov/images/longRangeCircle.png</href>
+        </Icon>        
+	    <LatLonBox>          
+		  <north>25.813035</north>          
+		  <south>25.480299</south>          
+		  <east>-80.321667017634</east>          
+		  <west>-80.690554982366</west>   
+	    </LatLonBox>      
+	  </GroundOverlay>
+
+      <Placemark>  
+        <name>FAA Long Range Radar Site</name>  
+        <description>    
+          <![CDATA[    
+		    TAMIAMI<br><br>      
+            Latitude: 25.646667<br>      
+            Longitude: -80.506111<br>      
+            Exclusion Zone: 10 nautical miles<br>      
+            <span style="color: red">
+              No part of the image swath may cross this zone.
+            </span><br><br>      
+            The FAA long range radars are L-band radars<br>      
+            used by the FAA to <a href='http://en.wikipedia.org/wiki/Air_traffic_control' target='_blank'>track aircraft movement</a> in<br>  
+            US airspace.
+<br><br></span>    
+          ]]>   
+        </description>  
+        <styleUrl>#triangleStyle</styleUrl>  
+        <Polygon>    
+          <altitudeMode>clampToGround</altitudeMode>    
+          <outerBoundaryIs>      
+            <LinearRing>        
+              <coordinates>          
+                -80.506111,25.736667
+                -80.406111,25.596667
+                -80.606111,25.596667
+                -80.506111,25.736667
+              </coordinates>      
+            </LinearRing>    
+          </outerBoundaryIs>  
+        </Polygon>
+      </Placemark>
+
+    </Folder>
+    <!-- End of TAMIAMI -->
+
+
+    <!-- TEXARKANA -->
+    <Folder>	  
+      <name>TEXARKANA</name>
+
+      <GroundOverlay>
+	    <Icon>          
+		  <href>http://uavsar.jpl.nasa.gov/images/longRangeCircle.png</href>
+        </Icon>        
+	    <LatLonBox>          
+		  <north>33.525257</north>          
+		  <south>33.192521</south>          
+		  <east>-93.723783726892</east>          
+		  <west>-94.121772273107</west>   
+	    </LatLonBox>      
+	  </GroundOverlay>
+
+      <Placemark>  
+        <name>FAA Long Range Radar Site</name>  
+        <description>    
+          <![CDATA[    
+		    TEXARKANA<br><br>      
+            Latitude: 33.358889<br>      
+            Longitude: -93.922778<br>      
+            Exclusion Zone: 10 nautical miles<br>      
+            <span style="color: red">
+              No part of the image swath may cross this zone.
+            </span><br><br>      
+            The FAA long range radars are L-band radars<br>      
+            used by the FAA to <a href='http://en.wikipedia.org/wiki/Air_traffic_control' target='_blank'>track aircraft movement</a> in<br>  
+            US airspace.
+<br><br></span>    
+          ]]>   
+        </description>  
+        <styleUrl>#triangleStyle</styleUrl>  
+        <Polygon>    
+          <altitudeMode>clampToGround</altitudeMode>    
+          <outerBoundaryIs>      
+            <LinearRing>        
+              <coordinates>          
+                -93.922778,33.448889
+                -93.822778,33.308889
+                -94.022778,33.308889
+                -93.922778,33.448889
+              </coordinates>      
+            </LinearRing>    
+          </outerBoundaryIs>  
+        </Polygon>
+      </Placemark>
+
+    </Folder>
+    <!-- End of TEXARKANA -->
+
+
+    <!-- THE PLAINS -->
+    <Folder>	  
+      <name>THE PLAINS</name>
+
+      <GroundOverlay>
+	    <Icon>          
+		  <href>http://uavsar.jpl.nasa.gov/images/longRangeCircle.png</href>
+        </Icon>        
+	    <LatLonBox>          
+		  <north>39.047201</north>          
+		  <south>38.714465</south>          
+		  <east>-77.489610398586</east>          
+		  <west>-77.916501601414</west>   
+	    </LatLonBox>      
+	  </GroundOverlay>
+
+      <Placemark>  
+        <name>FAA Long Range Radar Site</name>  
+        <description>    
+          <![CDATA[    
+		    THE PLAINS<br><br>      
+            Latitude: 38.880833<br>      
+            Longitude: -77.703056<br>      
+            Exclusion Zone: 10 nautical miles<br>      
+            <span style="color: red">
+              No part of the image swath may cross this zone.
+            </span><br><br>      
+            The FAA long range radars are L-band radars<br>      
+            used by the FAA to <a href='http://en.wikipedia.org/wiki/Air_traffic_control' target='_blank'>track aircraft movement</a> in<br>  
+            US airspace.
+<br><br></span>    
+          ]]>   
+        </description>  
+        <styleUrl>#triangleStyle</styleUrl>  
+        <Polygon>    
+          <altitudeMode>clampToGround</altitudeMode>    
+          <outerBoundaryIs>      
+            <LinearRing>        
+              <coordinates>          
+                -77.703056,38.970833
+                -77.603056,38.830833
+                -77.803056,38.830833
+                -77.703056,38.970833
+              </coordinates>      
+            </LinearRing>    
+          </outerBoundaryIs>  
+        </Polygon>
+      </Placemark>
+
+    </Folder>
+    <!-- End of THE PLAINS -->
+
+
+    <!-- TYNDALL -->
+    <Folder>	  
+      <name>TYNDALL</name>
+
+      <GroundOverlay>
+	    <Icon>          
+		  <href>http://uavsar.jpl.nasa.gov/images/longRangeCircle.png</href>
+        </Icon>        
+	    <LatLonBox>          
+		  <north>30.242479</north>          
+		  <south>29.909743</south>          
+		  <east>-85.418731488320</east>          
+		  <west>-85.802934511680</west>   
+	    </LatLonBox>      
+	  </GroundOverlay>
+
+      <Placemark>  
+        <name>FAA Long Range Radar Site</name>  
+        <description>    
+          <![CDATA[    
+		    TYNDALL<br><br>      
+            Latitude: 30.076111<br>      
+            Longitude: -85.610833<br>      
+            Exclusion Zone: 10 nautical miles<br>      
+            <span style="color: red">
+              No part of the image swath may cross this zone.
+            </span><br><br>      
+            The FAA long range radars are L-band radars<br>      
+            used by the FAA to <a href='http://en.wikipedia.org/wiki/Air_traffic_control' target='_blank'>track aircraft movement</a> in<br>  
+            US airspace.
+<br><br></span>    
+          ]]>   
+        </description>  
+        <styleUrl>#triangleStyle</styleUrl>  
+        <Polygon>    
+          <altitudeMode>clampToGround</altitudeMode>    
+          <outerBoundaryIs>      
+            <LinearRing>        
+              <coordinates>          
+                -85.610833,30.166111
+                -85.510833,30.026111
+                -85.710833,30.026111
+                -85.610833,30.166111
+              </coordinates>      
+            </LinearRing>    
+          </outerBoundaryIs>  
+        </Polygon>
+      </Placemark>
+
+    </Folder>
+    <!-- End of TYNDALL -->
+
+
+    <!-- VANDENBERG -->
+    <Folder>	  
+      <name>VANDENBERG</name>
+
+      <GroundOverlay>
+	    <Icon>          
+		  <href>http://uavsar.jpl.nasa.gov/images/longRangeCircle.png</href>
+        </Icon>        
+	    <LatLonBox>          
+		  <north>34.75359</north>          
+		  <south>34.420854</south>          
+		  <east>-120.39173453225</east>          
+		  <west>-120.79548746775</west>   
+	    </LatLonBox>      
+	  </GroundOverlay>
+
+      <Placemark>  
+        <name>FAA Long Range Radar Site</name>  
+        <description>    
+          <![CDATA[    
+		    VANDENBERG<br><br>      
+            Latitude: 34.587222<br>      
+            Longitude: -120.593611<br>      
+            Exclusion Zone: 10 nautical miles<br>      
+            <span style="color: red">
+              No part of the image swath may cross this zone.
+            </span><br><br>      
+            The FAA long range radars are L-band radars<br>      
+            used by the FAA to <a href='http://en.wikipedia.org/wiki/Air_traffic_control' target='_blank'>track aircraft movement</a> in<br>  
+            US airspace.
+<br><br></span>    
+          ]]>   
+        </description>  
+        <styleUrl>#triangleStyle</styleUrl>  
+        <Polygon>    
+          <altitudeMode>clampToGround</altitudeMode>    
+          <outerBoundaryIs>      
+            <LinearRing>        
+              <coordinates>          
+                -120.593611,34.677222
+                -120.493611,34.537222
+                -120.693611,34.537222
+                -120.593611,34.677222
+              </coordinates>      
+            </LinearRing>    
+          </outerBoundaryIs>  
+        </Polygon>
+      </Placemark>
+
+    </Folder>
+    <!-- End of VANDENBERG -->
+
+
+    <!-- WATFORD CITY -->
+    <Folder>	  
+      <name>WATFORD CITY</name>
+
+      <GroundOverlay>
+	    <Icon>          
+		  <href>http://uavsar.jpl.nasa.gov/images/longRangeCircle.png</href>
+        </Icon>        
+	    <LatLonBox>          
+		  <north>47.845257</north>          
+		  <south>47.512521</south>          
+		  <east>-103.533062339223</east>          
+		  <west>-104.026381660777</west>   
+	    </LatLonBox>      
+	  </GroundOverlay>
+
+      <Placemark>  
+        <name>FAA Long Range Radar Site</name>  
+        <description>    
+          <![CDATA[    
+		    WATFORD CITY<br><br>      
+            Latitude: 47.678889<br>      
+            Longitude: -103.779722<br>      
+            Exclusion Zone: 10 nautical miles<br>      
+            <span style="color: red">
+              No part of the image swath may cross this zone.
+            </span><br><br>      
+            The FAA long range radars are L-band radars<br>      
+            used by the FAA to <a href='http://en.wikipedia.org/wiki/Air_traffic_control' target='_blank'>track aircraft movement</a> in<br>  
+            US airspace.
+<br><br></span>    
+          ]]>   
+        </description>  
+        <styleUrl>#triangleStyle</styleUrl>  
+        <Polygon>    
+          <altitudeMode>clampToGround</altitudeMode>    
+          <outerBoundaryIs>      
+            <LinearRing>        
+              <coordinates>          
+                -103.779722,47.768889
+                -103.679722,47.628889
+                -103.879722,47.628889
+                -103.779722,47.768889
+              </coordinates>      
+            </LinearRing>    
+          </outerBoundaryIs>  
+        </Polygon>
+      </Placemark>
+
+    </Folder>
+    <!-- End of WATFORD CITY -->
+
+
+    <!-- WEST MESA -->
+    <Folder>	  
+      <name>WEST MESA</name>
+
+      <GroundOverlay>
+	    <Icon>          
+		  <href>http://uavsar.jpl.nasa.gov/images/longRangeCircle.png</href>
+        </Icon>        
+	    <LatLonBox>          
+		  <north>35.238035</north>          
+		  <south>34.905299</south>          
+		  <east>-106.66665979548</east>          
+		  <west>-107.07278420452</west>   
+	    </LatLonBox>      
+	  </GroundOverlay>
+
+      <Placemark>  
+        <name>FAA Long Range Radar Site</name>  
+        <description>    
+          <![CDATA[    
+		    WEST MESA<br><br>      
+            Latitude: 35.071667<br>      
+            Longitude: -106.869722<br>      
+            Exclusion Zone: 10 nautical miles<br>      
+            <span style="color: red">
+              No part of the image swath may cross this zone.
+            </span><br><br>      
+            The FAA long range radars are L-band radars<br>      
+            used by the FAA to <a href='http://en.wikipedia.org/wiki/Air_traffic_control' target='_blank'>track aircraft movement</a> in<br>  
+            US airspace.
+<br><br></span>    
+          ]]>   
+        </description>  
+        <styleUrl>#triangleStyle</styleUrl>  
+        <Polygon>    
+          <altitudeMode>clampToGround</altitudeMode>    
+          <outerBoundaryIs>      
+            <LinearRing>        
+              <coordinates>          
+                -106.869722,35.161667
+                -106.769722,35.021667
+                -106.969722,35.021667
+                -106.869722,35.161667
+              </coordinates>      
+            </LinearRing>    
+          </outerBoundaryIs>  
+        </Polygon>
+      </Placemark>
+
+    </Folder>
+    <!-- End of WEST MESA -->
+
+
+    <!-- WHITEHOUSE -->
+    <Folder>	  
+      <name>WHITEHOUSE</name>
+
+      <GroundOverlay>
+	    <Icon>          
+		  <href>http://uavsar.jpl.nasa.gov/images/longRangeCircle.png</href>
+        </Icon>        
+	    <LatLonBox>          
+		  <north>30.512479</north>          
+		  <south>30.179743</south>          
+		  <east>-81.680984302722</east>          
+		  <west>-82.066237697278</west>   
+	    </LatLonBox>      
+	  </GroundOverlay>
+
+      <Placemark>  
+        <name>FAA Long Range Radar Site</name>  
+        <description>    
+          <![CDATA[    
+		    WHITEHOUSE<br><br>      
+            Latitude: 30.346111<br>      
+            Longitude: -81.873611<br>      
+            Exclusion Zone: 10 nautical miles<br>      
+            <span style="color: red">
+              No part of the image swath may cross this zone.
+            </span><br><br>      
+            The FAA long range radars are L-band radars<br>      
+            used by the FAA to <a href='http://en.wikipedia.org/wiki/Air_traffic_control' target='_blank'>track aircraft movement</a> in<br>  
+            US airspace.
+<br><br></span>    
+          ]]>   
+        </description>  
+        <styleUrl>#triangleStyle</styleUrl>  
+        <Polygon>    
+          <altitudeMode>clampToGround</altitudeMode>    
+          <outerBoundaryIs>      
+            <LinearRing>        
+              <coordinates>          
+                -81.873611,30.436111
+                -81.773611,30.296111
+                -81.973611,30.296111
+                -81.873611,30.436111
+              </coordinates>      
+            </LinearRing>    
+          </outerBoundaryIs>  
+        </Polygon>
+      </Placemark>
+
+    </Folder>
+    <!-- End of WHITEHOUSE -->
+
+</Document>
+</kml>	

@@ -1,0 +1,1 @@
+{"result": {"input": {"address": {"zip": "30269", "city": "Peachtree City", "street": "784 S Hwy 74", "state": "GA"}, "benchmark": {"isDefault": true, "benchmarkDescription": "Public Address Ranges - Current Benchmark", "id": "4", "benchmarkName": "Public_AR_Current"}}, "addressMatches": []}}

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<link rel='stylesheet' type='text/css' href='museum.css'>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+<script language="JavaScript">
+
+(function($) {
+    $(document).ready(function() {
+        var who_called = document.referrer.toLowerCase();
+        var mom = null;
+        var fivemin = null;
+        var popup;
+        var lat = document.getElementById('lat').value;
+        var lon = document.getElementById('lon').value;
+        if (who_called.indexOf('showmap2.php') >= 0) {
+            mom = window.opener;
+            fiveMins();
+        }
+        $(function() {
+            $(document).on('click','body *',function(){
+                if(mom !== null){
+                    fiveMins();
+                }
+            });
+
+
+
+        });
+    function fiveMins(){ // set five minute timer when a site is clicked
+        if(fivemin){ clearInterval(fivemin); }
+        fivemin = setInterval(function(){
+            clearInterval(fivemin);
+    //        if(getPopup()){ blur(popup); }
+    //        initialize();
+            this.close();
+            focus();
+            }, 300000);
+        }
+    });
+})(jQuery);
+</script>
+
+<BODY >
+
+<!-- (1) SELECT r.*, r.id as recid, r.location AS siteloc, t.* FROM radarsites AS r  LEFT JOIN terraserver AS t ON r.location=t.location WHERE r.location="Mill Valley AFS, CA" -->
+<!-- Mill Valley AFS, CA, ID: 11916 --><br>
+<CENTER><H2>Information for Mill Valley AFS, CA</H2>
+<H3>Latitude: 37-55-30 N, Longitude: 122-35-58 W</H3>
+<input type='hidden' id='lat' value='37-55-30 N'><input type='hidden' id='lon' value='122-35-58 W'>
+<H3>Call Sign(s): Misfit; Sliphorn</H3>
+<hr><TABLE class=odisp cellpadding=5 cellspacing=0>
+<TR>
+<th class=odisp  ALIGN=center><FONT size=2><B>Perm ID</B></FONT></th>
+<th class=odisp  ALIGN=center><FONT size=2><B>Sage ID</B></FONT></th>
+<th class=odisp  ALIGN=center><FONT size=2><B>JSS ID</B></FONT></th>
+<th class=odisp  ALIGN=center><FONT size=2><B>Unit</B></FONT></th>
+<th class=odisp  ALIGN=center><FONT size=2><B>Location</B></FONT></th>
+<th class=odisp  ALIGN=center><FONT size=2><B>Early<br>Equip.</B></FONT></th>
+<th class=odisp  ALIGN=center><FONT size=2><B>Final<br>Equip.</B></FONT></th>
+<th class=odisp  ALIGN=center><FONT size=2><B>Oper.<BR>Date</B></FONT></th>
+<th class=odisp  ALIGN=center><FONT size=2><B>Inact.<BR>Date</B></FONT></th>
+<th class=odisp  ALIGN=center><FONT size=2><B>Notes</B></FONT></th>
+</TR>
+<TR>
+<TD class=odisp  ALIGN=CENTER style="font-size: 80%">P-38</TD>
+<TD class=odisp  ALIGN=CENTER style="font-size: 80%">Z-38</TD>
+<TD class=odisp  ALIGN=CENTER style="font-size: 80%">J-33</TD>
+<TD class=odisp  ALIGN=CENTER style="font-size: 80%">666; Det. 3, 14 MWS</TD>
+<TD class=odisp  style="font-size: 80%">Mill Valley AFS, CA </TD>
+<TD class=odisp  ALIGN=CENTER style="font-size: 80%">CPS-6B(2); FPS-8/GPS-3; FPS-7C; FPS-6,-6B; FPS-26A (FSS-7)</TD>
+<TD class=odisp  ALIGN=CENTER style="font-size: 80%">FPS-7; FPS-90; (FSS-7).  FPS-66A, FPS-116 (JSS).</TD>
+<TD class=odisp  ALIGN=CENTER style="font-size: 80%">1951</TD>
+<TD class=odisp  ALIGN=CENTER style="font-size: 80%">JSS ARSR-4 site now</TD>
+<TD class=odisp  style="font-size: 80%">Site sits atop Mt. Tamalpais. FPS-7 later became FPS-107. FPS-26A modified to FSS-7 radar. USAF site shared with Army for Nike Missile air-defense system (SF-90DC). Remote GATR at Beale AFB, CA (R-18), Det 1.  Det 2/666 was Mather AFB radar, after 1966.</TD>
+</TR>
+<!-- Diag: P-38, LRR, MEWS, FAA, ARMY, LRR, MEWS, FAA, ARMY -->
+<!-- Z-38-->
+<!-- P-38-->
+<!-- (2) SELECT r.*,r.location AS siteloc, t.* FROM radarsites AS r  LEFT JOIN terraserver AS t ON r.location=t.location WHERE (r.permid regexp "^P-38[a-zA-Z]+" or r.permid regexp "/ *P-38[a-zA-Z]+" or r.sageid regexp "^Z-38[a-zA-Z]+" or r.sageid regexp "/ *Z-38[a-zA-Z]+") AND r.type="GFA" ORDER BY r.permid -->
+</table></center>
+<p><b>Current Use:</b>&nbsp;Site transferred to FAA 1 Oct 1980.  Still active.</p>
+<CENTER><TABLE WIDTH=100%><TR>
+<TD valign='top'>
+<B>NOTICE:</B><BLOCKQUOTE>
+Some photos and documents may be marked with varying degrees of classification,
+up to SECRET. Data so marked is the way it was delivered from official USAF sources,
+and have been completely declassified. To the best of our knowledge, no
+currently classified data is stored on this site.</BLOCKQUOTE>
+The following site information is available:
+<UL>
+<!-- Loc: Mill Valley AFS, CA - Mill+Valley+AFS,+CA (before) -->
+<LI><a href="showroster.php?site=Mill+Valley+AFS,+CA">Site Roster</a></li>
+<!-- Images: SELECT * FROM images WHERE filename like 'photos/MillValleyAFSCA%' and type='image' -->
+<LI><a href="thumbs.php?site=Mill+Valley+AFS,+CA&more=">Photographs</a></li>
+<!-- Pages: SELECT * FROM images WHERE filename like 'MillValleyAFSCA%' and type='doc_html' 6 -->
+<LI><a href="documents.php?site=Mill+Valley+AFS,+CA">Documents</a></li>
+<!-- hasdir: webpages MillValleyAFSCA -->
+<LI><a href='http://www.acme.com/jef/nike/sf90dc.html' target='_blank'>Web Site</a></li>
+<!-- Pages: SELECT * FROM images WHERE filename like 'MillValleyAFSCA%' and type='recent_html' 1 -->
+<LI><a href='parsehtml.php?key=MillValleyAFSCA.html&type=recent_html'>Recent photos</a></li>
+<!-- Interactive map for Mill Valley AFS, CA -->
+<LI><a href="showmap.php?key=MillValleyAFSCA&site=Mill+Valley+AFS,+CA">Map</a></li>
+<LI><a href='#' id='popin' >Site History</a></li>
+<!-- Images: SELECT * FROM images WHERE filename like 'maps/terraserver/images/MillValleyAFSCA%' and type='image' -->
+<li><a href='aerials.php?city=Mill+Valley+AFS,+CA'>Aerial Images</a></li>
+</UL>
+<div id='history' class='bdisp' style='display:none;'><center><h3>History of Mill Valley AFS, CA<h3></center>The 666th AC&W Squadron began operating an AN/CPS-6B radar at this Bay-area site in late 1951. In 1955 the site received an AN/FPS-8 that subsequently was converted to an AN/GPS-3. During 1956 an AN/FPS-4 height-finder radar operated here. In 1958 the AN/FPS-4 was superseded by an AN/FPS-6 set. In late 1960 this site began feeding data into the SAGE system. This site began operating an AN/FPS-7 search radar in 1960. By 1961 the 666th operated this radar along with the AN/FPS-6 and AN/FPS-6B height-finder radars. The US Army shared this radar site during the 1960's for Nike-missile control, designating the site as SF-90DC. In 1964 an AN/FPS-26A height-finder radar was added, replacing the AN/FPS-6.  Also in 1964, the AN/FPS-6B was modified to an AN/FPS-90.  In 1966 the AN/FPS-26A was removed from SAGE duties when it was converted to an AN/FSS-7 SLBM detection & warning radar. (Originally, the AN/FPS-26 at Point Arena AFS was to have been converted to an AN/FSS-7, and Mill Valley AFS was to close; however, those plans were later reversed.) Mill Valley AFS came under TAC jurisdiction in October 1979. During the 1980s, most of the property was turned over to the National Park Service and the FAA. The Air Force retained control of the height-finder radar (modified to an AN/FPS-116) and the SLBM radar, which was deactivated circa 1980. In 1995 the FAA operated an AN/FPS-66A search set. In the late 1990's, the AN/FPS-66A was replaced with an ARSR-4 in the old AN/FPS-26A / AN/FSS-7 tower, the only CONUS site to place an ARSR-4 in a tower other than a specially-designed ARSR-4 tower.<br><br>References:  "Searching the Skies"; misc. ADCOM documents; eyewitness accounts.<br><br><br><center><a href='#' id='closehistory' ><b><i>Hide</i></b></a></center></div></TD><TD ALIGN=CENTER>
+<!-- Emblem(s) follow -->
+<!-- Images: SELECT * FROM images WHERE filename like 'shields/MillValleyAFSCA%' and type='image' -->
+<img src='showimage.php?name=shields/MillValleyAFSCA.jpg' oncontextmenu='return(false);'><br>
+<img src='showimage.php?name=shields/MillValleyAFSCA14th.jpg' oncontextmenu='return(false);'><br>
+</td></tr></table><hr>
+</CENTER>
+<div id="end" style="display: none;"></div>
+</body>
+</html>
