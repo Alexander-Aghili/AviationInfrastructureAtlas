@@ -18,13 +18,7 @@ def run(command,label):
     result=subprocess.run(command,cwd=ROOT,capture_output=True,text=True)
     if result.returncode:raise RuntimeError(f'{label} failed:\n'+(result.stdout+result.stderr)[-4000:])
 def update_readme(text,cycle,audit,features):
-    o=audit['boundary_source'];towers=sum(f['feature_type']=='towers' for f in features);rdr=sum(f['source']['table']=='RDR' for f in features)
-    replacements=[(r'FAA NASR cycle \*\*[\d-]+\*\*',f'FAA NASR cycle **{cycle}**'),
-        (r'\*\*[\d,]+ normalized records\*\*, \*\*[\d,]+ mapped\*\*, and \*\*[\d,]+ unlocated\*\*',f"**{audit['records']:,} normalized records**, **{audit['mapped']:,} mapped**, and **{audit['unlocated']:,} unlocated**"),
-        (r'effective \*\*[\d-]+ through [\d-]+\*\*',f"effective **{o['effective_date']} through {o['valid_until']}**"),
-        (r'\d+ polygon records',f"{o['source_polygon_records']} polygon records"),
-        (r'all [\d,]+ current US ATCT',f'all {towers:,} current US ATCT'),
-        (r'all [\d,]+ US NASR RDR records',f'all {rdr:,} US NASR RDR records')]
+    replacements=[(r'FAA NASR cycle \*\*[\d-]+\*\*',f'FAA NASR cycle **{cycle}**')]
     missing=[]
     for pattern,value in replacements:
         text,count=re.subn(pattern,value,text)
