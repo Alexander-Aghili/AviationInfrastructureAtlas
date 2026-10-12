@@ -1,0 +1,699 @@
+[
+ {
+  "identifier": "A11",
+  "facility_name": "Anchorage TRACON",
+  "address": "5200 W. International Airport Road, Anchorage, AK 99502",
+  "position": "census",
+  "census_address": {
+   "street": "5200 W International Airport Road",
+   "city": "Anchorage",
+   "state": "AK",
+   "zip": "99502"
+  },
+  "epa_registry_id": null,
+  "review_note": null,
+  "sources": [
+   {
+    "title": "FAA Letter to Airmen LTA-A11-5: ADS-B Out Use in Anchorage Class C",
+    "publisher": "FAA (Federal NOTAM System, Letters to Airmen)",
+    "url": "https://notams.aim.faa.gov/lta/main/viewlta?lookupid=3608599578867144640",
+    "date": "Issued 2025-04-11",
+    "quote": "Anchorage TRACON | 5200 W. International Airport Road | Anchorage, AK 99502",
+    "tier": "government"
+   },
+   {
+    "title": "FAA Letter to Airmen LTA-A11-3: Wake Turbulence Re-categorization",
+    "publisher": "FAA (Federal NOTAM System, Letters to Airmen)",
+    "url": "https://notams.aim.faa.gov/lta/main/viewlta?lookupid=2005324809734460492",
+    "date": "Issued 2019-03-22",
+    "quote": "5200 W. International Airport Road, Anchorage, AK 99502",
+    "tier": "government"
+   },
+   {
+    "title": "FAA Service Center List 09.18.26 (PIV sites & points of contact), FAA Office of Security & Hazardous Materials Safety (ASH)",
+    "publisher": "FAA / ASH",
+    "url": "https://www.faa.gov/headquartersoffices/ash/service-center-hours",
+    "date": "2026-09-18 (PDF metadata created 2026-09-22)",
+    "quote": "FAA ANCHORAGE ATCT (TWAN1-ANC) 5200 W International Airport Road Anchorage, Alaska, 99502",
+    "tier": "government"
+   }
+  ]
+ },
+ {
+  "identifier": "D01",
+  "facility_name": "Denver TRACON",
+  "address": "26705 East 68th Ave, Room 109, Denver, CO 80249-6361",
+  "position": "census",
+  "census_address": {
+   "street": "26705 East 68th Ave",
+   "city": "Denver",
+   "state": "CO",
+   "zip": "80249"
+  },
+  "epa_registry_id": null,
+  "review_note": null,
+  "sources": [
+   {
+    "title": "FAA Letter to Airmen LTA-D01-5: CWT Radar Separation Standards Implementation within Denver TRACON airspace",
+    "publisher": "FAA (Federal NOTAM System, Letters to Airmen)",
+    "url": "https://notams.aim.faa.gov/lta/main/viewlta?lookupid=2753331838062696171",
+    "date": "Effective 2022-02-10",
+    "quote": "26705 East 68th Ave, Room 109, Denver, CO 80249-6361",
+    "tier": "government"
+   }
+  ]
+ },
+ {
+  "identifier": "D10",
+  "facility_name": "Dallas-Fort Worth TRACON",
+  "address": "2401 International Parkway, Dallas-Fort Worth, TX 75261",
+  "position": "epa",
+  "census_address": null,
+  "epa_registry_id": "110034319333",
+  "review_note": null,
+  "sources": [
+   {
+    "title": "FAA Letter to Airmen LTA-D10-20: Regional Approach Radiotelephony Nomenclature Change",
+    "publisher": "FAA (Federal NOTAM System, Letters to Airmen)",
+    "url": "https://notams.aim.faa.gov/lta/main/viewlta?lookupid=3470140914452665704",
+    "date": "Effective 2024-10-31",
+    "quote": "Dallas - Ft Worth TRACON | 2401 Internatiional Parkway | Dallas-Fort Worth, TX 75261",
+    "tier": "government"
+   },
+   {
+    "title": "FAA Letter to Airmen LTA-D10-10: RECAT/CWT Implementation within Dallas-Ft Worth TRACON airspace",
+    "publisher": "FAA (Federal NOTAM System, Letters to Airmen)",
+    "url": "https://notams.aim.faa.gov/lta/main/viewlta?lookupid=2556204116544067191",
+    "date": "Effective 2021-04-30",
+    "quote": "2401 Internatiional Parkway, Dallas-Fort Worth, TX 75261",
+    "tier": "government"
+   },
+   {
+    "title": "FAA Service Center List 09.18.26 (PIV sites & points of contact), FAA Office of Security & Hazardous Materials Safety (ASH)",
+    "publisher": "FAA / ASH",
+    "url": "https://www.faa.gov/headquartersoffices/ash/service-center-hours",
+    "date": "2026-09-18 (PDF metadata created 2026-09-22)",
+    "quote": "Fort Worth TRACON-D10 (DFWTC) 2401 International Parkway, RM 103 Dallas-Fort Worth Airport, TX 75261",
+    "tier": "government"
+   },
+   {
+    "title": "EPA Facility Registry Service record 110034319333: D10 TERMINAL RADAR APPROACH CONTROL",
+    "publisher": "US EPA Facility Registry Service (FRS REST get_facilities)",
+    "url": "https://frs-public.epa.gov/ords/frs_public2/fii_query_detail.disp_program_facility?p_registry_id=110034319333",
+    "date": "unknown (retrieved 2026-10-06)",
+    "quote": "D10 TERMINAL RADAR APPROACH CONTROL | 2401 N INTERNATIONAL PKWY, DFW AIRPORT, TX 75261 | 32.89575 -97.041435",
+    "tier": "government"
+   }
+  ]
+ },
+ {
+  "identifier": "D21",
+  "facility_name": "Detroit TRACON",
+  "address": "Detroit Metro Airport, Building 801, Detroit, MI 48242",
+  "position": null,
+  "census_address": null,
+  "epa_registry_id": null,
+  "review_note": "Published only as Building 801 at Detroit Metro Airport; no street address or coordinates.",
+  "sources": [
+   {
+    "title": "FAA Letter to Airmen LTA-D21-20: VFR Practice Instrument Approaches",
+    "publisher": "FAA (Federal NOTAM System, Letters to Airmen)",
+    "url": "https://notams.aim.faa.gov/lta/main/viewlta?lookupid=2044473162053194956",
+    "date": "Issued 2019-05-15",
+    "quote": "Detroit TRACON | Detroit Metro Airport, Building 801 | Detroit, MI 48242 ... Department of Transportation, FAA, Detroit Metro ATCT, Building 801, Room 104, Detroit Metro Airport, Detroit, MI 48242",
+    "tier": "government"
+   },
+   {
+    "title": "FAA Service Center List 09.18.26 (PIV sites & points of contact), FAA Office of Security & Hazardous Materials Safety (ASH)",
+    "publisher": "FAA / ASH",
+    "url": "https://www.faa.gov/headquartersoffices/ash/service-center-hours",
+    "date": "2026-09-18 (PDF metadata created 2026-09-22)",
+    "quote": "Detroit ATCT (DTWAT) Detroit Metro Airport Bldg 801 Detroit, MI 48242",
+    "tier": "government"
+   }
+  ]
+ },
+ {
+  "identifier": "F11",
+  "facility_name": "Central Florida TRACON",
+  "address": "9399 Jeff Fuqua Blvd S., Orlando, FL 32827",
+  "position": "census",
+  "census_address": {
+   "street": "9399 Jeff Fuqua Blvd S",
+   "city": "Orlando",
+   "state": "FL",
+   "zip": "32827"
+  },
+  "epa_registry_id": null,
+  "review_note": null,
+  "sources": [
+   {
+    "title": "FAA Letter to Airmen LTA-F11-20: IFR Separation Services for VFR Aircraft Conducting Practice Instrument Approaches ... Orlando Area",
+    "publisher": "FAA (Federal NOTAM System, Letters to Airmen)",
+    "url": "https://notams.aim.faa.gov/lta/main/viewlta?lookupid=3495354887686854375",
+    "date": "Issued 2024-11-06",
+    "quote": "9399 Jeff Fuqua Blvd S., Orlando, FL 32827",
+    "tier": "government"
+   },
+   {
+    "title": "FAA Letter to Airmen LTA-F11-11: IFR Separation Services for VFR Aircraft ... Orlando Area",
+    "publisher": "FAA (Federal NOTAM System, Letters to Airmen)",
+    "url": "https://notams.aim.faa.gov/lta/main/viewlta?lookupid=1815443875553089137",
+    "date": "Issued 2018-07-09",
+    "quote": "9399 Jeff Fuqua Blvd S., Orlando, FL 32827",
+    "tier": "government"
+   },
+   {
+    "title": "FAA Service Center List 09.18.26 (PIV sites & points of contact), FAA Office of Security & Hazardous Materials Safety (ASH)",
+    "publisher": "FAA / ASH",
+    "url": "https://www.faa.gov/headquartersoffices/ash/service-center-hours",
+    "date": "2026-09-18 (PDF metadata created 2026-09-22)",
+    "quote": "Central Florida Tracon (F11) 9399 Jeff Fuqua Blvd Orlando, FL 32827",
+    "tier": "government"
+   }
+  ]
+ },
+ {
+  "identifier": "I90",
+  "facility_name": "Houston TRACON",
+  "address": "4005 Greens Road, Houston, TX 77032",
+  "position": "epa",
+  "census_address": null,
+  "epa_registry_id": "110070176021",
+  "review_note": null,
+  "sources": [
+   {
+    "title": "FAA Letter to Airmen LTA-I90-11: IFR Separation for VFR Aircraft Practicing Instrument Approaches",
+    "publisher": "FAA (Federal NOTAM System, Letters to Airmen)",
+    "url": "https://notams.aim.faa.gov/lta/main/viewlta?lookupid=2542470276965209541",
+    "date": "Issued 2021-04-01",
+    "quote": "4005 Greens Road, Houston, TX 77032",
+    "tier": "government"
+   },
+   {
+    "title": "FAA Letter to Airmen LTA-I90-5: Establishment of Class D Airspace at Houston Executive Airport (TME)",
+    "publisher": "FAA (Federal NOTAM System, Letters to Airmen)",
+    "url": "https://notams.aim.faa.gov/lta/main/viewlta?lookupid=1379210000752186417",
+    "date": "Issued 2016-11-08",
+    "quote": "4005 Greens Road, Houston, TX 77032",
+    "tier": "government"
+   },
+   {
+    "title": "FAA Service Center List 09.18.26 (PIV sites & points of contact), FAA Office of Security & Hazardous Materials Safety (ASH)",
+    "publisher": "FAA / ASH",
+    "url": "https://www.faa.gov/headquartersoffices/ash/service-center-hours",
+    "date": "2026-09-18 (PDF metadata created 2026-09-22)",
+    "quote": "Houston Tracon (I-90) 4005 Greens Rd Houston, TX 77032",
+    "tier": "government"
+   },
+   {
+    "title": "EPA Facility Registry Service record 110070176021: HOUSTON TRACON",
+    "publisher": "US EPA Facility Registry Service (FRS REST get_facilities)",
+    "url": "https://frs-public.epa.gov/ords/frs_public2/fii_query_detail.disp_program_facility?p_registry_id=110070176021",
+    "date": "unknown (retrieved 2026-10-06)",
+    "quote": "HOUSTON TRACON | 4005 GREENS RD, HOUSTON, TX 77032-2333 | 29.951522 -95.32879",
+    "tier": "government"
+   }
+  ]
+ },
+ {
+  "identifier": "JCF",
+  "facility_name": "Joshua Control Facility (Joshua Approach), Edwards AFB",
+  "address": "100 Sparks Drive, Edwards, CA 93524",
+  "position": null,
+  "census_address": null,
+  "epa_registry_id": null,
+  "review_note": "Address appears only in the PIV list beside Edwards AFB SSC; may not be the control building, so unlocated.",
+  "sources": [
+   {
+    "title": "FAA Service Center List 09.18.26 (PIV sites & points of contact), FAA Office of Security & Hazardous Materials Safety (ASH)",
+    "publisher": "FAA / ASH",
+    "url": "https://www.faa.gov/headquartersoffices/ash/service-center-hours",
+    "date": "2026-09-18 (PDF metadata created 2026-09-22)",
+    "quote": "Joshua Control (E10) / Edwards AFB SSC / 100 Sparks Drive / Edwrads, CA 93524",
+    "tier": "government"
+   },
+   {
+    "title": "Waze / 123atc.com listings",
+    "publisher": "non-government",
+    "url": "https://123atc.com/facility/JCF",
+    "date": "unknown",
+    "quote": "100 E Sparks Dr Edwards AFB, CA 93524",
+    "tier": "community"
+   }
+  ]
+ },
+ {
+  "identifier": "L30",
+  "facility_name": "Las Vegas TRACON",
+  "address": "5755 Kelley Lane, Las Vegas, NV 89119",
+  "position": "epa",
+  "census_address": null,
+  "epa_registry_id": "110059824515",
+  "review_note": null,
+  "sources": [
+   {
+    "title": "FAA Letter to Airmen LTA-L30-34: National Business Aviation Association (NBAA) Convention",
+    "publisher": "FAA (Federal NOTAM System, Letters to Airmen)",
+    "url": "https://notams.aim.faa.gov/lta/main/viewlta?lookupid=3729564654427444230",
+    "date": "Issued 2025-09-25",
+    "quote": "5755 Kelley Lane, Las Vegas, NV 89119",
+    "tier": "government"
+   },
+   {
+    "title": "FAA Letter to Airmen LTA-L30-18: Coordination for Special Activities Mission Support",
+    "publisher": "FAA (Federal NOTAM System, Letters to Airmen)",
+    "url": "https://notams.aim.faa.gov/lta/main/viewlta?lookupid=2994021555173857101",
+    "date": "Issued 2022-12-15",
+    "quote": "5755 Kelley Lane, Las Vegas, NV 89119",
+    "tier": "government"
+   },
+   {
+    "title": "FAA Service Center List 09.18.26 (PIV sites & points of contact), FAA Office of Security & Hazardous Materials Safety (ASH)",
+    "publisher": "FAA / ASH",
+    "url": "https://www.faa.gov/headquartersoffices/ash/service-center-hours",
+    "date": "2026-09-18 (PDF metadata created 2026-09-22)",
+    "quote": "LAS ATCT(LAS) 5755 Kelley Lane Las Vegas, NV 89119",
+    "tier": "government"
+   },
+   {
+    "title": "EPA Facility Registry Service record 110059824515: MCCARRAN AIRPORT ATCT/TRACON",
+    "publisher": "US EPA Facility Registry Service (FRS REST get_facilities)",
+    "url": "https://frs-public.epa.gov/ords/frs_public2/fii_query_detail.disp_program_facility?p_registry_id=110059824515",
+    "date": "unknown (retrieved 2026-10-06)",
+    "quote": "MCCARRAN AIRPORT ATCT/TRACON | 5755 KELLEY LANE, LAS VEGAS, NV 89119-1018 | 36.085815 -115.141484",
+    "tier": "government"
+   }
+  ]
+ },
+ {
+  "identifier": "M03",
+  "facility_name": "Memphis TRACON",
+  "address": "2515 Winchester Rd., Memphis, TN 38116",
+  "position": "census",
+  "census_address": {
+   "street": "2515 Winchester Rd",
+   "city": "Memphis",
+   "state": "TN",
+   "zip": "38116"
+  },
+  "epa_registry_id": null,
+  "review_note": null,
+  "sources": [
+   {
+    "title": "FAA Service Center List 09.18.26 (PIV sites & points of contact), FAA Office of Security & Hazardous Materials Safety (ASH)",
+    "publisher": "FAA / ASH",
+    "url": "https://www.faa.gov/headquartersoffices/ash/service-center-hours",
+    "date": "2026-09-18 (PDF metadata created 2026-09-22)",
+    "quote": "Memphis ATCT/TRACON (MEMAT) 2515 Winchester Rd. Memphis, TN 38116",
+    "tier": "government"
+   },
+   {
+    "title": "123atc.com M03 listing",
+    "publisher": "non-government",
+    "url": "https://123atc.com/facility/M03",
+    "date": "unknown",
+    "quote": "2515 Winchester Rd, Memphis, TN 38116",
+    "tier": "community"
+   }
+  ]
+ },
+ {
+  "identifier": "M98",
+  "facility_name": "Minneapolis TRACON",
+  "address": "6311 34 Avenue South, Minneapolis, MN 55443",
+  "position": "census",
+  "census_address": {
+   "street": "6311 34th Avenue South",
+   "city": "Minneapolis",
+   "state": "MN",
+   "zip": "55450"
+  },
+  "epa_registry_id": null,
+  "review_note": "Letter ZIP 55443 conflicts with the FAA PIV list ZIP 55450 for the same street; geocoded with 55450.",
+  "sources": [
+   {
+    "title": "FAA Letter to Airmen LTA-M98-14: VFR Practice Instrument Approaches",
+    "publisher": "FAA (Federal NOTAM System, Letters to Airmen)",
+    "url": "https://notams.aim.faa.gov/lta/main/viewlta?lookupid=2496934096542898050",
+    "date": "Issued 2021-01-29",
+    "quote": "6311 34 Avenue South, Minneapolis, MN 55443",
+    "tier": "government"
+   },
+   {
+    "title": "FAA Service Center List 09.18.26 (PIV sites & points of contact), FAA Office of Security & Hazardous Materials Safety (ASH)",
+    "publisher": "FAA / ASH",
+    "url": "https://www.faa.gov/headquartersoffices/ash/service-center-hours",
+    "date": "2026-09-18 (PDF metadata created 2026-09-22)",
+    "quote": "Minneapolis ATCT (MSP) 6311 34th Ave S Minneapolis, MN 55450",
+    "tier": "government"
+   }
+  ]
+ },
+ {
+  "identifier": "P31",
+  "facility_name": "Pensacola TRACON",
+  "address": "4240 Airfield Road, Pensacola, FL 32504",
+  "position": "census",
+  "census_address": {
+   "street": "4240 Airfield Road",
+   "city": "Pensacola",
+   "state": "FL",
+   "zip": "32504"
+  },
+  "epa_registry_id": null,
+  "review_note": null,
+  "sources": [
+   {
+    "title": "FAA Letter to Airmen LTA-P31-6: Pensacola VFR Practice Areas",
+    "publisher": "FAA (Federal NOTAM System, Letters to Airmen)",
+    "url": "https://notams.aim.faa.gov/lta/main/viewlta?lookupid=2384726174371682009",
+    "date": "Issued 2020-08-31",
+    "quote": "4240 Airfield Road, Pensacola, FL 32504",
+    "tier": "government"
+   },
+   {
+    "title": "FAA Service Center List 09.18.26 (PIV sites & points of contact), FAA Office of Security & Hazardous Materials Safety (ASH)",
+    "publisher": "FAA / ASH",
+    "url": "https://www.faa.gov/headquartersoffices/ash/service-center-hours",
+    "date": "2026-09-18 (PDF metadata created 2026-09-22)",
+    "quote": "Pensacola TRACON (PNS) 4240 Airfield Rd. Pensacola, FL 32504",
+    "tier": "government"
+   }
+  ]
+ },
+ {
+  "identifier": "P50",
+  "facility_name": "Phoenix TRACON",
+  "address": "3500 E. Sky Harbor Blvd., Phoenix, AZ 85034",
+  "position": "census",
+  "census_address": {
+   "street": "3500 E Sky Harbor Blvd",
+   "city": "Phoenix",
+   "state": "AZ",
+   "zip": "85034"
+  },
+  "epa_registry_id": null,
+  "review_note": "EPA lists 2400 E Sky Harbor; the FAA address is used.",
+  "sources": [
+   {
+    "title": "FAA Letter to Airmen LTA-P50-54: RECAT CWT Implementation within Phoenix TRACON and Luke AFB RAPCON Airspace",
+    "publisher": "FAA (Federal NOTAM System, Letters to Airmen)",
+    "url": "https://notams.aim.faa.gov/lta/main/viewlta?lookupid=2804849531206768413",
+    "date": "Issued 2022-04-01",
+    "quote": "3500 E. Sky Harbor Blvd., Phoenix, AZ 85034",
+    "tier": "government"
+   },
+   {
+    "title": "FAA Letter to Airmen LTA-P50-18: VFR Practice Approaches",
+    "publisher": "FAA (Federal NOTAM System, Letters to Airmen)",
+    "url": "https://notams.aim.faa.gov/lta/main/viewlta?lookupid=1264701320669960132",
+    "date": "Issued 2016-06-03",
+    "quote": "3500 E. Sky Harbor Blvd., Phoenix, AZ 85034",
+    "tier": "government"
+   },
+   {
+    "title": "FAA Service Center List 09.18.26 (PIV sites & points of contact), FAA Office of Security & Hazardous Materials Safety (ASH)",
+    "publisher": "FAA / ASH",
+    "url": "https://www.faa.gov/headquartersoffices/ash/service-center-hours",
+    "date": "2026-09-18 (PDF metadata created 2026-09-22)",
+    "quote": "Phoenix TRACON(PHX) Phoenix- Sky Harbor Intl Airport 3500 E.Sky Harbor Blvd Phoenix, AZ 85034",
+    "tier": "government"
+   },
+   {
+    "title": "EPA Facility Registry Service record 110039462471: FAA PHOENIX TRACON",
+    "publisher": "US EPA Facility Registry Service (FRS REST get_facilities)",
+    "url": "https://frs-public.epa.gov/ords/frs_public2/fii_query_detail.disp_program_facility?p_registry_id=110039462471",
+    "date": "unknown (retrieved 2026-10-06)",
+    "quote": "FAA PHOENIX TRACON | 2400 E SKY HARBOR, PHOENIX, AZ 85034 | 33.437644 -112.0187",
+    "tier": "government"
+   }
+  ]
+ },
+ {
+  "identifier": "P80",
+  "facility_name": "Portland TRACON",
+  "address": "7108 NE Airport Way, Portland, OR 97218",
+  "position": null,
+  "census_address": null,
+  "epa_registry_id": null,
+  "review_note": "No unique Census address match; unlocated.",
+  "sources": [
+   {
+    "title": "FAA Letter to Airmen LTA-P80-10: Warning for the possibility of glider activity in the vicinity of Hillsboro, Oregon and the Newberg VOR",
+    "publisher": "FAA (Federal NOTAM System, Letters to Airmen)",
+    "url": "https://notams.aim.faa.gov/lta/main/viewlta?lookupid=2535253450850047851",
+    "date": "Issued 2021-04-09",
+    "quote": "7108 NE Airport Way, Portland, OR 97218",
+    "tier": "government"
+   },
+   {
+    "title": "FAA Service Center List 09.18.26 (PIV sites & points of contact), FAA Office of Security & Hazardous Materials Safety (ASH)",
+    "publisher": "FAA / ASH",
+    "url": "https://www.faa.gov/headquartersoffices/ash/service-center-hours",
+    "date": "2026-09-18 (PDF metadata created 2026-09-22)",
+    "quote": "Portland ATCT/TRACON (PDX) 7108 NE Airport Way Portland, OR 97218",
+    "tier": "government"
+   }
+  ]
+ },
+ {
+  "identifier": "R90",
+  "facility_name": "Omaha TRACON",
+  "address": "100 TRACON Hill, Bellevue, NE 68137",
+  "position": "epa",
+  "census_address": null,
+  "epa_registry_id": "110045727059",
+  "review_note": "Official addresses disagree (100 TRACON Hill 68137; EPA 100 TRACON Hill Rd 68005; PIV list 1125 W Mission Ave 68005, about 650 m east). EPA FRS coordinates used.",
+  "sources": [
+   {
+    "title": "FAA Letter to Airmen LTA-R90-18: Practice Areas West of Millard Airport (MLE)",
+    "publisher": "FAA (Federal NOTAM System, Letters to Airmen)",
+    "url": "https://notams.aim.faa.gov/lta/main/viewlta?lookupid=2793911537541060219",
+    "date": "Issued 2022-03-15",
+    "quote": "100 TRACON Hill, Bellevue, NE 68137",
+    "tier": "government"
+   },
+   {
+    "title": "FAA Letter to Airmen LTA-R90-9: Practice Areas East of Council Bluffs Airport (CBF)",
+    "publisher": "FAA (Federal NOTAM System, Letters to Airmen)",
+    "url": "https://notams.aim.faa.gov/lta/main/viewlta?lookupid=2013379113359775546",
+    "date": "Issued 2019-04-03",
+    "quote": "100 TRACON Hill, Bellevue, NE 68137",
+    "tier": "government"
+   },
+   {
+    "title": "EPA Facility Registry Service record 110045727059: OMAHA TRACON R90",
+    "publisher": "US EPA Facility Registry Service (FRS REST get_facilities)",
+    "url": "https://frs-public.epa.gov/ords/frs_public2/fii_query_detail.disp_program_facility?p_registry_id=110045727059",
+    "date": "unknown (retrieved 2026-10-06)",
+    "quote": "OMAHA TRACON R90 | 100 TRACON HILL RD, BELLEVUE, NE 68005-3933 | 41.136665 -95.916123",
+    "tier": "government"
+   },
+   {
+    "title": "FAA Service Center List 09.18.26 (PIV sites & points of contact), FAA Office of Security & Hazardous Materials Safety (ASH)",
+    "publisher": "FAA / ASH",
+    "url": "https://www.faa.gov/headquartersoffices/ash/service-center-hours",
+    "date": "2026-09-18 (PDF metadata created 2026-09-22)",
+    "quote": "Omaha TRACON R90 (OMA R90) 1125 W. Mission Ave Bellevue, NE 68005",
+    "tier": "government"
+   }
+  ]
+ },
+ {
+  "identifier": "S56",
+  "facility_name": "Salt Lake City TRACON",
+  "address": "1201 North 4000 West, Salt Lake City, UT 74132",
+  "position": null,
+  "census_address": null,
+  "epa_registry_id": null,
+  "review_note": "Published ZIP 74132 appears to be a typo (PIV list: 84116); no unique address match, so unlocated.",
+  "sources": [
+   {
+    "title": "FAA Letter to Airmen LTA-S56-20: VFR Practice Approaches",
+    "publisher": "FAA (Federal NOTAM System, Letters to Airmen)",
+    "url": "https://notams.aim.faa.gov/lta/main/viewlta?lookupid=3783189079730951496",
+    "date": "Issued 2025-12-10",
+    "quote": "1201 North 4000 West, Salt Lake City, UT 74132",
+    "tier": "government"
+   },
+   {
+    "title": "FAA Letter to Airmen LTA-S56-15: South Valley Regional Airport (SVR) and Salt Lake City (SLC) Class B Airspace",
+    "publisher": "FAA (Federal NOTAM System, Letters to Airmen)",
+    "url": "https://notams.aim.faa.gov/lta/main/viewlta?lookupid=3612904823399126405",
+    "date": "Issued 2025-04-17",
+    "quote": "1201 North 4000 West, Salt Lake City, UT 74132",
+    "tier": "government"
+   },
+   {
+    "title": "FAA Service Center List 09.18.26 (PIV sites & points of contact), FAA Office of Security & Hazardous Materials Safety (ASH)",
+    "publisher": "FAA / ASH",
+    "url": "https://www.faa.gov/headquartersoffices/ash/service-center-hours",
+    "date": "2026-09-18 (PDF metadata created 2026-09-22)",
+    "quote": "Salt Lake City ATCT (SLC) 1201 N 4000 W Salt Lake City, UT 84116",
+    "tier": "government"
+   }
+  ]
+ },
+ {
+  "identifier": "U90",
+  "facility_name": "Tucson TRACON",
+  "address": "Davis-Monthan AFB, 4435 Phoenix Street, Bldg 4816, Tucson, AZ 85707-4615",
+  "position": "epa",
+  "census_address": null,
+  "epa_registry_id": "110039288632",
+  "review_note": "Located on Davis-Monthan AFB; the PIV list Aero Park Blvd entry is the airport tower and is not used.",
+  "sources": [
+   {
+    "title": "FAA Letter to Airmen LTA-U90-8: Air Traffic Services During VFR Practice Approaches",
+    "publisher": "FAA (Federal NOTAM System, Letters to Airmen)",
+    "url": "https://notams.aim.faa.gov/lta/main/viewlta?lookupid=2839667077202056560",
+    "date": "Issued 2022-05-19",
+    "quote": "Davis-Monthan AFB, 4435 Phoenix Street, Bldg 4816, Tucson, AZ 85707-4615",
+    "tier": "government"
+   },
+   {
+    "title": "EPA Facility Registry Service record 110039288632: FAA TUCSON TRACON",
+    "publisher": "US EPA Facility Registry Service (FRS REST get_facilities)",
+    "url": "https://frs-public.epa.gov/ords/frs_public2/fii_query_detail.disp_program_facility?p_registry_id=110039288632",
+    "date": "unknown (retrieved 2026-10-06)",
+    "quote": "FAA TUCSON TRACON | 4445 E PHOENIX ST, DAVIS MONTHAN AFB, AZ 85707 | 32.170473 -110.876619",
+    "tier": "government"
+   },
+   {
+    "title": "FAA Service Center List 09.18.26 (PIV sites & points of contact), FAA Office of Security & Hazardous Materials Safety (ASH)",
+    "publisher": "FAA / ASH",
+    "url": "https://www.faa.gov/headquartersoffices/ash/service-center-hours",
+    "date": "2026-09-18 (PDF metadata created 2026-09-22)",
+    "quote": "Tucson ATCT/TRACON (TUS) 1865 East Aero Park BLVD Tucson, AZ 85756",
+    "tier": "government"
+   }
+  ]
+ },
+ {
+  "identifier": "Y90",
+  "facility_name": "Yankee TRACON",
+  "address": "35 Perimeter Rd., Windsor Locks, CT 06096",
+  "position": "census",
+  "census_address": {
+   "street": "35 Perimeter Rd",
+   "city": "Windsor Locks",
+   "state": "CT",
+   "zip": "06096"
+  },
+  "epa_registry_id": null,
+  "review_note": null,
+  "sources": [
+   {
+    "title": "FAA Letter to Airmen LTA-Y90-18: Class C VFR Transition Route",
+    "publisher": "FAA (Federal NOTAM System, Letters to Airmen)",
+    "url": "https://notams.aim.faa.gov/lta/main/viewlta?lookupid=3174371485611463746",
+    "date": "Issued 2023-08-31",
+    "quote": "35 Perimeter Rd., Windsor Locks, CT 06096",
+    "tier": "government"
+   },
+   {
+    "title": "FAA Letter to Airmen LTA-Y90-8: Class C VFR Transition Route",
+    "publisher": "FAA (Federal NOTAM System, Letters to Airmen)",
+    "url": "https://notams.aim.faa.gov/lta/main/viewlta?lookupid=2764839670826144932",
+    "date": "Issued 2022-02-02",
+    "quote": "35 Perimeter Rd., Windsor Locks, CT 06096",
+    "tier": "government"
+   },
+   {
+    "title": "FAA Service Center List 09.18.26 (PIV sites & points of contact), FAA Office of Security & Hazardous Materials Safety (ASH)",
+    "publisher": "FAA / ASH",
+    "url": "https://www.faa.gov/headquartersoffices/ash/service-center-hours",
+    "date": "2026-09-18 (PDF metadata created 2026-09-22)",
+    "quote": "Bradley ATCT/TRACON (BDL) 35 Perimeter Rd. Windsor Locks, CT 06096",
+    "tier": "government"
+   }
+  ]
+ },
+ {
+  "identifier": "A80",
+  "facility_name": "Atlanta TRACON",
+  "address": "784 Highway 74 South, Peachtree City, GA 30269",
+  "position": null,
+  "census_address": null,
+  "epa_registry_id": null,
+  "review_note": "No official coordinates; no Census address match for any official address form.",
+  "sources": [
+   {
+    "title": "FAA Letter to Airmen LTA-A80-20: VFR Aircraft Conducting Practice Instrument Approaches",
+    "publisher": "FAA (Federal NOTAM System, Letters to Airmen)",
+    "url": "https://notams.aim.faa.gov/lta/main/viewlta?lookupid=2729937649853798015",
+    "date": "Issued 2021-12-16",
+    "quote": "784 Highway 74 South, Peachtree City, GA 30269",
+    "tier": "government"
+   },
+   {
+    "title": "FAA Letter to Airmen LTA-A80-11: Atlanta Satellite RNAV Preferred Departure Routings",
+    "publisher": "FAA (Federal NOTAM System, Letters to Airmen)",
+    "url": "https://notams.aim.faa.gov/lta/main/viewlta?lookupid=1229150883946698283",
+    "date": "Issued 2016-04-15",
+    "quote": "784 Highway 74 South, Peachtree City, GA 30269",
+    "tier": "government"
+   },
+   {
+    "title": "FAA Service Center List 09.18.26 (PIV sites & points of contact), FAA Office of Security & Hazardous Materials Safety (ASH)",
+    "publisher": "FAA / ASH",
+    "url": "https://www.faa.gov/headquartersoffices/ash/service-center-hours",
+    "date": "2026-09-18 (PDF metadata created 2026-09-22)",
+    "quote": "A80 TRACON (A80) 784 S Hwy 74 Peachtree City, GA 30269",
+    "tier": "government"
+   },
+   {
+    "title": "Specifications: Atlanta TRACON A80 Peachtree City, GA Roof System Replacement & Fall Protection Installation, FAA-A80-1508361",
+    "publisher": "FAA Southern Region, Terminal Engineering (document hosted on a third-party bid plan-room S3 bucket, not faa.gov)",
+    "url": "https://imlive.s3.amazonaws.com/Federal%20Government/ID179154421661335644304228059733459058019/J1%20-%20b%201508361%20A80%20Roof%20replacement%20-%20Specifications%20(Rev%206.15.2020).pdf",
+    "date": "2019-05 (rev. 2020-06-15)",
+    "quote": "Project Identification: A80 Atlanta TRACON. Location: 784 Joel Cowen Parkway, Peachtree City, GA 00000",
+    "tier": "government"
+   }
+  ]
+ },
+ {
+  "identifier": "A90",
+  "facility_name": "Boston Consolidated TRACON",
+  "address": "25 Robert Milligan Parkway, Merrimack, NH 03054",
+  "position": "epa",
+  "census_address": null,
+  "epa_registry_id": "110069329426",
+  "review_note": null,
+  "sources": [
+   {
+    "title": "EPA Facility Registry Service record 110069329426: FAA BOSTON CONSOLIDATED TRACON",
+    "publisher": "US EPA Facility Registry Service (FRS REST get_facilities)",
+    "url": "https://frs-public.epa.gov/ords/frs_public2/fii_query_detail.disp_program_facility?p_registry_id=110069329426",
+    "date": "unknown (retrieved 2026-10-06)",
+    "quote": "FAA BOSTON CONSOLIDATED TRACON | 25 ROBERT MILLIGAN PKWY, MERRIMACK, NH 03054 | 42.81512 -71.49238",
+    "tier": "government"
+   },
+   {
+    "title": "FAA Letter to Airmen LTA-A90-36: Practice Instrument Approaches",
+    "publisher": "FAA (Federal NOTAM System, Letters to Airmen)",
+    "url": "https://notams.aim.faa.gov/lta/main/viewlta?lookupid=3825140096349246515",
+    "date": "Issued 2026-02-04",
+    "quote": "25 Robert Milligan Parkway, Merrimack, NH 03054",
+    "tier": "government"
+   },
+   {
+    "title": "FAA Letter to Airmen LTA-A90-26: Summer Flying in the Vicinity of Cape Cod, Nantucket and Martha's Vineyard",
+    "publisher": "FAA (Federal NOTAM System, Letters to Airmen)",
+    "url": "https://notams.aim.faa.gov/lta/main/viewlta?lookupid=2774317208090711539",
+    "date": "Issued 2022-02-15",
+    "quote": "25 Robert Milligan Parkway, Merrimack, NH 03054",
+    "tier": "government"
+   },
+   {
+    "title": "FAA Service Center List 09.18.26 (PIV sites & points of contact), FAA Office of Security & Hazardous Materials Safety (ASH)",
+    "publisher": "FAA / ASH",
+    "url": "https://www.faa.gov/headquartersoffices/ash/service-center-hours",
+    "date": "2026-09-18 (PDF metadata created 2026-09-22)",
+    "quote": "A90 TRACON / Boston Consolidated TRACON 25 Robert Milligan Pkwy Merrimack, NH 03054",
+    "tier": "government"
+   }
+  ]
+ }
+]

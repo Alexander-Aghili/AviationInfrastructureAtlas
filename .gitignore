@@ -3,3 +3,6 @@ dist/
 test-results/
 playwright-report/
 __pycache__/
+data/raw.previous/
+data/.update-backup/
+data/terrain/

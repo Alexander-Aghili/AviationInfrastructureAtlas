@@ -1,0 +1,1 @@
+{"result":{"input":{"address":{"zip":"44135","city":"Cleveland","street":"5800 Postal Rd","state":"OH"},"benchmark":{"isDefault":true,"benchmarkDescription":"Public Address Ranges - Current Benchmark","id":"4","benchmarkName":"Public_AR_Current"}},"addressMatches":[]}}

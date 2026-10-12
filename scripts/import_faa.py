@@ -1,8 +1,9 @@
-"""Normalize the retained 2026-10-01 FAA release; no airport-coordinate substitutions."""
+"""Normalize the retained FAA NASR release; no airport-coordinate substitutions."""
 import csv,json,re,hashlib,collections,pathlib,math
+from release import retained_cycle,csv_dir,subscription_url
 ROOT=pathlib.Path(__file__).resolve().parents[1]
-RAW=ROOT/'data/raw'; OUT=ROOT/'public/data'; CYCLE='2026-10-01'
-SOURCE='https://www.faa.gov/air_traffic/flight_info/aeronav/aero_data/NASR_Subscription/2026-10-01/'
+RAW=ROOT/'data/raw'; OUT=ROOT/'public/data'; CYCLE=retained_cycle(RAW)
+SOURCE=subscription_url(CYCLE)
 def coords(row):
     try:
         lat=float(row['LAT_DECIMAL']);lon=float(row['LONG_DECIMAL'])
@@ -16,7 +17,7 @@ def dms(value):
     if not m:return None
     d,mn,s,h=m.groups();return (float(d)+float(mn)/60+float(s)/3600)*(-1 if h in 'SW' else 1)
 def rows(group,table):
-    with (RAW/f'01_Oct_2026_{group}_CSV'/f'{table}.csv').open(encoding='utf-8-sig',newline='') as f:return list(csv.DictReader(f))
+    with (csv_dir(RAW,CYCLE,group)/f'{table}.csv').open(encoding='utf-8-sig',newline='') as f:return list(csv.DictReader(f))
 def main():
     features=[];counts={};seen=set()
     manifest=json.loads((RAW/'manifest.json').read_text())
@@ -47,7 +48,18 @@ def main():
             if r.get('COUNTRY_CODE')!='US':continue
             if table=='ATC_BASE' and r['FACILITY_TYPE']=='NON-ATCT':continue
             key='|'.join(r.get(k,'') for k in [idfield,typefield,'STATE_CODE','CITY','COMM_OUTLET_NAME','NAV_ID','FACILITY_ID','RADAR_NO'] if k in r)
-            add(table,key,r[namefield] or r[idfield],r[idfield],kind,r[typefield],r,centers=[r.get('APCH_P_PROVIDER','')] if r.get('APCH_P_PROV_TYPE_CD')=='C' else [],role='weather station location' if kind=='weather' else 'equipment location')
+            facility_kind='towers' if table=='ATC_BASE' and r['FACILITY_TYPE'].startswith('ATCT') else kind
+            name=(r[namefield] or r[idfield])+(' control tower' if facility_kind=='towers' else '')
+            add(table,key,name,r[idfield],facility_kind,r[typefield],r,centers=[],role='weather station location' if kind=='weather' else 'equipment location')
+            if table=='ATC_BASE':
+                f=features[-1]
+                if facility_kind=='towers':f['aliases']+=['ATCT','Airport Traffic Control Tower']
+                for prefix in ['APCH_P','APCH_S','DEP_P','DEP_S']:
+                    ident=r.get(prefix+'_PROVIDER');provider_type=r.get(prefix+'_PROV_TYPE_CD')
+                    relation='published ARTCC association' if provider_type=='C' else 'published approach/departure provider association'
+                    item={'type':relation,'identifier':ident}
+                    if ident and item not in f['relationships']:f['relationships'].append(item)
+
     for table,sub in [('ILS_BASE','Localizer'),('ILS_GS','Glide slope'),('ILS_DME','DME'),('ILS_MKR','Marker beacon')]:
         for r in rows('ILS',table):
             if r['COUNTRY_CODE']!='US':continue
@@ -75,37 +87,31 @@ def main():
     for (loc,typ,lat,lon,state),g in grouped.items():
         line=g['lines'][0];row={'STATE_CODE':state,'CITY':loc,'EFF_DATE':line[133:143].strip(),'ARTCC_NAME':line[8:48].strip(),'ICAO_ID':line[225:229].strip() if typ=='ARTCC' else '','REMARK':' / '.join(g['remarks']),'FREQUENCIES':' / '.join(sorted(set(g['frequencies']))),'ASSOCIATED_AIRPORTS':', '.join(sorted(set(g['airports']))),'LAT_SOURCE':line[175:200].strip(),'LONG_SOURCE':line[200:225].strip(),'SOURCE_RECORDS':'; '.join(g['keys'])}
         kind={'ARTCC':'centers','RCAG':'communications','ARSR':'radar','SECRA':'radar','CERAP':'control'}[typ]
-        add('AFF1','|'.join([loc,typ,state,str(lat),str(lon)]),loc,g['centers'][0] if typ=='ARTCC' else loc,kind,typ,row,geometry=[lon,lat] if lat is not None and lon is not None else None,centers=g['centers'],role='physical facility location' if typ=='ARTCC' else 'equipment site location')
-    # Published vertices only; omitted segments carry arcs or national-border instructions.
-    boundary=[];groups=collections.defaultdict(list);omitted=0
-    for r in rows('ARB','ARB_SEG'):
-        if r['LOCATION_ID'].startswith('Z'):groups[(r['LOCATION_ID'],r['ALTITUDE'],r['TYPE'])].append(r)
-    for (center,alt,typ),rr in groups.items():
-        rr.sort(key=lambda r:int(r['POINT_SEQ']));parts=[];run=[];start=0
-        for i,r in enumerate(rr):
-            a=coords(r);desc=r['BNDRY_PT_DESCRIP'].upper();closing='POINT OF BEGINNING' in desc
-            b=coords(rr[start] if closing else rr[(i+1)%len(rr)])
-            unsupported=any(w in desc for w in ['ARC','BOUNDARY','BORDER','THENCE VIA']) or not a or not b or abs(a[0]-b[0])>180
-            if unsupported:
-                if len(run)>1:parts.append(run)
-                run=[];omitted+=1
-            else:
-                if not run:run=[a]
-                run.append(b)
-            if closing:
-                if len(run)>1:parts.append(run)
-                run=[];start=i+1
-        if len(run)>1:parts.append(run)
-        if parts:boundary.append({'type':'Feature','geometry':{'type':'MultiLineString','coordinates':parts},'properties':{'center':center,'name':rr[0]['LOCATION_NAME'].title(),'altitude':alt,'boundary_type':typ,'effective_date':rr[0]['EFF_DATE'],'note':'Published straight segments only. Curves, national borders and antimeridian segments omitted pending geometry validation.'}})
+        add('AFF1','|'.join([loc,typ,state,str(lat),str(lon)]),loc,g['centers'][0] if typ in ['ARTCC','CERAP'] else loc,kind,typ,row,geometry=[lon,lat] if lat is not None and lon is not None else None,centers=g['centers'],role='physical facility location' if typ=='ARTCC' else 'equipment site location')
+    from boundaries import load_boundaries
+    boundary,boundary_manifest,boundary_audit=load_boundaries(ROOT,features,rows('ARB','ARB_SEG'))
+    omitted=0
     from supplemental import augment
     supplemental_manifest=json.loads((ROOT/'data/supplemental/manifest.json').read_text())
     for entry in supplemental_manifest:
         if hashlib.sha256((ROOT/entry['file']).read_bytes()).hexdigest()!=entry['sha256']:raise ValueError('Supplemental checksum mismatch: '+entry['file'])
+    for name in ['tower-manifest.json','surface-manifest.json','airport-reference-manifest.json','tracon-manifest.json']:
+        entries=json.loads((ROOT/'data/supplemental'/name).read_text())
+        for entry in entries:
+            if hashlib.sha256((ROOT/entry['file']).read_bytes()).hexdigest()!=entry['sha256']:raise ValueError('Supplemental checksum mismatch: '+entry['file'])
+        supplemental_manifest+=entries
     supplemental_audit=augment(features,RAW,ROOT)
+    from surface_surveillance import augment_surface
+    supplemental_audit['surface_deployments']=augment_surface(features,RAW)
+
+    from airport_references import add_airport_references
+    supplemental_audit['airport_reference_markers']=add_airport_references(features,RAW)
+    supplemental_audit['radar_inventory_by_type']=dict(collections.Counter(f['subtype'] for f in features if f['feature_type']=='radar'))
     counts=dict(collections.Counter(f['source']['table'] for f in features))
     counts_by_type=collections.Counter(f['feature_type'] for f in features)
-    audit={'cycle':CYCLE,'source':SOURCE,'records':len(features),'mapped':sum(bool(f['geometry']) for f in features),'unlocated':sum(not f['geometry'] for f in features),'normalized_equipment_records':len(features),'unique_installations':None,'site_groups':len(set(f['site_id'] for f in features)),'by_table':counts,'by_type':dict(counts_by_type),'boundary_variants':len(boundary),'omitted_boundary_segments':omitted,'unassociated':sum(not f['relationships'] for f in features),'supplemental':supplemental_audit,'completeness':'Not a complete inventory. NASA/JPL supplies long-range radar site coordinates; FAA and NTSB supply selected terminal antenna positions. Many terminal radars and control facilities remain unlocated. Equipment inventories are dated, not live status. FAA-address Census geocodes are approximate. ARTCC boundaries show partial straight segments.','deduplication':'AFF sites reconciled only by exact site name, type, state and source coordinates; shared center associations retained. Other cross-table duplicates have not been reconciled.'}
+    audit={'cycle':CYCLE,'source':SOURCE,'records':len(features),'mapped':sum(bool(f['geometry']) for f in features),'unlocated':sum(not f['geometry'] for f in features),'normalized_equipment_records':len(features),'unique_installations':None,'site_groups':len(set(f['site_id'] for f in features)),'by_table':counts,'by_type':dict(counts_by_type),'boundary_variants':boundary_audit['variants'],'boundary_source':boundary_audit,'omitted_boundary_segments':omitted,'unassociated':sum(not f['relationships'] for f in features),'supplemental':supplemental_audit,'completeness':'Not a complete inventory. NASA/JPL supplies long-range radar site coordinates; FAA and NTSB supply selected terminal antenna positions. Many terminal radars and control facilities remain unlocated. Equipment inventories are dated, not live status. Markers without published equipment positions use labeled FAA airport reference points only when the airport association is documented. TRACON buildings with an FAA-published address use labeled Census address estimates; other address geocodes are not rendered. Center and FIR/CTA outlines use FAA chart-published polygons with separate high/low variants. They are not internal controller sectors.','deduplication':'AFF sites reconciled only by exact site name, type, state and source coordinates; shared center associations retained. Other cross-table duplicates have not been reconciled.'}
     OUT.mkdir(parents=True,exist_ok=True)
+    (OUT/'boundary-manifest.json').write_text(json.dumps(boundary_manifest,indent=2))
     (OUT/'supplemental-manifest.json').write_text(json.dumps(supplemental_manifest,indent=2))
     catalog=[{k:v for k,v in f.items() if k not in ['attributes','quality']} for f in features]
     (OUT/'catalog.json').write_text(json.dumps(catalog,separators=(',',':')))

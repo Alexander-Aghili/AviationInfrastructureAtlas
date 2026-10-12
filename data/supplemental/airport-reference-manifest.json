@@ -1,0 +1,9 @@
+[
+  {
+    "file": "data/raw/01_Oct_2026_APT_CSV.zip",
+    "url": "https://nfdc.faa.gov/webContent/28DaySub/extra/01_Oct_2026_APT_CSV.zip",
+    "sha256": "aba48ea877f249d9b8cd63988b14b3432a6a09ad1fbe9561a5e6443c99c03dd0",
+    "bytes": 8030968,
+    "retrieved_at": "2026-10-04T18:41:18.392567+00:00"
+  }
+]

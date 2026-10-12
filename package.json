@@ -10,7 +10,13 @@
     "data:build": "python3 scripts/import_faa.py",
     "test": "python3 -m unittest discover -s tests -p 'test_*.py' && node --test tests/*.test.js",
     "test:browser": "playwright test",
-    "data:acquire": "python3 scripts/acquire_faa.py"
+    "data:acquire": "python3 scripts/acquire_faa.py",
+    "data:update": "python3 scripts/update_release.py",
+    "data:coverage": "python3 scripts/build_coverage.py",
+    "data:tracons": "python3 scripts/acquire_tracons.py",
+    "data:boundaries": "python3 scripts/acquire_boundaries.py",
+    "data:towers": "python3 scripts/acquire_towers.py",
+    "data:surface": "python3 scripts/acquire_surface.py"
   },
   "dependencies": {
     "leaflet": "^1.9.4"

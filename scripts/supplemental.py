@@ -84,12 +84,34 @@ def augment(features,raw,root):
     rno=next(f for f in features if f['source']['table']=='RDR' and f['identifiers'][0]=='RNO' and f['facility_class']=='ASR')
     rno['geometry']={'type':'Point','coordinates':[-(119+46/60+46.45/3600),39+30/60+4.55/3600]};rno['location_date']='2017-11-02';rno['location_accuracy']='Published antenna coordinates';rno['coordinate_role']='NTSB-published radar sensor location';rno['quality']['mapped']=True;rno['quality']['original_coordinates']={'LATITUDE':'39°30′4.55″N','LONGITUDE':'119°46′46.45″W'};rno['quality']['review_notes']=['2017 NTSB antenna position; present installation position is not independently certified.']
     rno['sources'].append(source('ATC factual report · WPR16FA172','National Transportation Safety Board','https://data.ntsb.gov/Docket/Document/docBLOB?FileExtension=.PDF&FileName=Air+Traffic+Control+Group+Chairman%27s+Factual+Report-Master.PDF&ID=40464366','2017-11-02',['radar antenna location','ASR-11 corroboration'],'RNO'))
-    # FAA directory addresses with Census address-range geocodes: visibly approximate, never antenna positions.
-    locations=json.loads((root/'data/supplemental/control_locations.json').read_text())
+    # Retain published addresses as evidence. A TRACON building is the facility itself, so its
+    # address estimate is mapped with a label; tower addresses never stand in for tower cabs.
+    locations=json.loads((root/'data/supplemental/control_locations.json').read_text())+json.loads((root/'data/supplemental/tower_locations.json').read_text())
     for item in locations:
         f=next((f for f in features if f['source']['table']=='ATC_BASE' and f['identifiers'][0]==item['identifier']),None)
-        if not f or not item.get('coordinates'):continue
-        f['geometry']={'type':'Point','coordinates':item['coordinates']};f['coordinate_role']='approximate facility address location';f['location_date']=item['retrieved_at'][:10];f['location_accuracy']='Address estimate';f['quality']['mapped']=True;f['quality']['review_notes']=['Census TIGER address-range interpolation of the FAA-published facility address; not surveyed building or antenna coordinates.'];f['city']=item['city'];f['attributes']['FACILITY_ADDRESS']=item['address'];f['sources'] += [source('FAA service-center directory','Federal Aviation Administration',DIRECTORY,'2023-12-19',['facility address'],item['identifier']),source('Census address geocoder','US Census Bureau',item['url'],item['retrieved_at'][:10],['approximate address location'],item['address'],note='TIGER street-range interpolation; explicitly labeled approximate.')]
+        if not f:continue
+        f['attributes']['FACILITY_ADDRESS']=item['address']
+        f['sources'].append(source('FAA service-center directory','Federal Aviation Administration',DIRECTORY,'2023-12-19',['facility address'],item['identifier']))
+        if f['subtype']=='TRACON' and item.get('coordinates') and not f['geometry']:
+            f['geometry']={'type':'Point','coordinates':item['coordinates']};f['equipment_geometry']=None
+            f['coordinate_role']='Census street-range estimate of the FAA-published facility address';f['location_accuracy']='Address estimate';f['location_date']='2023-12-19';f['quality']['mapped']=True
+            f['quality']['review_notes']=['Census street-range interpolation of the FAA directory address; not a surveyed building position.']
+            f['sources'].append(source('US Census Geocoder · address match','US Census Bureau',item['url'],item['retrieved_at'][:10],['estimated map position'],item['identifier']))
+    # FAA Letters to Airmen / PIV-list addresses for other TRACONs, positioned by Census or EPA FRS.
+    for item in json.loads((root/'data/supplemental/tracon_locations.json').read_text()):
+        f=next((f for f in features if f['source']['table']=='ATC_BASE' and f['subtype']=='TRACON' and f['identifiers'][0]==item['identifier']),None)
+        if not f:continue
+        f['attributes'].setdefault('FACILITY_ADDRESS',item['address'])
+        if item['review_note']:f['quality']['review_notes'].append(item['review_note'])
+        offices={'FAA (Federal NOTAM System, Letters to Airmen)':'Federal Aviation Administration · Letter to Airmen','FAA / ASH':'Federal Aviation Administration · Security & Hazardous Materials Safety'}
+        for s in item['sources']:
+            if s['publisher'] in offices:f['sources'].append(source(s['title'],offices[s['publisher']],s['url'],s['date'],['facility address'],item['identifier'],note='Published address: '+s['quote'] if s.get('quote') else None))
+        evidence=item['position_evidence']
+        if evidence and not f['geometry']:
+            f['geometry']={'type':'Point','coordinates':item['coordinates']};f['equipment_geometry']=None
+            f['coordinate_role']=evidence['role'];f['location_accuracy']='Address estimate';f['location_date']=evidence['date'];f['quality']['mapped']=True
+            f['quality']['review_notes'].append('Approximate facility position from an official address; not a surveyed building position.')
+            f['sources'].append(source(evidence['title'],evidence['publisher'],evidence['url'],evidence['date'],['estimated map position'],item['identifier']))
         if item['identifier']=='NCT':f['aliases']+=['NorCal','Norcal Approach','Norcal Departure','Northern California TRACON Facility','Mather']
     # Explicit sensor associations from ATC-450 Table A-1. No proximity-based inference.
     nct_ids=['BAB','OAK','MCE','MRY','RNO','SCK','SUU']
@@ -99,4 +121,4 @@ def augment(features,raw,root):
             f['sources'].append(source('ATC-450 · Table A-1, NCT row','MIT Lincoln Laboratory · FAA-sponsored research',ATC450+'#page=55','2022-03-04',['TRACON association'],f['identifiers'][0],tier='faa-sponsored research'))
     nct=next(f for f in features if f['source']['table']=='ATC_BASE' and 'NCT' in f['identifiers'])
     nct['attributes']['FACILITY_FUNCTION']='Terminal Radar Approach Control (TRACON)';nct['attributes']['DOCUMENTED_SENSOR_IDS']=', '.join(nct_ids)
-    return {'long_range_sites':sum(f['source']['table']=='JPL_RADAR' for f in features),'terminal_model_records':sum(f['source']['table']=='RDR' and f['equipment_model'] is not None for f in features),'control_address_estimates':sum(f['location_accuracy']=='Address estimate' for f in features),'equipment_inventory_dates':['2015-05-26','2022-03-04'],'note':'NASR cycle and supplemental evidence dates are distinct. Radar models are last documented types, not a claim of current equipment. NASA/JPL radar inventory is undated. Address geocodes are approximate.'}
+    return {'long_range_sites':sum(f['source']['table']=='JPL_RADAR' for f in features),'terminal_model_records':sum(f['source']['table']=='RDR' and f['equipment_model'] is not None for f in features),'control_address_estimates':sum(f['location_accuracy']=='Address estimate' for f in features),'equipment_inventory_dates':['2015-05-26','2022-03-04'],'note':'NASR cycle and supplemental evidence dates are distinct. Radar models are last documented types, not a claim of current equipment. NASA/JPL radar inventory is undated. TRACON buildings with an FAA-published address are mapped at labeled Census address estimates; tower address geocodes are retained as research only and are not rendered.'}

@@ -1,0 +1,3360 @@
+[
+  {
+    "identifier": "CID",
+    "street": "9455 Shepard Court, S.W.",
+    "city": "Cedar Rapids",
+    "state": "IA",
+    "zip": "52404",
+    "source_heading": "Cedar Rapids ATCT (CID ATCT)",
+    "address": "9455 Shepard Court, S.W., Cedar Rapids, IA 52404",
+    "coordinates": [
+      -91.705816251069,
+      41.88917169868
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=9455+Shepard+Court%2C+S.W.&city=Cedar+Rapids&state=IA&zip=52404&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-CID.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "DSM",
+    "street": "3000 McKinley Avenue",
+    "city": "Des Moines",
+    "state": "IA",
+    "zip": "50321",
+    "source_heading": "Des Moines ATCT/TRACON (DSM)",
+    "address": "3000 McKinley Avenue, Des Moines, IA 50321",
+    "coordinates": [
+      -93.658383718214,
+      41.54087824105
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=3000+McKinley+Avenue&city=Des+Moines&state=IA&zip=50321&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-DSM.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "SUX",
+    "street": "6001 Mitchell Street",
+    "city": "Sioux City",
+    "state": "IA",
+    "zip": "51111",
+    "source_heading": "Sioux City ATCT (SUX ATCT)",
+    "address": "6001 Mitchell Street, Sioux City, IA 51111",
+    "coordinates": [
+      -96.376287210798,
+      42.402079123855
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=6001+Mitchell+Street&city=Sioux+City&state=IA&zip=51111&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-SUX.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "ALO",
+    "street": "2740 Lingston Lane",
+    "city": "Waterloo",
+    "state": "IA",
+    "zip": "50703",
+    "source_heading": "Waterloo ATCT (ALO ATCT)",
+    "address": "2740 Lingston Lane, Waterloo, IA 50703",
+    "coordinates": [
+      -92.394374271337,
+      42.550398100265
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=2740+Lingston+Lane&city=Waterloo&state=IA&zip=50703&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-ALO.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "MCI",
+    "street": "4 International Square",
+    "city": "Kansas City",
+    "state": "KS",
+    "zip": "64153",
+    "source_heading": "MCI, Kansas City International Tower (MCI)",
+    "address": "4 International Square, Kansas City, KS 64153",
+    "coordinates": [
+      -94.714718889996,
+      39.297664975523
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=4+International+Square&city=Kansas+City&state=KS&zip=64153&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-MCI.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "ICT",
+    "street": "2196 South Airport Road",
+    "city": "Wichita",
+    "state": "KS",
+    "zip": "67209",
+    "source_heading": "Wichita ATCT (ICT ATCT)",
+    "address": "2196 South Airport Road, Wichita, KS 67209",
+    "coordinates": [
+      -97.426228921542,
+      37.655344141023
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=2196+South+Airport+Road&city=Wichita&state=KS&zip=67209&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-ICT.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "STL",
+    "street": "10789 Lambert Internation Blvd",
+    "city": "St. Louis",
+    "state": "MO",
+    "zip": "63044",
+    "source_heading": "St. Louis ATCT (STL ATCT)",
+    "address": "10789 Lambert Internation Blvd, St. Louis, MO 63044",
+    "coordinates": [
+      -90.370396473143,
+      38.74304214541
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=10789+Lambert+Internation+Blvd&city=St.+Louis&state=MO&zip=63044&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-STL.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "SGF",
+    "street": "2365 North FAA Avenue",
+    "city": "Springfield",
+    "state": "MO",
+    "zip": "65802",
+    "source_heading": "Springfield ATCT (SGF ATCT)",
+    "address": "2365 North FAA Avenue, Springfield, MO 65802",
+    "coordinates": [
+      -93.393686983216,
+      37.236889437509
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=2365+North+FAA+Avenue&city=Springfield&state=MO&zip=65802&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-SGF.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "LNK",
+    "street": "2600 West Adams St.",
+    "city": "Lincoln",
+    "state": "NE",
+    "zip": "68524",
+    "source_heading": "Lincoln ATCT (LNK ATCT)",
+    "address": "2600 West Adams St., Lincoln, NE 68524",
+    "coordinates": null,
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=2600+West+Adams+St.&city=Lincoln&state=NE&zip=68524&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-LNK.json",
+    "match_status": "no unique match"
+  },
+  {
+    "identifier": "OMA",
+    "street": "4501 Abbott Dr",
+    "city": "Omaha",
+    "state": "NE",
+    "zip": "68110",
+    "source_heading": "Omaha ATCT (OMA ATCT)",
+    "address": "4501 Abbott Dr, Omaha, NE 68110",
+    "coordinates": [
+      -95.901795018866,
+      41.292256488555
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=4501+Abbott+Dr&city=Omaha&state=NE&zip=68110&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-OMA.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "MTN",
+    "street": "701 Wilson Point Road, Box 1",
+    "city": "Middle River",
+    "state": "MD",
+    "zip": "21220",
+    "source_heading": "Martin State Airport ATCT (MTN)",
+    "address": "701 Wilson Point Road, Box 1, Middle River, MD 21220",
+    "coordinates": [
+      -76.424948714562,
+      39.329913546102
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=701+Wilson+Point+Road%2C+Box+1&city=Middle+River&state=MD&zip=21220&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-MTN.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "CDW",
+    "street": "31 Wright Way, Suite #1",
+    "city": "Fairfield",
+    "state": "NJ",
+    "zip": "07004",
+    "source_heading": "Caldwell ATCT (CDW)",
+    "address": "31 Wright Way, Suite #1, Fairfield, NJ 07004",
+    "coordinates": null,
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=31+Wright+Way%2C+Suite+%231&city=Fairfield&state=NJ&zip=07004&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-CDW.json",
+    "match_status": "no unique match"
+  },
+  {
+    "identifier": "MMU",
+    "street": "4 Airport Road",
+    "city": "Morristown",
+    "state": "NJ",
+    "zip": "07960",
+    "source_heading": "Morristown ATCT (MMU ATCT)",
+    "address": "4 Airport Road, Morristown, NJ 07960",
+    "coordinates": [
+      -74.42434127055,
+      40.792561628597
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=4+Airport+Road&city=Morristown&state=NJ&zip=07960&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-MMU.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "EWR",
+    "street": "118 Flagpole Rd",
+    "city": "Newark",
+    "state": "NJ",
+    "zip": "07114",
+    "source_heading": "Newark ATCT (EWR)",
+    "address": "118 Flagpole Rd, Newark, NJ 07114",
+    "coordinates": null,
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=118+Flagpole+Rd&city=Newark&state=NJ&zip=07114&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-EWR.json",
+    "match_status": "no unique match"
+  },
+  {
+    "identifier": "TEB",
+    "street": "225 Fred Wehran Dr",
+    "city": "Teterboro",
+    "state": "NJ",
+    "zip": "07608",
+    "source_heading": "Teterboro ATCT (TEB ATCT)",
+    "address": "225 Fred Wehran Dr, Teterboro, NJ 07608",
+    "coordinates": [
+      -74.055272796695,
+      40.851840081242
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=225+Fred+Wehran+Dr&city=Teterboro&state=NJ&zip=07608&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-TEB.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "BUF",
+    "street": "165 Holtz Dr.",
+    "city": "Cheektowaga",
+    "state": "NY",
+    "zip": "14225",
+    "source_heading": "Buffalo ATCT/TRACON (BUF ATCT)",
+    "address": "165 Holtz Dr., Cheektowaga, NY 14225",
+    "coordinates": [
+      -78.717666086631,
+      42.940491114706
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=165+Holtz+Dr.&city=Cheektowaga&state=NY&zip=14225&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-BUF.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "ELM",
+    "street": "276 Sing Sing Rd",
+    "city": "Horseheads",
+    "state": "NY",
+    "zip": "14845",
+    "source_heading": "Elmira ATCT (ELM ATCT)",
+    "address": "276 Sing Sing Rd, Horseheads, NY 14845",
+    "coordinates": [
+      -76.898242142793,
+      42.162556127703
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=276+Sing+Sing+Rd&city=Horseheads&state=NY&zip=14845&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-ELM.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "BGM",
+    "street": "2534 Airport Road",
+    "city": "Johnson City",
+    "state": "NY",
+    "zip": "13790",
+    "source_heading": "Binghamton ATCT/TRACON (BGM)",
+    "address": "2534 Airport Road, Johnson City, NY 13790",
+    "coordinates": [
+      -75.987445925904,
+      42.209916766804
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=2534+Airport+Road&city=Johnson+City&state=NY&zip=13790&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-BGM.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "ALB",
+    "street": "128 Sicker Rd",
+    "city": "Latham",
+    "state": "NY",
+    "zip": "12110",
+    "source_heading": "Albany County ATCT/TRACON (ALB)",
+    "address": "128 Sicker Rd, Latham, NY 12110",
+    "coordinates": [
+      -73.801351339964,
+      42.751335288873
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=128+Sicker+Rd&city=Latham&state=NY&zip=12110&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-ALB.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "SYR",
+    "street": "200 Constellation Way North",
+    "city": "North Syracuse",
+    "state": "NY",
+    "zip": "13212",
+    "source_heading": "Syracuse-Hancock ATCT/TRACON (SYR)",
+    "address": "200 Constellation Way North, North Syracuse, NY 13212",
+    "coordinates": [
+      -76.116393888398,
+      43.114893921149
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=200+Constellation+Way+North&city=North+Syracuse&state=NY&zip=13212&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-SYR.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "ROC",
+    "street": "1375 Scottsville Rd",
+    "city": "Rochester",
+    "state": "NY",
+    "zip": "14624",
+    "source_heading": "Rochester ATCT/TRACON (ROC ATCT)",
+    "address": "1375 Scottsville Rd, Rochester, NY 14624",
+    "coordinates": [
+      -77.669931706073,
+      43.112893790023
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=1375+Scottsville+Rd&city=Rochester&state=NY&zip=14624&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-ROC.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "POU",
+    "street": "265 New Hackensack Rd",
+    "city": "Wappingers Falls",
+    "state": "NY",
+    "zip": "12590",
+    "source_heading": "Dutchess ATCT (POU ATCT)",
+    "address": "265 New Hackensack Rd, Wappingers Falls, NY 12590",
+    "coordinates": [
+      -73.88392698508,
+      41.623799215554
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=265+New+Hackensack+Rd&city=Wappingers+Falls&state=NY&zip=12590&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-POU.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "HPN",
+    "street": "91 Tower Rd",
+    "city": "White Plains",
+    "state": "NY",
+    "zip": "10604",
+    "source_heading": "Westchester ATCT (HPN)",
+    "address": "91 Tower Rd, White Plains, NY 10604",
+    "coordinates": [
+      -73.718850947541,
+      41.060577868668
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=91+Tower+Rd&city=White+Plains&state=NY&zip=10604&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-HPN.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "AVP",
+    "street": "534 Lidy Road",
+    "city": "Dupont",
+    "state": "PA",
+    "zip": "18641",
+    "source_heading": "Wilkes-Barre ATCT/TRACON (AVP ATCT)",
+    "address": "534 Lidy Road, Dupont, PA 18641",
+    "coordinates": [
+      -75.734319714169,
+      41.327898059073
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=534+Lidy+Road&city=Dupont&state=PA&zip=18641&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-AVP.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "ERI",
+    "street": "4411 West 12th Street, Room 218",
+    "city": "Erie",
+    "state": "PA",
+    "zip": "16505",
+    "source_heading": "Erie ATCT (ERI ATCT)",
+    "address": "4411 West 12th Street, Room 218, Erie, PA 16505",
+    "coordinates": [
+      -80.182590261808,
+      42.08421992641
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=4411+West+12th+Street%2C+Room+218&city=Erie&state=PA&zip=16505&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-ERI.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "PHL",
+    "street": "15 Hog Island Rd.",
+    "city": "Philadelphia",
+    "state": "PA",
+    "zip": "19153",
+    "source_heading": "Philadelphia ATCT/TRACON (PHL)",
+    "address": "15 Hog Island Rd., Philadelphia, PA 19153",
+    "coordinates": null,
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=15+Hog+Island+Rd.&city=Philadelphia&state=PA&zip=19153&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-PHL.json",
+    "match_status": "no unique match"
+  },
+  {
+    "identifier": "ABE",
+    "street": "135 Fashion Dr.",
+    "city": "South Allentown",
+    "state": "PA",
+    "zip": "18109",
+    "source_heading": "Allentown ATCT/TRACON (ABE ATCT)",
+    "address": "135 Fashion Dr., South Allentown, PA 18109",
+    "coordinates": [
+      -75.442277973851,
+      40.658192591076
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=135+Fashion+Dr.&city=South+Allentown&state=PA&zip=18109&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-ABE.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "HEF",
+    "street": "10603 Observation Road",
+    "city": "Manassas",
+    "state": "VA",
+    "zip": "20110",
+    "source_heading": "Manassas ATCT (HEF)",
+    "address": "10603 Observation Road, Manassas, VA 20110",
+    "coordinates": [
+      -77.520319536379,
+      38.720942481219
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=10603+Observation+Road&city=Manassas&state=VA&zip=20110&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-HEF.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "PHF",
+    "street": "2402 G Avenue",
+    "city": "Newport News",
+    "state": "VA",
+    "zip": "23602",
+    "source_heading": "Newport News ATCT (PHF)",
+    "address": "2402 G Avenue, Newport News, VA 23602",
+    "coordinates": [
+      -76.505534003447,
+      37.129610813871
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=2402+G+Avenue&city=Newport+News&state=VA&zip=23602&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-PHF.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "RIC",
+    "street": "5701 Gulfstream Rd",
+    "city": "Richmond",
+    "state": "VA",
+    "zip": "23250",
+    "source_heading": "Richmond ATCT (RIC ATCT)",
+    "address": "5701 Gulfstream Rd, Richmond, VA 23250",
+    "coordinates": [
+      -77.331965902559,
+      37.513457132375
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=5701+Gulfstream+Rd&city=Richmond&state=VA&zip=23250&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-RIC.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "ROA",
+    "street": "5354 Aviation Dr.",
+    "city": "Roanoke",
+    "state": "VA",
+    "zip": "24012",
+    "source_heading": "Roanoke ATCT/TRACON (ROA ATCT)",
+    "address": "5354 Aviation Dr., Roanoke, VA 24012",
+    "coordinates": [
+      -79.971239736998,
+      37.326029028508
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=5354+Aviation+Dr.&city=Roanoke&state=VA&zip=24012&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-ROA.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "ORF",
+    "street": "1245 Miller Store Rd",
+    "city": "Virginia Beach",
+    "state": "VA",
+    "zip": "23455",
+    "source_heading": "Norfolk ATCT/TRACON (ORF)",
+    "address": "1245 Miller Store Rd, Virginia Beach, VA 23455",
+    "coordinates": [
+      -76.194442161753,
+      36.890716623126
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=1245+Miller+Store+Rd&city=Virginia+Beach&state=VA&zip=23455&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-ORF.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "CKB",
+    "street": "2500 Aviation Way Bridgeport",
+    "city": "Bridgeport",
+    "state": "WV",
+    "zip": "26330",
+    "source_heading": "Clarksburg ATCT (CKB)",
+    "address": "2500 Aviation Way Bridgeport, Bridgeport, WV 26330",
+    "coordinates": null,
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=2500+Aviation+Way+Bridgeport&city=Bridgeport&state=WV&zip=26330&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-CKB.json",
+    "match_status": "no unique match"
+  },
+  {
+    "identifier": "CRW",
+    "street": "100 Airport Rd.",
+    "city": "Charleston",
+    "state": "WV",
+    "zip": "25311",
+    "source_heading": "Charleston ATCT/TRACON (CRW)",
+    "address": "100 Airport Rd., Charleston, WV 25311",
+    "coordinates": [
+      -81.596948254771,
+      38.368721558986
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=100+Airport+Rd.&city=Charleston&state=WV&zip=25311&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-CRW.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "HTS",
+    "street": "1471 Airport Rd",
+    "city": "Huntington",
+    "state": "WV",
+    "zip": "25704",
+    "source_heading": "Huntington ATCT/TRACON (HTS)",
+    "address": "1471 Airport Rd, Huntington, WV 25704",
+    "coordinates": [
+      -82.55585578526,
+      38.37025510813
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=1471+Airport+Rd&city=Huntington&state=WV&zip=25704&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-HTS.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "ARB",
+    "street": "875 Airport Drive",
+    "city": "Ann Arbor",
+    "state": "MI",
+    "zip": "48108",
+    "source_heading": "Ann Arbor ATCT (ARB)",
+    "address": "875 Airport Drive, Ann Arbor, MI 48108",
+    "coordinates": [
+      -83.745207234799,
+      42.226830693133
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=875+Airport+Drive&city=Ann+Arbor&state=MI&zip=48108&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-ARB.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "MKG",
+    "street": "113 Sinclair Dr",
+    "city": "Muskegon",
+    "state": "MI",
+    "zip": "49441",
+    "source_heading": "Muskegon ATCT/TRACON (MKG)",
+    "address": "113 Sinclair Dr, Muskegon, MI 49441",
+    "coordinates": [
+      -86.234808974814,
+      43.165502001158
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=113+Sinclair+Dr&city=Muskegon&state=MI&zip=49441&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-MKG.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "CPS",
+    "street": "9951 Molla Drive",
+    "city": "Cahokia",
+    "state": "IL",
+    "zip": "62206",
+    "source_heading": "St. Louis Downtown ATCT (CPS)",
+    "address": "9951 Molla Drive, Cahokia, IL 62206",
+    "coordinates": [
+      -90.166966301705,
+      38.570146637966
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=9951+Molla+Drive&city=Cahokia&state=IL&zip=62206&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-CPS.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "MDW",
+    "street": "6200 South Laramie Ave",
+    "city": "Chicago",
+    "state": "IL",
+    "zip": "60638",
+    "source_heading": "Midway ATCT (MDW)",
+    "address": "6200 South Laramie Ave, Chicago, IL 60638",
+    "coordinates": null,
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=6200+South+Laramie+Ave&city=Chicago&state=IL&zip=60638&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-MDW.json",
+    "match_status": "no unique match"
+  },
+  {
+    "identifier": "CMI",
+    "street": "1 Airport Rd",
+    "city": "Savoy",
+    "state": "IL",
+    "zip": "61874",
+    "source_heading": "Champaign ATCT (CMI)",
+    "address": "1 Airport Rd, Savoy, IL 61874",
+    "coordinates": [
+      -88.254049957557,
+      40.039479661116
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=1+Airport+Rd&city=Savoy&state=IL&zip=61874&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-CMI.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "MLI",
+    "street": "6421 74th Ave",
+    "city": "Milan",
+    "state": "IL",
+    "zip": "61264",
+    "source_heading": "Quad City ATCT/TRACON (MLI)",
+    "address": "6421 74th Ave, Milan, IL 61264",
+    "coordinates": [
+      -90.510217157569,
+      41.441200606226
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=6421+74th+Ave&city=Milan&state=IL&zip=61264&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-MLI.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "PIA",
+    "street": "6100 W Dirksen Parkway",
+    "city": "Peoria",
+    "state": "IL",
+    "zip": "61607",
+    "source_heading": "Peoria ATCT/TRACON (PIA)",
+    "address": "6100 W Dirksen Parkway, Peoria, IL 61607",
+    "coordinates": null,
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=6100+W+Dirksen+Parkway&city=Peoria&state=IL&zip=61607&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-PIA.json",
+    "match_status": "no unique match"
+  },
+  {
+    "identifier": "RFD",
+    "street": "5701 Falcon Rd",
+    "city": "Rockford",
+    "state": "IL",
+    "zip": "61109",
+    "source_heading": "Rockford ATCT (RFD)",
+    "address": "5701 Falcon Rd, Rockford, IL 61109",
+    "coordinates": [
+      -89.085259205337,
+      42.198434943591
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=5701+Falcon+Rd&city=Rockford&state=IL&zip=61109&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-RFD.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "DPA",
+    "street": "2710 International Drive",
+    "city": "West Chicago",
+    "state": "IL",
+    "zip": "60185",
+    "source_heading": "DuPage ATCT (DPA)",
+    "address": "2710 International Drive, West Chicago, IL 60185",
+    "coordinates": [
+      -88.257338399498,
+      41.907028468315
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=2710+International+Drive&city=West+Chicago&state=IL&zip=60185&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-DPA.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "EVV",
+    "street": "7405 Indianapolis Rd",
+    "city": "Evansville",
+    "state": "IN",
+    "zip": "47725",
+    "source_heading": "Evansville ATCT (EVV)",
+    "address": "7405 Indianapolis Rd, Evansville, IN 47725",
+    "coordinates": null,
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=7405+Indianapolis+Rd&city=Evansville&state=IN&zip=47725&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-EVV.json",
+    "match_status": "no unique match"
+  },
+  {
+    "identifier": "FWA",
+    "street": "3817 Winters Road",
+    "city": "Fort Wayne",
+    "state": "IN",
+    "zip": "46809",
+    "source_heading": "Fort Wayne ATCT/TRACON (FWA)",
+    "address": "3817 Winters Road, Fort Wayne, IN 46809",
+    "coordinates": [
+      -85.187287696022,
+      40.974520097381
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=3817+Winters+Road&city=Fort+Wayne&state=IN&zip=46809&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-FWA.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "LAF",
+    "street": "1560 Aviation Drive",
+    "city": "Lafayette",
+    "state": "IN",
+    "zip": "47906",
+    "source_heading": "Lafayette ATCT (LAF)",
+    "address": "1560 Aviation Drive, Lafayette, IN 47906",
+    "coordinates": [
+      -86.933345316791,
+      40.416892545134
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=1560+Aviation+Drive&city=Lafayette&state=IN&zip=47906&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-LAF.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "SBN",
+    "street": "2301 North Bendix",
+    "city": "South Bend",
+    "state": "IN",
+    "zip": "46628",
+    "source_heading": "South Bend ATCT (SBN)",
+    "address": "2301 North Bendix, South Bend, IN 46628",
+    "coordinates": [
+      -86.293855538913,
+      41.708284875384
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=2301+North+Bendix&city=South+Bend&state=IN&zip=46628&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-SBN.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "HUF",
+    "street": "580 S Airport St",
+    "city": "Terre Haute",
+    "state": "IN",
+    "zip": "47803",
+    "source_heading": "Terre Haute ATCT(HUF)",
+    "address": "580 S Airport St, Terre Haute, IN 47803",
+    "coordinates": [
+      -87.304747439553,
+      39.460882334241
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=580+S+Airport+St&city=Terre+Haute&state=IN&zip=47803&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-HUF.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "YIP",
+    "street": "8808 Beck Rd",
+    "city": "Belleville",
+    "state": "MI",
+    "zip": "48111",
+    "source_heading": "Willow Run ATCT (YIP)",
+    "address": "8808 Beck Rd, Belleville, MI 48111",
+    "coordinates": [
+      -83.504209887129,
+      42.239485985377
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=8808+Beck+Rd&city=Belleville&state=MI&zip=48111&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-YIP.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "FNT",
+    "street": "3900 W. Maple Road",
+    "city": "Flint",
+    "state": "MI",
+    "zip": "48507",
+    "source_heading": "Flint ATCT/TRACON (FNT)",
+    "address": "3900 W. Maple Road, Flint, MI 48507",
+    "coordinates": [
+      -83.751664615422,
+      42.958594134601
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=3900+W.+Maple+Road&city=Flint&state=MI&zip=48507&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-FNT.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "GRR",
+    "street": "5500 44th St. SE",
+    "city": "Grand Rapids",
+    "state": "MI",
+    "zip": "49512",
+    "source_heading": "Grand Rapids ATCT(GRR ATCT)",
+    "address": "5500 44th St. SE, Grand Rapids, MI 49512",
+    "coordinates": [
+      -85.532412569177,
+      42.885171620415
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=5500+44th+St.+SE&city=Grand+Rapids&state=MI&zip=49512&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-GRR.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "LAN",
+    "street": "4100 Capital City Blvd",
+    "city": "Lansing",
+    "state": "MI",
+    "zip": "48906",
+    "source_heading": "Lansing ATCT (LAN ATCT)",
+    "address": "4100 Capital City Blvd, Lansing, MI 48906",
+    "coordinates": [
+      -84.588934768933,
+      42.773161623389
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=4100+Capital+City+Blvd&city=Lansing&state=MI&zip=48906&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-LAN.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "AZO",
+    "street": "5400 Aviation Drive",
+    "city": "Portage",
+    "state": "MI",
+    "zip": "49002",
+    "source_heading": "Kalamazoo ATCT (AZO)",
+    "address": "5400 Aviation Drive, Portage, MI 49002",
+    "coordinates": null,
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=5400+Aviation+Drive&city=Portage&state=MI&zip=49002&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-AZO.json",
+    "match_status": "no unique match"
+  },
+  {
+    "identifier": "PTK",
+    "street": "6510 Highland Road",
+    "city": "Waterford",
+    "state": "MI",
+    "zip": "48327",
+    "source_heading": "Pontiac ATCT (PTK)",
+    "address": "6510 Highland Road, Waterford, MI 48327",
+    "coordinates": [
+      -83.417112432778,
+      42.659628428109
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=6510+Highland+Road&city=Waterford&state=MI&zip=48327&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-PTK.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "STP",
+    "street": "514 Tower Rd.",
+    "city": "St. Paul",
+    "state": "MN",
+    "zip": "55107",
+    "source_heading": "St. Paul ATCT (STP ATCT)",
+    "address": "514 Tower Rd., St. Paul, MN 55107",
+    "coordinates": null,
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=514+Tower+Rd.&city=St.+Paul&state=MN&zip=55107&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-STP.json",
+    "match_status": "no unique match"
+  },
+  {
+    "identifier": "FCM",
+    "street": "10110 Flying Cloud Dr.",
+    "city": "Eden Prairie",
+    "state": "MN",
+    "zip": "55347",
+    "source_heading": "Flying Cloud ATCT (FCM)",
+    "address": "10110 Flying Cloud Dr., Eden Prairie, MN 55347",
+    "coordinates": [
+      -93.455890437632,
+      44.820593928389
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=10110+Flying+Cloud+Dr.&city=Eden+Prairie&state=MN&zip=55347&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-FCM.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "MSP",
+    "street": "6311 34th Ave S",
+    "city": "Minneapolis",
+    "state": "MN",
+    "zip": "55450",
+    "source_heading": "Minneapolis ATCT (MSP)",
+    "address": "6311 34th Ave S, Minneapolis, MN 55450",
+    "coordinates": [
+      -93.222992715216,
+      44.887434344466
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=6311+34th+Ave+S&city=Minneapolis&state=MN&zip=55450&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-MSP.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "MIC",
+    "street": "5800 Crystal Airport Rd",
+    "city": "Crystal",
+    "state": "MN",
+    "zip": "55429",
+    "source_heading": "Minneapolis-Crystal ATCT (MIC ATCT)",
+    "address": "5800 Crystal Airport Rd, Crystal, MN 55429",
+    "coordinates": [
+      -93.355791533303,
+      45.058434734786
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=5800+Crystal+Airport+Rd&city=Crystal&state=MN&zip=55429&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-MIC.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "RST",
+    "street": "9 Helgerson Drive",
+    "city": "Rochester",
+    "state": "MN",
+    "zip": "55902",
+    "source_heading": "Rochester ATCT (RST ATCT)",
+    "address": "9 Helgerson Drive, Rochester, MN 55902",
+    "coordinates": [
+      -92.489956418141,
+      43.912573797519
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=9+Helgerson+Drive&city=Rochester&state=MN&zip=55902&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-RST.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "BIS",
+    "street": "2301 University Drive Bldg. 23A",
+    "city": "Bismarck",
+    "state": "ND",
+    "zip": "58504",
+    "source_heading": "Bismarck ATCT (BIS ATCT)",
+    "address": "2301 University Drive Bldg. 23A, Bismarck, ND 58504",
+    "coordinates": [
+      -100.763151268697,
+      46.76564717459
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=2301+University+Drive+Bldg.+23A&city=Bismarck&state=ND&zip=58504&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-BIS.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "CLE",
+    "street": "5800 Postal Rd",
+    "city": "Cleveland",
+    "state": "OH",
+    "zip": "44135",
+    "source_heading": "Cleveland ATCT (CLE)",
+    "address": "5800 Postal Rd, Cleveland, OH 44135",
+    "coordinates": null,
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=5800+Postal+Rd&city=Cleveland&state=OH&zip=44135&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-CLE.json",
+    "match_status": "no unique match"
+  },
+  {
+    "identifier": "CMH",
+    "street": "4277 International Gtwy.",
+    "city": "Columbus",
+    "state": "OH",
+    "zip": "43219",
+    "source_heading": "Columbus ATCT (CMH)",
+    "address": "4277 International Gtwy., Columbus, OH 43219",
+    "coordinates": [
+      -82.891307501822,
+      39.99825832204
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=4277+International+Gtwy.&city=Columbus&state=OH&zip=43219&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-CMH.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "MFD",
+    "street": "2101 Harrington Memorial Rd.",
+    "city": "Mansfield",
+    "state": "OH",
+    "zip": "44903",
+    "source_heading": "Mansfield ATCT/TRACON (MFD)",
+    "address": "2101 Harrington Memorial Rd., Mansfield, OH 44903",
+    "coordinates": [
+      -82.513077251932,
+      40.812790693306
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=2101+Harrington+Memorial+Rd.&city=Mansfield&state=OH&zip=44903&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-MFD.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "DAY",
+    "street": "3753 Cargo Road",
+    "city": "Vandalia",
+    "state": "OH",
+    "zip": "45377",
+    "source_heading": "Dayton ATCT/TRACON (DAY)",
+    "address": "3753 Cargo Road, Vandalia, OH 45377",
+    "coordinates": [
+      -84.225029521699,
+      39.899151229133
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=3753+Cargo+Road&city=Vandalia&state=OH&zip=45377&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-DAY.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "YNG",
+    "street": "3976 King Graves Rd",
+    "city": "Vienna",
+    "state": "OH",
+    "zip": "44473",
+    "source_heading": "Youngstown ATCT (YNG)",
+    "address": "3976 King Graves Rd, Vienna, OH 44473",
+    "coordinates": [
+      -80.672320823366,
+      41.272135115128
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=3976+King+Graves+Rd&city=Vienna&state=OH&zip=44473&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-YNG.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "FSD",
+    "street": "2601 Jaycee Lane",
+    "city": "Sioux Falls",
+    "state": "SD",
+    "zip": "57104",
+    "source_heading": "Sioux Falls ATCT/TRACON (FSD)",
+    "address": "2601 Jaycee Lane, Sioux Falls, SD 57104",
+    "coordinates": [
+      -96.730853951523,
+      43.582835275708
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=2601+Jaycee+Lane&city=Sioux+Falls&state=SD&zip=57104&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-FSD.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "GRB",
+    "street": "2077 Airport Dr, Rm 311",
+    "city": "Green Bay",
+    "state": "WI",
+    "zip": "54313",
+    "source_heading": "Green Bay ATCT/TRACON (GRB)",
+    "address": "2077 Airport Dr, Rm 311, Green Bay, WI 54313",
+    "coordinates": [
+      -88.122103017921,
+      44.495693037353
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=2077+Airport+Dr%2C+Rm+311&city=Green+Bay&state=WI&zip=54313&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-GRB.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "MSN",
+    "street": "4301 Internatinal Lane",
+    "city": "Madison",
+    "state": "WI",
+    "zip": "53704",
+    "source_heading": "Madison ATCT (MSN ATCT)",
+    "address": "4301 Internatinal Lane, Madison, WI 53704",
+    "coordinates": [
+      -89.349173370007,
+      43.134231706047
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=4301+Internatinal+Lane&city=Madison&state=WI&zip=53704&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-MSN.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "BDL",
+    "street": "35 Perimeter Rd.",
+    "city": "Windsor Locks",
+    "state": "CT",
+    "zip": "06096",
+    "source_heading": "Bradley ATCT/TRACON (BDL)",
+    "address": "35 Perimeter Rd., Windsor Locks, CT 06096",
+    "coordinates": [
+      -72.685960355383,
+      41.945918796767
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=35+Perimeter+Rd.&city=Windsor+Locks&state=CT&zip=06096&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-BDL.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "BOS",
+    "street": "600 Control Tower, 17th Floor",
+    "city": "East Boston",
+    "state": "MA",
+    "zip": "02128",
+    "source_heading": "Boston ATCT(BOS)",
+    "address": "600 Control Tower, 17th Floor, East Boston, MA 02128",
+    "coordinates": null,
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=600+Control+Tower%2C+17th+Floor&city=East+Boston&state=MA&zip=02128&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-BOS.json",
+    "match_status": "no unique match"
+  },
+  {
+    "identifier": "ACK",
+    "street": "14 Airport Rd.",
+    "city": "Nantucket",
+    "state": "MA",
+    "zip": "02554",
+    "source_heading": "Nantucket ATCT (ACK)",
+    "address": "14 Airport Rd., Nantucket, MA 02554",
+    "coordinates": [
+      -70.065804611514,
+      41.257504917572
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=14+Airport+Rd.&city=Nantucket&state=MA&zip=02554&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-ACK.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "MHT",
+    "street": "8 Ammon Drive",
+    "city": "Manchester",
+    "state": "NH",
+    "zip": "03103",
+    "source_heading": "Manchester ATCT (MHT)",
+    "address": "8 Ammon Drive, Manchester, NH 03103",
+    "coordinates": [
+      -71.438909910405,
+      42.933180153517
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=8+Ammon+Drive&city=Manchester&state=NH&zip=03103&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-MHT.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "PVD",
+    "street": "464 Warwick Industrial Dr",
+    "city": "Warwick",
+    "state": "RI",
+    "zip": "02886",
+    "source_heading": "Providence ATCT/TRACON (PVD)",
+    "address": "464 Warwick Industrial Dr, Warwick, RI 02886",
+    "coordinates": [
+      -71.431310612701,
+      41.714795582511
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=464+Warwick+Industrial+Dr&city=Warwick&state=RI&zip=02886&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-PVD.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "BTV",
+    "street": "1250 Airport Dr",
+    "city": "South Burlington",
+    "state": "VT",
+    "zip": "05403",
+    "source_heading": "Burlington ATCT/SMO/TRACON (BTV)",
+    "address": "1250 Airport Dr, South Burlington, VT 05403",
+    "coordinates": [
+      -73.157254030555,
+      44.470123542155
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=1250+Airport+Dr&city=South+Burlington&state=VT&zip=05403&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-BTV.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "ASE",
+    "street": "0150 W. Airport Road",
+    "city": "Aspen",
+    "state": "CO",
+    "zip": "81611",
+    "source_heading": "Aspen ATCT (ASE)",
+    "address": "0150 W. Airport Road, Aspen, CO 81611",
+    "coordinates": [
+      -106.864320714938,
+      39.220012006021
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=0150+W.+Airport+Road&city=Aspen&state=CO&zip=81611&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-ASE.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "APA",
+    "street": "7800 South Peoria St., Ste I-13, East Wing",
+    "city": "Englewood",
+    "state": "CO",
+    "zip": "80112",
+    "source_heading": "Centennial ATCT (APA)",
+    "address": "7800 South Peoria St., Ste I-13, East Wing, Englewood, CO 80112",
+    "coordinates": null,
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=7800+South+Peoria+St.%2C+Ste+I-13%2C+East+Wing&city=Englewood&state=CO&zip=80112&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-APA.json",
+    "match_status": "no unique match"
+  },
+  {
+    "identifier": "COS",
+    "street": "460 Kincheloe Loop",
+    "city": "Peterson AFB",
+    "state": "CO",
+    "zip": "80914",
+    "source_heading": "Colorado Springs SSC/ATCT (COS)",
+    "address": "460 Kincheloe Loop, Peterson AFB, CO 80914",
+    "coordinates": null,
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=460+Kincheloe+Loop&city=Peterson+AFB&state=CO&zip=80914&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-COS.json",
+    "match_status": "no unique match"
+  },
+  {
+    "identifier": "PUB",
+    "street": "31385 Bryan Circle",
+    "city": "Pueblo",
+    "state": "CO",
+    "zip": "81001",
+    "source_heading": "Pueblo ATCT (PUB)",
+    "address": "31385 Bryan Circle, Pueblo, CO 81001",
+    "coordinates": [
+      -104.494529893329,
+      38.283742596339
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=31385+Bryan+Circle&city=Pueblo&state=CO&zip=81001&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-PUB.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "BJC",
+    "street": "11001 Control Tower Rd.",
+    "city": "Westminster",
+    "state": "CO",
+    "zip": "80021",
+    "source_heading": "Broomfield ATCT (BJC)",
+    "address": "11001 Control Tower Rd., Westminster, CO 80021",
+    "coordinates": null,
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=11001+Control+Tower+Rd.&city=Westminster&state=CO&zip=80021&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-BJC.json",
+    "match_status": "no unique match"
+  },
+  {
+    "identifier": "BOI",
+    "street": "3001 W. Harvard Street",
+    "city": "Boise",
+    "state": "ID",
+    "zip": "83705",
+    "source_heading": "Boise ATCT (BOI)",
+    "address": "3001 W. Harvard Street, Boise, ID 83705",
+    "coordinates": [
+      -116.219693856548,
+      43.556969064897
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=3001+W.+Harvard+Street&city=Boise&state=ID&zip=83705&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-BOI.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "TWF",
+    "street": "350 Airport Loop",
+    "city": "Twin Falls",
+    "state": "ID",
+    "zip": "83301",
+    "source_heading": "Twin Falls ATCT (TWF)",
+    "address": "350 Airport Loop, Twin Falls, ID 83301",
+    "coordinates": [
+      -114.484925449906,
+      42.483595820871
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=350+Airport+Loop&city=Twin+Falls&state=ID&zip=83301&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-TWF.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "BIL",
+    "street": "1907 Terminal Circle",
+    "city": "Billings",
+    "state": "MT",
+    "zip": "59105",
+    "source_heading": "Billings ATCT/TRACON (BIL)",
+    "address": "1907 Terminal Circle, Billings, MT 59105",
+    "coordinates": [
+      -108.53599075476,
+      45.80264847204
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=1907+Terminal+Circle&city=Billings&state=MT&zip=59105&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-BIL.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "GTF",
+    "street": "2830 Airport Ave. A",
+    "city": "Great Falls",
+    "state": "MT",
+    "zip": "59404",
+    "source_heading": "Great Falls ATCT (GTF)",
+    "address": "2830 Airport Ave. A, Great Falls, MT 59404",
+    "coordinates": [
+      -111.358302129346,
+      47.480160939582
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=2830+Airport+Ave.+A&city=Great+Falls&state=MT&zip=59404&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-GTF.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "HLN",
+    "street": "3100 Airport Way",
+    "city": "Helena",
+    "state": "MT",
+    "zip": "59601",
+    "source_heading": "Helena ATCT (HLN)",
+    "address": "3100 Airport Way, Helena, MT 59601",
+    "coordinates": [
+      -111.983278431359,
+      46.602199872235
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=3100+Airport+Way&city=Helena&state=MT&zip=59601&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-HLN.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "UAO",
+    "street": "14313 Stenbock Way Unit #15",
+    "city": "Aurora",
+    "state": "OR",
+    "zip": "97002",
+    "source_heading": "Aurora State Airport ATCT (UAO)",
+    "address": "14313 Stenbock Way Unit #15, Aurora, OR 97002",
+    "coordinates": [
+      -122.766397729933,
+      45.24899971545
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=14313+Stenbock+Way+Unit+%2315&city=Aurora&state=OR&zip=97002&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-UAO.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "EUG",
+    "street": "28833 Douglas Dr",
+    "city": "Eugene",
+    "state": "OR",
+    "zip": "97402",
+    "source_heading": "Eugene ATCT/TRACON (EUG)",
+    "address": "28833 Douglas Dr, Eugene, OR 97402",
+    "coordinates": [
+      -123.212155177962,
+      44.117828415939
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=28833+Douglas+Dr&city=Eugene&state=OR&zip=97402&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-EUG.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "PDX",
+    "street": "7108 NE Airport Way",
+    "city": "Portland",
+    "state": "OR",
+    "zip": "97218",
+    "source_heading": "Portland ATCT/TRACON (PDX)",
+    "address": "7108 NE Airport Way, Portland, OR 97218",
+    "coordinates": null,
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=7108+NE+Airport+Way&city=Portland&state=OR&zip=97218&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-PDX.json",
+    "match_status": "no unique match"
+  },
+  {
+    "identifier": "SLC",
+    "street": "1201 N 4000 W",
+    "city": "Salt Lake City",
+    "state": "UT",
+    "zip": "84116",
+    "source_heading": "Salt Lake City ATCT (SLC)",
+    "address": "1201 N 4000 W, Salt Lake City, UT 84116",
+    "coordinates": null,
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=1201+N+4000+W&city=Salt+Lake+City&state=UT&zip=84116&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-SLC.json",
+    "match_status": "no unique match"
+  },
+  {
+    "identifier": "PAE",
+    "street": "3310 100th Street, SW",
+    "city": "Everett",
+    "state": "WA",
+    "zip": "98204",
+    "source_heading": "Paine ATCT (PAE)",
+    "address": "3310 100th Street, SW, Everett, WA 98204",
+    "coordinates": [
+      -122.275935620263,
+      47.907560683063
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=3310+100th+Street%2C+SW&city=Everett&state=WA&zip=98204&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-PAE.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "MWH",
+    "street": "7820 Andrews Rd NE",
+    "city": "Moses Lake",
+    "state": "WA",
+    "zip": "98837",
+    "source_heading": "Moses Lake ATCT (MWH)",
+    "address": "7820 Andrews Rd NE, Moses Lake, WA 98837",
+    "coordinates": [
+      -119.321951380493,
+      47.188359951957
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=7820+Andrews+Rd+NE&city=Moses+Lake&state=WA&zip=98837&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-MWH.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "PSC",
+    "street": "3601 N 20th Ave",
+    "city": "Pasco",
+    "state": "WA",
+    "zip": "99301",
+    "source_heading": "Pasco ATCT (PSC)",
+    "address": "3601 N 20th Ave, Pasco, WA 99301",
+    "coordinates": [
+      -119.116593723676,
+      46.255990296246
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=3601+N+20th+Ave&city=Pasco&state=WA&zip=99301&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-PSC.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "BFI",
+    "street": "8200 E. Marginal Way",
+    "city": "Seattle",
+    "state": "WA",
+    "zip": "98108",
+    "source_heading": "Boeing Field ATCT (BFI)",
+    "address": "8200 E. Marginal Way, Seattle, WA 98108",
+    "coordinates": [
+      -122.305387450987,
+      47.529545877839
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=8200+E.+Marginal+Way&city=Seattle&state=WA&zip=98108&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-BFI.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "SEA",
+    "street": "2440 South 166th Street",
+    "city": "Seattle",
+    "state": "WA",
+    "zip": "98158",
+    "source_heading": "Seattle ATCT (SEA ATCT)",
+    "address": "2440 South 166th Street, Seattle, WA 98158",
+    "coordinates": [
+      -122.301796593585,
+      47.454893232777
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=2440+South+166th+Street&city=Seattle&state=WA&zip=98158&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-SEA.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "GEG",
+    "street": "8314 W. Electric Ave",
+    "city": "Spokane",
+    "state": "WA",
+    "zip": "99224",
+    "source_heading": "Spokane ATCT/TRACON (GEG)",
+    "address": "8314 W. Electric Ave, Spokane, WA 99224",
+    "coordinates": [
+      -117.528354344816,
+      47.612656371037
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=8314+W.+Electric+Ave&city=Spokane&state=WA&zip=99224&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-GEG.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "CPR",
+    "street": "8627 Delta Drive",
+    "city": "Casper",
+    "state": "WY",
+    "zip": "82604",
+    "source_heading": "Casper SSC/ATCT (CPR)",
+    "address": "8627 Delta Drive, Casper, WY 82604",
+    "coordinates": [
+      -106.461980518366,
+      42.887413684959
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=8627+Delta+Drive&city=Casper&state=WY&zip=82604&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-CPR.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "BHM",
+    "street": "5100 Tower View Drive",
+    "city": "Birmingham",
+    "state": "AL",
+    "zip": "35212",
+    "source_heading": "Birmingham ATCT (BHM ATCT)",
+    "address": "5100 Tower View Drive, Birmingham, AL 35212",
+    "coordinates": null,
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=5100+Tower+View+Drive&city=Birmingham&state=AL&zip=35212&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-BHM.json",
+    "match_status": "no unique match"
+  },
+  {
+    "identifier": "HSV",
+    "street": "1000 East Boeing Circle",
+    "city": "Huntsville",
+    "state": "AL",
+    "zip": "35824",
+    "source_heading": "Huntsville ATCT (HSV ATCT)",
+    "address": "1000 East Boeing Circle, Huntsville, AL 35824",
+    "coordinates": [
+      -86.772239824701,
+      34.639714647552
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=1000+East+Boeing+Circle&city=Huntsville&state=AL&zip=35824&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-HSV.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "MOB",
+    "street": "101 Flave Pierce Rd",
+    "city": "Mobile",
+    "state": "AL",
+    "zip": "36608",
+    "source_heading": "Mobile ATCT (MOB)",
+    "address": "101 Flave Pierce Rd, Mobile, AL 36608",
+    "coordinates": [
+      -88.250035418941,
+      30.688949488243
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=101+Flave+Pierce+Rd&city=Mobile&state=AL&zip=36608&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-MOB.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "PIE",
+    "street": "14510 Airport Parkway",
+    "city": "Clearwater",
+    "state": "FL",
+    "zip": "33762",
+    "source_heading": "St. Pete-Clearwater ATCT (PIE)",
+    "address": "14510 Airport Parkway, Clearwater, FL 33762",
+    "coordinates": [
+      -82.691808903696,
+      27.902969048653
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=14510+Airport+Parkway&city=Clearwater&state=FL&zip=33762&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-PIE.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "DAB",
+    "street": "2302 Bellevue Avenue",
+    "city": "Daytona Beach",
+    "state": "FL",
+    "zip": "32114",
+    "source_heading": "Daytona ATCT (DAB)",
+    "address": "2302 Bellevue Avenue, Daytona Beach, FL 32114",
+    "coordinates": [
+      -81.058370509479,
+      29.174509237423
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=2302+Bellevue+Avenue&city=Daytona+Beach&state=FL&zip=32114&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-DAB.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "FLL",
+    "street": "4150 S.W. 12th Ter",
+    "city": "Ft. Lauderdale",
+    "state": "FL",
+    "zip": "33315",
+    "source_heading": "Ft Lauderdale International ATCT (FLL)",
+    "address": "4150 S.W. 12th Ter, Ft. Lauderdale, FL 33315",
+    "coordinates": [
+      -80.157177947902,
+      26.070487694492
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=4150+S.W.+12th+Ter&city=Ft.+Lauderdale&state=FL&zip=33315&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-FLL.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "RSW",
+    "street": "11900 Regional Lane SE",
+    "city": "Ft. Myers",
+    "state": "FL",
+    "zip": "33913",
+    "source_heading": "Ft. Myers ATCT (RSW)",
+    "address": "11900 Regional Lane SE, Ft. Myers, FL 33913",
+    "coordinates": [
+      -81.768160891037,
+      26.534594128456
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=11900+Regional+Lane+SE&city=Ft.+Myers&state=FL&zip=33913&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-RSW.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "SUA",
+    "street": "1895 SE Flying Fortress Ln.",
+    "city": "Stuart",
+    "state": "FL",
+    "zip": "34996",
+    "source_heading": "Stuart ATCT (SUA ATCT)",
+    "address": "1895 SE Flying Fortress Ln., Stuart, FL 34996",
+    "coordinates": [
+      -80.223052823783,
+      27.188057379579
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=1895+SE+Flying+Fortress+Ln.&city=Stuart&state=FL&zip=34996&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-SUA.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "FPR",
+    "street": "3300 Hammond Rd",
+    "city": "Ft. Pierce",
+    "state": "FL",
+    "zip": "34946",
+    "source_heading": "Ft. Pierce ATCT (FPR ATCT)",
+    "address": "3300 Hammond Rd, Ft. Pierce, FL 34946",
+    "coordinates": [
+      -80.374007201485,
+      27.491698793002
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=3300+Hammond+Rd&city=Ft.+Pierce&state=FL&zip=34946&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-FPR.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "JAX",
+    "street": "14400 Whirlwind Ave",
+    "city": "Jacsonville",
+    "state": "FL",
+    "zip": "32218",
+    "source_heading": "Jacksonville ATCT/TRACON (JAX)",
+    "address": "14400 Whirlwind Ave, Jacsonville, FL 32218",
+    "coordinates": [
+      -81.682977279373,
+      30.494248440384
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=14400+Whirlwind+Ave&city=Jacsonville&state=FL&zip=32218&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-JAX.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "EYW",
+    "street": "3479 S. Roosevelt Blvd.",
+    "city": "Key West",
+    "state": "FL",
+    "zip": "33040",
+    "source_heading": "Key West ATCT (EYW ATCT)",
+    "address": "3479 S. Roosevelt Blvd., Key West, FL 33040",
+    "coordinates": null,
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=3479+S.+Roosevelt+Blvd.&city=Key+West&state=FL&zip=33040&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-EYW.json",
+    "match_status": "no unique match"
+  },
+  {
+    "identifier": "MIA",
+    "street": "6400 NW 22nd St",
+    "city": "Miami",
+    "state": "FL",
+    "zip": "33122",
+    "source_heading": "Miami ATCT (MIA ATCT)",
+    "address": "6400 NW 22nd St, Miami, FL 33122",
+    "coordinates": null,
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=6400+NW+22nd+St&city=Miami&state=FL&zip=33122&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-MIA.json",
+    "match_status": "no unique match"
+  },
+  {
+    "identifier": "OLV",
+    "street": "8020 Terminal Dr.",
+    "city": "Olive Branch",
+    "state": "MS",
+    "zip": "38654",
+    "source_heading": "Olive Branch ATCT (OLV ATCT)",
+    "address": "8020 Terminal Dr., Olive Branch, MS 38654",
+    "coordinates": null,
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=8020+Terminal+Dr.&city=Olive+Branch&state=MS&zip=38654&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-OLV.json",
+    "match_status": "no unique match"
+  },
+  {
+    "identifier": "TMB",
+    "street": "14744 SW 128th St.",
+    "city": "Maimi",
+    "state": "FL",
+    "zip": "33196",
+    "source_heading": "TAMIAMI ATCT (TMB ATCT)",
+    "address": "14744 SW 128th St., Maimi, FL 33196",
+    "coordinates": null,
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=14744+SW+128th+St.&city=Maimi&state=FL&zip=33196&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-TMB.json",
+    "match_status": "no unique match"
+  },
+  {
+    "identifier": "OCF",
+    "street": "1700 SW 60th Ave",
+    "city": "Ocala",
+    "state": "FL",
+    "zip": "34474",
+    "source_heading": "Ocala ATCT (OCF ATCT)",
+    "address": "1700 SW 60th Ave, Ocala, FL 34474",
+    "coordinates": [
+      -82.218754495653,
+      29.16905846974
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=1700+SW+60th+Ave&city=Ocala&state=FL&zip=34474&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-OCF.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "OPF",
+    "street": "14201 NW 42nd Ave",
+    "city": "Opa-Locka",
+    "state": "FL",
+    "zip": "33054",
+    "source_heading": "Opa-Locka Airport (OPF ATCT)",
+    "address": "14201 NW 42nd Ave, Opa-Locka, FL 33054",
+    "coordinates": null,
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=14201+NW+42nd+Ave&city=Opa-Locka&state=FL&zip=33054&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-OPF.json",
+    "match_status": "no unique match"
+  },
+  {
+    "identifier": "MCO",
+    "street": "9685 Jeff Fuqua Blvd.",
+    "city": "Orlando",
+    "state": "FL",
+    "zip": "32827",
+    "source_heading": "Orlando ATCT (MCO)(TESHMCO)",
+    "address": "9685 Jeff Fuqua Blvd., Orlando, FL 32827",
+    "coordinates": null,
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=9685+Jeff+Fuqua+Blvd.&city=Orlando&state=FL&zip=32827&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-MCO.json",
+    "match_status": "no unique match"
+  },
+  {
+    "identifier": "ORL",
+    "street": "4599 ORL Tower Road",
+    "city": "Orlando",
+    "state": "FL",
+    "zip": "32807",
+    "source_heading": "Orlando Executive Tower (ORL)",
+    "address": "4599 ORL Tower Road, Orlando, FL 32807",
+    "coordinates": null,
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=4599+ORL+Tower+Road&city=Orlando&state=FL&zip=32807&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-ORL.json",
+    "match_status": "no unique match"
+  },
+  {
+    "identifier": "ECP",
+    "street": "6300 West Bay Pkwy, Box M",
+    "city": "Panama City",
+    "state": "FL",
+    "zip": "32409",
+    "source_heading": "Panama City ATCT (ECP ATCT)",
+    "address": "6300 West Bay Pkwy, Box M, Panama City, FL 32409",
+    "coordinates": null,
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=6300+West+Bay+Pkwy%2C+Box+M&city=Panama+City&state=FL&zip=32409&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-ECP.json",
+    "match_status": "no unique match"
+  },
+  {
+    "identifier": "HWO",
+    "street": "7801 South Airport Rd",
+    "city": "Pembroke Pines",
+    "state": "FL",
+    "zip": "33023",
+    "source_heading": "North Perry ATCT (HWO)",
+    "address": "7801 South Airport Rd, Pembroke Pines, FL 33023",
+    "coordinates": null,
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=7801+South+Airport+Rd&city=Pembroke+Pines&state=FL&zip=33023&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-HWO.json",
+    "match_status": "no unique match"
+  },
+  {
+    "identifier": "PMP",
+    "street": "1001 Northeast 10th Street",
+    "city": "Pompano Beach",
+    "state": "FL",
+    "zip": "33060",
+    "source_heading": "Pompano ATCT (PMP ATCT)",
+    "address": "1001 Northeast 10th Street, Pompano Beach, FL 33060",
+    "coordinates": [
+      -80.112206210676,
+      26.241428766954
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=1001+Northeast+10th+Street&city=Pompano+Beach&state=FL&zip=33060&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-PMP.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "SFB",
+    "street": "747 Control Tower lane",
+    "city": "Sanford",
+    "state": "FL",
+    "zip": "32773",
+    "source_heading": "Sanford ATCT (SFB)",
+    "address": "747 Control Tower lane, Sanford, FL 32773",
+    "coordinates": null,
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=747+Control+Tower+lane&city=Sanford&state=FL&zip=32773&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-SFB.json",
+    "match_status": "no unique match"
+  },
+  {
+    "identifier": "SRQ",
+    "street": "705 Tower Rd",
+    "city": "Sarasota",
+    "state": "FL",
+    "zip": "34243",
+    "source_heading": "Sarasota ATCT (SRQ)",
+    "address": "705 Tower Rd, Sarasota, FL 34243",
+    "coordinates": null,
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=705+Tower+Rd&city=Sarasota&state=FL&zip=34243&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-SRQ.json",
+    "match_status": "no unique match"
+  },
+  {
+    "identifier": "TPA",
+    "street": "4180 George J Bean Pky",
+    "city": "Tampa",
+    "state": "FL",
+    "zip": "33607",
+    "source_heading": "TPA ATCT (TPA)",
+    "address": "4180 George J Bean Pky, Tampa, FL 33607",
+    "coordinates": [
+      -82.536616570339,
+      27.978404374773
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=4180+George+J+Bean+Pky&city=Tampa&state=FL&zip=33607&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-TPA.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "VRB",
+    "street": "2930 Flight Safety Drive",
+    "city": "Vero Beach",
+    "state": "FL",
+    "zip": "32960",
+    "source_heading": "Vero Beach ATCT (VRB ATCT)",
+    "address": "2930 Flight Safety Drive, Vero Beach, FL 32960",
+    "coordinates": [
+      -80.420378554148,
+      27.651099478417
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=2930+Flight+Safety+Drive&city=Vero+Beach&state=FL&zip=32960&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-VRB.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "AHN",
+    "street": "1014 Ben Epps Dr",
+    "city": "Athens",
+    "state": "GA",
+    "zip": "30605",
+    "source_heading": "Athens Tower (AHN ATCT)",
+    "address": "1014 Ben Epps Dr, Athens, GA 30605",
+    "coordinates": [
+      -83.323782873055,
+      33.953806866665
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=1014+Ben+Epps+Dr&city=Athens&state=GA&zip=30605&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-AHN.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "ATL",
+    "street": "1106 M.H. Jackson Service Road",
+    "city": "Atlanta",
+    "state": "GA",
+    "zip": "30354",
+    "source_heading": "Atlanta Tower (ATL)",
+    "address": "1106 M.H. Jackson Service Road, Atlanta, GA 30354",
+    "coordinates": null,
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=1106+M.H.+Jackson+Service+Road&city=Atlanta&state=GA&zip=30354&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-ATL.json",
+    "match_status": "no unique match"
+  },
+  {
+    "identifier": "AGS",
+    "street": "1540 Hangar Rd",
+    "city": "Augusta",
+    "state": "GA",
+    "zip": "30906",
+    "source_heading": "Augusta ATCT (AGS ATCT)",
+    "address": "1540 Hangar Rd, Augusta, GA 30906",
+    "coordinates": null,
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=1540+Hangar+Rd&city=Augusta&state=GA&zip=30906&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-AGS.json",
+    "match_status": "no unique match"
+  },
+  {
+    "identifier": "PDK",
+    "street": "2001 Airport Rd",
+    "city": "Chamblee",
+    "state": "GA",
+    "zip": "30341",
+    "source_heading": "DeKalb Peachtree ATCT (PDK)",
+    "address": "2001 Airport Rd, Chamblee, GA 30341",
+    "coordinates": null,
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=2001+Airport+Rd&city=Chamblee&state=GA&zip=30341&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-PDK.json",
+    "match_status": "no unique match"
+  },
+  {
+    "identifier": "SAV",
+    "street": "100 Melaver Drive",
+    "city": "Savannah",
+    "state": "GA",
+    "zip": "31408",
+    "source_heading": "SAV ATCT (SAV ATCT)",
+    "address": "100 Melaver Drive, Savannah, GA 31408",
+    "coordinates": [
+      -81.209157944095,
+      32.141237212336
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=100+Melaver+Drive&city=Savannah&state=GA&zip=31408&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-SAV.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "CVG",
+    "street": "56 New Price Pike",
+    "city": "Erlanger",
+    "state": "KY",
+    "zip": "41018",
+    "source_heading": "Cincinnati (Covington) ATCT/TRACON (CVG)",
+    "address": "56 New Price Pike, Erlanger, KY 41018",
+    "coordinates": [
+      -84.605513834152,
+      39.016570463246
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=56+New+Price+Pike&city=Erlanger&state=KY&zip=41018&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-CVG.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "LEX",
+    "street": "4051 Terminal Drive",
+    "city": "Lexington",
+    "state": "KY",
+    "zip": "40510",
+    "source_heading": "Lexington ATCT/TRACON (LEX ATCT)",
+    "address": "4051 Terminal Drive, Lexington, KY 40510",
+    "coordinates": [
+      -84.596959829514,
+      38.03995361545
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=4051+Terminal+Drive&city=Lexington&state=KY&zip=40510&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-LEX.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "LOU",
+    "street": "2710 Moron Ave",
+    "city": "Louisville",
+    "state": "KY",
+    "zip": "40205",
+    "source_heading": "Louisville-Bowman ATCT (LOU)",
+    "address": "2710 Moron Ave, Louisville, KY 40205",
+    "coordinates": [
+      -85.660315199486,
+      38.227231630585
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=2710+Moron+Ave&city=Louisville&state=KY&zip=40205&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-LOU.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "SDF",
+    "street": "755 Grade Ln",
+    "city": "Louisville",
+    "state": "KY",
+    "zip": "40213",
+    "source_heading": "Louisville Standiford ATCT/TRACON (SDF ATCT)",
+    "address": "755 Grade Ln, Louisville, KY 40213",
+    "coordinates": [
+      -85.729254626006,
+      38.159324791327
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=755+Grade+Ln&city=Louisville&state=KY&zip=40213&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-SDF.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "PAH",
+    "street": "2665 Fisher Rd.",
+    "city": "Paducah",
+    "state": "KY",
+    "zip": "42086",
+    "source_heading": "Paducah ATCT (PAH ATCT)",
+    "address": "2665 Fisher Rd., Paducah, KY 42086",
+    "coordinates": null,
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=2665+Fisher+Rd.&city=Paducah&state=KY&zip=42086&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-PAH.json",
+    "match_status": "no unique match"
+  },
+  {
+    "identifier": "GPT",
+    "street": "4445 10th Ave",
+    "city": "Gulfport",
+    "state": "MS",
+    "zip": "39501",
+    "source_heading": "Gulfport, MS ATCT (GPT ATCT)",
+    "address": "4445 10th Ave, Gulfport, MS 39501",
+    "coordinates": null,
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=4445+10th+Ave&city=Gulfport&state=MS&zip=39501&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-GPT.json",
+    "match_status": "no unique match"
+  },
+  {
+    "identifier": "JAN",
+    "street": "100 International Drive Suite 500",
+    "city": "Jackson",
+    "state": "MS",
+    "zip": "39208",
+    "source_heading": "JAN ATCT (Jackson MS)(JAN ATCT)",
+    "address": "100 International Drive Suite 500, Jackson, MS 39208",
+    "coordinates": null,
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=100+International+Drive+Suite+500&city=Jackson&state=MS&zip=39208&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-JAN.json",
+    "match_status": "no unique match"
+  },
+  {
+    "identifier": "CLT",
+    "street": "4939 Hangar Rd",
+    "city": "Charlotte",
+    "state": "NC",
+    "zip": "28208",
+    "source_heading": "Charlotte ATCT (CLT)",
+    "address": "4939 Hangar Rd, Charlotte, NC 28208",
+    "coordinates": [
+      -80.943900896844,
+      35.204733419676
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=4939+Hangar+Rd&city=Charlotte&state=NC&zip=28208&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-CLT.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "FAY",
+    "street": "3041 Control Tower Rd. Ste 100",
+    "city": "Fayetteville",
+    "state": "NC",
+    "zip": "28306",
+    "source_heading": "Fayetteville ATCT/TRACON (FAY)",
+    "address": "3041 Control Tower Rd. Ste 100, Fayetteville, NC 28306",
+    "coordinates": [
+      -78.885224496942,
+      34.991819721402
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=3041+Control+Tower+Rd.+Ste+100&city=Fayetteville&state=NC&zip=28306&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-FAY.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "AVL",
+    "street": "61 Terminal Drive, Suite #2",
+    "city": "Fletcher",
+    "state": "NC",
+    "zip": "28732",
+    "source_heading": "Asheville ATCT/TRACON (AVL)",
+    "address": "61 Terminal Drive, Suite #2, Fletcher, NC 28732",
+    "coordinates": null,
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=61+Terminal+Drive%2C+Suite+%232&city=Fletcher&state=NC&zip=28732&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-AVL.json",
+    "match_status": "no unique match"
+  },
+  {
+    "identifier": "GSO",
+    "street": "1321 S. Terminal Service Rd",
+    "city": "Greensboro",
+    "state": "NC",
+    "zip": "27409",
+    "source_heading": "Greensboro ATCT/SSC (GSO)",
+    "address": "1321 S. Terminal Service Rd, Greensboro, NC 27409",
+    "coordinates": [
+      -79.942029061027,
+      36.101358353173
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=1321+S.+Terminal+Service+Rd&city=Greensboro&state=NC&zip=27409&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-GSO.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "RDU",
+    "street": "1000 Sawyer Circle",
+    "city": "Morrisville",
+    "state": "NC",
+    "zip": "27560",
+    "source_heading": "Raleigh-Durham ATCT (RDU)",
+    "address": "1000 Sawyer Circle, Morrisville, NC 27560",
+    "coordinates": [
+      -78.785346434171,
+      35.881282147916
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=1000+Sawyer+Circle&city=Morrisville&state=NC&zip=27560&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-RDU.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "ILM",
+    "street": "2220 Control Tower Dr.",
+    "city": "Wilmington",
+    "state": "NC",
+    "zip": "28405",
+    "source_heading": "Wilmington ATCT/TRACON (ILM)",
+    "address": "2220 Control Tower Dr., Wilmington, NC 28405",
+    "coordinates": [
+      -77.89813306338,
+      34.265819558893
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=2220+Control+Tower+Dr.&city=Wilmington&state=NC&zip=28405&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-ILM.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "ISO",
+    "street": "2920 Rouse Road",
+    "city": "Kinston",
+    "state": "NC",
+    "zip": "28504",
+    "source_heading": "New Bern ATCT (ISO)",
+    "address": "2920 Rouse Road, Kinston, NC 28504",
+    "coordinates": [
+      -77.613937607096,
+      35.301141780372
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=2920+Rouse+Road&city=Kinston&state=NC&zip=28504&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-ISO.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "FLO",
+    "street": "2085 Terminal Drive",
+    "city": "Florence",
+    "state": "SC",
+    "zip": "29506",
+    "source_heading": "Florence ATCT (FLO ATCT)",
+    "address": "2085 Terminal Drive, Florence, SC 29506",
+    "coordinates": [
+      -79.728234317544,
+      34.193391170884
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=2085+Terminal+Drive&city=Florence&state=SC&zip=29506&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-FLO.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "GSP",
+    "street": "2000 GSP Drive, Suite 5",
+    "city": "Greer",
+    "state": "SC",
+    "zip": "29651",
+    "source_heading": "GSP ATCT (GSP ATCT)",
+    "address": "2000 GSP Drive, Suite 5, Greer, SC 29651",
+    "coordinates": [
+      -82.211948471199,
+      34.894182426067
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=2000+GSP+Drive%2C+Suite+5&city=Greer&state=SC&zip=29651&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-GSP.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "MYR",
+    "street": "3242 Tower St",
+    "city": "Myrtle Beach",
+    "state": "SC",
+    "zip": "29577",
+    "source_heading": "Myrtle Beach ATCT (MYR ATCT)",
+    "address": "3242 Tower St, Myrtle Beach, SC 29577",
+    "coordinates": [
+      -78.94082816459,
+      33.684440449581
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=3242+Tower+St&city=Myrtle+Beach&state=SC&zip=29577&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-MYR.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "CHS",
+    "street": "5775 S. Aviation Avenue",
+    "city": "North Charleston",
+    "state": "SC",
+    "zip": "29406",
+    "source_heading": "Charleston ATCT (CHS)",
+    "address": "5775 S. Aviation Avenue, North Charleston, SC 29406",
+    "coordinates": [
+      -80.02941849329,
+      32.898646144252
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=5775+S.+Aviation+Avenue&city=North+Charleston&state=SC&zip=29406&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-CHS.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "CAE",
+    "street": "2821 Aviation Way",
+    "city": "West Columbia",
+    "state": "SC",
+    "zip": "29170",
+    "source_heading": "CAE ATCT (CAE)",
+    "address": "2821 Aviation Way, West Columbia, SC 29170",
+    "coordinates": [
+      -81.117601535654,
+      33.944800107538
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=2821+Aviation+Way&city=West+Columbia&state=SC&zip=29170&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-CAE.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "TRI",
+    "street": "2701 Hwy 75",
+    "city": "Blountville",
+    "state": "TN",
+    "zip": "37617",
+    "source_heading": "Tri-City ATCT/TRACON (TRI)",
+    "address": "2701 Hwy 75, Blountville, TN 37617",
+    "coordinates": [
+      -82.412666114104,
+      36.476406410886
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=2701+Hwy+75&city=Blountville&state=TN&zip=37617&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-TRI.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "CHA",
+    "street": "5921 Pinehurst Avenue",
+    "city": "Chattanooga",
+    "state": "TN",
+    "zip": "37421",
+    "source_heading": "Chattanooga ATCT (CHA ATCT)",
+    "address": "5921 Pinehurst Avenue, Chattanooga, TN 37421",
+    "coordinates": [
+      -85.200899368638,
+      35.029242139731
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=5921+Pinehurst+Avenue&city=Chattanooga&state=TN&zip=37421&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-CHA.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "TYS",
+    "street": "2207 Airbase Rd",
+    "city": "Louisville",
+    "state": "TN",
+    "zip": "37777",
+    "source_heading": "Knoxville ATCT (TYS ATCT)",
+    "address": "2207 Airbase Rd, Louisville, TN 37777",
+    "coordinates": [
+      -84.002115413985,
+      35.817766398093
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=2207+Airbase+Rd&city=Louisville&state=TN&zip=37777&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-TYS.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "BNA",
+    "street": "515 Olen Taylor Dr.",
+    "city": "Nashville",
+    "state": "TN",
+    "zip": "37217",
+    "source_heading": "Nashville ATCT/TRACON (BNA)",
+    "address": "515 Olen Taylor Dr., Nashville, TN 37217",
+    "coordinates": [
+      -86.674159527708,
+      36.116750662305
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=515+Olen+Taylor+Dr.&city=Nashville&state=TN&zip=37217&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-BNA.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "FSM",
+    "street": "5100 S 66TH ST",
+    "city": "Fort Smith",
+    "state": "AR",
+    "zip": "72903",
+    "source_heading": "Fort Smith ATCT (FSM)",
+    "address": "5100 S 66TH ST, Fort Smith, AR 72903",
+    "coordinates": [
+      -94.361872979397,
+      35.333819913001
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=5100+S+66TH+ST&city=Fort+Smith&state=AR&zip=72903&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-FSM.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "LIT",
+    "street": "2601 David Grundfest Jr. Drive",
+    "city": "Little Rock",
+    "state": "AR",
+    "zip": "72206",
+    "source_heading": "Little Rock ATCT (LIT ATCT)",
+    "address": "2601 David Grundfest Jr. Drive, Little Rock, AR 72206",
+    "coordinates": [
+      -92.223981134753,
+      34.724328693007
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=2601+David+Grundfest+Jr.+Drive&city=Little+Rock&state=AR&zip=72206&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-LIT.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "TXK",
+    "street": "401 Airport Drive Suite 100",
+    "city": "Texarkana",
+    "state": "AR",
+    "zip": "71854",
+    "source_heading": "Texarkana ATCT/SSC (TXK)",
+    "address": "401 Airport Drive Suite 100, Texarkana, AR 71854",
+    "coordinates": [
+      -93.995137111765,
+      33.456559215396
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=401+Airport+Drive+Suite+100&city=Texarkana&state=AR&zip=71854&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-TXK.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "BTR",
+    "street": "8326 Merle Gustafson Dr",
+    "city": "Baton Rouge",
+    "state": "LA",
+    "zip": "70807",
+    "source_heading": "Baton Rouge ATCT (BTR ATCT)",
+    "address": "8326 Merle Gustafson Dr, Baton Rouge, LA 70807",
+    "coordinates": [
+      -91.149460961864,
+      30.52313352799
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=8326+Merle+Gustafson+Dr&city=Baton+Rouge&state=LA&zip=70807&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-BTR.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "HUM",
+    "street": "129 Tower Road",
+    "city": "Houma",
+    "state": "LA",
+    "zip": "70363",
+    "source_heading": "Houma Tower (HUM)",
+    "address": "129 Tower Road, Houma, LA 70363",
+    "coordinates": [
+      -90.66768453555,
+      29.56646271473
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=129+Tower+Road&city=Houma&state=LA&zip=70363&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-HUM.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "MSY",
+    "street": "900 Airline Dr",
+    "city": "Kenner",
+    "state": "LA",
+    "zip": "70062",
+    "source_heading": "New Orleans ATCT/TRACON (MSY)",
+    "address": "900 Airline Dr, Kenner, LA 70062",
+    "coordinates": null,
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=900+Airline+Dr&city=Kenner&state=LA&zip=70062&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-MSY.json",
+    "match_status": "no unique match"
+  },
+  {
+    "identifier": "LFT",
+    "street": "220 Tower Drive Room 102",
+    "city": "Lafayette",
+    "state": "LA",
+    "zip": "70508",
+    "source_heading": "LFT ATCT (LFT)",
+    "address": "220 Tower Drive Room 102, Lafayette, LA 70508",
+    "coordinates": [
+      -91.998067606896,
+      30.204719511398
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=220+Tower+Drive+Room+102&city=Lafayette&state=LA&zip=70508&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-LFT.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "LCH",
+    "street": "500 Airport Blvd, Ste 109",
+    "city": "Lake Charles",
+    "state": "LA",
+    "zip": "70607",
+    "source_heading": "Lake Charles ATCT (LCH)",
+    "address": "500 Airport Blvd, Ste 109, Lake Charles, LA 70607",
+    "coordinates": [
+      -93.213567271985,
+      30.128698389189
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=500+Airport+Blvd%2C+Ste+109&city=Lake+Charles&state=LA&zip=70607&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-LCH.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "MLU",
+    "street": "5403 Operations Road",
+    "city": "Monroe",
+    "state": "LA",
+    "zip": "71203",
+    "source_heading": "Monroe ATCT/TRACON (MLU ATCT)",
+    "address": "5403 Operations Road, Monroe, LA 71203",
+    "coordinates": [
+      -92.044108043584,
+      32.51018652532
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=5403+Operations+Road&city=Monroe&state=LA&zip=71203&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-MLU.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "NEW",
+    "street": "8500 Lloyd Stearman Drive",
+    "city": "New Orleans",
+    "state": "LA",
+    "zip": "70126",
+    "source_heading": "Lakefront ATCT (NEW ATCT)",
+    "address": "8500 Lloyd Stearman Drive, New Orleans, LA 70126",
+    "coordinates": null,
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=8500+Lloyd+Stearman+Drive&city=New+Orleans&state=LA&zip=70126&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-NEW.json",
+    "match_status": "no unique match"
+  },
+  {
+    "identifier": "OUN",
+    "street": "1700 Lexington Ave",
+    "city": "Norman",
+    "state": "OK",
+    "zip": "73069",
+    "source_heading": "Westheimer Tower (OUN)",
+    "address": "1700 Lexington Ave, Norman, OK 73069",
+    "coordinates": [
+      -97.465502632064,
+      35.240752817271
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=1700+Lexington+Ave&city=Norman&state=OK&zip=73069&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-OUN.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "OKC",
+    "street": "4500 SW 67",
+    "city": "Oklahoma City",
+    "state": "OK",
+    "zip": "73159",
+    "source_heading": "Oklahoma City Will Rogers ATCT (OKC ATCT)",
+    "address": "4500 SW 67, Oklahoma City, OK 73159",
+    "coordinates": [
+      -97.599847298951,
+      35.398616904984
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=4500+SW+67&city=Oklahoma+City&state=OK&zip=73159&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-OKC.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "TUL",
+    "street": "3232 N. Memorial Dr",
+    "city": "Tulsa",
+    "state": "OK",
+    "zip": "74115",
+    "source_heading": "Tulsa ATCT (TUL)",
+    "address": "3232 N. Memorial Dr, Tulsa, OK 74115",
+    "coordinates": [
+      -95.887046865742,
+      36.203588076065
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=3232+N.+Memorial+Dr&city=Tulsa&state=OK&zip=74115&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-TUL.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "ROW",
+    "street": "30 W. Challenger",
+    "city": "Roswell",
+    "state": "NM",
+    "zip": "88203",
+    "source_heading": "Roswell ATCT/SSC (ROW)",
+    "address": "30 W. Challenger, Roswell, NM 88203",
+    "coordinates": [
+      -104.530739964075,
+      33.309944900778
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=30+W.+Challenger&city=Roswell&state=NM&zip=88203&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-ROW.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "ABI",
+    "street": "2925 Lance Drive",
+    "city": "Abilene",
+    "state": "TX",
+    "zip": "79602",
+    "source_heading": "Abilene ATCT/TRACON (ABI)",
+    "address": "2925 Lance Drive, Abilene, TX 79602",
+    "coordinates": [
+      -99.679459798891,
+      32.414695009786
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=2925+Lance+Drive&city=Abilene&state=TX&zip=79602&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-ABI.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "ADS",
+    "street": "16000 Dooley Road",
+    "city": "Addison",
+    "state": "TX",
+    "zip": "75001",
+    "source_heading": "Addison ATCT (ADS)",
+    "address": "16000 Dooley Road, Addison, TX 75001",
+    "coordinates": [
+      -96.838344387373,
+      32.967984096357
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=16000+Dooley+Road&city=Addison&state=TX&zip=75001&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-ADS.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "AMA",
+    "street": "1920 English Rd.",
+    "city": "Amarillo",
+    "state": "TX",
+    "zip": "79108",
+    "source_heading": "Amarillo ATCT SSC (AMA)",
+    "address": "1920 English Rd., Amarillo, TX 79108",
+    "coordinates": [
+      -101.708387708482,
+      35.233700719057
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=1920+English+Rd.&city=Amarillo&state=TX&zip=79108&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-AMA.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "BRO",
+    "street": "905 S. Minnesota Ave.",
+    "city": "Brownsville",
+    "state": "TX",
+    "zip": "78521",
+    "source_heading": "Brownsville Tower (BRO)",
+    "address": "905 S. Minnesota Ave., Brownsville, TX 78521",
+    "coordinates": [
+      -97.43241844799,
+      25.905431060442
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=905+S.+Minnesota+Ave.&city=Brownsville&state=TX&zip=78521&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-BRO.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "AUS",
+    "street": "10102 Aircraft Ln",
+    "city": "Austin",
+    "state": "TX",
+    "zip": "78719",
+    "source_heading": "Austin ATCT (AUS)",
+    "address": "10102 Aircraft Ln, Austin, TX 78719",
+    "coordinates": null,
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=10102+Aircraft+Ln&city=Austin&state=TX&zip=78719&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-AUS.json",
+    "match_status": "no unique match"
+  },
+  {
+    "identifier": "BPT",
+    "street": "5040 W. Airline Dr.",
+    "city": "Beaumont",
+    "state": "TX",
+    "zip": "77705",
+    "source_heading": "Beaumont ATCT (BPT)",
+    "address": "5040 W. Airline Dr., Beaumont, TX 77705",
+    "coordinates": [
+      -94.018852472327,
+      29.954932499377
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=5040+W.+Airline+Dr.&city=Beaumont&state=TX&zip=77705&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-BPT.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "CRP",
+    "street": "6902 McGloin Rd",
+    "city": "Corpus Christi",
+    "state": "TX",
+    "zip": "78415",
+    "source_heading": "Corpus Christi ATCT/SSC (CRP)",
+    "address": "6902 McGloin Rd, Corpus Christi, TX 78415",
+    "coordinates": null,
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=6902+McGloin+Rd&city=Corpus+Christi&state=TX&zip=78415&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-CRP.json",
+    "match_status": "no unique match"
+  },
+  {
+    "identifier": "DFW",
+    "street": "2960 East 23rd Street",
+    "city": "Dallas",
+    "state": "TX",
+    "zip": "75261",
+    "source_heading": "Dallas-Fort Worth ATCT (DFW)",
+    "address": "2960 East 23rd Street, Dallas, TX 75261",
+    "coordinates": null,
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=2960+East+23rd+Street&city=Dallas&state=TX&zip=75261&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-DFW.json",
+    "match_status": "no unique match"
+  },
+  {
+    "identifier": "DAL",
+    "street": "8100 Aviation Pl.",
+    "city": "Dallas",
+    "state": "TX",
+    "zip": "75235",
+    "source_heading": "Dallas Love Field ATCT (DAL)",
+    "address": "8100 Aviation Pl., Dallas, TX 75235",
+    "coordinates": [
+      -96.843178531513,
+      32.840024307314
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=8100+Aviation+Pl.&city=Dallas&state=TX&zip=75235&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-DAL.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "GYI",
+    "street": "4603 Airport Dr",
+    "city": "Denison",
+    "state": "TX",
+    "zip": "75020",
+    "source_heading": "North Texas Regional Tower (GYI)",
+    "address": "4603 Airport Dr, Denison, TX 75020",
+    "coordinates": [
+      -96.666065987198,
+      33.713073595826
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=4603+Airport+Dr&city=Denison&state=TX&zip=75020&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-GYI.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "DTO",
+    "street": "5003 Airport Road",
+    "city": "Denton",
+    "state": "TX",
+    "zip": "76207",
+    "source_heading": "Denton Tower (DTO)",
+    "address": "5003 Airport Road, Denton, TX 76207",
+    "coordinates": [
+      -97.192737342027,
+      33.201851690181
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=5003+Airport+Road&city=Denton&state=TX&zip=76207&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-DTO.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "ELP",
+    "street": "2050 Hawkins Blvd",
+    "city": "El Paso",
+    "state": "TX",
+    "zip": "79925",
+    "source_heading": "El Paso ATCT/SSC (ELP)",
+    "address": "2050 Hawkins Blvd, El Paso, TX 79925",
+    "coordinates": [
+      -106.372650470799,
+      31.798083727747
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=2050+Hawkins+Blvd&city=El+Paso&state=TX&zip=79925&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-ELP.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "HOU",
+    "street": "8410 Lockheed St",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77061",
+    "source_heading": "Houston Hobby ATCT (HOU ATCT)",
+    "address": "8410 Lockheed St, Houston, TX 77061",
+    "coordinates": [
+      -95.287796904674,
+      29.646010851941
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=8410+Lockheed+St&city=Houston&state=TX&zip=77061&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-HOU.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "IAH",
+    "street": "4215 Will Clayton Pkwy",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77032",
+    "source_heading": "Houston Intercont'l ATCT (IAH)",
+    "address": "4215 Will Clayton Pkwy, Houston, TX 77032",
+    "coordinates": null,
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=4215+Will+Clayton+Pkwy&city=Houston&state=TX&zip=77032&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-IAH.json",
+    "match_status": "no unique match"
+  },
+  {
+    "identifier": "LRD",
+    "street": "4817 Maher Ave",
+    "city": "Laredo",
+    "state": "TX",
+    "zip": "78041",
+    "source_heading": "Laredo Tower (LRD)",
+    "address": "4817 Maher Ave, Laredo, TX 78041",
+    "coordinates": [
+      -99.470794062343,
+      27.535281560278
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=4817+Maher+Ave&city=Laredo&state=TX&zip=78041&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-LRD.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "GGG",
+    "street": "214 Tower Rd.",
+    "city": "Longview",
+    "state": "TX",
+    "zip": "75603",
+    "source_heading": "Longview ATCT (GGG)",
+    "address": "214 Tower Rd., Longview, TX 75603",
+    "coordinates": [
+      -94.711237146685,
+      32.37874150448
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=214+Tower+Rd.&city=Longview&state=TX&zip=75603&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-GGG.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "LBB",
+    "street": "7001 N. Martin Luther King, Jr. Blvd",
+    "city": "Lubbock",
+    "state": "TX",
+    "zip": "79403",
+    "source_heading": "Lubbock ATCT (LBB)",
+    "address": "7001 N. Martin Luther King, Jr. Blvd, Lubbock, TX 79403",
+    "coordinates": [
+      -101.819200595679,
+      33.651641521179
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=7001+N.+Martin+Luther+King%2C+Jr.+Blvd&city=Lubbock&state=TX&zip=79403&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-LBB.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "MFE",
+    "street": "2600 Hangar Lane",
+    "city": "McAllen",
+    "state": "TX",
+    "zip": "78503",
+    "source_heading": "McAllen Tower (MFE)",
+    "address": "2600 Hangar Lane, McAllen, TX 78503",
+    "coordinates": [
+      -98.236935314638,
+      26.181174966064
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=2600+Hangar+Lane&city=McAllen&state=TX&zip=78503&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-MFE.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "MAF",
+    "street": "2500 North Pliska Drive",
+    "city": "Midland",
+    "state": "TX",
+    "zip": "79706",
+    "source_heading": "Midland ATCT SSC (MAF)",
+    "address": "2500 North Pliska Drive, Midland, TX 79706",
+    "coordinates": [
+      -102.209264645989,
+      31.940251449426
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=2500+North+Pliska+Drive&city=Midland&state=TX&zip=79706&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-MAF.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "SJT",
+    "street": "8616 Terminal Circle",
+    "city": "San Angelo",
+    "state": "TX",
+    "zip": "76904",
+    "source_heading": "Mathis Tower (SJT)",
+    "address": "8616 Terminal Circle, San Angelo, TX 76904",
+    "coordinates": [
+      -100.503177727647,
+      31.357716609316
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=8616+Terminal+Circle&city=San+Angelo&state=TX&zip=76904&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-SJT.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "SAT",
+    "street": "9434 Airport Blvd.Rm 15",
+    "city": "San Antonio",
+    "state": "TX",
+    "zip": "78216",
+    "source_heading": "San Antonio ATCT/SSC (SAT)",
+    "address": "9434 Airport Blvd.Rm 15, San Antonio, TX 78216",
+    "coordinates": [
+      -98.476747662871,
+      29.526449272887
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=9434+Airport+Blvd.Rm+15&city=San+Antonio&state=TX&zip=78216&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-SAT.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "SGR",
+    "street": "12888 South Hightway, Ste100",
+    "city": "Sugar Land",
+    "state": "TX",
+    "zip": "77498",
+    "source_heading": "Sugar Land Tower (SGR)",
+    "address": "12888 South Hightway, Ste100, Sugar Land, TX 77498",
+    "coordinates": null,
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=12888+South+Hightway%2C+Ste100&city=Sugar+Land&state=TX&zip=77498&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-SGR.json",
+    "match_status": "no unique match"
+  },
+  {
+    "identifier": "VCT",
+    "street": "348 Bachelor Dr",
+    "city": "Victoria",
+    "state": "TX",
+    "zip": "77904",
+    "source_heading": "Victoria Tower (VCT)",
+    "address": "348 Bachelor Dr, Victoria, TX 77904",
+    "coordinates": null,
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=348+Bachelor+Dr&city=Victoria&state=TX&zip=77904&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-VCT.json",
+    "match_status": "no unique match"
+  },
+  {
+    "identifier": "ACT",
+    "street": "7909 Karl May Drive",
+    "city": "Waco",
+    "state": "TX",
+    "zip": "76708",
+    "source_heading": "Waco ATCT (ACT ATCT)",
+    "address": "7909 Karl May Drive, Waco, TX 76708",
+    "coordinates": [
+      -97.222565794265,
+      31.608236229993
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=7909+Karl+May+Drive&city=Waco&state=TX&zip=76708&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-ACT.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "BFL",
+    "street": "1547 Boughton Drive",
+    "city": "Bakersfield",
+    "state": "CA",
+    "zip": "93308",
+    "source_heading": "Bakersfield ATCT/TRACON (BFL)",
+    "address": "1547 Boughton Drive, Bakersfield, CA 93308",
+    "coordinates": [
+      -119.045169471549,
+      35.434091166581
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=1547+Boughton+Drive&city=Bakersfield&state=CA&zip=93308&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-BFL.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "PRC",
+    "street": "6500 Wilkinson Dr",
+    "city": "Prescott",
+    "state": "AZ",
+    "zip": "86301",
+    "source_heading": "Prescott ATCT (PRC)",
+    "address": "6500 Wilkinson Dr, Prescott, AZ 86301",
+    "coordinates": [
+      -112.41953236089,
+      34.648926227204
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=6500+Wilkinson+Dr&city=Prescott&state=AZ&zip=86301&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-PRC.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "TUS",
+    "street": "1865 East Aero Park BLVD",
+    "city": "Tucson",
+    "state": "AZ",
+    "zip": "85756",
+    "source_heading": "Tucson ATCT/TRACON (TUS)",
+    "address": "1865 East Aero Park BLVD, Tucson, AZ 85756",
+    "coordinates": [
+      -110.944874420723,
+      32.109474175766
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=1865+East+Aero+Park+BLVD&city=Tucson&state=AZ&zip=85756&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-TUS.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "BUR",
+    "street": "2821 N. Hollywood Way",
+    "city": "Burbank",
+    "state": "CA",
+    "zip": "91505",
+    "source_heading": "Burbank ATCT(BUR ATCT)",
+    "address": "2821 N. Hollywood Way, Burbank, CA 91505",
+    "coordinates": [
+      -118.348812697136,
+      34.203061938459
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=2821+N.+Hollywood+Way&city=Burbank&state=CA&zip=91505&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-BUR.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "CMA",
+    "street": "797 Aviation Drive",
+    "city": "Camarillo",
+    "state": "CA",
+    "zip": "93010",
+    "source_heading": "CMA ATCT(CMA)",
+    "address": "797 Aviation Drive, Camarillo, CA 93010",
+    "coordinates": [
+      -119.085260042592,
+      34.209595564956
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=797+Aviation+Drive&city=Camarillo&state=CA&zip=93010&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-CMA.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "FAT",
+    "street": "5055 E Anderson Avenue",
+    "city": "Fresno",
+    "state": "CA",
+    "zip": "93727",
+    "source_heading": "Fresno ATCT/TRACON(FAT)",
+    "address": "5055 E Anderson Avenue, Fresno, CA 93727",
+    "coordinates": [
+      -119.724398228835,
+      36.773713209784
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=5055+E+Anderson+Avenue&city=Fresno&state=CA&zip=93727&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-FAT.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "SBA",
+    "street": "10 Burns Place",
+    "city": "Goleta",
+    "state": "CA",
+    "zip": "93117",
+    "source_heading": "Santa Barbara ATCT(SBA)",
+    "address": "10 Burns Place, Goleta, CA 93117",
+    "coordinates": [
+      -119.845245976716,
+      34.43151225427
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=10+Burns+Place&city=Goleta&state=CA&zip=93117&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-SBA.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "MRY",
+    "street": "2475 Henderson Way",
+    "city": "Monterey",
+    "state": "CA",
+    "zip": "93940",
+    "source_heading": "Monterey ATCT (MRY)",
+    "address": "2475 Henderson Way, Monterey, CA 93940",
+    "coordinates": [
+      -121.853124825485,
+      36.587329144027
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=2475+Henderson+Way&city=Monterey&state=CA&zip=93940&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-MRY.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "APC",
+    "street": "4000 Airport Rd",
+    "city": "NAPA",
+    "state": "CA",
+    "zip": "94558",
+    "source_heading": "NAPA ATCT (APC)",
+    "address": "4000 Airport Rd, NAPA, CA 94558",
+    "coordinates": [
+      -122.277052861183,
+      38.206379042164
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=4000+Airport+Rd&city=NAPA&state=CA&zip=94558&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-APC.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "PSP",
+    "street": "280 N El Cielo Rd",
+    "city": "Palm Springs",
+    "state": "CA",
+    "zip": "92262",
+    "source_heading": "Palm Springs ATCT (PSP ATCT)",
+    "address": "280 N El Cielo Rd, Palm Springs, CA 92262",
+    "coordinates": [
+      -116.51056005154,
+      33.826275774063
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=280+N+El+Cielo+Rd&city=Palm+Springs&state=CA&zip=92262&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-PSP.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "PAO",
+    "street": "1909 Embarcadero Rd",
+    "city": "Palo Alto",
+    "state": "CA",
+    "zip": "94303",
+    "source_heading": "Palo Alto ATCT (PAO ATCT)",
+    "address": "1909 Embarcadero Rd, Palo Alto, CA 94303",
+    "coordinates": [
+      -122.113385870191,
+      37.453669645318
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=1909+Embarcadero+Rd&city=Palo+Alto&state=CA&zip=94303&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-PAO.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "SAN",
+    "street": "3690 Pacific Hwy",
+    "city": "San Diego",
+    "state": "CA",
+    "zip": "92101",
+    "source_heading": "Lindbergh ATCT(SAN)",
+    "address": "3690 Pacific Hwy, San Diego, CA 92101",
+    "coordinates": [
+      -117.180964289004,
+      32.738479849195
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=3690+Pacific+Hwy&city=San+Diego&state=CA&zip=92101&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-SAN.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "SFO",
+    "street": "250 Upper Domestic Loop",
+    "city": "San Francisco",
+    "state": "CA",
+    "zip": "94128",
+    "source_heading": "SFO ATCT (SFO)",
+    "address": "250 Upper Domestic Loop, San Francisco, CA 94128",
+    "coordinates": null,
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=250+Upper+Domestic+Loop&city=San+Francisco&state=CA&zip=94128&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-SFO.json",
+    "match_status": "no unique match"
+  },
+  {
+    "identifier": "STS",
+    "street": "2245 Airport Blvd",
+    "city": "Santa Rosa",
+    "state": "CA",
+    "zip": "95403",
+    "source_heading": "Santa Rosa ATCT (STS)",
+    "address": "2245 Airport Blvd, Santa Rosa, CA 95403",
+    "coordinates": [
+      -122.803379089706,
+      38.511058474585
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=2245+Airport+Blvd&city=Santa+Rosa&state=CA&zip=95403&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-STS.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "OGG",
+    "street": "1 Eena Street",
+    "city": "Kahului",
+    "state": "HI",
+    "zip": "96732",
+    "source_heading": "Kahului Airport, Maui ATCT/SSC(OGG)",
+    "address": "1 Eena Street, Kahului, HI 96732",
+    "coordinates": null,
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=1+Eena+Street&city=Kahului&state=HI&zip=96732&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-OGG.json",
+    "match_status": "no unique match"
+  },
+  {
+    "identifier": "ITO",
+    "street": "102 Ailolo Street",
+    "city": "Hilo",
+    "state": "HI",
+    "zip": "96720",
+    "source_heading": "Hilo SSC/ATCT(ITO)",
+    "address": "102 Ailolo Street, Hilo, HI 96720",
+    "coordinates": [
+      -155.048369803661,
+      19.71617766081
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=102+Ailolo+Street&city=Hilo&state=HI&zip=96720&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-ITO.json",
+    "match_status": "matched"
+  },
+  {
+    "identifier": "LIH",
+    "street": "3244 Waikai St",
+    "city": "Lihue",
+    "state": "HI",
+    "zip": "96766",
+    "source_heading": "Lihue ATCT(LIH)",
+    "address": "3244 Waikai St, Lihue, HI 96766",
+    "coordinates": null,
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=3244+Waikai+St&city=Lihue&state=HI&zip=96766&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-LIH.json",
+    "match_status": "no unique match"
+  },
+  {
+    "identifier": "LAS",
+    "street": "5755 Kelley Lane",
+    "city": "Las Vegas",
+    "state": "NV",
+    "zip": "89119",
+    "source_heading": "LAS ATCT(LAS)",
+    "address": "5755 Kelley Lane, Las Vegas, NV 89119",
+    "coordinates": null,
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=5755+Kelley+Lane&city=Las+Vegas&state=NV&zip=89119&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-LAS.json",
+    "match_status": "no unique match"
+  },
+  {
+    "identifier": "RNO",
+    "street": "755 S. Rock Blvd",
+    "city": "Reno",
+    "state": "NV",
+    "zip": "89502",
+    "source_heading": "Reno ATCT(RNO)",
+    "address": "755 S. Rock Blvd, Reno, NV 89502",
+    "coordinates": [
+      -119.758812096224,
+      39.50085992807
+    ],
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=755+S.+Rock+Blvd&city=Reno&state=NV&zip=89502&benchmark=Public_AR_Current&format=json",
+    "retrieved_at": "2026-10-04T18:33:10.962972+00:00",
+    "response_file": "data/raw/geocode-tower-RNO.json",
+    "match_status": "matched"
+  }
+]

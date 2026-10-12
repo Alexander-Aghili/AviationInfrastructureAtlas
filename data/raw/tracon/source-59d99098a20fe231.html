@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+    <!--[if IEMobile 7]><html class="iem7 no-js" lang="en" dir="ltr"><![endif]-->
+    <!--[if lt IE 7]><html class="lt-ie9 lt-ie8 lt-ie7 no-js" lang="en" dir="ltr"><![endif]-->
+    <!--[if (IE 7)&(!IEMobile)]><html class="lt-ie9 lt-ie8 no-js" lang="en" dir="ltr"><![endif]-->
+    <!--[if IE 8]><html class="lt-ie9 no-js" lang="en" dir="ltr"><![endif]-->
+    <!--[if (gt IE 8)|(gt IEMobile 7)]><!--> <html class="no-js not-oldie" lang="en" dir="ltr"> <!--<![endif]-->
+    <head>
+      <meta charset="utf-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="HandheldFriendly" content="true" />
+      <link rel="shortcut icon" href="https://www.epa.gov/sites/all/themes/epa/favicon.ico" type="image/vnd.microsoft.icon" />
+      <meta name="MobileOptimized" content="width" />
+      <meta http-equiv="cleartype" content="on" />
+      <meta http-equiv="ImageToolbar" content="false" />
+      <meta name="viewport" content="width=device-width" />
+      <meta name="version" content="20150331" />
+    <!--googleon: all-->
+      <meta name="DC.description" content="" />
+      <meta name="DC.title" content="" />
+      <title>FRS Facility Detail Report | Envirofacts | US EPA</title>
+    <!--googleoff: snippet-->
+      <meta name="keywords" content="" />
+      <link rel="shortlink" href="" />
+      <link rel="canonical" href="" />
+      <meta name="DC.creator" content="" />
+      <meta name="DC.language" content="en" />
+      <meta name="DC.Subject.epachannel" content="" />
+      <meta name="DC.type" content="" />
+      <meta name="DC.date.created" content="" />
+      <meta name="DC.date.modified" content="" />
+    <!--googleoff: all-->
+      <link type="text/css" rel="stylesheet" href="https://www.epa.gov/sites/all/libraries/template/s.css" media="all" />
+      <!--[if lt IE 9]><link type="text/css" rel="stylesheet" href="https://www.epa.gov/sites/all/themes/epa/css/ie.css" media="all" /><![endif]-->
+      <link rel="alternate" type="application/atom+xml" title="EPA.gov News" href="http://yosemite.epa.gov/opa/admpress.nsf/RSSRecentNews" />
+      <link rel="alternate" type="application/atom+xml" title="EPA.gov Headquarters Press Releases" href="http://yosemite.epa.gov/opa/admpress.nsf/RSSByLocation?open&amp;location=Headquarters" />
+      <link rel="alternate" type="application/atom+xml" title="Greenversations, EPA's Blog" href="http://blog.epa.gov/blog/feed/" />
+      <!--[if lt IE 9]><script src="https://www.epa.gov/sites/all/themes/epa/js/html5.js"></script><![endif]-->
+
+    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.0.1/leaflet.css" />
+    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/MarkerCluster.css" />
+    <style type="text/css">
+      div.clusterIconStyle {
+        background-image: url("https://ordsext.epa.gov/FLA/fii/fii/gif/fiimap/cluster.png");
+        background-repeat: no-repeat;
+        width: 20px;
+        height: 20px;
+        text-align: center;
+        vertical-align: middle;
+      }
+      div.clusterIconStyle span {
+        font-weight: bold;
+        color: white;
+      }
+    </style>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+    <script type="text/javascript" src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/esri-leaflet@3.0.14/dist/esri-leaflet.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/esri-leaflet-vector@4.2.8/dist/esri-leaflet-vector.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/leaflet.markercluster@1.5.0/dist/MarkerCluster.Default.css" integrity="sha512-6ZCLMiYwTeli2rVh3XAPxy3YoR5fVxGdH/pz+KMCzRY2M65Emgkw00Yqmhh8qLGeYQ3LbVZGdmOX9KUjSKr0TA==" crossorigin="">
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/leaflet.markercluster@1.5.0/dist/MarkerCluster.css" integrity="sha512-mQ77VzAakzdpWdgfL/lM1ksNy89uFgibRQANsNneSTMD/bj0Y/8+94XMwYhnbzx8eki2hrbPpDm0vD0CiT2lcg==" crossorigin="">
+    <script src="https://unpkg.com/leaflet.markercluster@1.5.0/dist/leaflet.markercluster.js" integrity="sha512-pWPELjRaw2ZdoT0PDi7iRpRlk1XX3rtnfejJ/HwskyojpHei+9hKpwdphC4yssNt4FM0TjMQOmMrk6ZYSn274w==" crossorigin=""></script>
+    <script src="https://unpkg.com/esri-leaflet-cluster@3.0.1/dist/esri-leaflet-cluster.js"></script>
+    <script type="text/javascript">
+      var facilityMap;
+      var facilityMapIconUrls = {
+        frs: "https://ordsext.epa.gov/FLA/fii/fii/gif/fiimap/placemark_square_orange.png",
+        as: "https://ordsext.epa.gov/FLA/fii/fii/gif/fiimap/placemark_square_navy.png",
+        wo: "https://ordsext.epa.gov/FLA/fii/fii/gif/fiimap/placemark_square_green.png",
+        bp: "https://ordsext.epa.gov/FLA/fii/fii/gif/fiimap/placemark_square_selected.png",
+        orange: "https://ordsext.epa.gov/FLA/fii/fii/gif/fiimap/placemark_square_orange.png",
+        navy: "https://ordsext.epa.gov/FLA/fii/fii/gif/fiimap/placemark_square_navy.png",
+        green: "https://ordsext.epa.gov/FLA/fii/fii/gif/fiimap/placemark_square_green.png",
+        yellow: "https://ordsext.epa.gov/FLA/fii/fii/gif/fiimap/placemark_square_yellow.png",
+        red: "https://ordsext.epa.gov/FLA/fii/fii/gif/fiimap//placemark_square_highlight.png",
+        cyan: "https://ordsext.epa.gov/FLA/fii/fii/gif/fiimap/placemark_square_cyan.png",
+        gray: "https://ordsext.epa.gov/FLA/fii/fii/gif/fiimap/placemark_square_gray.png",
+        purple: "https://ordsext.epa.gov/FLA/fii/fii/gif/fiimap/placemark_square_purple.png",
+        white: "https://ordsext.epa.gov/FLA/fii/fii/gif/fiimap/placemark_square_white.png",
+        brown: "https://ordsext.epa.gov/FLA/fii/fii/gif/fiimap/placemark_square_brown.png",
+        star: "https://ordsext.epa.gov/FLA/fii/fii/gif/fiimap/star_red.png",
+        cluster: "https://ordsext.epa.gov/FLA/fii/fii/gif/fiimap/cluster.png"
+      };
+      var facilityMarkers = [];
+      var facilityMarkerClusterGroup;
+      var facilityMarkerGroup;
+      var facilityMapClusteringEnabled = false;
+      var facilityMapZoomTo = false;
+
+      const apiToken = "AAPKdd2f983868a44753b1eb8acc274caa69bn-JxSQlA56gSL_8xqjFOg2fDl4AOUHaSZt6nLTPqFZD0D5-uF5Za9ZzVdLjokIc";
+      
+      const streets = L.esri.Vector.vectorBasemapLayer("arcgis/streets", {worldview: "unitedStatesOfAmerica", token: apiToken});  
+      
+      function GetMap() {
+        console.log("GetMap called");
+        if (facilityMap !== undefined) {
+          return;
+        }
+        facilityMap = L.map("myMap", {
+          center: [39.8282, -98.5795],
+          zoom: 3
+        });
+        facilityMap._layersMaxZoom = 18;
+        scaleControl = L.control.scale({maxWidth: 200, metric: false}).addTo(facilityMap);
+
+        const vectorTiles = {};
+        imagesWithStreets = L.layerGroup([L.esri.Vector.vectorBasemapLayer("arcgis/imagery", {worldview: "unitedStatesOfAmerica", token: apiToken}),L.esri.Vector.vectorBasemapLayer("arcgis/imagery/labels", {worldview: "unitedStatesOfAmerica", token: apiToken})]);
+        vectorTiles["Imagery"] = imagesWithStreets;
+        vectorTiles["Streets"] = L.esri.Vector.vectorBasemapLayer("arcgis/streets", {worldview: "unitedStatesOfAmerica", token: apiToken});
+        vectorTiles["Topographic"] = L.esri.Vector.vectorBasemapLayer("arcgis/topographic", {worldview: "unitedStatesOfAmerica", token: apiToken});
+        vectorTiles["Streets"].addTo(facilityMap);
+        L.control.layers(vectorTiles).addTo(facilityMap);
+
+        facilityMarkerClusterGroup = L.markerClusterGroup({
+          iconCreateFunction: function(cluster) {
+            return L.divIcon({ html: "<div class=\"clusterIconStyle\"><span>" + cluster.getChildCount() + "</span></div>" });
+          },
+          maxClusterRadius: 50
+        });
+        facilityMarkerGroup = new L.featureGroup({ chunkedLoading: true });
+      }
+      function ShowMessage() {
+        console.log("ShowMessage called");
+        if (jQuery("#myMapError").length === 0) {
+          jQuery("#myMap").after("<div id=\"myMapError\"><B>Too many results to display on map.<BR> Only query results <= 2000 records will be displayed.</B></div>");
+        }
+      }
+      function SetClustering() {
+        console.log("SetClustering called");
+        facilityMapClusteringEnabled = true;
+        if (facilityMap !== undefined) {
+          SetVisibility();
+        }
+      }
+      function SetNoClustering() {
+        console.log("SetNoClustering called");
+        facilityMapClusteringEnabled = false;
+        if (facilityMap !== undefined) {
+          SetVisibility();
+        }
+      }
+      function clearFacilityMarkerSelection() {
+          jQuery.each(facilityMarkers, function (iMarker, vMarker) {
+            vMarker.setIcon(L.icon({ iconUrl: facilityMapIconUrls.frs }));
+          });
+      }
+      function SelectandZoomToFacility(e) {
+        console.log("SelectandZoomToFacility called");
+        if (facilityMap !== undefined) {
+          SetNoClustering();
+          clearFacilityMarkerSelection();
+          var index = e.valueOf();
+          facilityMap.setView(facilityMarkers[index].getLatLng());
+          facilityMarkers[index].setIcon(L.icon({ iconUrl: facilityMapIconUrls.red }));
+          window.location.hash="TopMap";
+        }
+      }
+      function SelectandZoomToFOIA(e) {
+        console.log("SelectandZoomToFOIA called but not implemented");
+        return;
+        try {
+                if (reseticon != null)
+                  {
+                    var prevshp = layer.GetShapeByIndex(reseticon);
+                    prevshp.SetCustomIcon(reseticonicon);
+                   }
+          layer.SetClusteringConfiguration(VEClusteringType.None);
+          var index = e.valueOf();
+                reseticon = index;
+          var curShape=layer.GetShapeByIndex(reseticon);
+          reseticonicon=curShape.GetCustomIcon().toString();
+          var shape2 = layer.GetShapeByIndex(index);
+          var points = shape2.GetPoints();
+            map.SetMapStyle(VEMapStyle.Hybrid);
+            var centerZoomLL = new VELatLong(points[0].Latitude, points[0].Longitude);
+              map.SetCenterAndZoom(centerZoomLL, 16);
+          window.location.hash="TopMap";
+                reseticon = index;
+            }
+        catch(e) {
+          alert(e.description + " points= " + points[0].length);
+            }
+      }      
+      function SetVisibility() {
+        console.log("SetVisibility called");
+        if (facilityMap === undefined) {
+          return;
+        }
+        facilityMap.whenReady(function() {
+          facilityMarkerClusterGroup.clearLayers();
+          facilityMarkerGroup.clearLayers();
+          facilityMap.removeLayer(facilityMarkerClusterGroup);
+          facilityMap.removeLayer(facilityMarkerGroup);
+          if (facilityMarkers.length > 0) {
+            jQuery.each(facilityMarkers, function (iMarker, vMarker) {
+              facilityMarkerClusterGroup.addLayer(vMarker);
+              facilityMarkerGroup.addLayer(vMarker);
+            });
+            if (facilityMapClusteringEnabled === true) {
+              facilityMap.addLayer(facilityMarkerClusterGroup);
+              if (facilityMapZoomTo === false) {
+                facilityMapZoomTo = true;
+                facilityMap.fitBounds(facilityMarkerClusterGroup.getBounds());
+                // hot fix
+                facilityMap.zoomIn(1);
+                setTimeout(function() {
+                  facilityMap.zoomOut(1);
+                }, 1000);
+              }
+            } else {
+              facilityMap.addLayer(facilityMarkerGroup);
+              if (facilityMapZoomTo === false) {
+                facilityMapZoomTo = true;
+                facilityMap.fitBounds(facilityMarkerGroup.getBounds());
+              }
+            }
+          }
+        });
+      }
+      function showLayer() {
+        SetVisibility();
+      }
+      function hideLayer() {
+        if (facilityMap !== undefined) {
+          facilityMap.whenReady(function() {
+            facilityMap.removeLayer(facilityMarkerClusterGroup);
+            facilityMap.removeLayer(facilityMarkerGroup);
+          });
+        }
+      }
+    </script>
+    <!-- DEPRECATED -->
+    <!-- <script type="text/javascript" src="https://ofmext.epa.gov/FLA/fla/js/fii_main_map.js"></script> -->
+    <META content="MSHTML 6.00.6000.16735" name=GENERATOR>
+
+    </head>
+    <style type="text/css">
+              #MSVE_obliqueNotification {visibility: hidden;}
+              .ero .ero-body {width: 380px;}
+			  
+
+* {
+    box-sizing: content-box;
+}
+
+body, dl, figure, form {
+    margin: 8px;
+}
+
+img, input, textarea, video {
+	max-width: none;
+}
+</style>
+
+    <!-- NOTE, figure out body classes! -->
+    <body 
+class="wide-template" 
+ >
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-L8ZB" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-L8ZB');</script>
+<!-- End Google Tag Manager -->
+<div class="skip-links"><a href="#main-content" class="skip-link element-invisible element-focusable">Jump to main content</a></div>
+<header class="masthead clearfix" role="banner">
+<img class="site-logo" src="https://www.epa.gov/sites/all/themes/epa/logo.png" alt="" />
+<hgroup class="site-name-and-slogan">
+<h1 class="site-name"><a href="https://www.epa.gov/" title="Go to the home page" rel="home"><span>US EPA</span></a></h1>
+<div class="site-slogan">United States Environmental Protection Agency</div>
+</hgroup>
+<form class="epa-search" method="get" action="https://search.epa.gov/epasearch/epasearch">
+<label class="element-hidden" for="search-box">Search</label>
+<input class="form-text" placeholder="Search EPA.gov" name="querytext" id="search-box" value=""/>
+<button class="epa-search-button" id="search-button" type="submit" title="Search">Search</button>
+<input type="hidden" name="fld" value="" />
+<input type="hidden" name="areaname" value="" />
+<input type="hidden" name="areacontacts" value="" />
+<input type="hidden" name="areasearchurl" value="" />
+<input type="hidden" name="typeofsearch" value="epa" />
+<input type="hidden" name="result_template" value="2col.ftl" />
+<input type="hidden" name="filter" value="sample4filt.hts" />
+</form>
+</header>
+<section id="main-content" class="main-content clearfix" role="main">
+<div class="region-preface clearfix">
+<div id="block-pane-epa-web-area-connect" class="block block-pane contextual-links-region">
+  <ul class="menu utility-menu">
+    <li class="menu-item"><a href="https://www.epa.gov/enviro/html/fii/fii_feedback.html" class="menu-link contact-us">Contact Us</a></li>
+  </ul>
+</div>
+</div>
+<div class="main-column clearfix">
+<!--googleon: all-->
+<div class="view view-revision-hublinks view-id-revision_hublinks view-display-id-block view-dom-id-247e421718a6a793146fcf16ee5a2a38">        <span class="related-info"><strong>Related Topics:</strong> </span>      
+
+<ul class="menu pipeline">
+<li class="menu-item">  
+  <a href="https://www.epa.gov/enviro/">Envirofacts</a>  </li>
+<li class="menu-item">  
+  <a href="https://www.epa.gov/enviro/html/fii/">FRS</a>  </li>
+</ul>          </div>  
+          <h1 class="page-title">FRS Facility Detail Report</h1>
+          <div class="panel-pane pane-node-content" >
+            <div class="pane-content">
+<div class="node node-page clearfix view-mode-full">
+
+<!--here -->
+<!--
+<aside class="col size-1of4" style="float: right;">
+<div class="panel-pane pane-epa-core-link-list-pane box multi related-info" >
+<h2 class="pane-title">Other Links:</h2>
+<div class="pane-content">
+<ul class="link-list">
+ <li><a href="fii_query_java.html">FRS Facility Query</a></li>
+  <li><a href="">FRS Organization Query</a></li>
+</ul>
+<div style="text-align:center;"><a target="_blank" href="https://frs-public.epa.gov/ords/frs_public2/ets_grab_error.smart_form?p_registry_id="><img src="https://www3.epa.gov/enviro/gif/report_error.gif" border="0" /></a></div>
+</div>
+</div>
+</aside>
+-->
+<aside class="col size-1of4" style="float: right;">
+<div class="panel-pane pane-epa-core-link-list-pane box multi related-info" >
+<h2 class="pane-title">Facility Registry Service Links:</h2>
+<div class="pane-content">
+<ul><li><a href="https://www.epa.gov/frs/" target="_blank">Facility Registry Service (FRS) Overview</a></li>
+<li><a href="https://www.epa.gov/enviro/frs-query-page">FRS Facility Query</a></li>
+<li><a href="organization_query_form">FRS Organization Query</a></li>
+<li><a href="https://www2.epa.gov/enviro/frs-ez-query">EZ Query</a></li>
+<li><a href="https://www2.epa.gov/enviro/frs-physical-data-model">FRS Physical Data Model</a></li>
+<li><a href="https://www2.epa.gov/enviro/frs-tables-geospatial-model-area">FRS Geospatial Model</a></li>
+</ul>
+<div style="text-align:center;"><a target="_blank" href="https://frs-public.epa.gov/ords/frs_public2/ets_grab_error.smart_form?p_registry_id="><img src="https://www3.epa.gov/enviro/gif/report_error.gif" border="0" /></a></div>
+</div>
+</div>
+</aside>
+<br>
+<center>
+<SCRIPT>
+     function f_mail()
+     { window.open("https://frs-public.epa.gov/ords/frs_public2/ets_grab_error.smart_form"
+      ,"winLOV2",
+        "alwaysRaised=yes,scrollbars=yes,resizable=yes,width=700,height=450,toolbar=yes")
+      }
+</SCRIPT><NOSCRIPT><P>This script opens a separate window for reporting data errors</P></NOSCRIPT>
+<center>
+<h3>FAA BOSTON CONSOLIDATED TRACON</h3>
+<b>EPA Registry Id:  </b>110069329426<br>
+25 ROBERT MILLIGAN PKWY
+<br />
+<td>MERRIMACK, NH 03054</td>
+<STYLE type="text/css">
+<!--
+TH {font-size: 8}
+TD {font-size: 8}
+TH {font-size: 8pt}
+TD {font-size: 8pt}
+-->
+</STYLE>
+<script language='javascript'>
+       function lrtHome() {
+          var cgiBase = "http:https://ordsext.epa.gov/FLA/fii/fii/";
+          location.href = cgiBase + "html/locational/lrt_viewer.html";
+   	  		return (true);
+       }
+     </script>
+<center>
+<SCRIPT LANGUAGE="JavaScript">
+     function f_mail()
+     { window.open("https://frs-public.epa.gov/ords/frs_public2/ets_grab_error.smart_form"
+      ,"winLOV2",
+        "alwaysRaised=yes,scrollbars=yes,resizable=yes,width=700,height=450,toolbar=yes")
+      }
+</SCRIPT><NOSCRIPT><P>This script opens a separate window for reporting data errors</P></NOSCRIPT>
+<br />
+<center><table border=0 cellspacing=0 cellpadding=0>
+          <tr><td align="left" valign="top">
+          <iframe scrolling="no" name="LRTMapFrame" id="LRTMapFrame" align="top" width="702px" height="452px" frameborder= "0" MARGINWIDTH="0" MARGINHEIGHT="0" src="get_vex.ve_map?xc=-71.49238&yc=42.81512&fac_id=110069329426&collect_desc=ADDRESS MATCHING-HOUSE NUMBER &label=FAA&#x25;20BOSTON&#x25;20CONSOLIDATED&#x25;20TRACON"></iframe>
+          </td><td valign="top">
+          <img src="https://ordsext.epa.gov/FLA/fii/fii/gif/lrt_viewer/legend_es.gif" border="0">
+          <br><p>
+          The facility locations displayed <br>
+          come from the FRS Spatial <br>
+          Coordinates tables.  They are the <br>
+          best representative locations for <br>
+          the displayed facilities based on <br>
+          the accuracy of the collection <br>
+          method and quality assurance <br>
+          checks performed against each <br>
+          location.  The North American <br>
+          Datum of 1983 is used to display <br>
+          all coordinates.</P>
+          </td></tr>
+          </table></center>
+          <iframe name="LRTLoadFrame" id="LRTLoadFrame" scrolling="NO" width="100%" height="0" frameborder="0"></iframe>
+          <input type="hidden" name="facCount" id="facCount" value="">
+          <input type="hidden" name="wHistory" id="wHistory" value="">
+</center>
+<TABLE BORDER="0" WIDTH="100%">
+<TR>
+<TD COLSPAN="2" VALIGN="2">
+<a name="interests"></a>
+<h2 align="CENTER">Environmental Interests</h2>
+<table  BORDER width="100%" align="CENTER">
+<TR ALIGN="LEFT" VALIGN="CENTER" bgcolor="#D9FDDA">
+<th align="CENTER"><a href="https://frs-public.epa.gov/ords/frs_public2//EF_METADATA_HTML_FRS.ef_metadata_column_page?p_topic=FRS&p_column_name=pgm_sys_acrnm">Information System</a></th>
+<th align="CENTER"><a href="https://frs-public.epa.gov/ords/frs_public2//EF_METADATA_HTML_FRS.ef_metadata_column_page?p_topic=FRS&p_column_name=primary_name">System Facility Name</a></th>
+<th align="CENTER"><a href="https://frs-public.epa.gov/ords/frs_public2//EF_METADATA_HTML_FRS.ef_metadata_column_page?p_topic=FRS&p_column_name=pgm_sys_id">Information System Id/Report Link</a></th>
+<th align="CENTER"><a href="https://frs-public.epa.gov/ords/frs_public2//EF_METADATA_HTML_FRS.ef_metadata_column_page?p_topic=FRS&p_column_name=interest_type">Environmental Interest Type</a></th>
+<th align="CENTER"><a href="https://frs-public.epa.gov/ords/frs_public2//EF_METADATA_HTML_FRS.ef_metadata_column_page?p_topic=FRS&p_column_name=source_of_data">Data Source</a></th>
+<th align="CENTER"><a href="https://frs-public.epa.gov/ords/frs_public2//EF_METADATA_HTML_FRS.ef_metadata_column_page?p_topic=FRS&p_column_name=last_reported_date">Last Updated Date</a></th>
+<th align="CENTER"><a href="https://frs-public.epa.gov/ords/frs_public2//ef_metadata_html_frs.ef_metadata_table?p_topic=FRS&p_table_name=frs_supplemental_interest">Supplemental Environmental Interests:</a></th>
+</tr>
+<TR bgcolor="#D4E4F3">
+<td align="CENTER"><a href="https://www.epa.gov/frs/frs-data-sources#AFS">ICIS-AIR (AIR)<br /></a></td>
+<td align="CENTER">FAA BOSTON CONSOLIDATED TRACON</td>
+<td align="CENTER">NH0000003301191196</td>
+<td align="CENTER">AIR MINOR</td>
+<td align="CENTER">ICIS</td>
+<td align="CENTER">06/07/2016</td>
+<td align="CENTER"><br /></td>
+</tr>
+</table>
+<table  BORDER="0">
+<tr>
+<td><H4>Additional EPA Reports: &nbsp;</H4></td>
+<td><H4><a href="https://geopub.epa.gov/myem/envmap/myenv.html?minx=-71.51938&miny=42.80112&maxx=-71.46538&maxy=42.82912&mw=750&mh=290&ve=13,42.81512,-71.49238&pText=FAA%20BOSTON%20CONSOLIDATED%20TRACON%2C%20MERRIMACK%2C%20NH" target=_blank>MyEnvironment</FONT></a>&nbsp;&nbsp;<a href="http://echo.epa.gov/detailed-facility-report?fid=110069329426" target=_blank>Enforcement and Compliance</FONT></a>&nbsp;&nbsp;<a href="https://frs-public.epa.gov/ords/frs_public2/gis_viewer.map_page?p_registry_id=110069329426" target=_blank>Facility Coordinates Viewer</FONT></a>&nbsp;&nbsp;<a href="http://cfpub.epa.gov/surf/huc.cfm?huc_code=01070006" target=_blank>Watershed Report</FONT></a></H4></td>
+</tr>
+</table>
+</TD>
+</TR>
+<TR VALIGN="TOP">
+<TD VALIGN="TOP" WIDTH="50%">
+<h4 align="CENTER">Standard Industrial Classification Codes (SIC)</h4>
+<table  BORDER WIDTH="500" align="CENTER">
+<table  width="100%"  border="0" cellpadding="5" cellspacing="0" valign="TOP">
+<tr align="border="0"">
+<td align="CENTER">No SIC Codes returned.</td>
+</tr>
+</table>
+<h4 align="CENTER">Facility Codes and Flags</h4>
+<table  BORDER WIDTH="500" align="CENTER">
+<TR>
+<TD bgcolor="#D4E4F3" align="RIGHT"><a href="https://frs-public.epa.gov/ords/frs_public2//EF_METADATA_HTML_FRS.ef_metadata_column_page?p_topic=FRS&p_column_name=epa_region"><strong>EPA Region:</strong></TD></a>
+<TD bgcolor="#D4E4F3" align="LEFT">01</TD>
+</TR>
+<TR>
+<TD align="RIGHT"><a href="https://frs-public.epa.gov/ords/frs_public2//EF_METADATA_HTML_FRS.ef_metadata_column_page?p_topic=FRS&p_column_name=duns_number"><strong>Duns Number:</strong></TD></a>
+<TD align="LEFT"><br /></TD>
+</TR>
+<TR bgcolor="#D4E4F3">
+<TD align="RIGHT"><a href="https://frs-public.epa.gov/ords/frs_public2//EF_METADATA_HTML_FRS.ef_metadata_column_page?p_topic=FRS&p_column_name=congressional_dist_num"><strong>Congressional District Number:</strong></TD></a>
+<TD align="LEFT">01</TD>
+</TR>
+<TR>
+<TD align="RIGHT"><a href="https://frs-public.epa.gov/ords/frs_public2//EF_METADATA_HTML_FRS.ef_metadata_column_page?p_topic=FRS&p_column_name=legislative_dist_num"><strong>Legislative District Number:</strong></TD></a>
+<TD align="LEFT"><br /></TD>
+</TR>
+<TR bgcolor="#D4E4F3">
+<TD align="RIGHT"><a href="https://frs-public.epa.gov/ords/frs_public2//EF_METADATA_HTML_FRS.ef_metadata_column_page?p_topic=FRS&p_column_name=derived_huc"><strong>HUC Code/Watershed:</strong></TD></a>
+<td align="LEFT">01070006<br /></td>
+</TR>
+<TR>
+<TD align="RIGHT"><a href="https://frs-public.epa.gov/ords/frs_public2//EF_METADATA_HTML_FRS.ef_metadata_column_page?p_topic=FRS&p_column_name=us_mexico_border_ind"><strong>US Mexico Border Indicator:</strong></TD></a>
+<td><br /></td>
+</TR>
+<TR bgcolor="#D4E4F3">
+<TD align="RIGHT"><a href="https://frs-public.epa.gov/ords/frs_public2//EF_METADATA_HTML_FRS.ef_metadata_column_page?p_topic=FRS&p_column_name=federal_agency_name"><strong>Federal Facility:</strong><align="RIGHT"/TD></a>
+<td align="LEFT">NO</td>
+</TR>
+<TR>
+<TD align="RIGHT"><a href="https://frs-public.epa.gov/ords/frs_public2//EF_METADATA_HTML_FRS.ef_metadata_column_page?p_topic=FRS&p_column_name=tribal_land_name"><strong>Tribal Land:</strong></TD></a>
+<td><br /></td>
+</TR>
+</table>
+<h4 align="CENTER"><a name="ALT_NAMES"></a>Alternative Names</h4>
+<table  BORDER WIDTH="500" align="CENTER">
+<table  width="100%"  border="0" cellpadding="5" cellspacing="0" valign="TOP">
+<tr align="border="0"">
+<td align="CENTER">No Alternative Names returned.</td>
+</tr>
+</table>
+<h4 align="CENTER">Organizations</h4>
+<table  BORDER WIDTH="500" align="CENTER">
+<table  width="100%"  border="0" cellpadding="5" cellspacing="0" valign="TOP">
+<tr align="border="0"">
+<td align="CENTER">No Organizations returned.</td>
+</tr>
+</table>
+</TD>
+<TD VALIGN="TOP" WIDTH="50%">
+<h4 align="CENTER">National Industry Classification System Codes (NAICS)</h4>
+<table  BORDER WIDTH="500" align="CENTER">
+<table  width="100%"  border="0" cellpadding="5" cellspacing="0" valign="TOP">
+<tr align="border="0"">
+<td align="CENTER">No NAICS Codes returned.</td>
+</tr>
+</table>
+<h4 align="CENTER">Facility Mailing Addresses</h4>
+<table  BORDER WIDTH="500" align="CENTER">
+<table  width="100%"  border="0" cellpadding="5" cellspacing="0" valign="TOP">
+<tr align="border="0"">
+<td align="CENTER">No Facility Mailing Addresses returned.</td>
+</tr>
+</table>
+<h4 align="CENTER">Contacts</h4>
+<table  BORDER WIDTH="500" align="CENTER">
+<table  width="100%"  border="0" cellpadding="5" cellspacing="0" valign="TOP">
+<tr align="border="0"">
+<td align="CENTER">No Contacts returned.</td>
+</tr>
+</table>
+</TD>
+</TR>
+</table>
+<p>Query executed on: OCT-06-2026
+                  </div>
+        
+        </div>
+        
+      </div>
+    
+      <div id="block-epa-og-footer" class="block block-epa-og">
+        <p>   <!--{FOOTER CONTENT}all--></p>
+      </div>
+<!--googleoff: all-->
+    </div>
+  </section>
+  <nav class="nav simple-nav simple-main-nav" role="navigation">
+    <h2 class="element-invisible">Main menu</h2>
+    <ul class="menu" role="menu">
+      <li class="menu-item" id="menu-learn" role="presentation"><a href="https://www2.epa.gov/learn-issues" title="Learn what you can do to protect the environment in your home, workplace, and community." class="menu-link" role="menuitem">Learn the Issues</a></li>
+      <li class="menu-item" id="menu-scitech" role="presentation"><a href="https://www2.epa.gov/science-and-technology" title="EPA&#039;s research mission is to conduct leading-edge research and foster the sound use of science and technology to fulfill EPA&#039;s mission to protect human health and safeguard the natural environment." class="menu-link" role="menuitem">Science &amp; Technology</a></li>
+      <li class="menu-item" id="menu-lawsregs" role="presentation"><a href="https://www2.epa.gov/laws-regulations" title="Laws written by Congress provide the authority for EPA to write regulations. Regulations explain the technical, operational, and legal details necessary to implement laws." class="menu-link" role="menuitem">Laws &amp; Regulations</a></li>
+      <li class="menu-item" id="menu-about" role="presentation"><a href="https://www2.epa.gov/aboutepa" title="Learn more about: our mission and what we do, how we are organized, and our history." class="menu-link" role="menuitem">About EPA</a></li>
+    </ul>
+  </nav>
+  <nav class="nav simple-nav simple-secondary-nav" role="navigation">
+    <h2 class="element-invisible">Secondary menu</h2>
+    <ul class="menu secondary-menu">
+      <li class="menu-1569 menu-item"><a href="https://www.epa.gov/espanol/" title="Spanish" class="menu-link">Espa&ntilde;ol</a></li>
+      <li class="menu-1571 menu-item"><a href="https://www2.epa.gov/languages/traditional-chinese" title="Traditional Chinese" class="menu-link">&#20013;&#25991;: &#32321;&#39636;&#29256;</a></li>
+      <li class="menu-1573 menu-item"><a href="https://www2.epa.gov/languages/simplified-chinese" title="Simplified Chinese" class="menu-link">&#20013;&#25991;: &#31616;&#20307;&#29256;</a></li>
+      <li class="menu-1575 menu-item"><a href="https://www2.epa.gov/languages/vietnamese" title="Vietnamese" class="menu-link">Ti&#7871;ng Vi&#7879;t</a></li>
+      <li class="menu-1577 menu-item"><a href="https://www2.epa.gov/languages/korean" title="Korean" class="menu-link">&#54620;&#44397;&#50612;</a></li>
+    </ul>
+  </nav>
+  <footer class="main-footer clearfix" role="contentinfo">
+    <div class="region-footer">
+      <div id="block-epa-core-footer" class="block block-epa-core">
+        <div class="row cols-2">
+          <div class="col size-2of5">
+            <ul class="pipeline">
+              <li><a href="https://www.epa.gov/">EPA Home</a></li>
+              <li><a href="https://www2.epa.gov/home/privacy-and-security-notice">Privacy and Security Notice</a></li>
+              <li><a href="https://www2.epa.gov/accessibility"
+                  >Accessibility</a></li>
+            </ul>
+            <p class="last-updated">Last updated on September 24, 2015</p>
+          </div>
+          <div class="col size-3of5">
+            <ul class="menu epa-menu">
+              <li class="menu-item"><a class="menu-link epa-hotline" href="https://www2.epa.gov/home/epa-hotlines">Hotlines</a></li>
+              <li class="menu-item"><a class="menu-link epa-news" href="https://www2.epa.gov/newsroom">News</a></li>
+              <li class="menu-item"><a class="menu-link epa-blog" href="https://www2.epa.gov/aboutepa/greenversations">Blogs</a></li>
+              <li class="menu-item"><a class="menu-link epa-apps" href="https://developer.epa.gov/category/apps/">Apps</a></li>
+              <li class="menu-item"><a class="menu-link epa-widgets" href="https://developer.epa.gov/category/widgets/">Widgets</a></li>
+            </ul>
+            <div class="social-menu-wrapper">
+              <div class="social-menu-title">Social sites:</div>
+              <ul class="menu social-menu">
+                <li class="menu-item"><a class="menu-link social-twitter" href="https://twitter.com/epa">Twitter</a></li>
+                <li class="menu-item"><a class="menu-link social-facebook" href="https://www.facebook.com/EPA">Facebook</a></li>
+                <li class="menu-item"><a class="menu-link social-youtube" href="http://www.youtube.com/user/USEPAgov">YouTube</a></li>
+                <li class="menu-item"><a class="menu-link social-flickr" href="http://www.flickr.com/photos/usepagov">Flickr</a></li>
+                <li class="menu-item"><a class="menu-link social-instagram" href="http://instagram.com/epagov">Instagram</a></li>
+              </ul>
+              <p class="social-menu-more"><a href="https://www2.epa.gov/home/social-media">More social media at&#160;EPA&#160;»</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://www.epa.gov/sites/all/libraries/template/jquery.js"></script>
+  <script src="https://www.epa.gov/sites/all/libraries/template/js.js"></script>
+  <script src="https://www.epa.gov/sites/all/modules/custom/epa_core/js/alert.js"></script>
+  <!--[if lt IE 9]><script src="https://www.epa.gov/sites/all/themes/epa/js/ie.js"></script><![endif]-->
+<SCRIPT type="text/javascript">
+SetVisibility();
+</SCRIPT>
+  
+</body>
+</html>

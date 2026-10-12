@@ -1,0 +1,16 @@
+[
+  {
+    "file": "data/raw/faa-asde-x.html",
+    "url": "https://www.faa.gov/air_traffic/technology/asde-x",
+    "sha256": "e677748246167122317c41a8549b6a4c7f06e4e4769a1b40e8d319823cf15102",
+    "bytes": 114449,
+    "retrieved_at": "2026-10-04T18:36:42.946204+00:00"
+  },
+  {
+    "file": "data/raw/faa-assc.html",
+    "url": "https://www.faa.gov/air_traffic/technology/adsb/atc/assc",
+    "sha256": "1bdbcd826bb3dab0e233c8c81b2acca3e211b81e715862e7ed00e7b183a2d2d7",
+    "bytes": 105740,
+    "retrieved_at": "2026-10-04T18:36:42.946396+00:00"
+  }
+]
